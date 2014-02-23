@@ -317,6 +317,7 @@ textarea {
   width: 600px;
   height: 46px;
   background-position: 0 -54px;
+  display: none;
 }
 .border-bottom-gray {
   border-bottom: 1px solid #e2e2e2;
