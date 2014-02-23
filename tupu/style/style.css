@@ -250,7 +250,7 @@ textarea {
 .side h1 {
   font-size: 26px;
   color: #000;
-  margin: 25px 20px;
+  margin: 25px 0;
   padding: 0;
 }
 .side .descript {
