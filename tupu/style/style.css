@@ -183,18 +183,12 @@ textarea {
 .like-list li.cr-last {
   margin-right: 0;
 }
-.topic {
-  background: #e2e2e2;
-}
 .topic h4 {
   font-size: 28px;
   line-height: 34px;
   height: 34px;
   margin: 0;
   padding: 15px 5px;
-}
-.topic .topic-photos {
-  background: #fff;
 }
 .topic .topic-photos li {
   float: left;
@@ -409,8 +403,8 @@ textarea {
   }
   .side {
     position: static;
-    width: auto;
-    margin: 10px 0 15px 0;
+    width: 600px;
+    margin: 10px auto 15px auto;
     padding: 0;
     min-height: 0;
   }

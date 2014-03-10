@@ -77,10 +77,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="general.less" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="general.less" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style/general.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="272" column="31" selection-start="5013" selection-end="5013" vertical-scroll-proportion="19.576923" vertical-offset="5642" max-vertical-offset="6256">
+                <state line="285" column="11" selection-start="5217" selection-end="5217" vertical-scroll-proportion="0.35993487" vertical-offset="4624" max-vertical-offset="6273">
                   <folding />
                 </state>
               </provider>
@@ -104,12 +104,12 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/style/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="62" column="20" selection-start="790" selection-end="790" vertical-scroll-proportion="-2.6291292" vertical-offset="2805" max-vertical-offset="7837">
+                <state line="64" column="20" selection-start="822" selection-end="822" vertical-scroll-proportion="0.0" vertical-offset="7205" max-vertical-offset="7854">
                   <folding>
-                    <marker date="1393130072000" expanded="true" signature="463:489" placeholder="{...}" />
+                    <marker date="1393162367000" expanded="true" signature="463:489" placeholder="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -122,16 +122,20 @@
           <file leaf-file-name="photo.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/photo.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="5" column="4" selection-start="215" selection-end="215" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="1819">
-                  <folding />
+                <state line="101" column="24" selection-start="4679" selection-end="4679" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="493">
+                  <folding>
+                    <element signature="tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                    <element signature="tag#div#0;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                    <element signature="tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="photographer.html" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="photographer.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/photographer.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="2" column="16" selection-start="29" selection-end="29" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="1717">
+                <state line="25" column="34" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.66718996" vertical-offset="0" max-vertical-offset="1734">
                   <folding />
                 </state>
               </provider>
@@ -146,10 +150,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="topic.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="topic.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/topic.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="12" column="67" selection-start="463" selection-end="463" vertical-scroll-proportion="-0.30769232" vertical-offset="408" max-vertical-offset="1071">
+                <state line="12" column="67" selection-start="463" selection-end="463" vertical-scroll-proportion="7.8461537" vertical-offset="408" max-vertical-offset="1071">
                   <folding />
                 </state>
               </provider>
@@ -170,12 +174,12 @@
         <option value="$PROJECT_DIR$/style/reset.less" />
         <option value="$PROJECT_DIR$/style/media.less" />
         <option value="$PROJECT_DIR$/style/main.less" />
-        <option value="$PROJECT_DIR$/style/general.less" />
         <option value="$PROJECT_DIR$/style/handherd.less" />
         <option value="$PROJECT_DIR$/topic.html" />
-        <option value="$PROJECT_DIR$/photographer.html" />
         <option value="$PROJECT_DIR$/photo.html" />
         <option value="$PROJECT_DIR$/home.html" />
+        <option value="$PROJECT_DIR$/style/general.less" />
+        <option value="$PROJECT_DIR$/photographer.html" />
       </list>
     </option>
   </component>
@@ -438,12 +442,12 @@
       <workItem from="1392713602683" duration="49000" />
       <workItem from="1392713694071" duration="5134000" />
       <workItem from="1392787424639" duration="7140000" />
-      <workItem from="1393033517664" duration="22537000" />
+      <workItem from="1393033517664" duration="24033000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34860000" />
+    <option name="totallyTimeSpent" value="36356000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -518,7 +522,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="189" column="0" selection-start="3068" selection-end="3068" vertical-scroll-proportion="0.0" vertical-offset="3213" max-vertical-offset="3944">
           <folding>
-            <marker date="1393130072000" expanded="true" signature="463:489" placeholder="{...}" />
+            <marker date="1393162367000" expanded="true" signature="463:489" placeholder="{...}" />
           </folding>
         </state>
       </provider>
@@ -526,14 +530,22 @@
     <entry file="file://$PROJECT_DIR$/photo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="76" column="26" selection-start="3942" selection-end="3942" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1513">
-          <folding />
+          <folding>
+            <element signature="tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#0;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/photo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
-          <folding />
+          <folding>
+            <element signature="tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#0;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -544,30 +556,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/photo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="4" selection-start="215" selection-end="215" vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="1819">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photographer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="16" selection-start="29" selection-end="29" vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="1717">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="17" selection-start="339" selection-end="339" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="1241">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/topic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="67" selection-start="463" selection-end="463" vertical-scroll-proportion="-0.30769232" vertical-offset="408" max-vertical-offset="1071">
+        <state line="12" column="67" selection-start="463" selection-end="463" vertical-scroll-proportion="7.8461537" vertical-offset="408" max-vertical-offset="1071">
           <folding />
         </state>
       </provider>
@@ -575,13 +566,6 @@
     <entry file="file://$PROJECT_DIR$/style/handherd.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="38" selection-start="346" selection-end="346" vertical-scroll-proportion="-9.153846" vertical-offset="0" max-vertical-offset="986">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style/general.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="272" column="31" selection-start="5013" selection-end="5013" vertical-scroll-proportion="19.576923" vertical-offset="5642" max-vertical-offset="6256">
           <folding />
         </state>
       </provider>
@@ -597,10 +581,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="20" selection-start="790" selection-end="790" vertical-scroll-proportion="-2.6291292" vertical-offset="2805" max-vertical-offset="7837">
+        <state line="64" column="20" selection-start="822" selection-end="822" vertical-scroll-proportion="0.0" vertical-offset="7205" max-vertical-offset="7854">
           <folding>
-            <marker date="1393130072000" expanded="true" signature="463:489" placeholder="{...}" />
+            <marker date="1393162367000" expanded="true" signature="463:489" placeholder="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="101" column="24" selection-start="4679" selection-end="4679" vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="493">
+          <folding>
+            <element signature="tag#div#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#0;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#div#1;tag#div#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/general.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="285" column="11" selection-start="5217" selection-end="5217" vertical-scroll-proportion="0.35993487" vertical-offset="4624" max-vertical-offset="6273">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="17" selection-start="339" selection-end="339" vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="1241">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photographer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="34" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.66718996" vertical-offset="0" max-vertical-offset="1734">
+          <folding />
         </state>
       </provider>
     </entry>
