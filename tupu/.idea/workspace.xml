@@ -75,10 +75,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="general.less" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="general.less" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style/general.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="168" column="36" selection-start="2998" selection-end="2998" vertical-scroll-proportion="-3.9423077" vertical-offset="2651" max-vertical-offset="6273">
+                <state line="210" column="26" selection-start="3816" selection-end="3816" vertical-scroll-proportion="0.6762226" vertical-offset="3169" max-vertical-offset="6273">
                   <folding />
                 </state>
               </provider>
@@ -87,7 +87,7 @@
           <file leaf-file-name="handherd.less" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/style/handherd.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="14" column="38" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="986">
+                <state line="16" column="16" selection-start="405" selection-end="405" vertical-scroll-proportion="-1.3076923" vertical-offset="238" max-vertical-offset="986">
                   <folding />
                 </state>
               </provider>
@@ -102,10 +102,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/style/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="23" column="34" selection-start="295" selection-end="295" vertical-scroll-proportion="0.6062015" vertical-offset="0" max-vertical-offset="7786">
+                <state line="23" column="34" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7786">
                   <folding>
                     <marker date="1394465052000" expanded="true" signature="463:489" placeholder="{...}" />
                   </folding>
@@ -144,10 +144,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="topic.html" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="topic.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/topic.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="40" column="92" selection-start="1776" selection-end="1776" vertical-scroll-proportion="0.5368421" vertical-offset="323" max-vertical-offset="1071">
+                <state line="47" column="34" selection-start="2268" selection-end="2268" vertical-scroll-proportion="0.7157895" vertical-offset="323" max-vertical-offset="1071">
                   <folding />
                 </state>
               </provider>
@@ -169,12 +169,12 @@
         <option value="$PROJECT_DIR$/style/media.less" />
         <option value="$PROJECT_DIR$/style/main.less" />
         <option value="$PROJECT_DIR$/style/handherd.less" />
-        <option value="$PROJECT_DIR$/style/general.less" />
         <option value="$PROJECT_DIR$/style/style.css" />
         <option value="$PROJECT_DIR$/photographer.html" />
         <option value="$PROJECT_DIR$/photo.html" />
         <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/topic.html" />
+        <option value="$PROJECT_DIR$/style/general.less" />
       </list>
     </option>
   </component>
@@ -438,12 +438,12 @@
       <workItem from="1392713694071" duration="5134000" />
       <workItem from="1392787424639" duration="7140000" />
       <workItem from="1393033517664" duration="24033000" />
-      <workItem from="1394452807613" duration="1574000" />
+      <workItem from="1394452807613" duration="1725000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37930000" />
+    <option name="totallyTimeSpent" value="38081000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -607,13 +607,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/handherd.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="38" selection-start="353" selection-end="353" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="986">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style/reset.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="19" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="918">
@@ -621,16 +614,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/general.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="168" column="36" selection-start="2998" selection-end="2998" vertical-scroll-proportion="-3.9423077" vertical-offset="2651" max-vertical-offset="6273">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="34" selection-start="295" selection-end="295" vertical-scroll-proportion="0.6062015" vertical-offset="0" max-vertical-offset="7786">
+        <state line="23" column="34" selection-start="295" selection-end="295" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="7786">
           <folding>
             <marker date="1394465052000" expanded="true" signature="463:489" placeholder="{...}" />
           </folding>
@@ -658,9 +644,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/style/handherd.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="16" selection-start="405" selection-end="405" vertical-scroll-proportion="-1.3076923" vertical-offset="238" max-vertical-offset="986">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/topic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="92" selection-start="1776" selection-end="1776" vertical-scroll-proportion="0.5368421" vertical-offset="323" max-vertical-offset="1071">
+        <state line="47" column="34" selection-start="2268" selection-end="2268" vertical-scroll-proportion="0.7157895" vertical-offset="323" max-vertical-offset="1071">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/general.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="210" column="26" selection-start="3816" selection-end="3816" vertical-scroll-proportion="0.6762226" vertical-offset="3169" max-vertical-offset="6273">
           <folding />
         </state>
       </provider>
