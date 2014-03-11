@@ -213,12 +213,10 @@ textarea {
 }
 .footer {
   background: #e2e2e2;
-  margin-top: 20px;
 }
 .footer p {
   font-size: 12px;
-  line-height: 12px;
-  margin-bottom: 10px;
+  padding: 10px;
 }
 .side {
   _position: absolute;
@@ -251,7 +249,7 @@ textarea {
 }
 .side .descript {
   font-size: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
 }
 .side .download img {
   display: block;
