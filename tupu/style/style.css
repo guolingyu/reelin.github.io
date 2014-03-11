@@ -213,10 +213,12 @@ textarea {
 }
 .footer {
   background: #e2e2e2;
+  margin-top: 20px;
 }
 .footer p {
   font-size: 12px;
-  padding: 10px;
+  line-height: 12px;
+  margin-bottom: 10px;
 }
 .side {
   _position: absolute;
