@@ -133,12 +133,13 @@
     }
 }
 .topic {
+    border-top: 1px solid #ececec;
     h4 {
         font-size: 28px;
         line-height: 34px;
         height: 34px;
         margin: 0;
-        padding: 15px 5px;
+        padding: 15px 10px;
     }
     .topic-photos {
         li {
@@ -304,6 +305,9 @@
             font-size: 20px;
             margin-top: 20px;
         }
+        &.last {
+            border: none;
+        }
     }
     .avatar img {
         width: 124px;
@@ -350,6 +354,11 @@
     .avatar img {
         width: 78px;
     }
+    .load-more {
+        padding: 10px 20px;
+        margin: 0;
+        border-top: 1px solid #efefef;
+    }
 }
 #topicMain {
     .topic-title {
@@ -357,5 +366,10 @@
     }
     .user-info {
         color: #6a6969;
+    }
+    .load-more {
+        padding: 10px 20px;
+        margin: 0;
+        border-top: 1px solid #efefef;
     }
 }
