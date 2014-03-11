@@ -135,19 +135,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="home.html" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="home.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/home.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="24" column="33" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.48872182" vertical-offset="83" max-vertical-offset="1241">
+                <state line="38" column="24" selection-start="1518" selection-end="1545" vertical-scroll-proportion="-7.923077" vertical-offset="440" max-vertical-offset="1241">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="topic.html" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="topic.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/topic.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="28" column="14" selection-start="1133" selection-end="1133" vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="1071">
+                <state line="40" column="92" selection-start="1776" selection-end="1776" vertical-scroll-proportion="0.5368421" vertical-offset="323" max-vertical-offset="1071">
                   <folding />
                 </state>
               </provider>
@@ -172,9 +172,9 @@
         <option value="$PROJECT_DIR$/style/general.less" />
         <option value="$PROJECT_DIR$/style/style.css" />
         <option value="$PROJECT_DIR$/photographer.html" />
+        <option value="$PROJECT_DIR$/photo.html" />
         <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/topic.html" />
-        <option value="$PROJECT_DIR$/photo.html" />
       </list>
     </option>
   </component>
@@ -438,12 +438,12 @@
       <workItem from="1392713694071" duration="5134000" />
       <workItem from="1392787424639" duration="7140000" />
       <workItem from="1393033517664" duration="24033000" />
-      <workItem from="1394452807613" duration="1293000" />
+      <workItem from="1394452807613" duration="1574000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37649000" />
+    <option name="totallyTimeSpent" value="37930000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -637,13 +637,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/topic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="14" selection-start="1133" selection-end="1133" vertical-scroll-proportion="-18.307692" vertical-offset="0" max-vertical-offset="1071">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/photo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="59" column="36" selection-start="2993" selection-end="2993" vertical-scroll-proportion="-13.730769" vertical-offset="646" max-vertical-offset="1717">
@@ -660,7 +653,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="33" selection-start="1001" selection-end="1001" vertical-scroll-proportion="0.48872182" vertical-offset="83" max-vertical-offset="1241">
+        <state line="38" column="24" selection-start="1518" selection-end="1545" vertical-scroll-proportion="-7.923077" vertical-offset="440" max-vertical-offset="1241">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="92" selection-start="1776" selection-end="1776" vertical-scroll-proportion="0.5368421" vertical-offset="323" max-vertical-offset="1071">
           <folding />
         </state>
       </provider>
