@@ -8,8 +8,8 @@
 			next = active.next()
 		}
 		
-		active.fadeOut(1200).removeClass("active");
-		next.fadeIn(1200).addClass("active");	
-	}, 5000);
+		active.fadeOut(2000).removeClass("active");
+		next.fadeIn(2000).addClass("active");	
+	}, 6000);
 	
 })(jQuery);
