@@ -21,13 +21,24 @@
     }
 }
 .animate-list {
+    position: relative;
+    *zoom: 1;
     background: #e2e2e2;
-    .pic2 {
-        margin-left: 176px;
-        display: none;
+    .pic {
+        position: absolute;
     }
+    .pic1 {
+        left: 0;
+        top: 0;
+    }
+    .pic2{
+        left: 186px;
+        top: 0;
+        display: none;
+    } 
     .pic3 {
-        margin-left: 360px;
+        right: 0;
+        top: 0;
         display: none;
     }    
 }
