@@ -4,7 +4,7 @@
 		isAndroid = / android|adr/gi.test(UA),
 		isIos = /iphone|ipod/gi.test(UA),
 		animateList = $(".animate-list"),
-		html = '<img class="pic1 active pic" src="images/webhome/wap1.png" alt="图扑"/><img class="pic2 pic" src="images/webhome/wap2.png" alt="图扑"/><img class="pic3 pic" src="images/webhome/wap3.png" alt="图扑"/><img class="pic4 pic" src="images/webhome/wap4.png" alt="图扑"/><img class="pic5 pic" src="images/webhome/wap5.png" alt="图扑"/><img class="pic6 pic" src="images/webhome/wap6.png" alt="图扑"/><img class="pic7 pic" src="images/webhome/wap7.png" alt="图扑"/><img class="pic8 pic" src="images/webhome/wap8.png" alt="图扑"/><img class="pic9 pic" src="images/webhome/wap9.png" alt="图扑"/>';		
+		html = '<img class="pic1 active pic" src="images/waphome/wap1.png" alt="图扑"/><img class="pic2 pic" src="images/waphome/wap2.png" alt="图扑"/><img class="pic3 pic" src="images/waphome/wap3.png" alt="图扑"/><img class="pic4 pic" src="images/waphome/wap4.png" alt="图扑"/><img class="pic5 pic" src="images/waphome/wap5.png" alt="图扑"/><img class="pic6 pic" src="images/waphome/wap6.png" alt="图扑"/><img class="pic7 pic" src="images/waphome/wap7.png" alt="图扑"/><img class="pic8 pic" src="images/waphome/wap8.png" alt="图扑"/><img class="pic9 pic" src="images/waphome/wap9.png" alt="图扑"/>';		
 	if (isAndroid || isIos) {
 		animateList.html(html);
 	}
