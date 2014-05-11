@@ -42,13 +42,22 @@
     }
     .animate-list {
         position: static;
-        height: auto;
+        height: 639px;
+        overflow: hidden;
         background: #fff;
         .pic {
             position: static;
             width: 360px;
             height: auto;
             margin-left: 140px;
+            display: none;
+        }
+        .pic-font {
+            width: 640px;
+            margin-left: 0;
+        }
+        .pic.active {
+            display: block;
         }
     }
     .footer {
