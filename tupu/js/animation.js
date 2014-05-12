@@ -17,16 +17,14 @@
 				next = active.next()
 			}
 			
-			active.fadeOut(2000, function() {
-				
-			}).removeClass("active");
-			next.fadeIn(2000, function() {
-				next.addClass("active");
-			});
+		    active.fadeOut(2000, function() {
+		    	next.fadeIn(2000).addClass("active");
+		    }).removeClass("active");
+			
 			
 		}, 5000);
 	} else {
-		// 动画效果
+		动画效果
 		var timer = setInterval(function() {
 			var active = $(".animate-list img.active"),
 				last = $(".animate-list img").last(),
