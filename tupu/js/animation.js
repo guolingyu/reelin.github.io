@@ -24,7 +24,6 @@
 			
 		}, 5000);
 	} else {
-		动画效果
 		var timer = setInterval(function() {
 			var active = $(".animate-list img.active"),
 				last = $(".animate-list img").last(),
