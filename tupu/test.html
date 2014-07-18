@@ -37,7 +37,6 @@
             float: right;
         }
         .icon {
-            background: url("http://img2.cache.netease.com/tie/images/email_icon.png") no-repeat 0 0;
             display: inline-block;
             *display: inline;
             *zoom: 1;
@@ -50,6 +49,12 @@
             font-size: 12px;
             position: absolute;
             left: -44px;
+        }
+        .icon-news img, .icon-tie img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
         }
         .icon-tie {
             background-position: 0 -21px;
@@ -113,11 +118,18 @@
             width: 600px;
         }
         .second .tie-img {
-            margin-top: 133px;
+            margin-top: 115px;
         }
         .tie-banner {
-            background: url("http://img2.cache.netease.com/tie/images/banner_bottom_bg.jpg") no-repeat 0 0;
+            position: relative;
+            *zoom: 1;
             padding: 20px 65px;
+        }
+        .tie-banner img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
         }
         .tie-banner p {
             color: #888;
@@ -129,7 +141,14 @@
             margin-bottom: 28px;
         }
         .tie-header {
-            background: url("http://img2.cache.netease.com/tie/images/banner.jpg") no-repeat 0 0;
+            position: relative;
+            *zoom: 1;
+        }
+        .tie-header img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
         }
         .tie-header h1, .tie-header h2 {
             text-indent: -1000px;
@@ -155,7 +174,6 @@
             padding: 6px 18px 23px 18px;
         }
         .trigel-bg {
-            background: url("http://img2.cache.netease.com/tie/images/trigel_bg.png") no-repeat 0 0;
             width: 600px;
             height: 17px;
             position: absolute;
@@ -165,101 +183,103 @@
     </style>
 </head>
 <body>
-    <div class="tie-wrapper">
-        <div class="tie-header">
-            <h1>网易跟贴精选第1期</h1>
-            <h2>那些年，被网友玩坏的巴西世界杯</h2>
-            <div class="describe">
-                <div class="des-bg"></div>
-                <p>世界杯帷幕已落，哪场比赛给你留下了最深刻的印象？是东道主1-7被狂灌进球到眼晕，还是苏亚雷斯露出獠牙痛咬对手？无跟贴，不新闻。有时候，比新闻本身更精彩的是网友吐槽。让我们一起回顾一下那些被网友玩坏了的世界杯新闻吧。</p>
-                <div class="trigel-bg"></div>
-            </div>
-        </div>
-        <div class="tie-container">
-            <ul class="tie-content">
-                <div class="clearfix" style="margin-top: -8px;">
-                    <div class="tie-img cf-r">
-                        <span class="icon icon-triangle"></span>
-                        <img src="http://img2.cache.netease.com/tie/images/news_img1.jpg" alt=""/>
-                    </div>
-                    <div class="cf-l">
-                        <li class="clearfix">
-                            <a class="tie-news" href="http://comment.news.163.com/sports2_bbs/PHOT3IN800055O36/A0ML0GJH.html"><span class="icon icon-news">新闻</span>1-7惨败!世纪惨案!巴西国耻日 创史上最大耻辱</a>
-                            <p class="tie-tie"><span class="icon icon-tie">跟贴</span>德国人你给巴西人裤子都扒了，最后给打个马赛克吧。</p>
-                            <p class="tie-author">—— xnf2694281 [懂球帝]</p>
-                        </li>
-                        <li class="clearfix last">
-                            <a class="tie-news" href="http://comment.news.163.com/sports2_bbs/A0MJI957000505HF/A0MKF276.html"><span class="icon icon-news">新闻</span>世界杯东道主遭殃:巴西1-7德国</a>
-                            <p class="tie-tie"><span class="icon icon-tie">跟贴</span>决赛你们去别的地方打吧，我们不办了。</p>
-                            <p class="tie-author">—— 网易海南省海口市手机网友</p>
-                        </li>
-                    </div>
-                </div>
-                <li class="clearfix"></li>
-                <li class="clearfix">
-                    <a class="tie-news" href="http://comment.news.163.com/sports2_bbs/PHOT3IU400055O36/A13JU0OG.html"><span class="icon icon-news">新闻</span>德国队第4次登顶世界之巅 拉姆捧杯众将狂欢</a>
-                    <p class="tie-tie"><span class="icon icon-tie">跟贴</span>巴西队告诉我们：就算考场设在你家，你也可能一塌糊涂；阿根廷告诉我们：只要第10题做得好，就可以确保上一本；西班牙告诉我们：即使你是高考状元，复读一年也不一定上本科；荷兰队告诉我们：即使你周考考赢了状元，期末还是不一定拿第一；中国队告诉我们：不好好学习的家伙，连参加高考的机会都没有！</p>
-                    <p class="tie-author">—— 网易浙江省杭州市手机网友</p>
-                </li>
-                <div class="clearfix second">
-                    <div class="tie-img cf-r">
-                        <span class="icon icon-triangle"></span>
-                        <img src="http://img2.cache.netease.com/tie/images/news_img2.jpg" alt=""/>
-                    </div>
-                    <div class="cf-l">
-                        <li class="clearfix">
-                            <a class="tie-news special" href="http://comment.news.163.com/sports2_bbs/9UTEH7MR000505HF/9UTF8K6U.html"><span class="icon icon-news">新闻</span>无助惹人怜!C罗疑摘袖标表不满 嘟嘴吐舌露窘相</a>
-                            <p class="tie-tie special"><span class="icon icon-tie">跟贴</span>裁判：“那个打人的，你过来你叫什么？”佩佩：“呸！呸！”裁判：“CNM，红牌滚粗！”</p>
-                            <p class="tie-author">—— 网易陕西省咸阳市手机网友</p>
-                        </li>
-                        <li class="clearfix last">
-                            <a class="tie-news" href="http://comment.news.163.com/sports2_bbs/9V0BQJP6000505HF/9V0Q388C.html"><span class="icon icon-news">新闻</span>墨西哥门神神扑被赞如"世纪扑救" 内马尔成背景</a>
-                            <p class="tie-tie"><span class="icon icon-tie">跟贴</span>“看了罗本的表现，我鼻血直冒。从罗西，罗马里奥，到罗纳尔多，罗纳尔迪尼奥，罗伯特卡洛斯，我只能说这是血统决定。这就是家族荣耀。”面对记着，罗玉凤激动的说。</p>
-                            <p class="tie-author">—— 网易湖北省武汉市手机网友</p>
-                        </li>
-                    </div>
-                </div>
-                <li class="clearfix"></li>
-                <li class="clearfix">
-                    <a class="tie-news" href="http://comment.news.163.com/sports2_bbs/9UQE6OJL000505HF/9USN765P.html"><span class="icon icon-news">新闻</span>德国VS葡萄牙前瞻:C罗或首发 克洛泽冲大罗纪录</a>
-                    <p class="tie-tie"><span class="icon icon-tie">跟贴</span>一哥们开了个包房看世界杯，正巧有个朋友来给他送东西，他非拖着朋友一起看世界杯，还要求赌球，赛毕，朋友赢钱走人。 小弟进来看大哥脸色不好又不敢笑，大哥骂“没见过赌球输的么？” 小弟说“见过，但没见过赌重播的……</p>
-                    <p class="tie-author">—— 神行BOY [网易黑龙江省牡丹江市手机网友]</p>
-                </li>
-                <li class="clearfix">
-                    <a class="tie-news" href="http://comment.sports.163.com/sports2_bbs/9V7RFHQA000505HF/9V7T08TB.html"><span class="icon icon-news">新闻</span>三狮军团回家了!成第4支出局队 意大利人靠不住</a>
-                    <p class="tie-tie"><span class="icon icon-tie">跟贴</span>无言独上天台<br>
-                        月如钩<br>
-                        强队全输我靠 想跳楼<br>
-                        剪不断 理还乱<br>
-                        冲上楼 <br>
-                        结果尼玛只能排后头。</p>
-                    <p class="tie-author">—— 网易四川省成都市网友</p>
-                </li>
-                <li class="clearfix">
-                    <a class="tie-news" href="http://comment.sports.163.com/sports2_bbs/9VFVRSJC000505HF/9VG7BGCV.html"><span class="icon icon-news">新闻</span>A组-内马尔2球 巴西4-1喀麦隆头名晋级将战智利</a>
-                    <p class="tie-tie"><span class="icon icon-tie">跟贴</span>一只螺被埋进了池边的淤泥里，螺对泥说：“你看不到我的眼泪，因为我在淤泥里。”泥对螺说：“我能感觉到你的眼泪，因为你在我心里。”双方突然一愣，螺怔怔地问道：“你…是鲁泥？”泥也恍惚地说：“…你是C螺？</p>
-                    <p class="tie-author">—— 江河倒悬 [懂球帝]</p>
-                </li>
-                <li class="clearfix">
-                    <a class="tie-news" href="http://comment.sports.163.com/sports2_bbs/A01JADRB000505HF/A01KPSSM.html"><span class="icon icon-news">新闻</span>淡定帝四神扑险逼疯法国 惋惜!失误送乌龙助攻</a>
-                    <p class="tie-tie"><span class="icon icon-tie">跟贴</span>世界杯我买西班牙，结果智利赢，买英格兰，结果意大利赢，买意大利，结果哥斯达黎加赢，两轮小组赛下来，输得一塌糊涂。我今日上山求问禅师，禅师不语，默默地为我倒了一杯白开水，我顿悟：大师是让我回归平淡是真的生活？大师叹气道：我输得比你更惨，茶叶都买不起了！</p>
-                    <p class="tie-author">—— 西门东窗事发 [网易广东省深圳市罗湖区手机网友]</p>
-                </li>
-                <li class="clearfix last">
-                    <a class="tie-news" href="http://comment.sports.163.com/sports2_bbs/A0BB9149000505HF/A0BH4U98.html"><span class="icon icon-news">新闻</span>球迷买西班牙一场输30万 台州彩民一人中116万</a>
-                    <p class="tie-tie"><span class="icon icon-tie">跟贴</span>一直买中国队输都可以上福布斯排行榜了</p>
-                    <p class="tie-author">—— 堕落好好男人 [网易英国网友]</p>
-                </li>
-            </ul>
-        </div>
-        <div class="tie-banner">
-            <p class="more">更多精彩网易跟贴，请<a href="http://tie.163.com/" target="_blank">点击</a></p>
-            <p class="reply">如果您对网易跟贴有任何建议和意见，请回复本邮件。</p>
-            <p>如果您不想再收到此邮件，请回复本邮件告知我们。</p>
-        </div>
-        <div class="tie-footer">
-            <a href="http://mail.163.com/client/dl.html?from=mail17" target="_blank"><img src="http://img2.cache.netease.com/tie/images/footer.jpg" alt="网易邮箱手机版"/></a>
+<div class="tie-wrapper">
+    <div class="tie-header">
+        <h1>网易跟贴精选第1期</h1>
+        <h2>那些年，被网友玩坏的巴西世界杯</h2>
+        <img src="http://img2.cache.netease.com/tie/images/banner.jpg" alt="网易跟贴精选第1期"/>
+        <div class="describe">
+            <div class="des-bg"></div>
+            <p>世界杯帷幕已落，哪场比赛给你留下了最深刻的印象？是东道主1-7被狂灌进球到眼晕，还是苏亚雷斯露出獠牙痛咬对手？无跟贴，不新闻。有时候，比新闻本身更精彩的是网友吐槽。让我们一起回顾一下那些被网友玩坏了的世界杯新闻吧。</p>
+            <div class="trigel-bg"><img src="http://img2.cache.netease.com/tie/images/trigel_bg.png" alt="背景"/></div>
         </div>
     </div>
+    <div class="tie-container">
+        <ul class="tie-content">
+            <div class="clearfix" style="margin-top: -8px;">
+                <div class="tie-img cf-r">
+                    <div class="icon icon-triangle"><img src="http://img2.cache.netease.com/tie/images/icon_triangle.png" alt="三角"/></div>
+                    <img src="http://img2.cache.netease.com/tie/images/news_img1.jpg" alt=""/>
+                </div>
+                <div class="cf-l">
+                    <li class="clearfix">
+                        <a class="tie-news" href="http://comment.news.163.com/sports2_bbs/PHOT3IN800055O36/A0ML0GJH.html"><div class="icon icon-news"><img src="http://img2.cache.netease.com/tie/images/icon_news.png" alt="绿色icon"/>新闻</div>1-7惨败!世纪惨案!巴西国耻日 创史上最大耻辱</a>
+                        <div class="tie-tie"><div class="icon icon-tie"><img src="http://img2.cache.netease.com/tie/images/icon_tie.png" alt="黑色icon"/>跟贴</div> 德国人你给巴西人裤子都扒了，最后给打个马赛克吧。</div>
+                        <p class="tie-author">—— xnf2694281 [懂球帝]</p>
+                    </li>
+                    <li class="clearfix last">
+                        <a class="tie-news" href="http://comment.news.163.com/sports2_bbs/A0MJI957000505HF/A0MKF276.html"><div class="icon icon-news"><img src="http://img2.cache.netease.com/tie/images/icon_news.png" alt="绿色icon"/>新闻</div>世界杯东道主遭殃:巴西1-7德国</a>
+                        <div class="tie-tie"><div class="icon icon-tie"><img src="http://img2.cache.netease.com/tie/images/icon_tie.png" alt="黑色icon"/>跟贴</div> 决赛你们去别的地方打吧，我们不办了。</div>
+                        <p class="tie-author">—— 网易海南省海口市手机网友</p>
+                    </li>
+                </div>
+            </div>
+            <li class="clearfix"></li>
+            <li class="clearfix">
+                <a class="tie-news" href="http://comment.news.163.com/sports2_bbs/PHOT3IU400055O36/A13JU0OG.html"><div class="icon icon-news"><img src="http://img2.cache.netease.com/tie/images/icon_news.png" alt="绿色icon"/>新闻</div>德国队第4次登顶世界之巅 拉姆捧杯众将狂欢</a>
+                <div class="tie-tie"><div class="icon icon-tie"><img src="http://img2.cache.netease.com/tie/images/icon_tie.png" alt="黑色icon"/>跟贴</div> 巴西队告诉我们：就算考场设在你家，你也可能一塌糊涂；阿根廷告诉我们：只要第10题做得好，就可以确保上一本；西班牙告诉我们：即使你是高考状元，复读一年也不一定上本科；荷兰队告诉我们：即使你周考考赢了状元，期末还是不一定拿第一；中国队告诉我们：不好好学习的家伙，连参加高考的机会都没有！</div>
+                <p class="tie-author">—— 网易浙江省杭州市手机网友</p>
+            </li>
+            <div class="clearfix second">
+                <div class="tie-img cf-r">
+                    <div class="icon icon-triangle"><img src="http://img2.cache.netease.com/tie/images/icon_triangle.png" alt="三角"/></div>
+                    <img src="http://img2.cache.netease.com/tie/images/news_img2.jpg" alt=""/>
+                </div>
+                <div class="cf-l">
+                    <li class="clearfix">
+                        <a class="tie-news special" href="http://comment.news.163.com/sports2_bbs/9UTEH7MR000505HF/9UTF8K6U.html"><div class="icon icon-news"><img src="http://img2.cache.netease.com/tie/images/icon_news.png" alt="绿色icon"/>新闻</div>无助惹人怜!C罗疑摘袖标表不满 嘟嘴吐舌露窘相</a>
+                        <div class="tie-tie special"><div class="icon icon-tie"><img src="http://img2.cache.netease.com/tie/images/icon_tie.png" alt="黑色icon"/>跟贴</div> 裁判：“那个打人的，你过来你叫什么？”佩佩：“呸！呸！”裁判：“CNM，红牌滚粗！”</div>
+                        <p class="tie-author">—— 网易陕西省咸阳市手机网友</p>
+                    </li>
+                    <li class="clearfix last">
+                        <a class="tie-news" href="http://comment.news.163.com/sports2_bbs/9V0BQJP6000505HF/9V0Q388C.html"><div class="icon icon-news"><img src="http://img2.cache.netease.com/tie/images/icon_news.png" alt="绿色icon"/>新闻</div>墨西哥门神神扑被赞如"世纪扑救" 内马尔成背景</a>
+                        <div class="tie-tie"><div class="icon icon-tie"><img src="http://img2.cache.netease.com/tie/images/icon_tie.png" alt="黑色icon"/>跟贴</div> “看了罗本的表现，我鼻血直冒。从罗西，罗马里奥，到罗纳尔多，罗纳尔迪尼奥，罗伯特卡洛斯，我只能说这是血统决定。这就是家族荣耀。”面对记着，罗玉凤激动的说。</div>
+                        <p class="tie-author">—— 网易湖北省武汉市手机网友</p>
+                    </li>
+                </div>
+            </div>
+            <li class="clearfix"></li>
+            <li class="clearfix">
+                <a class="tie-news" href="http://comment.news.163.com/sports2_bbs/9UQE6OJL000505HF/9USN765P.html"><div class="icon icon-news"><img src="http://img2.cache.netease.com/tie/images/icon_news.png" alt="绿色icon"/>新闻</div>德国VS葡萄牙前瞻:C罗或首发 克洛泽冲大罗纪录</a>
+                <div class="tie-tie"><div class="icon icon-tie"><img src="http://img2.cache.netease.com/tie/images/icon_tie.png" alt="黑色icon"/>跟贴</div> 一哥们开了个包房看世界杯，正巧有个朋友来给他送东西，他非拖着朋友一起看世界杯，还要求赌球，赛毕，朋友赢钱走人。 小弟进来看大哥脸色不好又不敢笑，大哥骂“没见过赌球输的么？” 小弟说“见过，但没见过赌重播的……</div>
+                <p class="tie-author">—— 神行BOY [网易黑龙江省牡丹江市手机网友]</p>
+            </li>
+            <li class="clearfix">
+                <a class="tie-news" href="http://comment.sports.163.com/sports2_bbs/9V7RFHQA000505HF/9V7T08TB.html"><div class="icon icon-news"><img src="http://img2.cache.netease.com/tie/images/icon_news.png" alt="绿色icon"/>新闻</div>三狮军团回家了!成第4支出局队 意大利人靠不住</a>
+                <div class="tie-tie"><div class="icon icon-tie"><img src="http://img2.cache.netease.com/tie/images/icon_tie.png" alt="黑色icon"/>跟贴</div> 无言独上天台<br>
+                    月如钩<br>
+                    强队全输我靠 想跳楼<br>
+                    剪不断 理还乱<br>
+                    冲上楼 <br>
+                    结果尼玛只能排后头。</div>
+                <p class="tie-author">—— 网易四川省成都市网友</p>
+            </li>
+            <li class="clearfix">
+                <a class="tie-news" href="http://comment.sports.163.com/sports2_bbs/9VFVRSJC000505HF/9VG7BGCV.html"><div class="icon icon-news"><img src="http://img2.cache.netease.com/tie/images/icon_news.png" alt="绿色icon"/>新闻</div>A组-内马尔2球 巴西4-1喀麦隆头名晋级将战智利</a>
+                <div class="tie-tie"><div class="icon icon-tie"><img src="http://img2.cache.netease.com/tie/images/icon_tie.png" alt="黑色icon"/>跟贴</div> 一只螺被埋进了池边的淤泥里，螺对泥说：“你看不到我的眼泪，因为我在淤泥里。”泥对螺说：“我能感觉到你的眼泪，因为你在我心里。”双方突然一愣，螺怔怔地问道：“你…是鲁泥？”泥也恍惚地说：“…你是C螺？</div>
+                <p class="tie-author">—— 江河倒悬 [懂球帝]</p>
+            </li>
+            <li class="clearfix">
+                <a class="tie-news" href="http://comment.sports.163.com/sports2_bbs/A01JADRB000505HF/A01KPSSM.html"><div class="icon icon-news"><img src="http://img2.cache.netease.com/tie/images/icon_news.png" alt="绿色icon"/>新闻</div>淡定帝四神扑险逼疯法国 惋惜!失误送乌龙助攻</a>
+                <div class="tie-tie"><div class="icon icon-tie"><img src="http://img2.cache.netease.com/tie/images/icon_tie.png" alt="黑色icon"/>跟贴</div> 世界杯我买西班牙，结果智利赢，买英格兰，结果意大利赢，买意大利，结果哥斯达黎加赢，两轮小组赛下来，输得一塌糊涂。我今日上山求问禅师，禅师不语，默默地为我倒了一杯白开水，我顿悟：大师是让我回归平淡是真的生活？大师叹气道：我输得比你更惨，茶叶都买不起了！</div>
+                <p class="tie-author">—— 西门东窗事发 [网易广东省深圳市罗湖区手机网友]</p>
+            </li>
+            <li class="clearfix last">
+                <a class="tie-news" href="http://comment.sports.163.com/sports2_bbs/A0BB9149000505HF/A0BH4U98.html"><div class="icon icon-news"><img src="http://img2.cache.netease.com/tie/images/icon_news.png" alt="绿色icon"/>新闻</div>球迷买西班牙一场输30万 台州彩民一人中116万</a>
+                <div class="tie-tie"><div class="icon icon-tie"><img src="http://img2.cache.netease.com/tie/images/icon_tie.png" alt="黑色icon"/>跟贴</div> 一直买中国队输都可以上福布斯排行榜了</div>
+                <p class="tie-author">—— 堕落好好男人 [网易英国网友]</p>
+            </li>
+        </ul>
+    </div>
+    <div class="tie-banner">
+        <img src="http://img2.cache.netease.com/tie/images/banner_bottom_bg.jpg" alt="背景图"/>
+        <p class="more">更多精彩网易跟贴，请<a href="http://tie.163.com/" target="_blank">点击</a></p>
+        <p class="reply">如果您对网易跟贴有任何建议和意见，请回复本邮件。</p>
+        <p>如果您不想再收到此邮件，请回复本邮件告知我们。</p>
+    </div>
+    <div class="tie-footer">
+        <a href="http://mail.163.com/client/dl.html?from=mail17" target="_blank"><img src="http://img2.cache.netease.com/tie/images/footer.jpg" alt="网易邮箱手机版"/></a>
+    </div>
+</div>
 </body>
 </html>
