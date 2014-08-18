@@ -254,13 +254,6 @@ textarea {
   font-size: 12px;
   padding: 10px;
 }
-.footer .close {
-  display: none;
-  position: absolute;
-  left: 0;
-  top: 0;
-  cursor: pointer;
-}
 .side {
   _float: left;
   position: fixed;
@@ -372,14 +365,8 @@ textarea {
 .fblod {
   font-weight: bold;
 }
-.install {
-  width: 470px;
+.modal {
   display: none;
-  text-align: center;
-  font-size: 30px;
-  padding: 8px 20px;
-  border-radius: 10px;
-  background: #e5e5e5;
 }
 #photographer .photo-main h3 {
   border-bottom: none;
@@ -534,18 +521,48 @@ textarea {
     margin-left: 0;
   }
   .footer {
-    background: #434343;
     padding: 25px 0;
-    position: relative;
   }
   .footer p {
     display: none;
   }
   .footer .install {
     display: block;
-    margin: 0px auto;
+    margin: 0 auto;
   }
-  .footer .close {
-    display: inline-block;
+  .modal {
+    display: block;
+    padding: 25px 0;
+    background: transparent;
+    position: fixed;
+    width: 640px;
+    left: 0;
+    bottom: 0;
+  }
+  .modal .install {
+    width: 470px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    background: #e5e5e5;
+  }
+  .modal .modal-bg {
+    width: 640px;
+    height: 111px;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    opacity: .7;
+  }
+  .modal .close {
+    position: absolute;
+    left: 0;
+    top: 0;
+    cursor: pointer;
   }
 }

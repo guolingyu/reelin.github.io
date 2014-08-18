@@ -60,18 +60,49 @@
         }
     }
     .footer {
-        background: #434343;
         padding: 25px 0;
-        position: relative;
         p {
             display: none;
         }
         .install {
             display: block;
-            margin: 0px auto;
+            margin: 0 auto;
+        }
+    }
+    .modal {
+        display: block;
+        padding: 25px 0;
+        background: transparent;
+        position: fixed;
+        width: 640px;
+        left: 0;
+        bottom: 0;
+        .install{
+            width: 470px;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            font-size: 30px;
+            padding: 8px 20px;
+            border-radius: 10px;
+            background: #e5e5e5;
+        }
+         .modal-bg {
+            width: 640px;
+            height: 111px;
+            background: #000;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            opacity: .7;
         }
         .close {
-            display: inline-block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            cursor: pointer;
         }
+
     }
 }
