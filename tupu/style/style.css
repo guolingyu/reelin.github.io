@@ -248,7 +248,7 @@ textarea {
   margin-right: 0;
 }
 .footer {
-  background: #434343;
+  background: #e2e2e2;
 }
 .footer p {
   font-size: 12px;
@@ -534,6 +534,7 @@ textarea {
     margin-left: 0;
   }
   .footer {
+    background: #434343;
     padding: 25px 0;
     position: relative;
   }
