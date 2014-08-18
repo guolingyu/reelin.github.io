@@ -202,10 +202,17 @@
     }
 }
 .footer {
-    background: #e2e2e2;
+    background: #434343;
     p {
         font-size: 12px;
         padding: 10px;
+    }
+    .close {
+        display: none;
+        position: absolute;
+        left: 0;
+        top: 0;
+        cursor: pointer;
     }
 }
 .side {
@@ -302,6 +309,11 @@
         background-position: 0 -54px;
         display: none;
     }
+    &.close {
+        width: 36px;
+        height: 36px;
+        background-position: -257px -4px;
+    }
 }
 .border-bottom-gray {
     border-bottom: 1px solid #e2e2e2;
@@ -313,6 +325,15 @@
 }
 .fblod {
     font-weight: bold;
+}
+.install {
+    width: 470px;
+    display: none;
+    text-align: center;
+    font-size: 30px;
+    padding: 8px 20px;
+    border-radius: 10px;
+    background: #e5e5e5;
 }
 #photographer {
     .photo-main h3 {
