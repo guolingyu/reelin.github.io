@@ -20,17 +20,15 @@
                 width: carWidth*1.2,
                 height: carHeight*1.2,
                 top: 100
-            }, {
-                duration: 800,
-                complete: function() {
-                    wheel.animate({
-                        width: wheelWidth,
-                        height: wheelHeight,
-                        top: "160px"
-                    }, 300, function() {
-                        wheelAnimation();
-                    });
-                }
+            }, 800, function() {
+                carousel.animate({
+                    width: carWidth,
+                    height: carHeight,
+                    top: 160
+                }, 300, function() {
+                    wheelAnimation();
+                });
+
             });
         });
     }
