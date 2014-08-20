@@ -9,7 +9,9 @@
         advWidth = adventure.width(),
         advHeight = adventure.height();
     $(".main-building").css("visibility", "hidden");
-    carouselAnimation();
+    $(window).load(function() {
+        carouselAnimation();
+    });
     function carouselAnimation() {
         carousel.animate({
             height: 0,
