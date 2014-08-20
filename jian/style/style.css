@@ -1,0 +1,147 @@
+body {
+  font: 12px/1.5 Arial, Helvetica, Sim Hei, "\5b8b\4f53", sans-serif;
+  background: #3bd2e6;
+  color: #221815;
+  margin: 0;
+  padding: 0;
+}
+address,
+cite,
+code,
+em,
+th,
+i {
+  font-weight: normal;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  blr: expression("this.onfocus=this.blur()");
+  outline: none;
+}
+a img {
+  border: 0;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a:active {
+  border: 0 none;
+}
+p {
+  word-wrap: break-word;
+}
+textarea {
+  resize: none;
+}
+.main-wrapper {
+  background: url("../images/1-bg.png") no-repeat 0 0;
+  width: 1041px;
+  height: 541px;
+  margin: 0 auto;
+  position: relative;
+  top: 194px;
+  *zoom: 1;
+  z-index: -1;
+}
+.main-wrapper .main-building {
+  position: absolute;
+  cursor: url("images/bus.png"), auto;
+}
+.main-wrapper #carousel {
+  left: 83px;
+  top: 160px;
+  z-index: 13;
+}
+.main-wrapper #wheel {
+  left: 119px;
+  top: -103px;
+  z-index: 12;
+}
+.main-wrapper #adventure {
+  left: 534px;
+  top: -15px;
+  z-index: 12;
+}
+.j-icon {
+  background: url("../images/1-icon.png") no-repeat 0 0;
+  position: absolute;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  vertical-align: middle;
+}
+.j-icon.cloud-big {
+  background-position: -1px 0;
+  width: 148px;
+  height: 79px;
+  top: -178px;
+  left: 119px;
+}
+.j-icon.cloud-middle {
+  background-position: -328px -28px;
+  width: 125px;
+  height: 76px;
+  left: 447px;
+  top: -150px;
+}
+.j-icon.cloud-small {
+  background-position: -607px -30px;
+  width: 111px;
+  height: 59px;
+  left: 720px;
+  top: -107px;
+  z-index: 1;
+}
+.j-icon.mountain {
+  background-position: 0 -116px;
+  width: 855px;
+  height: 110px;
+  left: 96px;
+  top: -98px;
+  z-index: 9;
+}
+.j-icon.balloon {
+  background-position: -876px -23px;
+  width: 150px;
+  height: 207px;
+  left: 839px;
+  top: -130px;
+  z-index: 10;
+}
+.j-icon.ice-cream {
+  background-position: 0 -273px;
+  width: 92px;
+  height: 136px;
+  left: 285px;
+  top: 169px;
+  z-index: 13;
+}
+.j-icon.bridge {
+  background-position: -144px -301px;
+  width: 93px;
+  height: 65px;
+  left: 488px;
+  top: 372px;
+}
