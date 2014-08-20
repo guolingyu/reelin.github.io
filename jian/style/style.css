@@ -67,7 +67,7 @@ textarea {
 }
 .main-wrapper .main-building {
   position: absolute;
-  cursor: url("images/bus.png"), auto;
+  cursor: url("http://reelin.github.io/jian/images/bus.png"), auto;
 }
 .main-wrapper #carousel {
   left: 83px;
