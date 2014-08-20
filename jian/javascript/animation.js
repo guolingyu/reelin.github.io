@@ -21,7 +21,7 @@
 
     // µ÷ÓÃ¶¯»­º¯Êý
     $(window).load(function() {
-        $(".wrapper-bg").fadeIn('500', function() {
+        $(".wrapper-bg").fadeIn('800', function() {
             dropIcons();
 
             setTimeout(function() {
@@ -44,7 +44,7 @@
             carousel.animate({
                 height: carHeight,
                 top: 160
-            }, 500, function() {
+            }, 450, function() {
                 wheelAnimation();
             });
         });
@@ -60,7 +60,7 @@
             wheel.animate({
                 height: wheelHeight,
                 top: -103
-            }, 450, function() {
+            }, 400, function() {
                 adventureAnimation();
             });
         });
@@ -75,7 +75,7 @@
             adventure.animate({
                 height: advHeight,
                 top: -15
-            }, 400);
+            }, 350);
         });
     }
     function dropIcons() {
@@ -87,5 +87,10 @@
                 top: top
             }, 500);
         });
+    }
+    var carouselTimeHandler = null,
+
+    function shake() {
+
     }
 })();
