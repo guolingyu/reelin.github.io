@@ -56,14 +56,22 @@ textarea {
   resize: none;
 }
 .main-wrapper {
-  background: url("../images/1-bg.png") no-repeat 0 0;
   width: 1041px;
   height: 541px;
   margin: 0 auto;
   position: relative;
   top: 194px;
   *zoom: 1;
+}
+.main-wrapper .wrapper-bg {
+  background: url("../images/1-bg.png") no-repeat 0 0;
+  width: 1041px;
+  height: 541px;
+  position: absolute;
+  left: 0;
+  top: 0;
   z-index: -1;
+  display: none;
 }
 .main-wrapper .main-building {
   position: absolute;

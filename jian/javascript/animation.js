@@ -11,7 +11,7 @@
         icon = $(".j-icon"),
         iconTopList = [];
 
-    // ≥ı º∂Øª≠‘™Àÿ◊¥Ã¨
+    // ÂàùÂßãÁä∂ÊÄÅ
     $(".main-building, .j-icon").css("visibility", "hidden");
     icon.each(function() {
         var that = $(this);
@@ -19,83 +19,63 @@
         that.css("top", "-200px");
     });
 
-    // µ˜”√∂Øª≠∫Ø ˝
+    // ¬µ√∑√ì√É¬∂¬Ø¬ª¬≠¬∫¬Ø√ä√Ω
     $(window).load(function() {
-        carouselAnimation();
-    });
+        $(".wrapper-bg").fadeIn('500', function() {
+            dropIcons();
+
+            setTimeout(function() {
+                carouselAnimation();
+            }, 500);
+        });
+        
+     });
 
     /**
-     * ∂Øª≠–ßπ˚
+     * 
      */
     function carouselAnimation() {
         carousel.animate({
+            width: carWidth,
             height: 0,
             top: 400
         }, 10, function() {
             carousel.css("visibility", "visible");
             carousel.animate({
-                width: carWidth*1.2,
-                height: carHeight*1.2,
-                top: 100
-            }, 800, function() {
-                carousel.animate({
-                    width: carWidth,
-                    height: carHeight,
-                    top: 160
-                }, 300, function() {
-                    wheelAnimation();
-                });
-
+                height: carHeight,
+                top: 160
+            }, 500, function() {
+                wheelAnimation();
             });
         });
     }
 
-    function wheelAnimation() {
+    function wheelAnimation() {        
         wheel.animate({
+            width: wheelWidth,
             height: 0,
             top: 200
         }, 10, function() {
             wheel.css("visibility", "visible");
             wheel.animate({
-                width: wheelWidth*1.2,
-                height: wheelHeight*1.2,
-                top: -170
-            }, {
-                duration: 800,
-                complete: function() {
-                    wheel.animate({
-                        width: wheelWidth,
-                        height: wheelHeight,
-                        top: -103
-                    }, 300, function() {
-                        adventureAnimation();
-                    });
-                }
+                height: wheelHeight,
+                top: -103
+            }, 450, function() {
+                adventureAnimation();
             });
         });
     }
     function adventureAnimation() {
         adventure.animate({
+            width: advWidth,
             height: 0,
             top: 345
         }, 10, function() {
             adventure.css("visibility", "visible");
             adventure.animate({
-                width: advWidth*1.2,
-                height: advHeight*1.2,
-                top: -90
-            }, {
-                duration: 800,
-                complete: function() {
-                    adventure.animate({
-                        width: advWidth,
-                        height: advHeight,
-                        top: -15
-                    }, 300, function() {
-                        dropIcons();
-                    });
-                }
-            });
+                height: advHeight,
+                top: -15
+            }, 400);
         });
     }
     function dropIcons() {
