@@ -21,14 +21,15 @@
 
     // µ÷ÓÃ¶¯»­º¯Êý
     $(window).load(function() {
-        $(".wrapper-bg").fadeIn('800', function() {
-            dropIcons();
+        setTimeout(function() {
+            $(".wrapper-bg").fadeIn('900', function() {
+                dropIcons();
 
-            setTimeout(function() {
-                carouselAnimation();
-            }, 500);
-        });
-        
+                setTimeout(function() {
+                    carouselAnimation();
+                }, 500);
+            });
+        }, 400);
      });
 
     /**
@@ -88,9 +89,6 @@
             }, 500);
         });
     }
-    var carouselTimeHandler = null,
+    
 
-    function shake() {
-
-    }
 })();
