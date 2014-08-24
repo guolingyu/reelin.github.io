@@ -40,7 +40,7 @@
                 }, 500);
             });
             $(".no-move").css("visibility","visible").fadeIn();
-        }, 600);
+        }, 1500);
      });
 
     /**
@@ -192,7 +192,7 @@
                 top = that.data("top");
             that.animate({
                 top: top
-            }, 500);
+            }, 700);
         });
     }
     carousel.on("click", function() {

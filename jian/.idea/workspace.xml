@@ -91,7 +91,7 @@
           <file leaf-file-name="animation.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/javascript/animation.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="194" column="16" selection-start="5551" selection-end="5551" vertical-scroll-proportion="0.44992295" vertical-offset="3006" max-vertical-offset="3655">
+                <state line="194" column="16" selection-start="5552" selection-end="5552" vertical-scroll-proportion="0.44992295" vertical-offset="3006" max-vertical-offset="3655">
                   <folding />
                 </state>
               </provider>
@@ -370,12 +370,12 @@
       <changelist id="cda9f8da-ec52-4f5d-ba6d-89f62bd5ef75" name="Default" comment="" />
       <created>1408907247041</created>
       <updated>1408907247041</updated>
-      <workItem from="1408907248556" duration="6490000" />
+      <workItem from="1408907248556" duration="6651000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6490000" />
+    <option name="totallyTimeSpent" value="6651000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -439,7 +439,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/javascript/animation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="194" column="16" selection-start="5551" selection-end="5551" vertical-scroll-proportion="0.44992295" vertical-offset="3006" max-vertical-offset="3655">
+        <state line="194" column="16" selection-start="5552" selection-end="5552" vertical-scroll-proportion="0.44992295" vertical-offset="3006" max-vertical-offset="3655">
           <folding />
         </state>
       </provider>
