@@ -2,8 +2,6 @@
     width: 1200px;
     height: 768px;
     margin: 0 auto;
-    position: relative;
-    *zoom: 1;
     cursor: url("http://reelin.github.io/jian/images/bus.png"),auto;
 }
 .main-content {
@@ -52,16 +50,15 @@
     z-index: 999;
     vertical-align: middle;
     display: none;
-    &.jian {
+    &.rainbow {
         width: 255px;
         height: 335px;
         left: -86px;
         top: -120px;
     }
-    &.rainbow {
+    &.jian {
         width: 423px;
         height: 236px;
-        background-position: -270px -14px;
         background-position: -270px -14px;
         right: -68px;
         bottom: -24px;
@@ -126,5 +123,28 @@
         height: 65px;
         left: 488px;
         top: 372px;
+    }
+    &.tree {
+        background-position: -348px -286px;
+        width: 39px;
+        height: 67px;
+        bottom: 86px;
+        top: auto;
+        left: 70px;
+        z-index: 15;
+    }
+    &.tree-bg {
+        top: 0px;
+        left: 110px;
+        z-index: 10;
+    }
+    &.umbrella {
+        background-position: -450px -276px;
+        width: 89px;
+        height: 87px;
+        bottom: 44px;
+        top: auto;
+        left: 215px;
+        z-index: 15;
     }
 }

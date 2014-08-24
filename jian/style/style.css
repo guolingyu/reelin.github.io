@@ -59,8 +59,6 @@ textarea {
   width: 1200px;
   height: 768px;
   margin: 0 auto;
-  position: relative;
-  *zoom: 1;
   cursor: url("http://reelin.github.io/jian/images/bus.png"), auto;
 }
 .main-content {
@@ -109,13 +107,13 @@ textarea {
   vertical-align: middle;
   display: none;
 }
-.j-font.jian {
+.j-font.rainbow {
   width: 255px;
   height: 335px;
   left: -86px;
   top: -120px;
 }
-.j-font.rainbow {
+.j-font.jian {
   width: 423px;
   height: 236px;
   background-position: -270px -14px;
@@ -161,11 +159,11 @@ textarea {
   z-index: 9;
 }
 .j-icon.balloon {
-  background-position: -876px -23px;
+  background-position: -885px -10px;
   width: 150px;
   height: 207px;
   left: 839px;
-  top: -130px;
+  top: -135px;
   z-index: 10;
 }
 .j-icon.ice-cream {
@@ -182,4 +180,27 @@ textarea {
   height: 65px;
   left: 488px;
   top: 372px;
+}
+.j-icon.tree {
+  background-position: -348px -286px;
+  width: 39px;
+  height: 67px;
+  bottom: 86px;
+  top: auto;
+  left: 70px;
+  z-index: 15;
+}
+.j-icon.tree-bg {
+  top: 0px;
+  left: 110px;
+  z-index: 10;
+}
+.j-icon.umbrella {
+  background-position: -450px -276px;
+  width: 89px;
+  height: 87px;
+  bottom: 44px;
+  top: auto;
+  left: 215px;
+  z-index: 15;
 }
