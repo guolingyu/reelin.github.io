@@ -55,17 +55,24 @@ p {
 textarea {
   resize: none;
 }
-.main-wrapper {
+.container {
+  width: 1200px;
+  height: 768px;
+  margin: 0 auto;
+  position: relative;
+  *zoom: 1;
+  cursor: url("http://reelin.github.io/jian/images/bus.png"), auto;
+}
+.main-content {
   width: 1041px;
   height: 541px;
   margin: 0 auto;
   position: relative;
   top: 194px;
   *zoom: 1;
-  cursor: url("http://reelin.github.io/jian/images/bus.png"), auto;
 }
-.main-wrapper .wrapper-bg {
-  background: url("../images/1-bg.png") no-repeat 0 0;
+.main-content .wrapper-bg {
+  background: url("../images/4_bg.png") no-repeat 0 0;
   width: 1041px;
   height: 541px;
   position: absolute;
@@ -74,26 +81,49 @@ textarea {
   z-index: -1;
   display: none;
 }
-.main-wrapper .main-building {
+.main-content .main-building {
   position: absolute;
 }
-.main-wrapper #carousel {
+.main-content #carousel {
   left: 83px;
   top: 160px;
   z-index: 13;
 }
-.main-wrapper #wheel {
+.main-content #wheel {
   left: 119px;
   top: -103px;
   z-index: 12;
 }
-.main-wrapper #adventure {
+.main-content #adventure {
   left: 534px;
   top: -15px;
   z-index: 12;
 }
+.j-font {
+  background: url("../images/4_font.png") no-repeat 0 0;
+  position: absolute;
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  z-index: 999;
+  vertical-align: middle;
+  display: none;
+}
+.j-font.jian {
+  width: 255px;
+  height: 335px;
+  left: -86px;
+  top: -120px;
+}
+.j-font.rainbow {
+  width: 423px;
+  height: 236px;
+  background-position: -270px -14px;
+  right: -68px;
+  bottom: -24px;
+}
 .j-icon {
-  background: url("../images/1-icon.png") no-repeat 0 0;
+  background: url("../images/1_icon.png") no-repeat 0 0;
   position: absolute;
   display: inline-block;
   *display: inline;
@@ -101,33 +131,33 @@ textarea {
   vertical-align: middle;
 }
 .j-icon.cloud-big {
-  background-position: -1px 0;
-  width: 148px;
+  background-position: -34px -14px;
+  width: 152px;
   height: 79px;
-  top: -178px;
+  top: -170px;
   left: 119px;
 }
 .j-icon.cloud-middle {
-  background-position: -328px -28px;
-  width: 125px;
+  background-position: -233px -15px;
+  width: 126px;
   height: 76px;
   left: 447px;
-  top: -150px;
+  top: -142px;
 }
 .j-icon.cloud-small {
-  background-position: -607px -30px;
-  width: 111px;
+  background-position: -402px -30px;
+  width: 114px;
   height: 59px;
   left: 720px;
-  top: -107px;
+  top: -109px;
   z-index: 1;
 }
 .j-icon.mountain {
-  background-position: 0 -116px;
+  background-position: 0 -104px;
   width: 855px;
-  height: 110px;
-  left: 96px;
-  top: -98px;
+  height: 124px;
+  left: 95px;
+  top: -101px;
   z-index: 9;
 }
 .j-icon.balloon {
@@ -139,8 +169,8 @@ textarea {
   z-index: 10;
 }
 .j-icon.ice-cream {
-  background-position: 0 -273px;
-  width: 92px;
+  background-position: 0 -266px;
+  width: 104px;
   height: 136px;
   left: 285px;
   top: 169px;
@@ -148,7 +178,7 @@ textarea {
 }
 .j-icon.bridge {
   background-position: -144px -301px;
-  width: 93px;
+  width: 108px;
   height: 65px;
   left: 488px;
   top: 372px;

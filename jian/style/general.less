@@ -1,13 +1,20 @@
-.main-wrapper {
+.container {
+    width: 1200px;
+    height: 768px;
+    margin: 0 auto;
+    position: relative;
+    *zoom: 1;
+    cursor: url("http://reelin.github.io/jian/images/bus.png"),auto;
+}
+.main-content {
     width: 1041px;
     height: 541px;
     margin: 0 auto;
     position: relative;
     top: 194px;
     *zoom: 1;
-    cursor: url("http://reelin.github.io/jian/images/bus.png"),auto;
     .wrapper-bg {
-        background: url("../images/1-bg.png") no-repeat 0 0;
+        background: url("../images/4_bg.png") no-repeat 0 0;
         width: 1041px;
         height: 541px;
         position: absolute;
@@ -36,54 +43,78 @@
         z-index: 12;
     }
 }
+.j-font {
+    background: url("../images/4_font.png") no-repeat 0 0;
+    position: absolute;
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+    z-index: 999;
+    vertical-align: middle;
+    display: none;
+    &.jian {
+        width: 255px;
+        height: 335px;
+        left: -86px;
+        top: -120px;
+    }
+    &.rainbow {
+        width: 423px;
+        height: 236px;
+        background-position: -270px -14px;
+        background-position: -270px -14px;
+        right: -68px;
+        bottom: -24px;
+    }
+}
 .j-icon {
-    background: url("../images/1-icon.png") no-repeat 0 0;
+    background: url("../images/1_icon.png") no-repeat 0 0;
     position: absolute;
     display: inline-block;
     *display: inline;
     *zoom: 1;
     vertical-align: middle;
     &.cloud-big {
-        background-position: -1px 0;
-        width: 148px;
+        background-position: -34px -14px;
+        width: 152px;
         height: 79px;
-        top: -178px;
+        top: -170px;
         left: 119px;
     }
     &.cloud-middle {
-        background-position: -328px -28px;
-        width: 125px;
+        background-position: -233px -15px;
+        width: 126px;
         height: 76px;
         left: 447px;
-        top: -150px;
+        top: -142px;
     }
     &.cloud-small {
-        background-position: -607px -30px;
-        width: 111px;
+        background-position: -402px -30px;
+        width: 114px;
         height: 59px;
         left: 720px;
-        top: -107px;
+        top: -109px;
         z-index: 1;
     }
     &.mountain {
-        background-position: 0 -116px;
+        background-position: 0 -104px;
         width: 855px;
-        height: 110px;
-        left: 96px;
-        top: -98px;
+        height: 124px;
+        left: 95px;
+        top: -101px;
         z-index: 9;
     }
     &.balloon {
-        background-position: -876px -23px;
+        background-position: -885px -10px;
         width: 150px;
         height: 207px;
         left: 839px;
-        top: -130px;
+        top: -135px;
         z-index: 10;
     }
     &.ice-cream {
-        background-position: 0 -273px;
-        width: 92px;
+        background-position: 0 -266px;
+        width: 104px;
         height: 136px;
         left: 285px;
         top: 169px;
@@ -91,7 +122,7 @@
     }
     &.bridge {
         background-position: -144px -301px;
-        width: 93px;
+        width: 108px;
         height: 65px;
         left: 488px;
         top: 372px;

@@ -19,7 +19,7 @@
         that.css("top", "-200px");
     });
 
-    // µ÷ÓÃ¶¯»­º¯Êý
+    // 动画开始
     $(window).load(function() {
         setTimeout(function() {
             $(".wrapper-bg").fadeIn('900', function() {
@@ -43,10 +43,18 @@
         }, 10, function() {
             carousel.css("visibility", "visible");
             carousel.animate({
-                height: carHeight,
-                top: 160
-            }, 450, function() {
-                wheelAnimation();
+                height: carHeight*1.1,
+                top: 100
+            }, {
+                duration: 700,
+                complete: function() {
+                    carousel.animate({
+                        height: carHeight,
+                        top: 160
+                    }, 300, function() {
+                        wheelAnimation();
+                    });
+                }
             });
         });
     }
@@ -59,10 +67,18 @@
         }, 10, function() {
             wheel.css("visibility", "visible");
             wheel.animate({
-                height: wheelHeight,
-                top: -103
-            }, 400, function() {
-                adventureAnimation();
+                height: wheelHeight*1.1,
+                top: -170
+            }, {
+                duration: 700,
+                complete: function() {
+                    wheel.animate({
+                        height: wheelHeight,
+                        top: -103
+                    }, 300, function() {
+                        adventureAnimation();
+                    });
+                }
             });
         });
     }
@@ -74,9 +90,17 @@
         }, 10, function() {
             adventure.css("visibility", "visible");
             adventure.animate({
-                height: advHeight,
-                top: -15
-            }, 350);
+                height: advHeight*1.1,
+                top: -90
+            }, {
+                duration: 700,
+                complete: function() {
+                    adventure.animate({
+                        height: advHeight,
+                        top: -15
+                    }, 300);
+                }
+            });
         });
     }
     function dropIcons() {
@@ -89,6 +113,4 @@
             }, 500);
         });
     }
-    
-
 })();
