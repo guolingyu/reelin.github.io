@@ -108,17 +108,17 @@
             adventure.css("visibility", "visible");
             adventure.animate({
                 height: advHeight*1.1,
-                top: -60
+                top: -30
             }, {
                 duration: 400,
                 complete: function() {
                     adventure.animate({
                         height: advHeight,
-                        top: -15
+                        top: 17
                     }, 200, function() {
-                        wheelShake();
-                        adventureShake()
                         shakeHandler();
+                        wheelShake();
+                        adventureShake();
                         carouselShake();
                     });
                 }

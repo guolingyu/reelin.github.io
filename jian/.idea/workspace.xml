@@ -79,19 +79,19 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="animation.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="animation.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/javascript/animation.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="144" column="21" selection-start="3960" selection-end="3960" vertical-scroll-proportion="0.0" vertical-offset="2184" max-vertical-offset="3570">
+                <state line="123" column="33" selection-start="3454" selection-end="3454" vertical-scroll-proportion="0.60522497" vertical-offset="1674" max-vertical-offset="3570">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="general.less" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="general.less" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/style/general.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="39" column="13" selection-start="786" selection-end="786" vertical-scroll-proportion="0.38618523" vertical-offset="417" max-vertical-offset="2635">
+                <state line="39" column="13" selection-start="786" selection-end="788" vertical-scroll-proportion="-4.730769" vertical-offset="417" max-vertical-offset="2635">
                   <folding />
                 </state>
               </provider>
@@ -110,8 +110,8 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/javascript/animation.js" />
         <option value="$PROJECT_DIR$/style/general.less" />
+        <option value="$PROJECT_DIR$/javascript/animation.js" />
       </list>
     </option>
   </component>
@@ -372,12 +372,12 @@
       <updated>1408907247041</updated>
       <workItem from="1408907248556" duration="6751000" />
       <workItem from="1408954378279" duration="18000" />
-      <workItem from="1408954424533" duration="2754000" />
+      <workItem from="1408954424533" duration="2967000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9523000" />
+    <option name="totallyTimeSpent" value="9736000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -453,16 +453,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/animation.js">
+    <entry file="file://$PROJECT_DIR$/style/general.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="21" selection-start="3960" selection-end="3960" vertical-scroll-proportion="0.0" vertical-offset="2184" max-vertical-offset="3570">
+        <state line="39" column="13" selection-start="786" selection-end="788" vertical-scroll-proportion="-4.730769" vertical-offset="417" max-vertical-offset="2635">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/general.less">
+    <entry file="file://$PROJECT_DIR$/javascript/animation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="13" selection-start="786" selection-end="786" vertical-scroll-proportion="0.38618523" vertical-offset="417" max-vertical-offset="2635">
+        <state line="123" column="33" selection-start="3454" selection-end="3454" vertical-scroll-proportion="0.60522497" vertical-offset="1674" max-vertical-offset="3570">
           <folding />
         </state>
       </provider>
