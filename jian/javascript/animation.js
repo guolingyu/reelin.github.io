@@ -136,13 +136,13 @@
     function shakeHandler() {
         carouselShakeHandler = setInterval(function() {
             carouselShake();
-        }, 1100);
+        }, 700);
         wheelShakeHandler = setInterval(function() {
             wheelShake();
-        }, 1100);
+        }, 700);
         adventureShakeHandler = setInterval(function() {
             adventureShake()
-        }, 1100);
+        }, 700);
     }
 
     function carouselShake() {
