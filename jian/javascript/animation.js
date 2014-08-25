@@ -22,7 +22,7 @@
     }
 
     /**
-     * 初始坠落
+     * 初始坠落元素状态
      */
     icon.each(function() {
         var that = $(this);
@@ -32,7 +32,9 @@
         }
     });
 
-    // 动画开始
+    /**
+     * 动画开始
+     */
     $(window).load(function() {
         setTimeout(function() {
             $(".wrapper-bg").fadeIn('900', function() {
@@ -46,7 +48,7 @@
      });
 
     /**
-     * 
+     * 弹起元素动画
      */
     function carouselAnimation() {
         carousel.animate({
@@ -97,9 +99,6 @@
             adventureAnimation();
         }, 400);
     }
-    var carouselShakeHandler = null,
-        wheelShakeHandler = null,
-        adventureShakeHandler = null;
     function adventureAnimation() {
         adventure.animate({
             width: advWidth,
@@ -126,6 +125,14 @@
             });
         });
     }
+
+    /**
+     * 抖动元素动画
+     */
+    var carouselShakeHandler = null,
+        wheelShakeHandler = null,
+        adventureShakeHandler = null;
+
     function shakeHandler() {
         carouselShakeHandler = setInterval(function() {
             carouselShake();
@@ -137,6 +144,7 @@
             adventureShake()
         }, 1100);
     }
+
     function carouselShake() {
         setTimeout(function() {
             carousel.attr("style", "").attr("src", "images/1-1-small.png");
@@ -162,6 +170,10 @@
             adventure.attr("src", "images/1-3.png");
         },600);
     }
+
+    /**
+     * 坠落动画
+     */
     function dropIcons() {
         icon.css("visibility", "visible");
         icon.each(function() {
@@ -172,6 +184,10 @@
             }, 700);
         });
     }
+
+    /**
+     * 绑定解除抖动动画
+     */
     carousel.on("click", function() {
         clearInterval(carouselShakeHandler);
         clearInterval(wheelShakeHandler);
