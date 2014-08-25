@@ -136,39 +136,33 @@
     function shakeHandler() {
         carouselShakeHandler = setInterval(function() {
             carouselShake();
-        }, 700);
+        }, 600);
         wheelShakeHandler = setInterval(function() {
             wheelShake();
-        }, 700);
+        }, 600);
         adventureShakeHandler = setInterval(function() {
             adventureShake()
-        }, 700);
+        }, 600);
     }
 
     function carouselShake() {
-        setTimeout(function() {
-            carousel.attr("style", "").attr("src", "images/1-1-small.png");
-        }, 500);
+        carousel.attr("style", "").attr("src", "images/1-1-small.png");
         setTimeout(function() {
             carousel.attr("src", "images/1-1.png");
-        },600);
+        },300);
     }
 
     function wheelShake() {
-        setTimeout(function() {
-            wheel.attr("style", "").attr("src", "images/1-2-small.png");
-        }, 500);
+        wheel.attr("style", "").attr("src", "images/1-2-small.png");
         setTimeout(function() {
             wheel.attr("src", "images/1-2.png");
-        },600);
+        },300);
     }
     function adventureShake() {
-        setTimeout(function() {
-            adventure.attr("style", "").attr("src", "images/1-3-small.png");
-        }, 500);
+        adventure.attr("style", "").attr("src", "images/1-3-small.png");
         setTimeout(function() {
             adventure.attr("src", "images/1-3.png");
-        }, 600);
+        }, 300);
     }
 
     /**
