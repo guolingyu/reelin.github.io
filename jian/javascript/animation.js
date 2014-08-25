@@ -61,18 +61,18 @@
                 height: carHeight*1.1,
                 top: 130
             }, {
-                duration: 550,
+                duration: 400,
                 complete: function() {
                     carousel.animate({
                         height: carHeight,
                         top: 160
-                    }, 300);
+                    }, 200);
                 }
             });
         });
         setTimeout(function() {
             wheelAnimation();
-        }, 400);
+        }, 200);
     }
 
     function wheelAnimation() {        
@@ -86,18 +86,18 @@
                 height: wheelHeight*1.1,
                 top: -130
             }, {
-                duration: 550,
+                duration: 400,
                 complete: function() {
                     wheel.animate({
                         height: wheelHeight,
                         top: -103
-                    }, 300);
+                    }, 200);
                 }
             });
         });
         setTimeout(function() {
             adventureAnimation();
-        }, 400);
+        }, 200);
     }
     function adventureAnimation() {
         adventure.animate({
@@ -110,12 +110,12 @@
                 height: advHeight*1.1,
                 top: -60
             }, {
-                duration: 550,
+                duration: 400,
                 complete: function() {
                     adventure.animate({
                         height: advHeight,
                         top: -15
-                    }, 300, function() {
+                    }, 200, function() {
                         wheelShake();
                         adventureShake()
                         shakeHandler();
