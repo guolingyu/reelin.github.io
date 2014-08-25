@@ -8,8 +8,7 @@
         adventure = $("#adventure"),
         advWidth = adventure.width(),
         advHeight = adventure.height(),
-        icon = $(".j-icon"),
-        iconTopList = [];
+        icon = $(".j-icon");
 
     // 初始状态
     $(".main-building, .j-icon").css("visibility", "hidden");
@@ -22,6 +21,9 @@
         $(".container").css("marginTop", conTop);
     }
 
+    /**
+     * 初始坠落
+     */
     icon.each(function() {
         var that = $(this);
         if (!that.hasClass("no-move")) {
@@ -62,12 +64,13 @@
                     carousel.animate({
                         height: carHeight,
                         top: 160
-                    }, 300, function() {
-                        wheelAnimation();
-                    });
+                    }, 300);
                 }
             });
         });
+        setTimeout(function() {
+            wheelAnimation();
+        }, 400);
     }
 
     function wheelAnimation() {        
@@ -86,12 +89,13 @@
                     wheel.animate({
                         height: wheelHeight,
                         top: -103
-                    }, 300, function() {
-                        adventureAnimation();
-                    });
+                    }, 300);
                 }
             });
         });
+        setTimeout(function() {
+            adventureAnimation();
+        }, 400);
     }
     var carouselShakeHandler = null,
         wheelShakeHandler = null,
