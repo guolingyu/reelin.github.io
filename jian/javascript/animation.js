@@ -40,7 +40,7 @@
                 }, 500);
             });
             $(".no-move").css("visibility","visible").fadeIn();
-        }, 1500);
+        }, 1200);
      });
 
     /**
@@ -57,7 +57,7 @@
                 height: carHeight*1.1,
                 top: 130
             }, {
-                duration: 700,
+                duration: 600,
                 complete: function() {
                     carousel.animate({
                         height: carHeight,
@@ -81,7 +81,7 @@
                 height: wheelHeight*1.1,
                 top: -130
             }, {
-                duration: 700,
+                duration: 600,
                 complete: function() {
                     wheel.animate({
                         height: wheelHeight,
@@ -107,7 +107,7 @@
                 height: advHeight*1.1,
                 top: -60
             }, {
-                duration: 700,
+                duration: 600,
                 complete: function() {
                     adventure.animate({
                         height: advHeight,
@@ -125,65 +125,83 @@
     function shakeHandler() {
         carouselShakeHandler = setInterval(function() {
             carouselShake();
-        }, 1700);
+        }, 1100);
         wheelShakeHandler = setInterval(function() {
             wheelShake();
-        }, 1700);
+        }, 1100);
         adventureShakeHandler = setInterval(function() {
             adventureShake()
-        }, 1700);
+        }, 1100);
     }
     function carouselShake() {
-        carousel.animate({
-            width: parseInt(carWidth) + 4,
-            height: parseInt(carHeight)+ 4,
-            top: 155
-        }, {
-            easing: "linear",
-            duration: 1200,
-            complete: function() {
-                carousel.animate({
-                    width: carWidth,
-                    height: carHeight,
-                    top: 160
-                },300, "linear");
-            }
-        });
+        setTimeout(function() {
+            carousel.attr("style", "").attr("src", "images/1-1-small.png");
+        }, 500);
+        setTimeout(function() {
+            carousel.attr("src", "images/1-1.png");
+        },600);
+//        carousel.animate({
+//            width: parseInt(carWidth) + 4,
+//            height: parseInt(carHeight)+ 4,
+//            top: 155
+//        }, {
+//            easing: "linear",
+//            duration: 1200,
+//            complete: function() {
+//                carousel.animate({
+//                    width: carWidth,
+//                    height: carHeight,
+//                    top: 160
+//                },300, "linear");
+//            }
+//        });
     }
 
     function wheelShake() {
-        wheel.animate({
-            width: wheelWidth + 4,
-            height: wheelHeight + 4,
-            top: -110
-        }, {
-            easing: "linear",
-            duration: 1200,
-            complete: function() {
-                wheel.animate({
-                    width: wheelWidth,
-                    height: wheelHeight,
-                    top: -103
-                }, 300, "linear");
-            }
-        });
+        setTimeout(function() {
+            wheel.attr("style", "").attr("src", "images/1-2-small.png");
+        }, 500);
+        setTimeout(function() {
+            wheel.attr("src", "images/1-2.png");
+        },600);
+//        wheel.animate({
+//            width: wheelWidth + 4,
+//            height: wheelHeight + 4,
+//            top: -110
+//        }, {
+//            easing: "linear",
+//            duration: 1200,
+//            complete: function() {
+//                wheel.animate({
+//                    width: wheelWidth,
+//                    height: wheelHeight,
+//                    top: -103
+//                }, 300, "linear");
+//            }
+//        });
     }
     function adventureShake() {
-        adventure.animate({
-            width: advWidth + 4,
-            height: advHeight + 4,
-            top: -20
-        }, {
-            easing: "linear",
-            duration: 1200,
-            complete: function() {
-                adventure.animate({
-                    width: advWidth,
-                    height: advHeight,
-                    top: -15
-                }, 300, "linear");
-            }
-        });
+        setTimeout(function() {
+            adventure.attr("style", "").attr("src", "images/1-3-small.png");
+        }, 500);
+        setTimeout(function() {
+            adventure.attr("src", "images/1-3.png");
+        },600);
+//        adventure.animate({
+//            width: advWidth + 4,
+//            height: advHeight + 4,
+//            top: -20
+//        }, {
+//            easing: "linear",
+//            duration: 1200,
+//            complete: function() {
+//                adventure.animate({
+//                    width: advWidth,
+//                    height: advHeight,
+//                    top: -15
+//                }, 300, "linear");
+//            }
+//        });
     }
     function dropIcons() {
         icon.css("visibility", "visible");
@@ -197,9 +215,11 @@
     }
     carousel.on("click", function() {
         clearInterval(carouselShakeHandler);
+        clearInterval(wheelShakeHandler);
         $(".rainbow").fadeIn(900);
     });
     wheel.on("click", function() {
+        clearInterval(carouselShakeHandler);
         clearInterval(wheelShakeHandler);
         $(".rainbow").fadeIn(900);
     });
