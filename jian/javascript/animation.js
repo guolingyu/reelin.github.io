@@ -168,7 +168,7 @@
         }, 500);
         setTimeout(function() {
             adventure.attr("src", "images/1-3.png");
-        },600);
+        }, 600);
     }
 
     /**
