@@ -1,199 +1,245 @@
 (function() {
-    var carousel = $("#carousel"),
-        carWidth = carousel.width(),
-        carHeight = carousel.height(),
-        wheel = $("#wheel"),
-        wheelWidth = wheel.width(),
-        wheelHeight = wheel.height(),
-        adventure = $("#adventure"),
-        advWidth = adventure.width(),
-        advHeight = adventure.height(),
+    var winWidth = $(window).width(),
+        winHeight = $(window).height(),
+        rightMargin = (winWidth - 1031) / 2,
         icon = $(".j-icon");
 
     // 初始状态
-    $(".main-building, .j-icon").css("visibility", "hidden");
-    $(".no-move").hide();
-
-    var winHeight = parseInt($(window).height()),
-        conTop = (winHeight - 768)/ 2,
-        iconTop = conTop > 200 ? "-" + conTop : -400;
-    if(conTop > 0) {
-        $(".container").css("marginTop", conTop);
-    }
-
-    /**
-     * 初始坠落元素状态
-     */
-    icon.each(function() {
-        var that = $(this);
-        if (!that.hasClass("no-move")) {
-            that.data("top", that.css("top"));
-            that.css("top", iconTop);
-        }
-    });
-
+    $(".main-content").css("top", winHeight);
+    $(".main-content-1").css("top", "66px");
+    $("#people").css("top", -winHeight - 400);
+    $("#end").css("top", winHeight + 400);
+    $("#airship").css("right", - (rightMargin + $("#airship").width()));
     /**
      * 动画开始
      */
+    var animationCount = 1;
     $(window).load(function() {
         setTimeout(function() {
-            $(".wrapper-bg").fadeIn('900', function() {
-                dropIcons();
-                setTimeout(function() {
-                    carouselAnimation();
-                }, 500);
-            });
-            $(".no-move").css("visibility","visible").fadeIn();
+            animation1();
         }, 1200);
      });
+    var isAnimating = false;
+    $(window).on('mousewheel', function(event, delta, deltaX, deltaY) {
+        var offsetY = event.offsetY;
+        console.log(deltaY, offsetY, winHeight *.2, isAnimating, animationCount);
+        if (deltaY < 0 && offsetY > (winHeight*.1) && !isAnimating) {
+            console.log(animationCount);
+            switch (animationCount) {
+                case 1:
+                    isAnimating = true;
+                    animation1();
+                    break;
+                case 2:
+                    isAnimating = true;
+                    animation2();
+                    break;
+                case 3:
+                    isAnimating = true;
+                    animation3();
+                    break;
+                case 4:
+                    isAnimating = true;
+                    animation4();
+                    break;
+                case 5:
+                    isAnimating = true;
+                    animation5();
+                    break;
+                case 6:
+                    isAnimating = true;
+                    animation6();
+                    break;
+            }
+        }
+//        console.log(event.clientY, event.offsetY);
+    });
+    function animation1() {
+        var wrapper = $(".main-content-1");
+        animationStart(wrapper, $("#rainbowBridge"), function() {
+            var airship = $("#airship"),
+                airLeft = airship.width() + winHeight;
+            slowMoveAnimation(airship, {
+                right: airLeft
+            });
+            slowMoveAnimation(wrapper.find(".boat-1"), {
+                left: 70,
+                top: 586
+            });
+            slowMoveAnimation(wrapper.find(".boat"),{
+                left: 890
+            });
+            slowMoveAnimation(wrapper.find(".cloud"), {
+                left: 134,
+                top: -51
+            });
+            animationCount ++;
+            isAnimating = false;
+        });
+    }
+    function animation2() {
+        var wrapper = $(".main-content-2");
+        slideWrapper($(".main-content-1"), wrapper, function() {
+            animationStart(wrapper, $("#arch"), function() {
+                slowMoveAnimation(wrapper.find(".boat"), {
+                    left: 122
+                });
+                slowMoveAnimation(wrapper.find(".cloud"), {
+                    left: 497,
+                    top: -44
+                });
+                animationCount ++;
+                isAnimating = false;
+            });
+        });
+
+    }
+    function animation3() {
+        var wrapper = $(".main-content-3");
+        slideWrapper($(".main-content-2"), wrapper, function() {
+            animationStart(wrapper, $("#jian"), function() {
+                slowMoveAnimation(wrapper.find(".truck"), {
+                    top: 428,
+                    left: 479
+                });
+                slowMoveAnimation(wrapper.find(".cloud"), {
+                    top: -105
+                });
+                animationCount ++;
+                isAnimating = false;
+            });
+            setTimeout(function() {
+                animationStart(wrapper, $("#tooth"));
+            }, 100);
+        });
+
+    }
+    function animation4() {
+        var wrapper = $(".main-content-4");
+        slideWrapper($(".main-content-3"), wrapper, function() {
+            animationStart(wrapper, $("#carousel"), function() {
+                slowMoveAnimation(wrapper.find(".balloon"), {
+                    left: 772
+                });
+                slowMoveAnimation(wrapper.find(".cloud"), {
+                    top: -43
+                });
+                animationCount ++;
+                isAnimating = false;
+            });
+            setTimeout(function() {
+                animationStart(wrapper, $("#wheel"));
+            }, 100);
+            setTimeout(function() {
+                animationStart(wrapper, $("#adventure"));
+            }, 200);
+        });
+
+
+    }
+    function animation5() {
+        var wrapper = $(".main-content-5");
+        slideWrapper($(".main-content-4"), wrapper, function() {
+            animationStart(wrapper, $("#dada"), function() {
+                slowMoveAnimation(wrapper.find(".cloud"), {
+                    top: -40
+                });
+                animationCount ++;
+                isAnimating = false;
+            });
+            setTimeout(function() {
+                animationStart(wrapper, $("#bang"));
+            }, 100);
+            setTimeout(function() {
+                animationStart(wrapper, $("#sugus"));
+            }, 200);
+        });
+
+
+    }
+    function animation6() {
+        var wrapper = $(".main-content-6");
+        slideWrapper($(".main-content-5"), wrapper, function() {
+            animationStart(wrapper, $("#consult"), function() {
+                dropAnimate($("#people"));
+                slowMoveAnimation(wrapper.find(".cloud"), {
+                    left: 200
+                });
+                slowMoveAnimation(wrapper.find(".rainbow"), {
+                    left: 385
+                });
+                animationCount ++;
+                isAnimating = false;
+            });
+        });
+
+//        setTimeout(function() {
+//            animationStart(wrapper, $("#bang"));
+//        }, 100);
+//        setTimeout(function() {
+//            animationStart(wrapper, $("#sugus"));
+//        }, 200);
+
+    }
+    function slideWrapper(prevElement, element, callback) {
+        var top = element.attr("data-value");
+        prevElement.animate({top: -winHeight}, 1000, function() {
+            prevElement.hide();
+
+        });
+        setTimeout(function() {
+            element.css("display", "block").animate({top: top}, 1000, callback);
+        },300)
+
+    }
+    /**
+     * 运行动画
+     * @param wrapper 外层元素
+     * @param element 弹起元素
+     */
+    function animationStart(wrapper, element, callback) {
+        upspringAnimation(element, callback);
+//        wrapper.find(".j-icon").show('100');
+    }
 
     /**
      * 弹起元素动画
      */
-    function carouselAnimation() {
-        carousel.animate({
-            width: carWidth,
-            height: 0,
-            top: 400
-        }, 10, function() {
-            carousel.css("visibility", "visible");
-            carousel.animate({
-                height: carHeight*1.1,
-                top: 130
-            }, {
-                duration: 400,
-                complete: function() {
-                    carousel.animate({
-                        height: carHeight,
-                        top: 160
-                    }, 200);
-                }
-            });
-        });
-        setTimeout(function() {
-            wheelAnimation();
-        }, 200);
-    }
+    function upspringAnimation(element, callback) {
+        var eleHeight = parseInt(element.attr("height")),
+            top = element.attr("data-value"),
+            newHeight = eleHeight * 1.1,
+            newTop = top - (newHeight-eleHeight);
 
-    function wheelAnimation() {        
-        wheel.animate({
-            width: wheelWidth,
-            height: 0,
-            top: 200
-        }, 10, function() {
-            wheel.css("visibility", "visible");
-            wheel.animate({
-                height: wheelHeight*1.1,
-                top: -130
-            }, {
-                duration: 400,
-                complete: function() {
-                    wheel.animate({
-                        height: wheelHeight,
-                        top: -103
-                    }, 200);
-                }
-            });
-        });
-        setTimeout(function() {
-            adventureAnimation();
-        }, 200);
-    }
-    function adventureAnimation() {
-        adventure.animate({
-            width: advWidth,
-            height: 0,
-            top: 345
-        }, 10, function() {
-            adventure.css("visibility", "visible");
-            adventure.animate({
-                height: advHeight*1.1,
-                top: -30
-            }, {
-                duration: 400,
-                complete: function() {
-                    adventure.animate({
-                        height: advHeight,
-                        top: 17
-                    }, 200, function() {
-                        shakeHandler();
-                        wheelShake();
-                        adventureShake();
-                        carouselShake();
-                    });
-                }
-            });
+        element.animate({
+            height: newHeight,
+            top: newTop
+        }, 400, function() {
+            element.animate({
+                height: eleHeight,
+                top: top
+            }, 200, callback);
         });
     }
 
     /**
-     * 抖动元素动画
+     * 缓慢移动动画
+     * @param element
+     * @param obj
      */
-    var carouselShakeHandler = null,
-        wheelShakeHandler = null,
-        adventureShakeHandler = null;
-
-    function shakeHandler() {
-        carouselShakeHandler = setInterval(function() {
-            carouselShake();
-        }, 600);
-        wheelShakeHandler = setInterval(function() {
-            wheelShake();
-        }, 600);
-        adventureShakeHandler = setInterval(function() {
-            adventureShake()
-        }, 600);
-    }
-
-    function carouselShake() {
-        carousel.attr("style", "").attr("src", "images/1-1-small.png");
-        setTimeout(function() {
-            carousel.attr("src", "images/1-1.png");
-        },300);
-    }
-
-    function wheelShake() {
-        wheel.attr("style", "").attr("src", "images/1-2-small.png");
-        setTimeout(function() {
-            wheel.attr("src", "images/1-2.png");
-        },300);
-    }
-    function adventureShake() {
-        adventure.attr("style", "").attr("src", "images/1-3-small.png");
-        setTimeout(function() {
-            adventure.attr("src", "images/1-3.png");
-        }, 300);
+    function slowMoveAnimation(element, obj) {
+        element.animate(obj, 10000, 'linear');
     }
 
     /**
      * 坠落动画
      */
-    function dropIcons() {
-        icon.css("visibility", "visible");
-        icon.each(function() {
-            var that = $(this),
-                top = that.data("top");
-            that.animate({
-                top: top
-            }, 700);
-        });
+    function dropAnimate(element) {
+        var top = element.attr("data-value");
+        element.css("display", "block").animate({
+            top: top
+        }, 700);
     }
 
-    /**
-     * 绑定解除抖动动画
-     */
-    carousel.on("click", function() {
-        clearInterval(carouselShakeHandler);
-        clearInterval(wheelShakeHandler);
-        $(".rainbow").fadeIn(900);
-    });
-    wheel.on("click", function() {
-        clearInterval(carouselShakeHandler);
-        clearInterval(wheelShakeHandler);
-        $(".rainbow").fadeIn(900);
-    });
-    adventure.on("click", function() {
-        clearInterval(adventureShakeHandler);
-        $(".jian").fadeIn(900);
-    });
+
 })();

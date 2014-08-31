@@ -63,13 +63,13 @@
     <favorites_list name="jian" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.45703495">
+    <splitter split-orientation="horizontal" split-proportion="0.3744681">
       <split-first>
         <leaf>
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="21" column="25" selection-start="866" selection-end="866" vertical-scroll-proportion="0.53846157" vertical-offset="0" max-vertical-offset="663">
+                <state line="19" column="56" selection-start="738" selection-end="738" vertical-scroll-proportion="0.53125" vertical-offset="0" max-vertical-offset="1224">
                   <folding />
                 </state>
               </provider>
@@ -82,8 +82,19 @@
           <file leaf-file-name="animation.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/javascript/animation.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="159" column="18" selection-start="4377" selection-end="4377" vertical-scroll-proportion="0.8026125" vertical-offset="2150" max-vertical-offset="3468">
+                <state line="190" column="65" selection-start="6268" selection-end="6268" vertical-scroll-proportion="0.4637224" vertical-offset="2936" max-vertical-offset="4250">
                   <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="Box.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/workspace/netease/trunktie/new/js/Box.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="492" column="24" selection-start="18018" selection-end="18028" vertical-scroll-proportion="-13.730769" vertical-offset="8007" max-vertical-offset="21641">
+                  <folding>
+                    <marker date="1408685546000" expanded="false" signature="5687:5711" placeholder="..." />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -91,7 +102,7 @@
           <file leaf-file-name="general.less" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/style/general.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="39" column="13" selection-start="786" selection-end="788" vertical-scroll-proportion="-12.75" vertical-offset="0" max-vertical-offset="2635">
+                <state line="4" column="21" selection-start="92" selection-end="92" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="5474">
                   <folding />
                 </state>
               </provider>
@@ -147,7 +158,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -194,9 +205,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -205,7 +248,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
-    <property name="last_opened_file_path" value="$USER_HOME$/workspace/netease" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -246,19 +289,6 @@
       <option name="trusted" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -285,6 +315,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -373,11 +416,12 @@
       <workItem from="1408907248556" duration="6751000" />
       <workItem from="1408954378279" duration="18000" />
       <workItem from="1408954424533" duration="3505000" />
+      <workItem from="1409458807062" duration="21646000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10274000" />
+    <option name="totallyTimeSpent" value="31920000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -398,7 +442,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14458804" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.05088853" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -427,6 +471,27 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="25" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="629">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/animation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="159" column="18" selection-start="4377" selection-end="4377" vertical-scroll-proportion="0.0" vertical-offset="2703" max-vertical-offset="3468">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/general.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="13" selection-start="786" selection-end="788" vertical-scroll-proportion="0.0" vertical-offset="663" max-vertical-offset="2635">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="9" column="16" selection-start="214" selection-end="226" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="629">
           <folding />
         </state>
@@ -446,23 +511,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
+    <entry file="file://$USER_HOME$/workspace/netease/trunktie/new/js/Box.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="25" selection-start="866" selection-end="866" vertical-scroll-proportion="0.53846157" vertical-offset="0" max-vertical-offset="663">
-          <folding />
+        <state line="492" column="24" selection-start="18018" selection-end="18028" vertical-scroll-proportion="-13.730769" vertical-offset="8007" max-vertical-offset="21641">
+          <folding>
+            <marker date="1408685546000" expanded="false" signature="5687:5711" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style/general.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="13" selection-start="786" selection-end="788" vertical-scroll-proportion="-12.75" vertical-offset="0" max-vertical-offset="2635">
+        <state line="4" column="21" selection-start="92" selection-end="92" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="5474">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="56" selection-start="738" selection-end="738" vertical-scroll-proportion="0.53125" vertical-offset="0" max-vertical-offset="1224">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javascript/animation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="159" column="18" selection-start="4377" selection-end="4377" vertical-scroll-proportion="0.8026125" vertical-offset="2150" max-vertical-offset="3468">
+        <state line="190" column="65" selection-start="6268" selection-end="6268" vertical-scroll-proportion="0.4637224" vertical-offset="2936" max-vertical-offset="4250">
           <folding />
         </state>
       </provider>
