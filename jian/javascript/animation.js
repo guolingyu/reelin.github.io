@@ -5,7 +5,7 @@
         icon = $(".j-icon");
 
     // 初始状态
-    $(".main-content").css("top", winHeight);
+    $(".main-content").css("top", winHeight+400);
     $(".main-content-1").css("top", "66px");
     $("#people").css("top", -winHeight - 400);
     $("#end").css("top", winHeight + 400);
@@ -52,7 +52,6 @@
                     break;
             }
         }
-//        console.log(event.clientY, event.offsetY);
     });
     function animation1() {
         var wrapper = $(".main-content-1");
@@ -61,6 +60,9 @@
                 airLeft = airship.width() + winHeight;
             slowMoveAnimation(airship, {
                 right: airLeft
+            }, function() {
+                animationCount ++;
+                isAnimating = false;
             });
             slowMoveAnimation(wrapper.find(".boat-1"), {
                 left: 70,
@@ -73,8 +75,7 @@
                 left: 134,
                 top: -51
             });
-            animationCount ++;
-            isAnimating = false;
+
         });
     }
     function animation2() {
@@ -227,8 +228,9 @@
      * @param element
      * @param obj
      */
-    function slowMoveAnimation(element, obj) {
-        element.animate(obj, 10000, 'linear');
+    function slowMoveAnimation(element, obj, callback) {
+        callback = callback ? callback : function(){};
+        element.animate(obj, 10000, 'linear', callback);
     }
 
     /**
