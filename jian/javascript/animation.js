@@ -188,7 +188,7 @@
 
         });
         setTimeout(function() {
-            element.css("display", "block").animate({top: top}, 1000, callback);
+            element.css("visibility", "visible").animate({top: top}, 1000, callback);
         },300)
 
     }
