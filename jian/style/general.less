@@ -1,8 +1,10 @@
+.wrapper {
+    overflow: hidden;
+}
 .container {
     width: 1200px;
     height: 768px;
     margin: 0 auto;
-    overflow: hidden;
     cursor: url("http://reelin.github.io/jian/images/bus.png"),auto;
 }
 .main-content {
@@ -39,8 +41,14 @@
     *zoom: 1;
     vertical-align: middle;
 }
+.j-font {
+    display: none;
+    position: absolute;
+    z-index: 99;
+}
 .main-content-1 {
     visibility: visible;
+    display: none;
     height: 664px;
     top: 66px;
     .wrapper-bg {
@@ -122,6 +130,10 @@
         }
 
     }
+    .j-font {
+        left: 284px;
+        bottom: 15px;
+    }
 }
 .main-content-3 {
     height: 631px;
@@ -167,6 +179,14 @@
             z-index: 13;
         }
 
+    }
+    .font-1 {
+        left: -33px;
+        top: -97px;
+    }
+    .font-2 {
+        right: -35px;
+        bottom: -74px;
     }
 }
 .main-content-4 {
@@ -228,6 +248,14 @@
         }
 
     }
+    .font-1 {
+        right: -50px;
+        bottom: -56px;
+    }
+    .font-2 {
+        left: 0;
+        top: 0;
+    }
 }
 .main-content-5 {
     height: 638px;
@@ -270,6 +298,10 @@
             z-index: -2;
         }
     }
+    .j-font {
+        bottom: 50px;
+        left: 32px;
+    }
 }
 .main-content-6 {
     height: 638px;
@@ -288,10 +320,10 @@
         top: 1800px;
         z-index: 12;
     }
-    #sugus {
-        left: 279px;
-        top: -20px;
-        z-index: 12;
+    #end {
+        display: none;
+        left: 90px;
+        z-index: 102;
     }
     .j-icon {
         background: url("../images/6/icon.png") no-repeat 0 0;
@@ -310,6 +342,29 @@
             top: -3px;
             z-index: -2;
         }
+    }
+    .font-1 {
+        top: 51px;
+        left: 245px;
+    }
+    .font-2 {
+        top: 20px;
+        left: 127px;
+        z-index: 100;
+    }
+    .font-3 {
+        top: 19px;
+        left: 29px;
+        z-index: 101;
+    }
+    .font-4 {
+        top: 38px;
+        right: 141px;
+    }
+    .font-5 {
+        right: 36px;
+        top: 10px;
+        z-index: 100;
     }
 }
 

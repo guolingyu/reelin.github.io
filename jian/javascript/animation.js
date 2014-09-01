@@ -1,82 +1,178 @@
 (function() {
     var winWidth = $(window).width(),
         winHeight = $(window).height(),
-        rightMargin = (winWidth - 1031) / 2,
+        rightMargin = (winWidth - 1031)/2,
         icon = $(".j-icon");
 
     // 初始状态
+    $(".wrapper").css({
+        width: winWidth,
+        height: 780
+    });
     $(".main-content").css("top", winHeight+400);
     $(".main-content-1").css("top", "66px");
     $("#people").css("top", -winHeight - 400);
     $("#end").css("top", winHeight + 400);
-    $("#airship").css("right", - (rightMargin + $("#airship").width()));
+    $("#airship").css("right", -(rightMargin+675));
     /**
      * 动画开始
      */
-    var animationCount = 1;
+    var animationCount = 2;
     $(window).load(function() {
         setTimeout(function() {
             animation1();
         }, 1200);
      });
-    var isAnimating = false;
+    var isAnimating = false,
+        canEnding = false,
+        canMove = false;
     $(window).on('mousewheel', function(event, delta, deltaX, deltaY) {
         var offsetY = event.offsetY;
-        console.log(deltaY, offsetY, winHeight *.2, isAnimating, animationCount);
-        if (deltaY < 0 && offsetY > (winHeight*.1) && !isAnimating) {
-            console.log(animationCount);
-            switch (animationCount) {
-                case 1:
-                    isAnimating = true;
-                    animation1();
-                    break;
-                case 2:
-                    isAnimating = true;
-                    animation2();
-                    break;
-                case 3:
-                    isAnimating = true;
-                    animation3();
-                    break;
-                case 4:
-                    isAnimating = true;
-                    animation4();
-                    break;
-                case 5:
-                    isAnimating = true;
-                    animation5();
-                    break;
-                case 6:
-                    isAnimating = true;
-                    animation6();
-                    break;
+        console.log(deltaY, offsetY, winHeight *.2, isAnimating, animationCount, canMove);
+        if (deltaY < 0) {
+            if (offsetY > (winHeight*.2) && canMove) {
+                console.log(animationCount);
+                switch (animationCount) {
+                    case 1:
+                        isAnimating = true;
+                        canMove = false;
+                        animation1();
+                        break;
+                    case 2:
+                        canMove = false;
+                        isAnimating = true;
+                        animation2();
+                        break;
+                    case 3:
+                        canMove = false;
+                        isAnimating = true;
+                        animation3();
+                        break;
+                    case 4:
+                        canMove = false;
+                        isAnimating = true;
+                        animation4();
+                        break;
+                    case 5:
+                        canMove = false;
+                        isAnimating = true;
+                        animation5();
+                        break;
+                    case 6:
+                        canMove = false;
+                        isAnimating = true;
+                        animation6();
+                        break;
+                    default :
+                        canMove = false;
+                        isAnimating = true;
+                        break;
+                }
+            } else if (offsetY > (winHeight*.1) ) {
+                if (!isAnimating) {
+                    var count = animationCount- 1,
+                        wrapperName = ".main-content-" + count,
+                        font = $(wrapperName).find(".j-font");
+                    if (count != 1 && $(font[0]).css("display") == "none" && !canEnding) {
+                        console.log("animationCount-1  ",animationCount-1);
+                        showFont(font);
+                    }
+                } else if (canEnding) {
+                    canEnding = false;
+                    dropAnimate($("#end"), 1500);
+                }
             }
+
         }
     });
+    /**
+     * 显示文字介绍
+     * @param element
+     */
+    function showFont(element) {
+        var len = element.length;
+        switch (len) {
+            case 1:
+                element.fadeIn(1000,function() {
+                    canMove = true;
+                });
+                break;
+            case 2:
+                $(element[0]).fadeIn(1000,function() {
+                    setTimeout(function() {
+                        $(element[1]).fadeIn(1000,function() {
+                            canMove = true;
+                        });
+                    }, 500);
+                });
+                break;
+            case 5:
+                $(element[0]).fadeIn(1000,function() {
+                    setTimeout(function() {
+                        setTimeout(function() {
+                            $(element[0]).fadeOut(500);
+                        }, 800);
+                        $(element[1]).fadeIn(1000,function() {
+                            setTimeout(function() {
+                                setTimeout(function() {
+                                    $(element[1]).fadeOut(500);
+                                }, 800);
+                                $(element[2]).fadeIn(1000,function() {
+                                    setTimeout(function() {
+                                        setTimeout(function() {
+                                            $(element[2]).fadeOut(500);
+                                        }, 800);
+                                        $(element[3]).fadeIn(1000,function() {
+                                            setTimeout(function() {
+                                                setTimeout(function() {
+                                                    $(element[3]).fadeOut(500);
+                                                }, 800);
+                                                $(element[4]).fadeIn(1000,function() {
+                                                    canMove = true;
+                                                    setTimeout(function() {
+                                                        $(element[4]).fadeOut(500, function() {
+                                                            canEnding = true;
+                                                        });
+                                                    }, 800);
+                                                });
+                                            }, 500);
+                                        });
+                                    }, 500);
+                                });
+                            }, 500);
+                        });
+                    }, 500);
+                });
+                break;
+        }
+    }
     function animation1() {
         var wrapper = $(".main-content-1");
-        animationStart(wrapper, $("#rainbowBridge"), function() {
-            var airship = $("#airship"),
-                airLeft = airship.width() + winHeight;
-            slowMoveAnimation(airship, {
-                right: airLeft
-            }, function() {
-                animationCount ++;
-                isAnimating = false;
-            });
-            slowMoveAnimation(wrapper.find(".boat-1"), {
-                left: 70,
-                top: 586
-            });
-            slowMoveAnimation(wrapper.find(".boat"),{
-                left: 890
-            });
-            slowMoveAnimation(wrapper.find(".cloud"), {
-                left: 134,
-                top: -51
-            });
+        wrapper.fadeIn(800,function() {
+            animationStart(wrapper, $("#rainbowBridge"), function() {
+                var airship = $("#airship"),
+                    airLeft = airship.width() + winHeight;
+                slowMoveAnimation(airship, {
+                    right: airLeft
+                }, function() {
+                    isAnimating = false;
+                    canMove = true;
+                });
+                slowMoveAnimation(wrapper.find(".boat-1"), {
+                    left: 70,
+                    top: 586
+                });
+                slowMoveAnimation(wrapper.find(".boat"),{
+                    left: 890
+                });
+                slowMoveAnimation(wrapper.find(".cloud"), {
+                    left: 134,
+                    top: -51
+                });
 
+            });
         });
+
     }
     function animation2() {
         var wrapper = $(".main-content-2");
@@ -91,6 +187,7 @@
                 });
                 animationCount ++;
                 isAnimating = false;
+                console.log("animation2", animationCount);
             });
         });
 
@@ -106,11 +203,14 @@
                 slowMoveAnimation(wrapper.find(".cloud"), {
                     top: -105
                 });
-                animationCount ++;
-                isAnimating = false;
+
             });
             setTimeout(function() {
-                animationStart(wrapper, $("#tooth"));
+                animationStart(wrapper, $("#tooth"), function() {
+                    animationCount ++;
+                    console.log("animation3", animationCount);
+                    isAnimating = false;
+                });
             }, 100);
         });
 
@@ -125,14 +225,17 @@
                 slowMoveAnimation(wrapper.find(".cloud"), {
                     top: -43
                 });
-                animationCount ++;
-                isAnimating = false;
             });
             setTimeout(function() {
                 animationStart(wrapper, $("#wheel"));
             }, 100);
             setTimeout(function() {
-                animationStart(wrapper, $("#adventure"));
+                animationStart(wrapper, $("#adventure"), function() {
+
+                    animationCount ++;
+                    isAnimating = false;
+                    console.log("animation4", animationCount);
+                });
             }, 200);
         });
 
@@ -145,14 +248,17 @@
                 slowMoveAnimation(wrapper.find(".cloud"), {
                     top: -40
                 });
-                animationCount ++;
-                isAnimating = false;
             });
             setTimeout(function() {
                 animationStart(wrapper, $("#bang"));
             }, 100);
             setTimeout(function() {
-                animationStart(wrapper, $("#sugus"));
+                animationStart(wrapper, $("#sugus"), function() {
+
+                    animationCount ++;
+                    isAnimating = false;
+                    console.log("animation5", animationCount);
+                });
             }, 200);
         });
 
@@ -236,11 +342,12 @@
     /**
      * 坠落动画
      */
-    function dropAnimate(element) {
-        var top = element.attr("data-value");
+    function dropAnimate(element, time) {
+        var top = element.attr("data-value")
+        time ? time : 700;
         element.css("display", "block").animate({
             top: top
-        }, 700);
+        }, time);
     }
 
 
