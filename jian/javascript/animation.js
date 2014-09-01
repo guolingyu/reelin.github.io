@@ -77,10 +77,11 @@
                         console.log("animationCount-1  ",animationCount-1);
                         showFont(font);
                     }
-                } else if (canEnding) {
-                    canEnding = false;
-                    dropAnimate($("#end"), 1500);
                 }
+//                else if (canEnding) {
+//                    canEnding = false;
+//                    dropAnimate($("#end"), 5000);
+//                }
             }
 
         }
@@ -109,39 +110,29 @@
             case 5:
                 $(element[0]).fadeIn(1000,function() {
                     setTimeout(function() {
-                        setTimeout(function() {
-                            $(element[0]).fadeOut(500);
-                        }, 800);
+                        $(element[0]).fadeOut(1000);
                         $(element[1]).fadeIn(1000,function() {
                             setTimeout(function() {
-                                setTimeout(function() {
-                                    $(element[1]).fadeOut(500);
-                                }, 800);
+                                $(element[1]).fadeOut(1000);
                                 $(element[2]).fadeIn(1000,function() {
                                     setTimeout(function() {
-                                        setTimeout(function() {
-                                            $(element[2]).fadeOut(500);
-                                        }, 800);
+                                        $(element[2]).fadeOut(1000);
                                         $(element[3]).fadeIn(1000,function() {
                                             setTimeout(function() {
-                                                setTimeout(function() {
-                                                    $(element[3]).fadeOut(500);
-                                                }, 800);
+                                                $(element[3]).fadeOut(1000);
                                                 $(element[4]).fadeIn(1000,function() {
                                                     canMove = true;
-                                                    setTimeout(function() {
-                                                        $(element[4]).fadeOut(500, function() {
-                                                            canEnding = true;
-                                                        });
-                                                    }, 800);
+                                                    $(element[4]).fadeOut(1000, function() {
+                                                        dropAnimate($("#end"), 5000);
+                                                    });
                                                 });
-                                            }, 500);
+                                            }, 1700);
                                         });
-                                    }, 500);
+                                    }, 1700);
                                 });
-                            }, 500);
+                            }, 1700);
                         });
-                    }, 500);
+                    }, 1700);
                 });
                 break;
         }
