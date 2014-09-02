@@ -7,9 +7,10 @@
 
     // 初始状态
 
-    $(".wrapper").css({
+    $(".wrapper, html").css({
         width: winWidth,
-        height: wrapperHeight
+        height: wrapperHeight,
+        overflow: "hidden"
     });
     $(".main-content").css("top", winHeight+400);
     $(".main-content-1").css("top", "66px");
