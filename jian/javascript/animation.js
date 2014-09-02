@@ -2,12 +2,14 @@
     var winWidth = $(window).width(),
         winHeight = $(window).height(),
         rightMargin = (winWidth - 1031)/2,
+        wrapperHeight = winHeight > 780 ? winHeight : 780,
         icon = $(".j-icon");
 
     // 初始状态
+
     $(".wrapper").css({
         width: winWidth,
-        height: 780
+        height: wrapperHeight
     });
     $(".main-content").css("top", winHeight+400);
     $(".main-content-1").css("top", "66px");
@@ -20,7 +22,7 @@
     var animationCount = 2;
     $(window).load(function() {
         setTimeout(function() {
-            animation1();
+            animation1(true);
         }, 1200);
      });
     var isAnimating = false,
@@ -28,44 +30,37 @@
         canMove = false;
     $(window).on('mousewheel', function(event, delta, deltaX, deltaY) {
         var offsetY = event.offsetY;
-        console.log(deltaY, offsetY, winHeight *.2, isAnimating, animationCount, canMove);
+//        console.log(deltaY, offsetY, winHeight *.2, isAnimating, animationCount, canMove);
         if (deltaY < 0) {
             if (offsetY > (winHeight*.2) && canMove) {
                 console.log(animationCount);
                 switch (animationCount) {
-                    case 1:
-                        isAnimating = true;
-                        canMove = false;
-                        animation1();
-                        break;
                     case 2:
                         canMove = false;
                         isAnimating = true;
-                        animation2();
+                        animation2(true);
                         break;
                     case 3:
                         canMove = false;
                         isAnimating = true;
-                        animation3();
+                        animation3(true);
                         break;
                     case 4:
                         canMove = false;
                         isAnimating = true;
-                        animation4();
+                        animation4(true);
                         break;
                     case 5:
                         canMove = false;
                         isAnimating = true;
-                        animation5();
+                        animation5(true);
                         break;
                     case 6:
                         canMove = false;
                         isAnimating = true;
-                        animation6();
+                        animation6(true);
                         break;
                     default :
-                        canMove = false;
-                        isAnimating = true;
                         break;
                 }
             } else if (offsetY > (winHeight*.1) ) {
@@ -75,15 +70,45 @@
                         font = $(wrapperName).find(".j-font");
                     if (count != 1 && $(font[0]).css("display") == "none" && !canEnding) {
                         console.log("animationCount-1  ",animationCount-1);
+                        isAnimating = true;
                         showFont(font);
                     }
                 }
-//                else if (canEnding) {
-//                    canEnding = false;
-//                    dropAnimate($("#end"), 5000);
-//                }
             }
 
+        } else {
+            if (offsetY > (winHeight*.1) && canMove) {
+                console.log("down",animationCount);
+                switch (animationCount) {
+                    case 3:
+                        canMove = false;
+                        isAnimating = true;
+                        animation2(false);
+                        break;
+                    case 4:
+                        canMove = false;
+                        isAnimating = true;
+                        animation3(false);
+                        break;
+                    case 5:
+                        canMove = false;
+                        isAnimating = true;
+                        animation4(false);
+                        break;
+                    case 6:
+                        canMove = false;
+                        isAnimating = true;
+                        animation5(false);
+                        break;
+                    case 7:
+                        canMove = false;
+                        isAnimating = true;
+                        animation6(false);
+                        break;
+                    default :
+                        break;
+                }
+            }
         }
     });
     /**
@@ -96,6 +121,7 @@
             case 1:
                 element.fadeIn(1000,function() {
                     canMove = true;
+                    isAnimating = false;
                 });
                 break;
             case 2:
@@ -103,46 +129,75 @@
                     setTimeout(function() {
                         $(element[1]).fadeIn(1000,function() {
                             canMove = true;
+                            isAnimating = false;
                         });
                     }, 500);
                 });
                 break;
             case 5:
+                canMove = false;
+                isAnimating = true;
                 $(element[0]).fadeIn(1000,function() {
                     setTimeout(function() {
-                        $(element[0]).fadeOut(1000);
-                        $(element[1]).fadeIn(1000,function() {
-                            setTimeout(function() {
-                                $(element[1]).fadeOut(1000);
-                                $(element[2]).fadeIn(1000,function() {
-                                    setTimeout(function() {
-                                        $(element[2]).fadeOut(1000);
-                                        $(element[3]).fadeIn(1000,function() {
+                        $(element[0]).fadeOut(1000, function() {
+                            $(element[1]).fadeIn(1000,function() {
+                                setTimeout(function() {
+                                    $(element[1]).fadeOut(1000, function() {
+                                        $(element[2]).fadeIn(1000,function() {
                                             setTimeout(function() {
-                                                $(element[3]).fadeOut(1000);
-                                                $(element[4]).fadeIn(1000,function() {
-                                                    canMove = true;
-                                                    $(element[4]).fadeOut(1000, function() {
-                                                        dropAnimate($("#end"), 5000);
+                                                $(element[2]).fadeOut(1000, function() {
+                                                    $(element[3]).fadeIn(1000,function() {
+                                                        setTimeout(function() {
+                                                            $(element[3]).fadeOut(1000, function(){
+                                                                $(element[4]).fadeIn(1000,function() {
+                                                                    setTimeout(function() {
+                                                                        canMove = true;
+                                                                        $(element[4]).fadeOut(1000, function() {
+                                                                            dropAnimate($("#end"), 5000, function() {
+                                                                                canMove = true;
+                                                                                isAnimating = false;
+                                                                            });
+                                                                        });
+                                                                    }, 1700);
+                                                                });
+                                                            });
+
+                                                        }, 1700);
                                                     });
                                                 });
+
                                             }, 1700);
                                         });
-                                    }, 1700);
-                                });
-                            }, 1700);
+                                    });
+
+                                }, 1700);
+                            });
                         });
+
                     }, 1700);
                 });
                 break;
         }
     }
-    function animation1() {
+    function animation1(isDown) {
         var wrapper = $(".main-content-1");
-        wrapper.fadeIn(800,function() {
-            animationStart(wrapper, $("#rainbowBridge"), function() {
-                var airship = $("#airship"),
-                    airLeft = airship.width() + winHeight;
+        if (isDown) {
+            wrapper.fadeIn(800,function() {
+                animation1CallBack(wrapper, isDown);
+            });
+        }
+
+    }
+    function animation1CallBack(wrapper, isDown) {
+        animationStart(wrapper, $("#rainbowBridge"), function() {
+            var airship = $("#airship"),
+                airLeft = airship.width() + winHeight;
+            if (!isDown)  {
+                isAnimating = false;
+                canMove = true;
+                --animationCount;
+                wrapper.find(".j-font").hide();
+            } else {
                 slowMoveAnimation(airship, {
                     right: airLeft
                 }, function() {
@@ -160,15 +215,24 @@
                     left: 134,
                     top: -51
                 });
-
-            });
+            }
         });
-
     }
-    function animation2() {
+    function animation2(isDown) {
         var wrapper = $(".main-content-2");
-        slideWrapper($(".main-content-1"), wrapper, function() {
-            animationStart(wrapper, $("#arch"), function() {
+        if (isDown) {
+            slideWrapper($(".main-content-1"), wrapper, isDown, function() {
+                animation2CallBack(wrapper, isDown);
+            });
+        } else {
+            slideWrapper(wrapper, $(".main-content-1"), isDown, function() {
+                animation1CallBack(wrapper);
+            });
+        }
+    }
+    function animation2CallBack(wrapper, isDown) {
+        animationStart(wrapper, $("#arch"), function() {
+            if (isDown)  {
                 slowMoveAnimation(wrapper.find(".boat"), {
                     left: 122
                 });
@@ -177,16 +241,30 @@
                     top: -44
                 });
                 animationCount ++;
-                isAnimating = false;
-                console.log("animation2", animationCount);
-            });
+            } else {
+                canMove = true;
+                --animationCount;
+                wrapper.find(".j-font").hide();
+            }
+            isAnimating = false;
+            console.log("animation2", animationCount);
         });
-
     }
-    function animation3() {
+    function animation3(isDown) {
         var wrapper = $(".main-content-3");
-        slideWrapper($(".main-content-2"), wrapper, function() {
-            animationStart(wrapper, $("#jian"), function() {
+        if (isDown) {
+            slideWrapper($(".main-content-2"), wrapper, isDown, function() {
+                animation3CallBack(wrapper, isDown);
+            });
+        } else {
+            slideWrapper(wrapper, $(".main-content-2"), isDown, function() {
+                animation2CallBack(wrapper, isDown);
+            });
+        }
+    }
+    function animation3CallBack(wrapper, isDown) {
+        animationStart(wrapper, $("#jian"), function() {
+            if (isDown)  {
                 slowMoveAnimation(wrapper.find(".truck"), {
                     top: 428,
                     left: 479
@@ -194,71 +272,118 @@
                 slowMoveAnimation(wrapper.find(".cloud"), {
                     top: -105
                 });
+            }
 
-            });
-            setTimeout(function() {
-                animationStart(wrapper, $("#tooth"), function() {
-                    animationCount ++;
-                    console.log("animation3", animationCount);
-                    isAnimating = false;
-                });
-            }, 100);
         });
-
+        setTimeout(function() {
+            animationStart(wrapper, $("#tooth"), function() {
+                if (isDown)  {
+                    animationCount ++;
+                } else {
+                    canMove = true;
+                    --animationCount;
+                    wrapper.find(".j-font").hide();
+                }
+                console.log("animation3", animationCount);
+                isAnimating = false;
+            });
+        }, 100);
     }
-    function animation4() {
+    function animation4(isDown) {
         var wrapper = $(".main-content-4");
-        slideWrapper($(".main-content-3"), wrapper, function() {
-            animationStart(wrapper, $("#carousel"), function() {
+        if (isDown) {
+            slideWrapper($(".main-content-3"), wrapper, isDown, function() {
+                animation4CallBack(wrapper, isDown);
+            });
+        } else {
+            slideWrapper(wrapper, $(".main-content-3"), isDown, function() {
+                animation3CallBack(wrapper, isDown);
+            });
+        }
+    }
+    function animation4CallBack(wrapper, isDown) {
+        animationStart(wrapper, $("#carousel"), function() {
+            if (isDown) {
                 slowMoveAnimation(wrapper.find(".balloon"), {
                     left: 772
                 });
                 slowMoveAnimation(wrapper.find(".cloud"), {
                     top: -43
                 });
-            });
-            setTimeout(function() {
-                animationStart(wrapper, $("#wheel"));
-            }, 100);
-            setTimeout(function() {
-                animationStart(wrapper, $("#adventure"), function() {
-
-                    animationCount ++;
-                    isAnimating = false;
-                    console.log("animation4", animationCount);
-                });
-            }, 200);
+            }
         });
-
-
+        setTimeout(function() {
+            animationStart(wrapper, $("#wheel"));
+        }, 100);
+        setTimeout(function() {
+            animationStart(wrapper, $("#adventure"), function() {
+                if (isDown)  {
+                    animationCount ++;
+                } else {
+                    canMove = true;
+                    --animationCount;
+                    wrapper.find(".j-font").hide();
+                }
+                isAnimating = false;
+                console.log("animation4", animationCount);
+            });
+        }, 200);
     }
-    function animation5() {
+    function animation5(isDown) {
         var wrapper = $(".main-content-5");
-        slideWrapper($(".main-content-4"), wrapper, function() {
-            animationStart(wrapper, $("#dada"), function() {
+        if (isDown) {
+            slideWrapper($(".main-content-4"), wrapper, isDown, function() {
+                animation5CallBack(wrapper, isDown);
+            });
+        } else {
+            slideWrapper(wrapper, $(".main-content-4"), isDown, function() {
+                animation4CallBack(wrapper, isDown);
+            });
+        }
+    }
+    function animation5CallBack(wrapper, isDown) {
+        animationStart(wrapper, $("#dada"), function() {
+            if (isDown) {
                 slowMoveAnimation(wrapper.find(".cloud"), {
                     top: -40
                 });
-            });
-            setTimeout(function() {
-                animationStart(wrapper, $("#bang"));
-            }, 100);
-            setTimeout(function() {
-                animationStart(wrapper, $("#sugus"), function() {
-
-                    animationCount ++;
-                    isAnimating = false;
-                    console.log("animation5", animationCount);
-                });
-            }, 200);
+            }
         });
-
-
+        setTimeout(function() {
+            animationStart(wrapper, $("#bang"));
+        }, 100);
+        setTimeout(function() {
+            animationStart(wrapper, $("#sugus"), function() {
+                if (isDown)  {
+                    animationCount ++;
+                } else {
+                    canMove = true;
+                    --animationCount;
+                    wrapper.find(".j-font").hide();
+                    $("#people, #end").stop().hide();
+                    $("#people").css("top", -winHeight - 400);
+                    $("#end").css("top", winHeight + 400);
+                }
+                isAnimating = false;
+                console.log("animation5", animationCount);
+            });
+        }, 200);
     }
-    function animation6() {
+    function animation6(isDown) {
         var wrapper = $(".main-content-6");
-        slideWrapper($(".main-content-5"), wrapper, function() {
-            animationStart(wrapper, $("#consult"), function() {
+        if (isDown) {
+            slideWrapper($(".main-content-5"), wrapper, isDown, function() {
+                animation6CallBack(wrapper, isDown);
+            });
+        } else {
+            slideWrapper(wrapper, $(".main-content-5"), isDown, function() {
+                animation5CallBack(wrapper, isDown);
+            });
+        }
+    }
+    function animation6CallBack(wrapper, isDown) {
+        animationStart(wrapper, $("#consult"), function() {
+            if (isDown)  {
                 dropAnimate($("#people"));
                 slowMoveAnimation(wrapper.find(".cloud"), {
                     left: 200
@@ -267,26 +392,29 @@
                     left: 385
                 });
                 animationCount ++;
-                isAnimating = false;
-            });
+            } else {
+//                canMove = true;
+                --animationCount;
+                wrapper.find(".j-font").hide();
+            }
+            isAnimating = false;
         });
-
-//        setTimeout(function() {
-//            animationStart(wrapper, $("#bang"));
-//        }, 100);
-//        setTimeout(function() {
-//            animationStart(wrapper, $("#sugus"));
-//        }, 200);
-
     }
-    function slideWrapper(prevElement, element, callback) {
+    function slideWrapper(prevElement, element, isDown, callback) {
         var top = element.attr("data-value");
-        prevElement.animate({top: -winHeight}, 1000, function() {
-            prevElement.hide();
+        if (isDown) {
+            prevElement.animate({top: -winHeight}, 1000, function() {
+                prevElement.hide();
 
-        });
+            });
+        } else {
+            prevElement.animate({top: winHeight}, 1000, function() {
+                prevElement.hide();
+
+            });
+        }
         setTimeout(function() {
-            element.css("visibility", "visible").animate({top: top}, 1000, callback);
+            element.css("visibility", "visible").show().animate({top: top}, 1000, callback);
         },300)
 
     }
@@ -297,7 +425,6 @@
      */
     function animationStart(wrapper, element, callback) {
         upspringAnimation(element, callback);
-//        wrapper.find(".j-icon").show('100');
     }
 
     /**
@@ -333,12 +460,12 @@
     /**
      * 坠落动画
      */
-    function dropAnimate(element, time) {
+    function dropAnimate(element, time, callback) {
         var top = element.attr("data-value")
         time ? time : 700;
         element.css("display", "block").animate({
             top: top
-        }, time);
+        }, time, callback);
     }
 
 
