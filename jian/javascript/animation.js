@@ -33,7 +33,7 @@
 //        console.log(deltaY, offsetY, winHeight *.2, isAnimating, animationCount, canMove);
         if (deltaY < 0) {
             if (offsetY > (winHeight*.2) && canMove) {
-                console.log(animationCount);
+//                console.log(animationCount);
                 switch (animationCount) {
                     case 2:
                         canMove = false;
@@ -69,7 +69,7 @@
                         wrapperName = ".main-content-" + count,
                         font = $(wrapperName).find(".j-font");
                     if (count != 1 && $(font[0]).css("display") == "none" && !canEnding) {
-                        console.log("animationCount-1  ",animationCount-1);
+//                        console.log("animationCount-1  ",animationCount-1);
                         isAnimating = true;
                         showFont(font);
                     }
@@ -78,7 +78,7 @@
 
         } else {
             if (offsetY > (winHeight*.1) && canMove) {
-                console.log("down",animationCount);
+//                console.log("down",animationCount);
                 switch (animationCount) {
                     case 3:
                         canMove = false;
@@ -247,7 +247,7 @@
                 wrapper.find(".j-font").hide();
             }
             isAnimating = false;
-            console.log("animation2", animationCount);
+//            console.log("animation2", animationCount);
         });
     }
     function animation3(isDown) {
@@ -284,7 +284,7 @@
                     --animationCount;
                     wrapper.find(".j-font").hide();
                 }
-                console.log("animation3", animationCount);
+//                console.log("animation3", animationCount);
                 isAnimating = false;
             });
         }, 100);
@@ -325,7 +325,7 @@
                     wrapper.find(".j-font").hide();
                 }
                 isAnimating = false;
-                console.log("animation4", animationCount);
+//                console.log("animation4", animationCount);
             });
         }, 200);
     }
@@ -365,7 +365,7 @@
                     $("#end").css("top", winHeight + 400);
                 }
                 isAnimating = false;
-                console.log("animation5", animationCount);
+//                console.log("animation5", animationCount);
             });
         }, 200);
     }
