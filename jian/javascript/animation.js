@@ -77,7 +77,7 @@
             }
 
         } else {
-            if (offsetY > 4 && canMove) {
+            if (offsetY > 2 && canMove) {
 //                console.log("down",animationCount);
                 switch (animationCount) {
                     case 3:
