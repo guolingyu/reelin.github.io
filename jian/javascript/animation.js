@@ -28,40 +28,47 @@
     var isAnimating = false,
         canEnding = false,
         canMove = false;
+    var t = 0; 	// 计数
+    var j = 0;  // 计数
     $("body").on('mousewheel', function(event, delta, deltaX, deltaY) {
         var offsetY = Math.abs(deltaY);
 //        console.log(deltaY, offsetY, winHeight *.2, isAnimating, animationCount, canMove);
         if (deltaY < 0) {
-            if (offsetY > 4 && canMove) {
-//                console.log(animationCount);
-                switch (animationCount) {
-                    case 2:
-                        canMove = false;
-                        isAnimating = true;
-                        animation2(true);
-                        break;
-                    case 3:
-                        canMove = false;
-                        isAnimating = true;
-                        animation3(true);
-                        break;
-                    case 4:
-                        canMove = false;
-                        isAnimating = true;
-                        animation4(true);
-                        break;
-                    case 5:
-                        canMove = false;
-                        isAnimating = true;
-                        animation5(true);
-                        break;
-                    case 6:
-                        canMove = false;
-                        isAnimating = true;
-                        animation6(true);
-                        break;
-                    default :
-                        break;
+            j = 0;
+            if (canMove) {
+                if (t > 5) {
+                    switch (animationCount) {
+                        case 2:
+                            canMove = false;
+                            isAnimating = true;
+                            animation2(true);
+                            break;
+                        case 3:
+                            canMove = false;
+                            isAnimating = true;
+                            animation3(true);
+                            break;
+                        case 4:
+                            canMove = false;
+                            isAnimating = true;
+                            animation4(true);
+                            break;
+                        case 5:
+                            canMove = false;
+                            isAnimating = true;
+                            animation5(true);
+                            break;
+                        case 6:
+                            canMove = false;
+                            isAnimating = true;
+                            animation6(true);
+                            break;
+                        default :
+                            break;
+                    }
+                    t = 0;
+                } else {
+                    t++;
                 }
             } else if (offsetY > 1 ) {
                 if (!isAnimating) {
@@ -69,7 +76,6 @@
                         wrapperName = ".main-content-" + count,
                         font = $(wrapperName).find(".j-font");
                     if (count != 1 && $(font[0]).css("display") == "none" && !canEnding) {
-//                        console.log("animationCount-1  ",animationCount-1);
                         isAnimating = true;
                         showFont(font);
                     }
@@ -77,36 +83,41 @@
             }
 
         } else {
-            if (offsetY > 2 && canMove) {
-//                console.log("down",animationCount);
-                switch (animationCount) {
-                    case 3:
-                        canMove = false;
-                        isAnimating = true;
-                        animation2(false);
-                        break;
-                    case 4:
-                        canMove = false;
-                        isAnimating = true;
-                        animation3(false);
-                        break;
-                    case 5:
-                        canMove = false;
-                        isAnimating = true;
-                        animation4(false);
-                        break;
-                    case 6:
-                        canMove = false;
-                        isAnimating = true;
-                        animation5(false);
-                        break;
-                    case 7:
-                        canMove = false;
-                        isAnimating = true;
-                        animation6(false);
-                        break;
-                    default :
-                        break;
+            if (canMove) {
+                t = 0;
+                if (j > 5) {
+                    switch (animationCount) {
+                        case 3:
+                            canMove = false;
+                            isAnimating = true;
+                            animation2(false);
+                            break;
+                        case 4:
+                            canMove = false;
+                            isAnimating = true;
+                            animation3(false);
+                            break;
+                        case 5:
+                            canMove = false;
+                            isAnimating = true;
+                            animation4(false);
+                            break;
+                        case 6:
+                            canMove = false;
+                            isAnimating = true;
+                            animation5(false);
+                            break;
+                        case 7:
+                            canMove = false;
+                            isAnimating = true;
+                            animation6(false);
+                            break;
+                        default :
+                            break;
+                    }
+                    j = 0;
+                } else {
+                    j++;
                 }
             }
         }
