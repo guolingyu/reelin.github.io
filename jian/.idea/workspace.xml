@@ -63,13 +63,13 @@
     <favorites_list name="jian" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.35854617">
+    <splitter split-orientation="horizontal" split-proportion="0.17485265">
       <split-first>
         <leaf>
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="79" column="14" selection-start="4595" selection-end="4595" vertical-scroll-proportion="2.019549" vertical-offset="0" max-vertical-offset="1462">
+                <state line="75" column="0" selection-start="4278" selection-end="4505" vertical-scroll-proportion="0.80613893" vertical-offset="776" max-vertical-offset="1462">
                   <folding />
                 </state>
               </provider>
@@ -87,7 +87,7 @@
           <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/style/style.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="26" column="43" selection-start="0" selection-end="7106" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="7276">
+                <state line="28" column="43" selection-start="0" selection-end="7140" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="7310">
                   <folding />
                 </state>
               </provider>
@@ -97,10 +97,10 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="animation.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="animation.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/javascript/animation.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="453" column="27" selection-start="16141" selection-end="16141" vertical-scroll-proportion="-9.884615" vertical-offset="7444" max-vertical-offset="8109">
+                <state line="33" column="36" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.5904486" vertical-offset="153" max-vertical-offset="8109">
                   <folding />
                 </state>
               </provider>
@@ -109,18 +109,16 @@
           <file leaf-file-name="animation.min.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/javascript/animation.min.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="8008" selection-start="103352" selection-end="103352" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
+                <state line="13" column="8008" selection-start="103352" selection-end="103352" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="323">
+                  <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="general.less" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="general.less" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/style/general.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="2" column="27" selection-start="56" selection-end="56" vertical-scroll-proportion="0.05112782" vertical-offset="0" max-vertical-offset="6460">
+                <state line="2" column="27" selection-start="56" selection-end="56" vertical-scroll-proportion="-0.0" vertical-offset="34" max-vertical-offset="6460">
                   <folding />
                 </state>
               </provider>
@@ -142,8 +140,8 @@
         <option value="$PROJECT_DIR$/style/style.min.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/javascript/animation.min.js" />
-        <option value="$PROJECT_DIR$/javascript/animation.js" />
         <option value="$PROJECT_DIR$/style/general.less" />
+        <option value="$PROJECT_DIR$/javascript/animation.js" />
       </list>
     </option>
   </component>
@@ -179,8 +177,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -261,6 +257,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -439,12 +437,14 @@
       <workItem from="1408954424533" duration="3505000" />
       <workItem from="1409458807062" duration="24519000" />
       <workItem from="1409605648750" duration="15135000" />
-      <workItem from="1409645912030" duration="1013000" />
+      <workItem from="1409645912030" duration="1391000" />
+      <workItem from="1409796588033" duration="35000" />
+      <workItem from="1409840050679" duration="450000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50941000" />
+    <option name="totallyTimeSpent" value="51804000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -471,8 +471,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -519,6 +519,90 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="14" selection-start="4595" selection-end="4595" vertical-scroll-proportion="0.0" vertical-offset="776" max-vertical-offset="1462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/style.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="5745" selection-start="5745" selection-end="5745" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="43" selection-start="0" selection-end="7140" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="7310">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/animation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="453" column="27" selection-start="16141" selection-end="16141" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8109">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/animation.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="8008" selection-start="103352" selection-end="103352" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/general.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="27" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="6460">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="14" selection-start="4595" selection-end="4595" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/style.min.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="5745" selection-start="5745" selection-end="5745" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="102">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="43" selection-start="0" selection-end="7140" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="7310">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/animation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="453" column="27" selection-start="16141" selection-end="16141" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8109">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/animation.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="8008" selection-start="103352" selection-end="103352" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/general.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="27" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="6460">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state line="79" column="14" selection-start="4595" selection-end="4595" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1462">
           <folding />
         </state>
@@ -548,9 +632,7 @@
     <entry file="file://$PROJECT_DIR$/javascript/animation.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="8008" selection-start="103352" selection-end="103352" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -577,9 +659,7 @@
     </entry>
     <entry file="file://$USER_HOME$/workspace/netease/trunktie/new/js/Box.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="492" column="24" selection-start="18018" selection-end="18028" vertical-scroll-proportion="0.0" vertical-offset="8364" max-vertical-offset="21658">
-          <folding />
-        </state>
+        <state line="492" column="24" selection-start="18018" selection-end="18028" vertical-scroll-proportion="0.0" vertical-offset="8364" max-vertical-offset="21658" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style/general.less">
@@ -633,9 +713,7 @@
     </entry>
     <entry file="file://$USER_HOME$/workspace/netease/trunktie/new/js/Box.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="492" column="24" selection-start="18018" selection-end="18028" vertical-scroll-proportion="0.0" vertical-offset="8364" max-vertical-offset="21658">
-          <folding />
-        </state>
+        <state line="492" column="24" selection-start="18018" selection-end="18028" vertical-scroll-proportion="0.0" vertical-offset="8364" max-vertical-offset="21658" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javascript/jquery.mousewheel.js">
@@ -645,16 +723,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/javascript/jquery-1.9.0.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="1" selection-start="93069" selection-end="93069" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state line="4" column="1" selection-start="93069" selection-end="93069" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="43" selection-start="0" selection-end="7106" vertical-scroll-proportion="0.0" vertical-offset="442" max-vertical-offset="7276">
+        <state line="28" column="43" selection-start="0" selection-end="7140" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="7310">
           <folding />
         </state>
       </provider>
@@ -666,32 +740,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/javascript/animation.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="8008" selection-start="103352" selection-end="103352" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="14" selection-start="4595" selection-end="4595" vertical-scroll-proportion="2.019549" vertical-offset="0" max-vertical-offset="1462">
+        <state line="75" column="0" selection-start="4278" selection-end="4505" vertical-scroll-proportion="0.80613893" vertical-offset="776" max-vertical-offset="1462">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/general.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="27" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="6460">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javascript/animation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="453" column="27" selection-start="16141" selection-end="16141" vertical-scroll-proportion="-9.884615" vertical-offset="7444" max-vertical-offset="8109">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/animation.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="8008" selection-start="103352" selection-end="103352" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style/general.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="27" selection-start="56" selection-end="56" vertical-scroll-proportion="0.05112782" vertical-offset="0" max-vertical-offset="6460">
+        <state line="33" column="36" selection-start="1049" selection-end="1049" vertical-scroll-proportion="0.5904486" vertical-offset="153" max-vertical-offset="8109">
           <folding />
         </state>
       </provider>

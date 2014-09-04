@@ -29,7 +29,7 @@
         canEnding = false,
         canMove = false;
     $(window).on('mousewheel', function(event, delta, deltaX, deltaY) {
-        var offsetY = event.offsetY;
+        var offsetY = Math.abs(deltaY);
 //        console.log(deltaY, offsetY, winHeight *.2, isAnimating, animationCount, canMove);
         if (deltaY < 0) {
             if (offsetY > (winHeight*.2) && canMove) {
