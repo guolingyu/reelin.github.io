@@ -28,11 +28,11 @@
     var isAnimating = false,
         canEnding = false,
         canMove = false;
-    $(window).on('mousewheel', function(event, delta, deltaX, deltaY) {
+    $("body").on('mousewheel', function(event, delta, deltaX, deltaY) {
         var offsetY = Math.abs(deltaY);
 //        console.log(deltaY, offsetY, winHeight *.2, isAnimating, animationCount, canMove);
         if (deltaY < 0) {
-            if (offsetY > (winHeight*.2) && canMove) {
+            if (offsetY > 4 && canMove) {
 //                console.log(animationCount);
                 switch (animationCount) {
                     case 2:
@@ -63,7 +63,7 @@
                     default :
                         break;
                 }
-            } else if (offsetY > (winHeight*.1) ) {
+            } else if (offsetY > 1 ) {
                 if (!isAnimating) {
                     var count = animationCount- 1,
                         wrapperName = ".main-content-" + count,
@@ -77,7 +77,7 @@
             }
 
         } else {
-            if (offsetY > (winHeight*.1) && canMove) {
+            if (offsetY > 4 && canMove) {
 //                console.log("down",animationCount);
                 switch (animationCount) {
                     case 3:
