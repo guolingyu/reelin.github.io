@@ -100,16 +100,7 @@
           <file leaf-file-name="animation.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/javascript/animation.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="49" column="29" selection-start="1621" selection-end="1621" vertical-scroll-proportion="0.5341074" vertical-offset="465" max-vertical-offset="8296">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="animation.min.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/javascript/animation.min.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="13" column="7617" selection-start="0" selection-end="103035" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="323">
+                <state line="79" column="19" selection-start="2694" selection-end="2694" vertical-scroll-proportion="0.48185778" vertical-offset="1011" max-vertical-offset="8381">
                   <folding />
                 </state>
               </provider>
@@ -185,6 +176,76 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="jian" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="style" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="javascript" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="jian" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="images" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
@@ -370,12 +431,12 @@
       <workItem from="1409645912030" duration="1391000" />
       <workItem from="1409796588033" duration="35000" />
       <workItem from="1409840050679" duration="2504000" />
-      <workItem from="1409846391861" duration="29000" />
+      <workItem from="1409846391861" duration="554000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="53887000" />
+    <option name="totallyTimeSpent" value="54412000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -699,23 +760,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/javascript/animation.js">
+    <entry file="file://$PROJECT_DIR$/style/general.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="29" selection-start="1621" selection-end="1621" vertical-scroll-proportion="0.5341074" vertical-offset="465" max-vertical-offset="8296">
+        <state line="2" column="27" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="6460">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/javascript/animation.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="7617" selection-start="0" selection-end="103035" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="323">
+        <state line="13" column="7617" selection-start="0" selection-end="103035" vertical-scroll-proportion="0.3207547" vertical-offset="0" max-vertical-offset="689">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/general.less">
+    <entry file="file://$PROJECT_DIR$/javascript/animation.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="27" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="6460">
+        <state line="79" column="19" selection-start="2694" selection-end="2694" vertical-scroll-proportion="0.48185778" vertical-offset="1011" max-vertical-offset="8381">
           <folding />
         </state>
       </provider>

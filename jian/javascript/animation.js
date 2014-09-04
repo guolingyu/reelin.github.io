@@ -30,9 +30,8 @@
         canMove = false;
     var t = 0; 	// 计数
     var j = 0;  // 计数
+    var k = 0;
     $("body").on('mousewheel', function(event, delta, deltaX, deltaY) {
-        var offsetY = Math.abs(deltaY);
-//        console.log(deltaY, offsetY, winHeight *.2, isAnimating, animationCount, canMove);
         if (deltaY < 0) {
             j = 0;
             if (canMove) {
@@ -70,8 +69,10 @@
                 } else {
                     t++;
                 }
-            } else if (offsetY > 1 ) {
-                if (!isAnimating) {
+            } else if (!isAnimating ) {
+
+                j = 0;
+                if (k > 0) {
                     var count = animationCount- 1,
                         wrapperName = ".main-content-" + count,
                         font = $(wrapperName).find(".j-font");
@@ -79,12 +80,16 @@
                         isAnimating = true;
                         showFont(font);
                     }
+                    k = 0;
+                } else {
+                    k++;
                 }
             }
 
         } else {
             if (canMove) {
                 t = 0;
+                k = 0;
                 if (j > 5) {
                     switch (animationCount) {
                         case 3:
