@@ -154,8 +154,10 @@
           <file leaf-file-name="topic.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/topic.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="93" column="42" selection-start="3908" selection-end="3908" vertical-scroll-proportion="0.5537459" vertical-offset="1241" max-vertical-offset="2397">
-                  <folding />
+                <state line="62" column="94" selection-start="2904" selection-end="2904" vertical-scroll-proportion="0.22149837" vertical-offset="918" max-vertical-offset="2414">
+                  <folding>
+                    <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -449,12 +451,12 @@
       <workItem from="1393033517664" duration="24033000" />
       <workItem from="1394452807613" duration="1970000" />
       <workItem from="1412165405795" duration="218000" />
-      <workItem from="1412166497012" duration="1951000" />
+      <workItem from="1412166497012" duration="2109000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40495000" />
+    <option name="totallyTimeSpent" value="40653000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -609,7 +611,9 @@
     <entry file="file://$PROJECT_DIR$/topic.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="49" column="7" selection-start="2421" selection-end="2526" vertical-scroll-proportion="0.0" vertical-offset="833" max-vertical-offset="1326">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -665,7 +669,9 @@
     <entry file="file://$PROJECT_DIR$/topic.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="67" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="1071">
-          <folding />
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -776,8 +782,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/topic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="42" selection-start="3908" selection-end="3908" vertical-scroll-proportion="0.5537459" vertical-offset="1241" max-vertical-offset="2397">
-          <folding />
+        <state line="62" column="94" selection-start="2904" selection-end="2904" vertical-scroll-proportion="0.22149837" vertical-offset="918" max-vertical-offset="2414">
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
