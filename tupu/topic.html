@@ -92,7 +92,22 @@
             }
             return {search: fn(search,new RegExp( "([^?=&]+)(=([^&]*))?", "g" ))||{},hash: fn(hash,new RegExp( "([^#=&]+)(=([^&]*))?", "g" ))||{}};
         }
+        function localParam(search,hash){
+            search = search || window.location.search;
+            hash = hash || window.location.hash;
+            var fn = function(str,reg){
+                if(str){
+                    var data = {};
+                    str.replace(reg,function( $0, $1, $2, $3 ){
+                        data[ $1 ] = $3;
+                    });
+                    return data;
+                }
+            }
+            return {search: fn(search,new RegExp( "([^?=&]+)(=([^&]*))?", "g" ))||{},hash: fn(hash,new RegExp( "([^#=&]+)(=([^&]*))?", "g" ))||{}};
+        }
         var nav = navigator,
+            params = localParam(),
             isIDevice = (/iphone|ipod/gi).test(nav.platform),
             isIDeviceIpad = (/ipad/gi).test(nav.platform),
             isAndroid = (/Android/gi).test(nav.userAgent),
@@ -100,7 +115,7 @@
             autoopen = params.search['autoopen']||params.hash['autoopen'],
             isappinstalled = params.search['isappinstalled'],
             appinstall = params.search['appinstall'],
-            wxLink = 'http://3g.163.com/ntes/special/00340D52/weixinfallback.html',
+            wxLink = 'http://reelin.github.io/tupu/weixin.html',
             iDownload = 'itms-apps://itunes.apple.com/us/app/tu-pu-yong-zhao-pian-chuang/id915233164?ls=1&amp;mt=8',
             openAppLink = params.hash['url']||params.search['url'],
             iframe = document.getElementById('ifr');
@@ -121,12 +136,12 @@
         function open(){
             if(isWeixin){
                 window.location = wxLink;
-            }else if((isIDevice || isIDeviceIpad) && !isAndroid){
-//                window.location = openAppLink;
-//                setTimeout(function(){
+            } else if((isIDevice || isIDeviceIpad) && !isAndroid){
+                window.location = openAppLink;
+                setTimeout(function(){
                     window.location = iDownload;
-//                }, 50);
-            }else{
+                }, 50);
+            } else{
                 window.location = iDownload;
             }
         }
