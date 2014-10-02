@@ -137,11 +137,6 @@
             if(isWeixin){
                 alert(wxLink);
                 window.location = wxLink;
-            } else if((isIDevice || isIDeviceIpad) && !isAndroid){
-                window.location = openAppLink;
-                setTimeout(function(){
-                    window.location = iDownload;
-                }, 50);
             } else{
                 window.location = iDownload;
             }
