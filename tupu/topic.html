@@ -93,29 +93,41 @@
             return {search: fn(search,new RegExp( "([^?=&]+)(=([^&]*))?", "g" ))||{},hash: fn(hash,new RegExp( "([^#=&]+)(=([^&]*))?", "g" ))||{}};
         }
         var nav = navigator,
-                params = localParam(),
-                isIDevice = (/iphone|ipod/gi).test(nav.platform),
-                isIDeviceIpad = (/ipad/gi).test(nav.platform),
-                isAndroid = (/Android/gi).test(nav.userAgent),
-                isWeixin = (/MicroMessenger/ig).test(nav.userAgent),
-                autoopen = params.search['autoopen']||params.hash['autoopen'],
-                isappinstalled = params.search['isappinstalled'],
-                appinstall = params.search['appinstall'],
-                wxLink = 'http://3g.163.com/ntes/special/00340D52/weixinfallback.html',
-                iDownload = 'itms-apps://itunes.apple.com/us/app/tu-pu-yong-zhao-pian-chuang/id915233164?ls=1&amp;mt=8',
-                openAppLink = params.hash['url']||params.search['url'],
-                iframe = document.getElementById('ifr');
+            isIDevice = (/iphone|ipod/gi).test(nav.platform),
+            isIDeviceIpad = (/ipad/gi).test(nav.platform),
+            isAndroid = (/Android/gi).test(nav.userAgent),
+            isWeixin = (/MicroMessenger/ig).test(nav.userAgent),
+            autoopen = params.search['autoopen']||params.hash['autoopen'],
+            isappinstalled = params.search['isappinstalled'],
+            appinstall = params.search['appinstall'],
+            wxLink = 'http://3g.163.com/ntes/special/00340D52/weixinfallback.html',
+            iDownload = 'itms-apps://itunes.apple.com/us/app/tu-pu-yong-zhao-pian-chuang/id915233164?ls=1&amp;mt=8',
+            openAppLink = params.hash['url']||params.search['url'],
+            iframe = document.getElementById('ifr');
 
+        // tupu:// 地址替换
+        if( (isIDevice || isIDeviceIpad) && !isAndroid){
+            openAppLink = openAppLink || 'newsapp://';
+        }else if(isAndroid){
+            openAppLink = openAppLink || 'newsapp://startup';
+        }
+        if(isappinstalled!==undefined){
+            wxLink += '?isappinstalled='+isappinstalled+'&openurl='+openAppLink;
+        }else if(appinstall!==undefined){
+            wxLink += '?appinstall='+appinstall+'&openurl='+openAppLink;
+        }else{
+            wxLink += '?openurl='+openAppLink;
+        }
         function open(){
             if(isWeixin){
                 window.location = wxLink;
             }else if((isIDevice || isIDeviceIpad) && !isAndroid){
-                window.location = openAppLink;
-                setTimeout(function(){
+//                window.location = openAppLink;
+//                setTimeout(function(){
                     window.location = iDownload;
-                }, 50);
+//                }, 50);
             }else{
-                iframe.src = openAppLink;
+                window.location = iDownload;
             }
         }
         $(".install-small").on("click",open);
