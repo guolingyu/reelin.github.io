@@ -227,18 +227,25 @@ textarea {
 }
 .topic .topic-photos li {
   float: left;
+  background: #e2e2e2;
   margin: 3px 2px;
   _margin-right: 0;
+  width: 156px;
+  height: 156px;
+  overflow: hidden;
 }
 .topic .topic-photos li img {
   float: left;
   width: 156px;
-  height: 156px;
 }
 .photo-list li {
   display: block;
+  background: #e2e2e2;
   float: left;
   margin: 0 2px 2px 0;
+  width: 212px;
+  height: 212px;
+  overflow: hidden;
 }
 .photo-list li img {
   display: block;
@@ -395,9 +402,13 @@ textarea {
 #photographer .post-info.last {
   border: none;
 }
-#photographer .avatar img {
+#photographer .avatar {
   width: 124px;
   height: 124px;
+  overflow: hidden;
+}
+#photographer .avatar img {
+  width: 124px;
 }
 #photographer .topic {
   background: #fff;
