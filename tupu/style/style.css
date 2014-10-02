@@ -227,7 +227,7 @@ textarea {
 }
 .topic .topic-photos li {
   float: left;
-  background: #e2e2e2;
+  background: #e6e7e8;
   margin: 3px 2px;
   _margin-right: 0;
   width: 156px;
@@ -240,7 +240,7 @@ textarea {
 }
 .photo-list li {
   display: block;
-  background: #e2e2e2;
+  background: #e6e7e8;
   float: left;
   margin: 0 2px 2px 0;
   width: 212px;
