@@ -126,13 +126,13 @@
         }else if(isAndroid){
             openAppLink = openAppLink || 'newsapp://startup';
         }
-        if(isappinstalled!==undefined){
-            wxLink += '?isappinstalled='+isappinstalled+'&openurl='+openAppLink;
-        }else if(appinstall!==undefined){
-            wxLink += '?appinstall='+appinstall+'&openurl='+openAppLink;
-        }else{
-            wxLink += '?openurl='+openAppLink;
-        }
+//        if(isappinstalled!==undefined){
+//            wxLink += '?isappinstalled='+isappinstalled+'&openurl='+openAppLink;
+//        }else if(appinstall!==undefined){
+//            wxLink += '?appinstall='+appinstall+'&openurl='+openAppLink;
+//        }else{
+//            wxLink += '?openurl='+openAppLink;
+//        }
         function open(){
             if(isWeixin){
                 alert('1');
