@@ -154,7 +154,7 @@
           <file leaf-file-name="topic.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/topic.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="62" column="94" selection-start="2904" selection-end="2904" vertical-scroll-proportion="0.22149837" vertical-offset="918" max-vertical-offset="2414">
+                <state line="120" column="8" selection-start="5257" selection-end="5276" vertical-scroll-proportion="0.747557" vertical-offset="1581" max-vertical-offset="2295">
                   <folding>
                     <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -451,12 +451,12 @@
       <workItem from="1393033517664" duration="24033000" />
       <workItem from="1394452807613" duration="1970000" />
       <workItem from="1412165405795" duration="218000" />
-      <workItem from="1412166497012" duration="2109000" />
+      <workItem from="1412166497012" duration="2230000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40653000" />
+    <option name="totallyTimeSpent" value="40774000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -782,7 +782,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/topic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="94" selection-start="2904" selection-end="2904" vertical-scroll-proportion="0.22149837" vertical-offset="918" max-vertical-offset="2414">
+        <state line="120" column="8" selection-start="5257" selection-end="5276" vertical-scroll-proportion="0.747557" vertical-offset="1581" max-vertical-offset="2295">
           <folding>
             <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

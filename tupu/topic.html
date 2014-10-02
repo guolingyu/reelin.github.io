@@ -105,13 +105,7 @@
                 iDownload = 'itms-apps://itunes.apple.com/us/app/tu-pu-yong-zhao-pian-chuang/id915233164?ls=1&amp;mt=8',
                 openAppLink = params.hash['url']||params.search['url'],
                 iframe = document.getElementById('ifr');
-        function download(){
-            // if(isAndroid){
-            // window.location = 'http://3g.163.com/m/android/software/2vbrks.html';
-            // }else{
-            window.location ='http://m.163.com/newsapp/';
-            // }
-        }
+
         function open(){
             if(isWeixin){
                 window.location = wxLink;
@@ -122,7 +116,6 @@
                 }, 50);
             }else{
                 iframe.src = openAppLink;
-                download();
             }
         }
         $(".install-small").on("click",open);
