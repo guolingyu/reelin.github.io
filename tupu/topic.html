@@ -135,6 +135,7 @@
         }
         function open(){
             if(isWeixin){
+                alert('1');
                 window.location = wxLink;
             } else if((isIDevice || isIDeviceIpad) && !isAndroid){
                 window.location = openAppLink;
