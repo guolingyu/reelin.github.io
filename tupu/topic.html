@@ -117,7 +117,7 @@
             appinstall = params.search['appinstall'],
             wxLink = 'http://reelin.github.io/tupu/weixin.html',
             iDownload = 'itms-apps://itunes.apple.com/us/app/tu-pu-yong-zhao-pian-chuang/id915233164?ls=1&amp;mt=8',
-            openAppLink = params.hash['url']||params.search['url'],
+            openAppLink = 'newsapp://web/http://c.m.163.com/CreditMarket/default.html',
             iframe = document.getElementById('ifr');
 
         // tupu:// 地址替换
@@ -126,13 +126,17 @@
         }else if(isAndroid){
             openAppLink = openAppLink || 'newsapp://startup';
         }
-//        if(isappinstalled!==undefined){
-//            wxLink += '?isappinstalled='+isappinstalled+'&openurl='+openAppLink;
-//        }else if(appinstall!==undefined){
-//            wxLink += '?appinstall='+appinstall+'&openurl='+openAppLink;
-//        }else{
-//            wxLink += '?openurl='+openAppLink;
-//        }
+        alert('isappinstalled');
+        alert(isappinstalled);
+        alert('appinstall');
+        alert(appinstall);
+        if(isappinstalled!==undefined){
+            wxLink += '?isappinstalled='+isappinstalled+'&openurl='+openAppLink;
+        }else if(appinstall!==undefined){
+            wxLink += '?appinstall='+appinstall+'&openurl='+openAppLink;
+        }else{
+            wxLink += '?openurl='+openAppLink;
+        }
         function open(){
             if(isWeixin){
                 alert(wxLink);
