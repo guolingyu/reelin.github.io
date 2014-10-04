@@ -120,7 +120,7 @@
           <file leaf-file-name="photo.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/photo.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="93" column="143" selection-start="5160" selection-end="5160" vertical-scroll-proportion="-8.923077" vertical-offset="1349" max-vertical-offset="1989">
+                <state line="11" column="0" selection-start="485" selection-end="485" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="2074">
                   <folding />
                 </state>
               </provider>
@@ -129,7 +129,7 @@
           <file leaf-file-name="photographer.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/photographer.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="91" column="139" selection-start="4234" selection-end="4234" vertical-scroll-proportion="-8.269231" vertical-offset="1332" max-vertical-offset="1989">
+                <state line="11" column="0" selection-start="489" selection-end="489" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="2074">
                   <folding />
                 </state>
               </provider>
@@ -138,7 +138,7 @@
           <file leaf-file-name="album.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/album.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="63" column="139" selection-start="3013" selection-end="3013" vertical-scroll-proportion="-8.269231" vertical-offset="856" max-vertical-offset="1496">
+                <state line="11" column="0" selection-start="490" selection-end="490" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="1581">
                   <folding />
                 </state>
               </provider>
@@ -147,16 +147,16 @@
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="40" column="139" selection-start="1849" selection-end="1849" vertical-scroll-proportion="-3.9615386" vertical-offset="474" max-vertical-offset="1088">
+                <state line="7" column="4" selection-start="283" selection-end="488" vertical-scroll-proportion="-2.2884614" vertical-offset="0" max-vertical-offset="1173">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="topic.html" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="topic.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/topic.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="60" column="127" selection-start="2949" selection-end="2949" vertical-scroll-proportion="0.4421875" vertical-offset="737" max-vertical-offset="1377">
+                <state line="13" column="23" selection-start="583" selection-end="583" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="1462">
                   <folding>
                     <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -164,10 +164,19 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="weixin.html" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="master_info.vm" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/workspace/netease/fashion/src/main/resources/templates/master/master_info.vm">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="17" column="30" selection-start="899" selection-end="899" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="1700">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="weixin.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/weixin.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="106" column="13" selection-start="4216" selection-end="4216" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="442">
+                <state line="8" column="19" selection-start="337" selection-end="337" vertical-scroll-proportion="0.2125" vertical-offset="0" max-vertical-offset="640">
                   <folding>
                     <element signature="tag#script#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
                   </folding>
@@ -194,12 +203,12 @@
         <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/style/handherd.less" />
         <option value="$PROJECT_DIR$/style/general.less" />
-        <option value="$PROJECT_DIR$/weixin.html" />
-        <option value="$PROJECT_DIR$/topic.html" />
-        <option value="$PROJECT_DIR$/album.html" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/album.html" />
         <option value="$PROJECT_DIR$/photo.html" />
         <option value="$PROJECT_DIR$/photographer.html" />
+        <option value="$PROJECT_DIR$/topic.html" />
+        <option value="$PROJECT_DIR$/weixin.html" />
       </list>
     </option>
   </component>
@@ -466,12 +475,12 @@
       <workItem from="1393033517664" duration="24033000" />
       <workItem from="1394452807613" duration="1970000" />
       <workItem from="1412165405795" duration="218000" />
-      <workItem from="1412166497012" duration="6127000" />
+      <workItem from="1412166497012" duration="6644000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44671000" />
+    <option name="totallyTimeSpent" value="45188000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -513,7 +522,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14216478" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14216478" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -761,15 +770,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weixin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="13" selection-start="4216" selection-end="4216" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="442">
-          <folding>
-            <element signature="tag#script#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style/general.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="195" column="27" selection-start="3508" selection-end="3508" vertical-scroll-proportion="-6.957143" vertical-offset="2828" max-vertical-offset="7429">
@@ -786,39 +786,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/workspace/netease/fashion/src/main/resources/templates/master/master_info.vm">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="30" selection-start="899" selection-end="899" vertical-scroll-proportion="-11.115385" vertical-offset="0" max-vertical-offset="1700">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/album.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="139" selection-start="3013" selection-end="3013" vertical-scroll-proportion="-8.269231" vertical-offset="856" max-vertical-offset="1496">
+        <state line="11" column="0" selection-start="490" selection-end="490" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="1581">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="139" selection-start="1849" selection-end="1849" vertical-scroll-proportion="-3.9615386" vertical-offset="474" max-vertical-offset="1088">
+        <state line="7" column="4" selection-start="283" selection-end="488" vertical-scroll-proportion="-2.2884614" vertical-offset="0" max-vertical-offset="1173">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/photo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="93" column="143" selection-start="5160" selection-end="5160" vertical-scroll-proportion="-8.923077" vertical-offset="1349" max-vertical-offset="1989">
+        <state line="11" column="0" selection-start="485" selection-end="485" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="2074">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/photographer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="139" selection-start="4234" selection-end="4234" vertical-scroll-proportion="-8.269231" vertical-offset="1332" max-vertical-offset="1989">
+        <state line="11" column="0" selection-start="489" selection-end="489" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="2074">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/topic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="127" selection-start="2949" selection-end="2949" vertical-scroll-proportion="0.4421875" vertical-offset="737" max-vertical-offset="1377">
+        <state line="13" column="23" selection-start="583" selection-end="583" vertical-scroll-proportion="-8.5" vertical-offset="0" max-vertical-offset="1462">
           <folding>
             <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weixin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="19" selection-start="337" selection-end="337" vertical-scroll-proportion="0.2125" vertical-offset="0" max-vertical-offset="640">
+          <folding>
+            <element signature="tag#script#1;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
           </folding>
         </state>
       </provider>
