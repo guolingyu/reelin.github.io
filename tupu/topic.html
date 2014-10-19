@@ -78,7 +78,6 @@
     <script type="text/javascript">
     (function() {
         function localParam(search,hash){
-
             search = search || window.location.search;
             hash = hash || window.location.hash;
             var fn = function(str,reg){
@@ -105,7 +104,8 @@
                 iDownload = 'itms-apps://itunes.apple.com/us/app/tu-pu-yong-zhao-pian-chuang/id915233164?ls=1&amp;mt=8',
                 openAppLink = 'newsapp://web/http://c.m.163.com/CreditMarket/default.html',
                 iframe = document.getElementById('ifr');
-
+        alert(isWeixin);
+        alert(wxLink);
         if( (isIDevice || isIDeviceIpad) && !isAndroid){
             openAppLink = openAppLink || 'tupu://';
         }else if(isAndroid){
@@ -118,7 +118,7 @@
         }else{
             wxLink += '?openurl='+openAppLink;
         }
-
+        alert(wxLink);
         function download(){
             if(isAndroid){
                 window.location = 'http://tupu.im/';
@@ -139,6 +139,7 @@
          */
         function open(){
             if(isWeixin){
+                alert(wxLink);
                 window.location = wxLink;
             }else if((isIDevice || isIDeviceIpad) && !isAndroid){
                 window.location = openAppLink;
