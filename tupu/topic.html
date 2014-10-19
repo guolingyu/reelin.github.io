@@ -76,7 +76,9 @@
 
     </script>
     <script type="text/javascript">
+    (function() {
         function localParam(search,hash){
+
             search = search || window.location.search;
             hash = hash || window.location.hash;
             var fn = function(str,reg){
@@ -153,6 +155,7 @@
         if(autoopen==1){
             open();
         }
+    })();
     </script>
 </div>
 </body>
