@@ -102,12 +102,12 @@
                 appinstall = params.search['appinstall'],
                 wxLink = 'http://reelin.github.io/tupu/weixin.html',
                 iDownload = 'itms-apps://itunes.apple.com/us/app/tu-pu-yong-zhao-pian-chuang/id915233164?ls=1&amp;mt=8',
-                openAppLink = 'tupu://photo?id=1',
+                openAppLink = 'newsapp://web/http://c.m.163.com/CreditMarket/default.html',
                 iframe = document.getElementById('ifr');
         alert(isWeixin);
         alert(wxLink);
         if( (isIDevice || isIDeviceIpad) && !isAndroid){
-            openAppLink = openAppLink || 'tupu://';
+            openAppLink = openAppLink || 'newsapp://';
         }else if(isAndroid){
             openAppLink = 'http://tupu.im/';
         }
