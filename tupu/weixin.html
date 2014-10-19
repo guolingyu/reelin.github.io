@@ -38,14 +38,13 @@
                 return {search: fn(search,new RegExp( "([^?=&]+)(=([^&]*))?", "g" ))||{},hash: fn(hash,new RegExp( "([^#=&]+)(=([^&]*))?", "g" ))||{}};
             }
             var isAndroid=navigator.userAgent.match(/android/ig),
-                    isIos=navigator.userAgent.match(/iphone|ipod/ig),
-                    isIpad=navigator.userAgent.match(/ipad/ig),
-                    isWeixin = (/MicroMessenger/ig).test(navigator.userAgent),
-                    params = localParam(),
-                    docid=params.search['docid'],
-                    isappinstalled = params.search['isappinstalled']||params.search['appinstall'],
-                    openurl = params.search['openurl']+window.location.hash,
-                    iframe = document.getElementById('ifr');
+                isIos=navigator.userAgent.match(/iphone|ipod/ig),
+                isIpad=navigator.userAgent.match(/ipad/ig),
+                isWeixin = (/MicroMessenger/ig).test(navigator.userAgent),
+                params = localParam(),
+                isappinstalled = params.search['isappinstalled']||params.search['appinstall'],
+                openurl = params.search['openurl']+window.location.hash,
+                iframe = document.getElementById('ifr');
             if(isIos||isIpad){
                 openurl = openurl || 'tupu://';
             }else if(isAndroid){

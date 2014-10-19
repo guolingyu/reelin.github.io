@@ -151,7 +151,10 @@
                 download();
             }
         }
-        $(".install-small").on("click",open);
+        $(".install-small").on("click", function(e) {
+            e.preventDefault();
+            open();
+        });
         //自动打开
         if(autoopen==1){
             open();

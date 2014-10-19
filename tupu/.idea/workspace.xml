@@ -63,7 +63,7 @@
     <favorites_list name="tupu" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.7419962">
+    <splitter split-orientation="horizontal" split-proportion="0.5936953">
       <split-first>
         <leaf>
           <file leaf-file-name="animation.js" pinned="false" current="false" current-in-tab="false">
@@ -75,10 +75,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="weixin.html" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="weixin.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/weixin.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="52" column="15" selection-start="2465" selection-end="2465" vertical-scroll-proportion="0.41203007" vertical-offset="610" max-vertical-offset="1462">
+                <state line="43" column="38" selection-start="1991" selection-end="1991" vertical-scroll-proportion="-0.7307692" vertical-offset="712" max-vertical-offset="1445">
                   <folding>
                     <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -86,10 +86,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="topic.html" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="topic.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/topic.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="103" column="118" selection-start="4820" selection-end="4909" vertical-scroll-proportion="-7.269231" vertical-offset="1562" max-vertical-offset="2856">
+                <state line="155" column="19" selection-start="6630" selection-end="6630" vertical-scroll-proportion="0.7699248" vertical-offset="2123" max-vertical-offset="2907">
                   <folding />
                 </state>
               </provider>
@@ -111,7 +111,7 @@
           <file leaf-file-name="topic.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/topic.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="133" column="16" selection-start="5926" selection-end="5926" vertical-scroll-proportion="0.43458647" vertical-offset="1972" max-vertical-offset="2856">
+                <state line="133" column="0" selection-start="5926" selection-end="5926" vertical-scroll-proportion="0.43458647" vertical-offset="1972" max-vertical-offset="2907">
                   <folding />
                 </state>
               </provider>
@@ -140,8 +140,8 @@
         <option value="$PROJECT_DIR$/photographer.html" />
         <option value="$PROJECT_DIR$/album.html" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/topic.html" />
         <option value="$PROJECT_DIR$/weixin.html" />
+        <option value="$PROJECT_DIR$/topic.html" />
       </list>
     </option>
   </component>
@@ -411,12 +411,12 @@
       <workItem from="1412166497012" duration="7171000" />
       <workItem from="1412737777820" duration="18000" />
       <workItem from="1412737842458" duration="24000" />
-      <workItem from="1413715686094" duration="2445000" />
+      <workItem from="1413715686094" duration="3524000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48202000" />
+    <option name="totallyTimeSpent" value="49281000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -664,13 +664,6 @@
         <state line="25" column="19" selection-start="426" selection-end="426" vertical-scroll-proportion="0.27071005" vertical-offset="242" max-vertical-offset="918" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/animation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1144" column="7" selection-start="17144" selection-end="17144" vertical-scroll-proportion="0.33238637" vertical-offset="19214" max-vertical-offset="64821">
@@ -685,19 +678,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/topic.html">
+    <entry file="file://$PROJECT_DIR$/weixin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="103" column="118" selection-start="4820" selection-end="4909" vertical-scroll-proportion="-7.269231" vertical-offset="1562" max-vertical-offset="2856">
+        <state line="43" column="38" selection-start="1991" selection-end="1991" vertical-scroll-proportion="-0.7307692" vertical-offset="712" max-vertical-offset="1445">
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/animation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weixin.html">
+    <entry file="file://$PROJECT_DIR$/topic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="15" selection-start="2465" selection-end="2465" vertical-scroll-proportion="0.41203007" vertical-offset="610" max-vertical-offset="1462">
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="155" column="19" selection-start="6630" selection-end="6630" vertical-scroll-proportion="0.7699248" vertical-offset="2123" max-vertical-offset="2907">
+          <folding />
         </state>
       </provider>
     </entry>
