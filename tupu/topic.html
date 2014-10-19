@@ -102,7 +102,8 @@
                 appinstall = params.search['appinstall'],
                 wxLink = 'http://reelin.github.io/tupu/weixin.html',
                 iDownload = 'itms-apps://itunes.apple.com/us/app/tu-pu-yong-zhao-pian-chuang/id915233164?ls=1&amp;mt=8',
-                openAppLink = 'newsapp://web/http://c.m.163.com/CreditMarket/default.html',
+                openAppLink = 'newsapp://',
+                skipAppLink = 'newsapp://web/http://c.m.163.com/CreditMarket/default.html',
                 iframe = document.getElementById('ifr');
         alert(isWeixin);
         alert(wxLink);
@@ -151,9 +152,26 @@
                 download();
             }
         }
-        $(".install-small").on("click", function(e) {
+        function skip() {
+            if(isWeixin){
+                window.location = wxLink;
+            }else if((isIDevice || isIDeviceIpad) && !isAndroid){
+                window.location = skipAppLink;
+                setTimeout(function(){
+                    window.location = iDownload;
+                }, 50);
+            } else {
+                iframe.src = skipAppLink;
+                download();
+            }
+        }
+        $(".install-small, .footer .install").on("click", function(e) {
             e.preventDefault();
             open();
+        });
+        $(".modal .install").on("click", function(e) {
+            e.preventDefault();
+            skip();
         });
         //自动打开
         if(autoopen==1){
