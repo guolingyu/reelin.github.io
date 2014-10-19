@@ -62,7 +62,6 @@
                 }
                 if(!isWeixin){
                     if((isIos||isIpad) && !isAndroid){
-                        alert(openurl);
                         window.location = openurl;
                         if(!isappinstalled || (isappinstalled && isappinstalled!='1') ){
                             setTimeout(function(){
