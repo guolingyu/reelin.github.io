@@ -78,7 +78,7 @@
           <file leaf-file-name="weixin.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/weixin.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="80" column="7" selection-start="3588" selection-end="3588" vertical-scroll-proportion="0.9488722" vertical-offset="729" max-vertical-offset="1462">
+                <state line="52" column="15" selection-start="2465" selection-end="2465" vertical-scroll-proportion="0.41203007" vertical-offset="610" max-vertical-offset="1462">
                   <folding>
                     <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
@@ -411,12 +411,12 @@
       <workItem from="1412166497012" duration="7171000" />
       <workItem from="1412737777820" duration="18000" />
       <workItem from="1412737842458" duration="24000" />
-      <workItem from="1413715686094" duration="2329000" />
+      <workItem from="1413715686094" duration="2445000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48086000" />
+    <option name="totallyTimeSpent" value="48202000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -694,7 +694,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weixin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="80" column="7" selection-start="3588" selection-end="3588" vertical-scroll-proportion="0.9488722" vertical-offset="729" max-vertical-offset="1462">
+        <state line="52" column="15" selection-start="2465" selection-end="2465" vertical-scroll-proportion="0.41203007" vertical-offset="610" max-vertical-offset="1462">
           <folding>
             <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>

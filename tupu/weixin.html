@@ -62,10 +62,10 @@
                 }
                 if(!isWeixin){
                     if((isIos||isIpad) && !isAndroid){
+                        alert(openurl);
                         window.location = openurl;
                         if(!isappinstalled || (isappinstalled && isappinstalled!='1') ){
                             setTimeout(function(){
-                                alert('yes');
                                 window.location = "itms-apps://itunes.apple.com/us/app/tu-pu-yong-zhao-pian-chuang/id915233164?ls=1&amp;mt=8";
                             }, 50);
                         }
