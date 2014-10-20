@@ -78,8 +78,9 @@
           <file leaf-file-name="weixin.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/weixin.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="63" column="54" selection-start="2905" selection-end="2905" vertical-scroll-proportion="0.39285713" vertical-offset="829" max-vertical-offset="1445">
+                <state line="16" column="20" selection-start="728" selection-end="728" vertical-scroll-proportion="0.44155845" vertical-offset="0" max-vertical-offset="1445">
                   <folding>
+                    <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                     <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                   </folding>
                 </state>
@@ -438,12 +439,12 @@
       <workItem from="1412166497012" duration="7171000" />
       <workItem from="1412737777820" duration="18000" />
       <workItem from="1412737842458" duration="24000" />
-      <workItem from="1413715686094" duration="4645000" />
+      <workItem from="1413715686094" duration="4860000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50402000" />
+    <option name="totallyTimeSpent" value="50617000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -759,8 +760,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weixin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="63" column="54" selection-start="2905" selection-end="2905" vertical-scroll-proportion="0.39285713" vertical-offset="829" max-vertical-offset="1445">
+        <state line="16" column="20" selection-start="728" selection-end="728" vertical-scroll-proportion="0.44155845" vertical-offset="0" max-vertical-offset="1445">
           <folding>
+            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
