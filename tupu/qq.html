@@ -16,7 +16,7 @@
 <body style="background:#fff;">
 <div class="wrapper clearfix">
     <div class="main">
-        <img src="images/qq.jpg" alt=""/>
+        <img src="images/qq.png" alt=""/>
 
     </div>
     <div id="guide" class="guide"></div>
@@ -41,7 +41,7 @@
             var isAndroid=navigator.userAgent.match(/android/ig),
                     isIos=navigator.userAgent.match(/iphone|ipod/ig),
                     isIpad=navigator.userAgent.match(/ipad/ig),
-                    isWeixin = (/MicroMessenger/ig).test(navigator.userAgent),
+                    isQQ = (/QQ/ig).test(navigator.userAgent),
                     params = localParam(),
                     isappinstalled = params.search['isappinstalled']||params.search['appinstall'],
                     openurl = params.search['openurl']+window.location.hash,
@@ -60,7 +60,7 @@
                 if((isIos||isIpad) && !isAndroid){
                     EL.classList.add(iosCls);
                 }
-                if(!isWeixin){
+                if(!isQQ){
                     if((isIos||isIpad) && !isAndroid){
                         window.location = openurl;
                         if(!isappinstalled || (isappinstalled && isappinstalled!='1') ){

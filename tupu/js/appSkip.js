@@ -19,16 +19,17 @@
         isIDeviceIpad = (/ipad/gi).test(nav.platform),
         isAndroid = (/Android/gi).test(nav.userAgent),
         isWeixin = (/MicroMessenger/ig).test(nav.userAgent),
+        isQQ = (/QQ/ig).test(nav.userAgent),
         autoopen = params.search['autoopen']||params.hash['autoopen'],
         isappinstalled = params.search['isappinstalled'],
         appinstall = params.search['appinstall'],
+        qqLink = 'http://reelin.github.io/tupu/qq.html',
         wxLink = 'http://reelin.github.io/tupu/weixin.html',
         iDownload = 'itms-apps://itunes.apple.com/us/app/tu-pu-yong-zhao-pian-chuang/id915233164?ls=1&amp;mt=8',
         openAppLink = 'newsapp://',
         skipAppLink = 'newsapp://web/http://c.m.163.com/CreditMarket/default.html',
         iframe = document.getElementById('ifr');
-    alert(nav.userAgent);
-    alert((/QQ/ig).test(nav.userAgent));
+
     if( (isIDevice || isIDeviceIpad) && !isAndroid){
         openAppLink = openAppLink || 'newsapp://';
     }else if(isAndroid){
@@ -36,10 +37,13 @@
     }
     if(isappinstalled!==undefined){
         wxLink += '?isappinstalled='+isappinstalled+'&openurl='+openAppLink;
+        qqLink += '?isappinstalled='+isappinstalled+'&openurl='+openAppLink;
     }else if(appinstall!==undefined){
         wxLink += '?appinstall='+appinstall+'&openurl='+openAppLink;
+        qqLink += '?appinstall='+appinstall+'&openurl='+openAppLink;
     }else{
         wxLink += '?openurl='+openAppLink;
+        qqLink += '?appinstall='+appinstall+'&openurl='+openAppLink;
     }
 
     function download(){
@@ -62,13 +66,17 @@
      */
     function open(){
         if(isWeixin){
-            alert(wxLink);
             window.location = wxLink;
         }else if((isIDevice || isIDeviceIpad) && !isAndroid){
-            window.location = openAppLink;
-            setTimeout(function(){
-                window.location = iDownload;
-            }, 50);
+            if(isQQ) {
+                alert(qqLink);
+                window.location = qqLink;
+            } else {
+                window.location = openAppLink;
+                setTimeout(function(){
+                    window.location = iDownload;
+                }, 50);
+            }
         } else {
             iframe.src = openAppLink;
             download();
@@ -78,10 +86,14 @@
         if(isWeixin){
             window.location = wxLink;
         }else if((isIDevice || isIDeviceIpad) && !isAndroid){
-            window.location = skipAppLink;
-            setTimeout(function(){
-                window.location = iDownload;
-            }, 50);
+            if(isQQ) {
+                window.location = qqLink;
+            } else {
+                window.location = skipAppLink;
+                setTimeout(function(){
+                    window.location = iDownload;
+                }, 50);
+            }
         } else {
             iframe.src = skipAppLink;
             download();
