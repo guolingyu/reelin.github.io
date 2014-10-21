@@ -43,7 +43,7 @@
         qqLink += '?appinstall='+appinstall+'&openurl='+openAppLink;
     }else{
         wxLink += '?openurl='+openAppLink;
-        qqLink += '?appinstall='+appinstall+'&openurl='+openAppLink;
+        qqLink += '?openurl='+openAppLink;
     }
     alert(qqLink);
 
