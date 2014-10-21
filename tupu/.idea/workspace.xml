@@ -177,7 +177,7 @@
           <file leaf-file-name="qq.html" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/qq.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="73" column="37" selection-start="3457" selection-end="3457" vertical-scroll-proportion="0.86917293" vertical-offset="663" max-vertical-offset="1445">
+                <state line="72" column="63" selection-start="0" selection-end="3586" vertical-scroll-proportion="0.84360904" vertical-offset="663" max-vertical-offset="1445">
                   <folding />
                 </state>
               </provider>
@@ -481,12 +481,12 @@
       <workItem from="1412737777820" duration="18000" />
       <workItem from="1412737842458" duration="24000" />
       <workItem from="1413715686094" duration="5301000" />
-      <workItem from="1413858266645" duration="858000" />
+      <workItem from="1413858266645" duration="875000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51916000" />
+    <option name="totallyTimeSpent" value="51933000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -510,7 +510,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -905,7 +905,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/qq.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="37" selection-start="3457" selection-end="3457" vertical-scroll-proportion="0.86917293" vertical-offset="663" max-vertical-offset="1445">
+        <state line="72" column="63" selection-start="0" selection-end="3586" vertical-scroll-proportion="0.84360904" vertical-offset="663" max-vertical-offset="1445">
           <folding />
         </state>
       </provider>
