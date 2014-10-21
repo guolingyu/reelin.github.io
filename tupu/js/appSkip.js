@@ -85,15 +85,14 @@
     function skip() {
         if(isWeixin){
             window.location = wxLink;
+        }else if(isQQ) {
+            alert(qqLink);
+            window.location = qqLink;
         }else if((isIDevice || isIDeviceIpad) && !isAndroid){
-            if(isQQ) {
-                window.location = qqLink;
-            } else {
-                window.location = skipAppLink;
-                setTimeout(function(){
-                    window.location = iDownload;
-                }, 50);
-            }
+            window.location = skipAppLink;
+            setTimeout(function(){
+                window.location = iDownload;
+            }, 50);
         } else {
             iframe.src = skipAppLink;
             download();

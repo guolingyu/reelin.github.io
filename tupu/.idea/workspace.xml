@@ -63,7 +63,7 @@
     <favorites_list name="tupu" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.18832392">
+    <splitter split-orientation="horizontal" split-proportion="0.63276833">
       <split-first>
         <leaf>
           <file leaf-file-name="animation.js" pinned="false" current="false" current-in-tab="false">
@@ -95,10 +95,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="appSkip.js" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="appSkip.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/appSkip.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="95" column="13" selection-start="3479" selection-end="3479" vertical-scroll-proportion="1.090566" vertical-offset="1037" max-vertical-offset="2023">
+                <state line="88" column="26" selection-start="3210" selection-end="3210" vertical-scroll-proportion="0.28742516" vertical-offset="1304" max-vertical-offset="2006">
                   <folding />
                 </state>
               </provider>
@@ -174,7 +174,7 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="qq.html" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="qq.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/qq.html">
               <provider selected="true" editor-type-id="text-editor">
                 <state line="79" column="7" selection-start="3537" selection-end="3537" vertical-scroll-proportion="0.9488722" vertical-offset="712" max-vertical-offset="1445">
@@ -209,8 +209,8 @@
         <option value="$PROJECT_DIR$/album.html" />
         <option value="$PROJECT_DIR$/photographer.html" />
         <option value="$PROJECT_DIR$/photo.html" />
-        <option value="$PROJECT_DIR$/js/appSkip.js" />
         <option value="$PROJECT_DIR$/qq.html" />
+        <option value="$PROJECT_DIR$/js/appSkip.js" />
       </list>
     </option>
   </component>
@@ -481,12 +481,12 @@
       <workItem from="1412737777820" duration="18000" />
       <workItem from="1412737842458" duration="24000" />
       <workItem from="1413715686094" duration="5301000" />
-      <workItem from="1413858266645" duration="887000" />
+      <workItem from="1413858266645" duration="1028000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51945000" />
+    <option name="totallyTimeSpent" value="52086000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -625,26 +625,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="120" column="0" selection-start="5610" selection-end="5610" vertical-scroll-proportion="0.0" vertical-offset="1614" max-vertical-offset="3196">
           <folding>
-            <marker date="1413858858000" expanded="true" signature="375:447" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="465:548" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="646:687" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="718:725" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="729:777" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="923:1192" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="1266:1592" placeholder="/*...*/" />
-            <marker date="1413858858000" expanded="true" signature="1642:2485" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="1690:1943" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="1994:2369" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="2141:2312" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="2375:2470" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="2532:3202" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="2724:2788" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="2839:3032" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="2856:3021" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="3038:3159" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="3278:3303" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="3348:3425" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="3452:3543" placeholder="{...}" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -870,42 +851,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/topic.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="0" selection-start="3604" selection-end="3604" vertical-scroll-proportion="-0.0" vertical-offset="1343" max-vertical-offset="1496">
+        <state line="81" column="45" selection-start="3619" selection-end="3619" vertical-scroll-proportion="-20.115385" vertical-offset="854" max-vertical-offset="1496">
           <folding>
-            <marker date="1413858858000" expanded="true" signature="375:447" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="465:548" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="646:687" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="718:725" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="729:777" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="923:1192" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="1266:1592" placeholder="/*...*/" />
-            <marker date="1413858858000" expanded="true" signature="1642:2485" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="1690:1943" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="1994:2369" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="2141:2312" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="2375:2470" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="2532:3202" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="2724:2788" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="2839:3032" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="2856:3021" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="3038:3159" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="3278:3303" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="3348:3425" placeholder="{...}" />
-            <marker date="1413858858000" expanded="true" signature="3452:3543" placeholder="{...}" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/appSkip.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="95" column="13" selection-start="3479" selection-end="3479" vertical-scroll-proportion="1.090566" vertical-offset="1037" max-vertical-offset="2023">
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/qq.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="79" column="7" selection-start="3537" selection-end="3537" vertical-scroll-proportion="0.9488722" vertical-offset="712" max-vertical-offset="1445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/appSkip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="26" selection-start="3210" selection-end="3210" vertical-scroll-proportion="0.28742516" vertical-offset="1304" max-vertical-offset="2006">
           <folding />
         </state>
       </provider>
