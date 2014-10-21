@@ -63,13 +63,13 @@
     <favorites_list name="tupu" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5936953">
+    <splitter split-orientation="horizontal" split-proportion="0.52636534">
       <split-first>
         <leaf>
           <file leaf-file-name="animation.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/animation.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+                <state line="35" column="30" selection-start="1500" selection-end="1500" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
                   <folding />
                 </state>
               </provider>
@@ -78,11 +78,8 @@
           <file leaf-file-name="weixin.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/weixin.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="16" column="20" selection-start="728" selection-end="728" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="1445">
-                  <folding>
-                    <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
+                <state line="36" column="45" selection-start="1567" selection-end="1567" vertical-scroll-proportion="-7.8461537" vertical-offset="408" max-vertical-offset="1445">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -90,7 +87,18 @@
           <file leaf-file-name="topic.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/topic.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="120" column="0" selection-start="5610" selection-end="5610" vertical-scroll-proportion="-8.192307" vertical-offset="1614" max-vertical-offset="3196">
+                <state line="79" column="0" selection-start="3607" selection-end="3607" vertical-scroll-proportion="-18.807692" vertical-offset="854" max-vertical-offset="1496">
+                  <folding>
+                    <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="appSkip.js" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js/appSkip.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="29" column="21" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.55988026" vertical-offset="119" max-vertical-offset="1819">
                   <folding />
                 </state>
               </provider>
@@ -99,16 +107,16 @@
           <file leaf-file-name="album.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/album.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="4" column="57" selection-start="162" selection-end="162" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="1581">
+                <state line="88" column="0" selection-start="3919" selection-end="3919" vertical-scroll-proportion="-21.423077" vertical-offset="939" max-vertical-offset="1649">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="40" column="19" selection-start="1766" selection-end="1766" vertical-scroll-proportion="1.05919" vertical-offset="0" max-vertical-offset="1173">
+                <state line="65" column="0" selection-start="2751" selection-end="2751" vertical-scroll-proportion="-22.23077" vertical-offset="527" max-vertical-offset="1241">
                   <folding />
                 </state>
               </provider>
@@ -117,7 +125,7 @@
           <file leaf-file-name="photo.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/photo.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="0" selection-start="533" selection-end="533" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="2074">
+                <state line="118" column="0" selection-start="6112" selection-end="6112" vertical-scroll-proportion="-21.423077" vertical-offset="1449" max-vertical-offset="2142">
                   <folding />
                 </state>
               </provider>
@@ -126,7 +134,7 @@
           <file leaf-file-name="photographer.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/photographer.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="11" column="0" selection-start="537" selection-end="537" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="2074">
+                <state line="115" column="4" selection-start="5076" selection-end="5140" vertical-scroll-proportion="-20.76923" vertical-offset="1415" max-vertical-offset="2125">
                   <folding />
                 </state>
               </provider>
@@ -136,10 +144,40 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="topic.html" pinned="false" current="false" current-in-tab="true">
+          <file leaf-file-name="topic.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/topic.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="133" column="0" selection-start="5945" selection-end="5945" vertical-scroll-proportion="0.43458647" vertical-offset="1972" max-vertical-offset="3196">
+                <state line="79" column="0" selection-start="3607" selection-end="3607" vertical-scroll-proportion="-0.0" vertical-offset="1343" max-vertical-offset="1496">
+                  <folding>
+                    <marker date="1413858646000" expanded="true" signature="375:447" placeholder="{...}" />
+                    <marker date="1413858646000" expanded="true" signature="465:548" placeholder="{...}" />
+                    <marker date="1413858646000" expanded="true" signature="646:687" placeholder="{...}" />
+                    <marker date="1413858646000" expanded="true" signature="718:725" placeholder="{...}" />
+                    <marker date="1413858646000" expanded="true" signature="729:777" placeholder="{...}" />
+                    <marker date="1413858646000" expanded="true" signature="923:1192" placeholder="{...}" />
+                    <marker date="1413858646000" expanded="true" signature="1266:1592" placeholder="/*...*/" />
+                    <marker date="1413858646000" expanded="true" signature="1642:2485" placeholder="{...}" />
+                    <marker date="1413858646000" expanded="true" signature="1690:1943" placeholder="{...}" />
+                    <marker date="1413858646000" expanded="true" signature="1994:2369" placeholder="{...}" />
+                    <marker date="1413858646000" expanded="true" signature="2141:2312" placeholder="{...}" />
+                    <marker date="1413858646000" expanded="true" signature="2375:2470" placeholder="{...}" />
+                    <marker date="1413858646000" expanded="true" signature="2532:3202" placeholder="{...}" />
+                    <marker date="1413858646000" expanded="true" signature="2724:2788" placeholder="{...}" />
+                    <marker date="1413858646000" expanded="true" signature="2839:3032" placeholder="{...}" />
+                    <marker date="1413858646000" expanded="true" signature="2856:3021" placeholder="{...}" />
+                    <marker date="1413858646000" expanded="true" signature="3038:3159" placeholder="{...}" />
+                    <marker date="1413858646000" expanded="true" signature="3278:3303" placeholder="{...}" />
+                    <marker date="1413858646000" expanded="true" signature="3348:3425" placeholder="{...}" />
+                    <marker date="1413858646000" expanded="true" signature="3452:3543" placeholder="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="qq.html" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/qq.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="52" column="32" selection-start="2480" selection-end="2480" vertical-scroll-proportion="0.7924812" vertical-offset="357" max-vertical-offset="1445">
                   <folding />
                 </state>
               </provider>
@@ -164,12 +202,15 @@
         <option value="$PROJECT_DIR$/home.html" />
         <option value="$PROJECT_DIR$/style/handherd.less" />
         <option value="$PROJECT_DIR$/style/general.less" />
+        <option value="$PROJECT_DIR$/weixin.html" />
+        <option value="$PROJECT_DIR$/qq.html" />
+        <option value="$PROJECT_DIR$/album.html" />
+        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/photo.html" />
         <option value="$PROJECT_DIR$/photographer.html" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/album.html" />
+        <option value="$PROJECT_DIR$/js/animation.js" />
         <option value="$PROJECT_DIR$/topic.html" />
-        <option value="$PROJECT_DIR$/weixin.html" />
+        <option value="$PROJECT_DIR$/js/appSkip.js" />
       </list>
     </option>
   </component>
@@ -205,6 +246,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -253,8 +296,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -263,7 +304,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="File.Encoding" />
-    <property name="last_opened_file_path" value="$USER_HOME$/workspace/netease" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -306,6 +347,19 @@
       <option name="trusted" value="true" />
       <method />
     </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <method />
+    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -332,19 +386,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -440,11 +481,12 @@
       <workItem from="1412737777820" duration="18000" />
       <workItem from="1412737842458" duration="24000" />
       <workItem from="1413715686094" duration="5301000" />
+      <workItem from="1413858266645" duration="401000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51058000" />
+    <option name="totallyTimeSpent" value="51459000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -537,6 +579,57 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/animation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weixin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="20" selection-start="728" selection-end="728" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/album.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="57" selection-start="162" selection-end="162" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1581">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="40" column="19" selection-start="1766" selection-end="1766" vertical-scroll-proportion="0.0" vertical-offset="680" max-vertical-offset="1173">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="533" selection-end="533" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="2074">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photographer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="537" selection-end="537" vertical-scroll-proportion="0.0" vertical-offset="187" max-vertical-offset="2074">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="120" column="0" selection-start="5610" selection-end="5610" vertical-scroll-proportion="0.0" vertical-offset="1614" max-vertical-offset="3196">
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/style/reset.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="19" selection-start="426" selection-end="426" vertical-scroll-proportion="0.0" vertical-offset="425" max-vertical-offset="918" />
@@ -709,61 +802,72 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/animation.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="533" selection-end="533" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="2074">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/photographer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="0" selection-start="537" selection-end="537" vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="2074">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/album.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="57" selection-start="162" selection-end="162" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="1581">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="0" selection-start="2317" selection-end="2317" vertical-scroll-proportion="0.33233532" vertical-offset="2243" max-vertical-offset="37060">
-          <folding />
-        </state>
+        <state line="145" column="0" selection-start="2317" selection-end="2317" vertical-scroll-proportion="0.33233532" vertical-offset="2243" max-vertical-offset="37060" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/topic.html">
+    <entry file="file://$PROJECT_DIR$/qq.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="120" column="0" selection-start="5610" selection-end="5610" vertical-scroll-proportion="-8.192307" vertical-offset="1614" max-vertical-offset="3196">
+        <state line="52" column="32" selection-start="2480" selection-end="2480" vertical-scroll-proportion="0.7924812" vertical-offset="357" max-vertical-offset="1445">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/weixin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="20" selection-start="728" selection-end="728" vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="1445">
-          <folding>
-            <element signature="n#style#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="36" column="45" selection-start="1567" selection-end="1567" vertical-scroll-proportion="-7.8461537" vertical-offset="408" max-vertical-offset="1445">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="19" selection-start="1766" selection-end="1766" vertical-scroll-proportion="1.05919" vertical-offset="0" max-vertical-offset="1173">
+        <state line="65" column="0" selection-start="2751" selection-end="2751" vertical-scroll-proportion="-22.23077" vertical-offset="527" max-vertical-offset="1241">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="0" selection-start="6112" selection-end="6112" vertical-scroll-proportion="-21.423077" vertical-offset="1449" max-vertical-offset="2142">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/album.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="88" column="0" selection-start="3919" selection-end="3919" vertical-scroll-proportion="-21.423077" vertical-offset="939" max-vertical-offset="1649">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/animation.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="30" selection-start="1500" selection-end="1500" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/photographer.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="4" selection-start="5076" selection-end="5140" vertical-scroll-proportion="-20.76923" vertical-offset="1415" max-vertical-offset="2125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="79" column="0" selection-start="3607" selection-end="3607" vertical-scroll-proportion="-18.807692" vertical-offset="854" max-vertical-offset="1496">
+          <folding>
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/appSkip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="21" selection-start="1384" selection-end="1384" vertical-scroll-proportion="0.55988026" vertical-offset="119" max-vertical-offset="1819">
           <folding />
         </state>
       </provider>

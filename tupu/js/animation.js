@@ -1,4 +1,4 @@
-(function() {	
+(function($) {
 	
 	var UA = navigator.userAgent,
 		isAndroid = / android|adr/gi.test(UA),
