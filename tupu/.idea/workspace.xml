@@ -98,7 +98,7 @@
           <file leaf-file-name="appSkip.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/appSkip.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="88" column="26" selection-start="3210" selection-end="3210" vertical-scroll-proportion="0.28742516" vertical-offset="1304" max-vertical-offset="2006">
+                <state line="47" column="18" selection-start="2155" selection-end="2155" vertical-scroll-proportion="0.41467065" vertical-offset="522" max-vertical-offset="2023">
                   <folding />
                 </state>
               </provider>
@@ -481,12 +481,12 @@
       <workItem from="1412737777820" duration="18000" />
       <workItem from="1412737842458" duration="24000" />
       <workItem from="1413715686094" duration="5301000" />
-      <workItem from="1413858266645" duration="1028000" />
+      <workItem from="1413858266645" duration="1094000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52086000" />
+    <option name="totallyTimeSpent" value="52152000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -867,7 +867,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/appSkip.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="26" selection-start="3210" selection-end="3210" vertical-scroll-proportion="0.28742516" vertical-offset="1304" max-vertical-offset="2006">
+        <state line="47" column="18" selection-start="2155" selection-end="2155" vertical-scroll-proportion="0.41467065" vertical-offset="522" max-vertical-offset="2023">
           <folding />
         </state>
       </provider>

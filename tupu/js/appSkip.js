@@ -45,6 +45,7 @@
         wxLink += '?openurl='+openAppLink;
         qqLink += '?appinstall='+appinstall+'&openurl='+openAppLink;
     }
+    alert(qqLink);
 
     function download(){
         //  if(isAndroid){
