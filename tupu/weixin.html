@@ -61,7 +61,7 @@
                 if((isIos||isIpad) && !isAndroid){
                     EL.classList.add(iosCls);
                 }
-                if(!isWeixin){
+                if(isWeixin){
                     if((isIos||isIpad) && !isAndroid){
                         if(!isappinstalled || (isappinstalled && isappinstalled!='1') ){
                             setTimeout(function(){
