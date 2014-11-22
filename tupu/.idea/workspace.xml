@@ -69,16 +69,16 @@
           <file leaf-file-name="animation.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/animation.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="35" column="30" selection-start="1500" selection-end="1500" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+                <state line="35" column="30" selection-start="1500" selection-end="1500" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="799">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="weixin.html" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="weixin.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/weixin.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="36" column="45" selection-start="1567" selection-end="1567" vertical-scroll-proportion="0.95327103" vertical-offset="0" max-vertical-offset="1445">
+                <state line="36" column="45" selection-start="1567" selection-end="1567" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1445">
                   <folding />
                 </state>
               </provider>
@@ -87,10 +87,8 @@
           <file leaf-file-name="topic.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/topic.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="69" column="0" selection-start="3315" selection-end="3315" vertical-scroll-proportion="-12.923077" vertical-offset="837" max-vertical-offset="1513">
-                  <folding>
-                    <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
+                <state line="69" column="0" selection-start="3315" selection-end="3315" vertical-scroll-proportion="0.0" vertical-offset="837" max-vertical-offset="1513">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -104,19 +102,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="skip.js" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="skip.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/skip.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="96" column="63" selection-start="3463" selection-end="3463" vertical-scroll-proportion="0.0" vertical-offset="1355" max-vertical-offset="2023">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="appSkip.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/js/appSkip.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="44" column="34" selection-start="0" selection-end="3824" vertical-scroll-proportion="-20.115385" vertical-offset="225" max-vertical-offset="2023">
+                <state line="83" column="39" selection-start="3042" selection-end="3042" vertical-scroll-proportion="0.22741432" vertical-offset="1265" max-vertical-offset="1972">
                   <folding />
                 </state>
               </provider>
@@ -125,7 +114,7 @@
           <file leaf-file-name="album.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/album.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="85" column="13" selection-start="3849" selection-end="3849" vertical-scroll-proportion="-17.5" vertical-offset="990" max-vertical-offset="1632">
+                <state line="85" column="13" selection-start="3849" selection-end="3849" vertical-scroll-proportion="0.0" vertical-offset="1445" max-vertical-offset="1632">
                   <folding />
                 </state>
               </provider>
@@ -134,7 +123,7 @@
           <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="54" column="90" selection-start="2424" selection-end="2424" vertical-scroll-proportion="-12.269231" vertical-offset="599" max-vertical-offset="1241">
+                <state line="54" column="90" selection-start="2424" selection-end="2424" vertical-scroll-proportion="0.0" vertical-offset="599" max-vertical-offset="1241">
                   <folding />
                 </state>
               </provider>
@@ -143,7 +132,7 @@
           <file leaf-file-name="photo.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/photo.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="113" column="46" selection-start="6016" selection-end="6016" vertical-scroll-proportion="-18.807692" vertical-offset="1432" max-vertical-offset="2125">
+                <state line="113" column="46" selection-start="6016" selection-end="6016" vertical-scroll-proportion="0.0" vertical-offset="1432" max-vertical-offset="2125">
                   <folding />
                 </state>
               </provider>
@@ -152,7 +141,7 @@
           <file leaf-file-name="photographer.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/photographer.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="114" column="46" selection-start="5071" selection-end="5071" vertical-scroll-proportion="-20.115385" vertical-offset="1415" max-vertical-offset="2125">
+                <state line="114" column="46" selection-start="5071" selection-end="5071" vertical-scroll-proportion="0.0" vertical-offset="1415" max-vertical-offset="2125">
                   <folding />
                 </state>
               </provider>
@@ -165,10 +154,8 @@
           <file leaf-file-name="topic.html" pinned="false" current="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/topic.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="80" column="0" selection-start="3602" selection-end="3602" vertical-scroll-proportion="0.7699248" vertical-offset="848" max-vertical-offset="1513">
-                  <folding>
-                    <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
+                <state line="80" column="0" selection-start="3602" selection-end="3602" vertical-scroll-proportion="0.8015038" vertical-offset="827" max-vertical-offset="1513">
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -176,7 +163,7 @@
           <file leaf-file-name="qq.html" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/qq.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="45" column="52" selection-start="2106" selection-end="2120" vertical-scroll-proportion="-11.192307" vertical-offset="474" max-vertical-offset="1445">
+                <state line="45" column="52" selection-start="2106" selection-end="2120" vertical-scroll-proportion="0.0" vertical-offset="474" max-vertical-offset="1445">
                   <folding />
                 </state>
               </provider>
@@ -209,8 +196,8 @@
         <option value="$PROJECT_DIR$/album.html" />
         <option value="$PROJECT_DIR$/photo.html" />
         <option value="$PROJECT_DIR$/photographer.html" />
-        <option value="$PROJECT_DIR$/js/skip.js" />
         <option value="$PROJECT_DIR$/topic.html" />
+        <option value="$PROJECT_DIR$/js/skip.js" />
       </list>
     </option>
   </component>
@@ -246,8 +233,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -296,6 +281,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -304,7 +291,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="options.lastSelected" value="File.Encoding" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/workspace/netease" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="MemberChooser.copyJavadoc" value="false" />
@@ -347,19 +334,6 @@
       <option name="trusted" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -386,6 +360,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -481,12 +468,13 @@
       <workItem from="1412737777820" duration="18000" />
       <workItem from="1412737842458" duration="24000" />
       <workItem from="1413715686094" duration="5301000" />
-      <workItem from="1413858266645" duration="1707000" />
+      <workItem from="1413858266645" duration="1926000" />
+      <workItem from="1413870952690" duration="173000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52765000" />
+    <option name="totallyTimeSpent" value="53157000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -533,8 +521,8 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -553,13 +541,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32876712" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959612" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14216478" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -610,9 +598,7 @@
     <entry file="file://$PROJECT_DIR$/topic.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="120" column="0" selection-start="5610" selection-end="5610" vertical-scroll-proportion="0.0" vertical-offset="1614" max-vertical-offset="3196">
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -783,9 +769,7 @@
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1144" column="7" selection-start="17144" selection-end="17144" vertical-scroll-proportion="0.33238637" vertical-offset="19214" max-vertical-offset="64821">
-          <folding />
-        </state>
+        <state line="1144" column="7" selection-start="17144" selection-end="17144" vertical-scroll-proportion="0.33238637" vertical-offset="19214" max-vertical-offset="64821" />
       </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/HTML5.js">
@@ -800,61 +784,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/appSkip.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="34" selection-start="0" selection-end="3824" vertical-scroll-proportion="-20.115385" vertical-offset="225" max-vertical-offset="2023">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/qq.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="45" column="52" selection-start="2106" selection-end="2120" vertical-scroll-proportion="-11.192307" vertical-offset="474" max-vertical-offset="1445">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/skip.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="63" selection-start="3463" selection-end="3463" vertical-scroll-proportion="0.0" vertical-offset="1355" max-vertical-offset="2023">
+        <state line="45" column="52" selection-start="2106" selection-end="2120" vertical-scroll-proportion="0.0" vertical-offset="474" max-vertical-offset="1445">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/album.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="13" selection-start="3849" selection-end="3849" vertical-scroll-proportion="-17.5" vertical-offset="990" max-vertical-offset="1632">
+        <state line="85" column="13" selection-start="3849" selection-end="3849" vertical-scroll-proportion="0.0" vertical-offset="1445" max-vertical-offset="1632">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="90" selection-start="2424" selection-end="2424" vertical-scroll-proportion="-12.269231" vertical-offset="599" max-vertical-offset="1241">
+        <state line="54" column="90" selection-start="2424" selection-end="2424" vertical-scroll-proportion="0.0" vertical-offset="599" max-vertical-offset="1241">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/photo.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="113" column="46" selection-start="6016" selection-end="6016" vertical-scroll-proportion="-18.807692" vertical-offset="1432" max-vertical-offset="2125">
+        <state line="113" column="46" selection-start="6016" selection-end="6016" vertical-scroll-proportion="0.0" vertical-offset="1432" max-vertical-offset="2125">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/photographer.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="46" selection-start="5071" selection-end="5071" vertical-scroll-proportion="-20.115385" vertical-offset="1415" max-vertical-offset="2125">
+        <state line="114" column="46" selection-start="5071" selection-end="5071" vertical-scroll-proportion="0.0" vertical-offset="1415" max-vertical-offset="2125">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/topic.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="0" selection-start="3315" selection-end="3315" vertical-scroll-proportion="-12.923077" vertical-offset="837" max-vertical-offset="1513">
-          <folding>
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -867,7 +828,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/weixin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="45" selection-start="1567" selection-end="1567" vertical-scroll-proportion="0.95327103" vertical-offset="0" max-vertical-offset="1445">
+        <state line="36" column="45" selection-start="1567" selection-end="1567" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="1445">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/topic.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="0" selection-start="3315" selection-end="3315" vertical-scroll-proportion="0.0" vertical-offset="837" max-vertical-offset="1513">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/skip.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="39" selection-start="3042" selection-end="3042" vertical-scroll-proportion="0.22741432" vertical-offset="1265" max-vertical-offset="1972">
           <folding />
         </state>
       </provider>

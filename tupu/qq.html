@@ -44,10 +44,10 @@
                     isQQ = (/QQ/ig).test(navigator.userAgent),
                     params = localParam(),
                     isappinstalled = params.search['isappinstalled']||params.search['appinstall'],
-                    openurl = params.search['openurl']+window.location.hash,
+                    openurl = params.search['openurl'],
                     iframe = document.getElementById('ifr');
             if(isIos||isIpad){
-                openurl = openurl || 'newsapp://';
+                openurl = openurl || 'tupu://';
             }else if(isAndroid){
                 openurl = 'http://tupu.im/';
             }
