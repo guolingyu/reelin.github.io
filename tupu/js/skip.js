@@ -50,6 +50,7 @@ function skip(link) {
         window.location = 'http://tupu.im/';
     }
     function open() {
+        alert('yo')
         if(isWeixin){
             window.location = wxLink;
         }else if(isQQ) {
@@ -64,12 +65,13 @@ function skip(link) {
             download();
         }
     }
+    $(".install-small, .footer .install").on("click", function(e) {
+        e.preventDefault();
+        download();
+    });
+    $(".modal .install").on("click", function(e) {
+        e.preventDefault();
+        open();
+    }); 
 }
-$(".install-small, .footer .install").on("click", function(e) {
-    e.preventDefault();
-    download();
-});
-$(".modal .install").on("click", function(e) {
-    e.preventDefault();
-    open();
-});    
+   
