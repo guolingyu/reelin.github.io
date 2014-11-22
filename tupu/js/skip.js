@@ -35,8 +35,8 @@ function skip(link) {
     }else if(isAndroid){
         skipAppLink= 'http://tupu.im/';
     }
-    alert('isappinstalled'+alert(isappinstalled);)
-    alert('appinstalled'+alert(appinstalled);)
+    alert('isappinstalled'+isappinstalled);
+    alert('appinstalled'+appinstalled);
     if(isappinstalled!==undefined){
         wxLink += '?isappinstalled='+isappinstalled+'&openurl='+skipAppLink;
         qqLink += '?isappinstalled='+isappinstalled+'&openurl='+skipAppLink;
