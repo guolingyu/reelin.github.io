@@ -26,6 +26,8 @@ function skip(link) {
         qqLink = 'http://reelin.github.io/tupu/qq.html',
         wxLink = 'http://reelin.github.io/tupu/weixin.html',
         iDownload = 'itms-apps://itunes.apple.com/us/app/tu-pu-yong-zhao-pian-chuang/id915233164?ls=1&amp;mt=8',
+        wxDownload = wxLink + '?openurl=' + iDownload,
+        qqDownload = qqLink + '?openurl=' + iDownload,
         skipAppLink = link,
         openAppLink = link,
         iframe = jQuery('#ifr');
@@ -36,7 +38,7 @@ function skip(link) {
         skipAppLink= 'http://tupu.im/';
     }
     alert('isappinstalled'+isappinstalled);
-    alert('appinstalled'+appinstalled);
+    alert('appinstalled'+appinstall);
     if(isappinstalled!==undefined){
         wxLink += '?isappinstalled='+isappinstalled+'&openurl='+skipAppLink;
         qqLink += '?isappinstalled='+isappinstalled+'&openurl='+skipAppLink;
@@ -50,14 +52,24 @@ function skip(link) {
     alert(wxLink);
 
     function download(){
-        window.location = 'http://tupu.im/';
+        if(isWeixin){
+            window.location = wxDownload;
+        // }else if(isQQ) {
+        //     window.location = qqDownload;
+        }else if((isIDevice || isIDeviceIpad) && !isAndroid){
+            setTimeout(function(){
+                window.location = iDownload;
+            }, 50);
+        } else {
+            window.location = skipAppLink;
+        }
     }
     function open() {
         alert('yo')
         if(isWeixin){
             window.location = wxLink;
-        }else if(isQQ) {
-            window.location = qqLink;
+        // }else if(isQQ) {
+        //     window.location = qqLink;
         }else if((isIDevice || isIDeviceIpad) && !isAndroid){
             window.location = skipAppLink;
             setTimeout(function(){
