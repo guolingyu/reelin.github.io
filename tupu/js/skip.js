@@ -24,7 +24,7 @@ function skip(link) {
         isappinstalled = params.search['isappinstalled'],
         appinstall = params.search['appinstall'],
         qqLink = 'http://tupu.im/static/qq.html',
-        wxLink = 'http://tupu.im/static/weixin.html',
+        wxLink = 'http://reelin.github.io/tupu/weixin.html',
         iDownload = 'itms-apps://itunes.apple.com/us/app/tu-pu-yong-zhao-pian-chuang/id915233164?ls=1&amp;mt=8',
         skipAppLink = link,
         openAppLink = link,
