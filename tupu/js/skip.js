@@ -27,6 +27,7 @@ function skip(link) {
         wxLink = 'http://tupu.im/static/weixin.html',
         iDownload = 'itms-apps://itunes.apple.com/us/app/tu-pu-yong-zhao-pian-chuang/id915233164?ls=1&amp;mt=8',
         skipAppLink = link,
+        openAppLink = link,
         iframe = jQuery('#ifr');
 
     if( (isIDevice || isIDeviceIpad) && !isAndroid){
@@ -35,14 +36,14 @@ function skip(link) {
         skipAppLink= 'http://tupu.im/';
     }
     if(isappinstalled!==undefined){
-        wxLink += '?isappinstalled='+isappinstalled+'&openurl='+openAppLink;
-        qqLink += '?isappinstalled='+isappinstalled+'&openurl='+openAppLink;
+        wxLink += '?isappinstalled='+isappinstalled+'&openurl='+skipAppLink;
+        qqLink += '?isappinstalled='+isappinstalled+'&openurl='+skipAppLink;
     }else if(appinstall!==undefined){
-        wxLink += '?appinstall='+appinstall+'&openurl='+openAppLink;
-        qqLink += '?appinstall='+appinstall+'&openurl='+openAppLink;
+        wxLink += '?appinstall='+appinstall+'&openurl='+skipAppLink;
+        qqLink += '?appinstall='+appinstall+'&openurl='+skipAppLink;
     }else{
-        wxLink += '?openurl='+openAppLink;
-        qqLink += '?openurl='+openAppLink;
+        wxLink += '?openurl='+skipAppLink;
+        qqLink += '?openurl='+skipAppLink;
     }
     alert(wxLink);
 
