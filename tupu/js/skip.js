@@ -44,6 +44,7 @@ function skip(link) {
         wxLink += '?openurl='+openAppLink;
         qqLink += '?openurl='+openAppLink;
     }
+    alert(wxLink);
 
     function download(){
         window.location = 'http://tupu.im/';
