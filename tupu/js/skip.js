@@ -23,8 +23,8 @@ function skip(link) {
         autoopen = params.search['autoopen']||params.hash['autoopen'],
         isappinstalled = params.search['isappinstalled'],
         appinstall = params.search['appinstall'],
-        qqLink = 'http://reelin.github.io/tupu/qq.html',
-        wxLink = 'http://reelin.github.io/tupu/weixin.html',
+        qqLink = 'http://tupu.im/static/qq.html',
+        wxLink = 'http://tupu.im/static/weixin.html',
         iDownload = 'itms-apps://itunes.apple.com/us/app/tu-pu-yong-zhao-pian-chuang/id915233164?ls=1&amp;mt=8',
         wxDownload = wxLink + '?openurl=' + iDownload,
         qqDownload = qqLink + '?openurl=' + iDownload,
@@ -49,7 +49,6 @@ function skip(link) {
         wxLink += '?openurl='+skipAppLink;
         qqLink += '?openurl='+skipAppLink;
     }
-    alert(wxLink);
 
     function download(){
         if(isWeixin){
@@ -65,11 +64,17 @@ function skip(link) {
         }
     }
     function open() {
-        alert('yo')
         if(isWeixin){
             window.location = wxLink;
         }else if(isQQ) {
-            window.location = qqLink;
+            alert('qq');
+            if(!appinstall || (appinstall && appinstall!='1') ){
+                setTimeout(function(){
+                    window.location = "itms-apps://itunes.apple.com/us/app/tu-pu-yong-zhao-pian-chuang/id915233164?ls=1&amp;mt=8";
+                }, 50);
+            } else {
+                window.location = openurl;
+            }
         }else if((isIDevice || isIDeviceIpad) && !isAndroid){
             window.location = skipAppLink;
             setTimeout(function(){
