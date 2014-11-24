@@ -54,8 +54,8 @@ function skip(link) {
     function download(){
         if(isWeixin){
             window.location = wxDownload;
-        // }else if(isQQ) {
-        //     window.location = qqDownload;
+        }else if(isQQ) {
+            window.location = qqDownload;
         }else if((isIDevice || isIDeviceIpad) && !isAndroid){
             setTimeout(function(){
                 window.location = iDownload;
@@ -68,8 +68,8 @@ function skip(link) {
         alert('yo')
         if(isWeixin){
             window.location = wxLink;
-        // }else if(isQQ) {
-        //     window.location = qqLink;
+        }else if(isQQ) {
+            window.location = qqLink;
         }else if((isIDevice || isIDeviceIpad) && !isAndroid){
             window.location = skipAppLink;
             setTimeout(function(){
