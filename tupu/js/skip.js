@@ -83,6 +83,7 @@ function skip(link) {
         download();
     });
     $(".modal .install").on("click", function(e) {
+        alert('u');
         e.preventDefault();
         open();
     }); 
