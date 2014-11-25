@@ -23,7 +23,7 @@ function skip(link) {
         autoopen = params.search['autoopen']||params.hash['autoopen'],
         isappinstalled = params.search['isappinstalled'],
         appinstall = params.search['appinstall'],
-        qqLink = 'http://tupu.im/static/qq.html',
+        qqLink = 'http://reelin.github.io/tupu/qq.html',
         wxLink = 'http://tupu.im/static/weixin.html',
         iDownload = 'itms-apps://itunes.apple.com/us/app/tu-pu-yong-zhao-pian-chuang/id915233164?ls=1&amp;mt=8',
         wxDownload = wxLink + '?openurl=' + iDownload,
