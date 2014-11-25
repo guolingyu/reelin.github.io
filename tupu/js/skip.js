@@ -62,7 +62,6 @@ function skip(link) {
             window.location = skipAppLink;
         }
     }
-    alert(openurl);
     function open() {
         if(isWeixin){
             window.location = wxLink;
