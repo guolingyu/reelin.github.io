@@ -37,7 +37,6 @@ function skip(link) {
     }else if(isAndroid){
         skipAppLink= 'http://tupu.im/';
     }
-    alert('isappinstalled'+isappinstalled);
     alert('appinstalled'+appinstall);
     if(isappinstalled!==undefined){
         wxLink += '?isappinstalled='+isappinstalled+'&openurl='+skipAppLink;
@@ -63,18 +62,12 @@ function skip(link) {
             window.location = skipAppLink;
         }
     }
+    alert(openurl);
     function open() {
         if(isWeixin){
             window.location = wxLink;
         }else if(isQQ) {
-            alert('qq');
-            if(!appinstall || (appinstall && appinstall!='1') ){
-                setTimeout(function(){
-                    window.location = "itms-apps://itunes.apple.com/us/app/tu-pu-yong-zhao-pian-chuang/id915233164?ls=1&amp;mt=8";
-                }, 50);
-            } else {
-                window.location = openurl;
-            }
+            window.location = qqLink;
         }else if((isIDevice || isIDeviceIpad) && !isAndroid){
             window.location = skipAppLink;
             setTimeout(function(){
