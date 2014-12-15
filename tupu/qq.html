@@ -43,7 +43,7 @@
                 isIpad=navigator.userAgent.match(/ipad/ig),
                 isQQ = (/QQ/ig).test(navigator.userAgent),
                 params = localParam(),
-                isappinstalled = params.search['isappinstalled']||params.search['appinstall'],
+                isappinstalled = params.search['appinstall'],
                 openurl = params.search['openurl'],
                 iframe = document.getElementById('ifr');
             if(isIos||isIpad){
@@ -51,6 +51,7 @@
             }else if(isAndroid){
                 openurl = 'http://tupu.im/';
             }
+            alert('isappinstalled ' + isappinstalled);
             alert(openurl);
             window.onload=function() {
                 var iosCls = 'iosguidedownload',
@@ -61,11 +62,8 @@
                 if((isIos||isIpad) && !isAndroid){
                     EL.classList.add(iosCls);
                 }
-                alert(isQQ);
                 if(!isQQ){
-                    alert(1);
                     if((isIos||isIpad) && !isAndroid){
-                        alert(2);
                         if(!isappinstalled || (isappinstalled && isappinstalled!='1') ){
                             setTimeout(function(){
                                 window.location.href = "itms-apps://itunes.apple.com/us/app/tu-pu-yong-zhao-pian-chuang/id915233164?ls=1&amp;mt=8";

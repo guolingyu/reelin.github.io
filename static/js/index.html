@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta content="target-densitydpi=device-dpi,width=640" name="viewport">
+    <title>贺卡</title>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    
+    <script type="text/javascript" src="js/util.js"></script>
+    <script type="text/javascript" src="js/zepto.min.js"></script>
+</head>
+
+<body>
+<div class="wrapper clearfix">
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("#jquery_jplayer_1").jPlayer({
+                ready: function () {
+                    $(this).jPlayer("setMedia", {
+                        m4a: "/media/mysound.mp4",
+                        oga: "/media/mysound.ogg"
+                    });
+                },
+                swfPath: "/js",
+                supplied: "m4a, oga"
+            });
+        });
+    </script>
+    <div id="jquery_jplayer_1"></div>
+    <div id="jp_container_1">
+        <a href="#" class="jp-play">Play</a>
+        <a href="#" class="jp-pause">Pause</a>
+    </div>
+</div>
+
+
+</body>
+</html>
