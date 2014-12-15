@@ -16,7 +16,7 @@ body {
 }
 body,div,img,ul,li,p,h1,h2,h3{margin:0;padding:0;border:0;}
 ul,li{list-style:none;}
-a{text-decoration:none;outline:0;}
+a,a:hover,a:focus{text-decoration:none;outline:0;}
 html {
     overflow-y: hidden;
 }
@@ -73,11 +73,21 @@ header p {
     margin-left: 65px;
     font-size: 14px;
     font-weight: bold;
+    line-height: 55px;
 }
 header .mute {
     width: 20px;
     height: 20px;
-    margin-left: 390px;
+    line-height: 20px;
+    margin-left: 452px;
+    padding: 4px;
+    border: 1px solid #eee;
+    border-radius: 30px;
+    background: #fcfdf8;
+    color: #428f85;
+    display: block;
+    text-align: center;
+    margin-top: 9px;
 }
 figure {
     width: 476px;

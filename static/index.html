@@ -5,6 +5,8 @@
     <meta content="target-densitydpi=device-dpi,width=640" name="viewport">
     <title>贺卡</title>
     <link rel="stylesheet" href="css/circle.player.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script type="text/javascript" src="js/util.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
@@ -43,6 +45,18 @@
                         wmode: "window",
                         keyEnabled: true
                     });
+            $('header .mute').on('click', function(e) {
+                e.preventDefault();
+                var that = $(this),
+                    icon = that.find('i');
+                if (icon.hasClass('icon-volume-up')) {
+                    icon.removeClass('icon-volume-up').addClass('icon-volume-down');
+                    $('#jquery_jplayer_1').jPlayer( "volumeMin" );
+                } else {
+                    icon.addClass('icon-volume-up').removeClass('icon-volume-down');
+                    $('#jquery_jplayer_1').jPlayer( "volumeMax" );
+                }
+            });
         });
         //]]>
     </script>
@@ -52,12 +66,12 @@
 <div class="wrapper clearfix theme-1">
     <div class="container-bg">
        <div class="content">
-           <header>
+           <header class="clearfix">
                <div class="author">
                    <img src="" alt="" width="55" height="55"/>
                    <p class="nick">老王Alex</p>
                </div>
-               <a class="icon mute" href="#"></a>
+               <a class="icon mute" href="#"><i class="icon-volume-up"></i></a>
            </header>
            <section class="main-content">
                <figure>
