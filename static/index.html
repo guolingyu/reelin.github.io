@@ -51,10 +51,10 @@
                     icon = that.find('i');
                 if (icon.hasClass('icon-volume-up')) {
                     icon.removeClass('icon-volume-up').addClass('icon-volume-down');
-                    $("#jquery_jplayer_1").jPlayer( {"volume": 0} );
+                    myCirclePlayer.player.jPlayer( {"volume": 0} )
                 } else {
                     icon.addClass('icon-volume-up').removeClass('icon-volume-down');
-                    $("#jquery_jplayer_1").jPlayer( {"volume": 0.8} );
+                    myCirclePlayer.player.jPlayer( {"volume": 0.8} )
                 }
             });
             $('.modal').height($(window).height());
