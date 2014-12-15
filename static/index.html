@@ -51,12 +51,22 @@
                     icon = that.find('i');
                 if (icon.hasClass('icon-volume-up')) {
                     icon.removeClass('icon-volume-up').addClass('icon-volume-down');
-                    $('#jquery_jplayer_1').jPlayer( "volumeMin" );
+                    $("#jquery_jplayer_1").jPlayer( {"volume": 0} );
                 } else {
                     icon.addClass('icon-volume-up').removeClass('icon-volume-down');
-                    $('#jquery_jplayer_1').jPlayer( "volumeMax" );
+                    $("#jquery_jplayer_1").jPlayer( {"volume": 0.8} );
                 }
             });
+            $('.modal').height($(window).height());
+            $('.f-btn.share').on('click', function(e) {
+                e.preventDefault();
+                $('.modal').show();
+            });
+            $('.wrapper').on('click', '.modal .modal-close', function(e) {
+                e.preventDefault();
+                $('.modal').hide();
+            });
+
         });
         //]]>
     </script>
@@ -102,10 +112,17 @@
                <p>有情人终成扣肉，<br>两情若是久长时，又岂在煮猪肉肉。<br>哈哈哈哈哈</p>
            </section>
            <footer>
-               <a class="btn share" href="#">分享</a>
-               <a class="btn" href="#">进入花店</a>
+               <a class="f-btn share" href="#">分享</a>
+               <a class="f-btn" href="#">进入花店</a>
            </footer>
        </div>
+
+        <div class="modal">
+            <a class="modal-close" href="#"><i class="icon-remove-sign icon-2x"></i></a>
+            <div class="modal-content">
+                <p>请点击右上角<br>把它分享给指定好友或朋友圈</p>
+            </div>
+        </div>
     </div>
 </div>
 
