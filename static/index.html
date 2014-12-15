@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script type="text/javascript" src="js/util.js"></script>
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+    <script type="text/javascript" src="js/jplayer/jquery.jplayer.min.js"></script>
     <script type="text/javascript" src="js/jquery.transform2d.js"></script>
     <script type="text/javascript" src="js/jquery.grab.js"></script>
     <script type="text/javascript" src="js/mod.csstransforms.min.js"></script>
@@ -34,7 +34,21 @@
              * Note that the {wmode:"window"} option is set to ensure playback in Firefox 3.6 with the Flash solution.
              * However, the OGA format would be used in this case with the HTML solution.
              */
-
+            $("#music").jPlayer({
+                ready: function () {
+                    $(this).jPlayer("setMedia", {
+                        mp3: "http://jplayer.org/audio/mp3/Miaow-07-Bubble.mp3"
+                    });
+                },
+                swfPath: "js/jplayer",
+                supplied: "mp3",
+                wmode: "window",
+                autoBlur: false,
+                smoothPlayBar: true,
+                keyEnabled: true,
+                remainingDuration: true,
+                toggleDuration: true
+            });
             var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
                     {
                         m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
@@ -43,7 +57,8 @@
                         cssSelectorAncestor: "#cp_container_1",
                         swfPath: "../../dist/jplayer",
                         wmode: "window",
-                        keyEnabled: true
+                        keyEnabled: true,
+                        muted: false
                     });
             $('header .mute').on('click', function(e) {
                 e.preventDefault();
@@ -54,7 +69,7 @@
                     myCirclePlayer.player.jPlayer("option", "muted", true);
                 } else {
                     icon.addClass('icon-volume-up').removeClass('icon-volume-off');
-                    myCirclePlayer.player.jPlayer("option","unmute");
+                    myCirclePlayer.player.jPlayer("option","muted", false);
                 }
             });
             $('.modal').height($(window).height());
@@ -81,7 +96,7 @@
                    <img src="" alt="" width="55" height="55"/>
                    <p class="nick">老王Alex</p>
                </div>
-               <a class="icon mute" href="#"><i class="icon-volume-up"></i></a>
+               <a class="mute" href="#"><i class="icon-volume-up" id="music"></i></a>
            </header>
            <section class="main-content">
                <figure>
