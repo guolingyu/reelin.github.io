@@ -50,11 +50,12 @@
                 var that = $(this),
                     icon = that.find('i');
                 if (icon.hasClass('icon-volume-up')) {
-                    icon.removeClass('icon-volume-up').addClass('icon-volume-down');
-                    myCirclePlayer.player.jPlayer( {"volume": 0} )
+                    icon.removeClass('icon-volume-up').addClass('icon-volume-off');
+                    myCirclePlayer.player.jPlayer({"volume": 0});
+                    alert('0');
                 } else {
-                    icon.addClass('icon-volume-up').removeClass('icon-volume-down');
-                    myCirclePlayer.player.jPlayer( {"volume": 0.8} )
+                    icon.addClass('icon-volume-up').removeClass('icon-volume-off');
+                    myCirclePlayer.player.jPlayer({"volume": 0.8});
                 }
             });
             $('.modal').height($(window).height());
@@ -120,7 +121,7 @@
         <div class="modal">
             <a class="modal-close" href="#"><i class="icon-remove-sign icon-2x"></i></a>
             <div class="modal-content">
-                <p>请点击右上角<br>把它分享给指定好友或朋友圈</p>
+                <p>请点击右上角按钮<br>把它分享给指定好友或朋友圈</p>
             </div>
         </div>
     </div>
