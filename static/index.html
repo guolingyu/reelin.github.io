@@ -51,10 +51,10 @@
                     icon = that.find('i');
                 if (icon.hasClass('icon-volume-up')) {
                     icon.removeClass('icon-volume-up').addClass('icon-volume-off');
-                    $('#jquery_jplayer_1').jPlayer("muted");
+                    myCirclePlayer.player.jPlayer("option", "muted", true);
                 } else {
                     icon.addClass('icon-volume-up').removeClass('icon-volume-off');
-                    myCirclePlayer.player.jPlayer("unmute");
+                    myCirclePlayer.player.jPlayer("option","unmute");
                 }
             });
             $('.modal').height($(window).height());
