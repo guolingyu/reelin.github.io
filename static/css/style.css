@@ -46,6 +46,42 @@ p, div {
 *html .clearfix {
     height: 1%;
 }
+.btn {
+display: inline-block;
+padding: 6px 12px;
+margin-bottom: 0;
+font-size: 14px;
+font-weight: normal;
+line-height: 1.428571429;
+text-align: center;
+white-space: nowrap;
+vertical-align: middle;
+cursor: pointer;
+background-image: none;
+border: 1px solid transparent;
+border-radius: 4px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+-o-user-select: none;
+user-select: none;
+}
+.btn-primary {
+color: #fff;
+background-color: #428bca;
+border-color: #357ebd;
+}
+.btn-lg {
+padding: 10px 16px;
+font-size: 18px;
+line-height: 1.33;
+border-radius: 6px;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open .dropdown-toggle.btn-primary {
+color: #fff;
+background-color: #3276b1;
+border-color: #285e8e;
+}
 .wrapper {
     width: 100%;
     min-height: 100%;
@@ -65,10 +101,13 @@ p, div {
 header {
     padding-top: 100px;
     margin-bottom: 15px;
+    position: relative;
+    z-index: 9;
 }
 header .author {
     float: left;
     width: 380px;
+    position: relative;
 }
 header img {
     border-radius: 27px;
@@ -103,8 +142,6 @@ header .mute {
 }
 figure {
     width: 476px;
-    height: 476px;
-    overflow: hidden;
 }
 .theme-1 .container-bg {
     background: url('../img/bg.png') repeat-y 0 0;
@@ -174,7 +211,7 @@ footer {
 }
 .music {
     background: transparent;
-    width: 170px;
+    width: 154px;
     height: 52px;
     border-radius: 6px;
     -webkit-border-radius: 6px;
@@ -302,4 +339,26 @@ footer {
 }
 .modal-close:hover {
     color: #fff;
+}
+.hut {
+    position: absolute;
+    left: -38px;
+    top: -22px;
+}
+.hut-big {
+    position: absolute;
+    right: -59px;
+    top: -52px;
+}
+.theme-1 .hut, .theme-1 .hut-big{
+    display: none;
+}
+.no-figure {
+    height: 70px; 
+}
+.no-figure #cp_container_1 {
+    bottom: -150px;;
+}
+.wrapper .no-figure .hut-big {
+    display: none;
 }
