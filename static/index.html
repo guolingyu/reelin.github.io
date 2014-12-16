@@ -34,28 +34,14 @@
              * Note that the {wmode:"window"} option is set to ensure playback in Firefox 3.6 with the Flash solution.
              * However, the OGA format would be used in this case with the HTML solution.
              */
-            $("#music").jPlayer({
-                ready: function () {
-                    $(this).jPlayer("setMedia", {
-                        mp3: "http://jplayer.org/audio/mp3/Miaow-07-Bubble.mp3"
-                    });
-                },
-                swfPath: "js/jplayer",
-                supplied: "mp3",
-                wmode: "window",
-                autoBlur: false,
-                smoothPlayBar: true,
-                keyEnabled: true,
-                remainingDuration: true,
-                toggleDuration: true
-            });
+            
             var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
                     {
                         m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
                         oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
                     }, {
                         cssSelectorAncestor: "#cp_container_1",
-                        swfPath: "../../dist/jplayer",
+                        swfPath: "js/jplayer",
                         wmode: "window",
                         keyEnabled: true,
                         muted: false
@@ -72,7 +58,10 @@
                     myCirclePlayer.player.jPlayer("option","muted", false);
                 }
             });
-            $('.modal').height($(window).height());
+            
+
+        });
+$('.modal').height($(window).height());
             $('.f-btn.share').on('click', function(e) {
                 e.preventDefault();
                 $('.modal').show();
@@ -81,14 +70,36 @@
                 e.preventDefault();
                 $('.modal').hide();
             });
-
-        });
+            $('.theme').on('click', function(e) {
+                e.preventDefault();
+                var that = $(this),
+                    wrapper = $('.wrapper');
+                $('.theme.hover').removeClass('hover');
+                that.addClass('hover');
+                if (that.hasClass('theme-btn-1')) {
+                    wrapper.removeClass('theme-2').addClass('theme-1');
+                } else {
+                    wrapper.removeClass('theme-1').addClass('theme-2');
+                } 
+            });
         //]]>
     </script>
 </head>
 
 <body>
 <div class="wrapper clearfix theme-1">
+    <div class="theme-block clearfix">
+        <a class="t-btn theme-btn-1 hover theme" href="#"></a>
+        <a class="t-btn theme-btn-2 theme" href="#"></a> 
+        <a class="t-btn music-1 music hover" href="#"><i class="icon-music"></i>Bloody and Blunt</a> 
+        <a class="t-btn music-2 music" href="#"><i class="icon-music"></i>Bloody and Blunt</a> 
+        <a class="t-btn music-3 music" href="#"><i class="icon-music"></i>Bloody and Blunt</a> 
+        <a class="t-btn music-4 music" href="#"><i class="icon-music"></i>Bloody and Blunt</a> 
+        <a class="t-btn music-5 music" href="#"><i class="icon-music"></i>Bloody and Blunt</a> 
+        <div class="clearfix">  
+            <button type="button" class="btn btn-primary btn-lg">好了，生成花语</button>
+        </div> 
+    </div>
     <div class="container-bg">
        <div class="content">
            <header class="clearfix">

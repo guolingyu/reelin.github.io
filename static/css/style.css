@@ -50,6 +50,10 @@ p, div {
     width: 100%;
     min-height: 100%;
 }
+.theme-block {
+    background: #232323;
+    padding: 40px;
+}
 .container-bg {
     width: 640px;
     position: relative;
@@ -82,13 +86,20 @@ header .mute {
     line-height: 20px;
     margin-left: 452px;
     padding: 4px;
-    border: 1px solid #eee;
     border-radius: 30px;
-    background: #fcfdf8;
-    color: #428f85;
     display: block;
     text-align: center;
     margin-top: 9px;
+}
+.theme-1 header .mute {
+    border: 1px solid #eee;
+    background: #fcfdf8;
+    color: #428f85;
+}
+.theme-2 header .mute {
+    border: 1px solid #efe5ca;
+    background: #fcfdf8;
+    color: #ca2301;
 }
 figure {
     width: 476px;
@@ -96,17 +107,30 @@ figure {
     overflow: hidden;
 }
 .theme-1 .container-bg {
-    background: url('../img/bg.png');
+    background: url('../img/bg.png') repeat-y 0 0;
     color: #428f85;
+}
+.theme-2 .container-bg {
+    background: url('../img/bg1.png') repeat-y 0 0;
+    color: #ca2301;    
 }
 .theme-1 figure {
     border: 4px solid #c7ccc6;
 }
+.theme-2 figure {
+    border: 4px solid #efe5ca;
+    color: #7e1400;
+}
 .desc {
     padding: 22px 20px;
-    border: 4px solid #f4f6eb;
-    background: #fcfdf8;
     margin-top: 50px;
+    background: #fcfdf8;
+}
+.theme-1 .desc {
+    border: 4px solid #f4f6eb;
+}
+.theme-2 .desc {
+    border: 4px solid #efe5ca;
 }
 .desc p {
     font-size: 16px;
@@ -120,17 +144,129 @@ footer {
 .f-btn {
     display: inline-block;
     font-size: 20px;
-    width: 168px;
+    width: 171px;
     height: 58px;
     line-height: 58px;
     border-radius: 5px;
     text-align: center;
-    color: #428f85;
-    background: #fcfdf8;
     margin-left: 50px;
 }
+.t-btn {
+    background: url('../img/btn.png') no-repeat 0 0;
+    display: inline-block;
+    width: 172px;
+    height: 60px;
+    margin-bottom: 35px;
+    margin-right: 20px;
+}
+.theme-btn-1:hover, .theme-btn-1.hover {
+    background-position: 0 -68px;
+}
+.theme-btn-2 {
+    background-position: -206px 0;
+}
+.theme-btn-2:hover {
+    background-position: -206px -67px;
+}
+.theme-block .btn {
+    display: block;
+    float: right;
+}
+.music {
+    background: transparent;
+    width: 170px;
+    height: 52px;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    font-size: 16px;
+    line-height: 52px;
+    padding-left: 10px;
+    border: 3px solid #000;
+}
+.music-1 {
+    color: #39afa4;
+    border-color: #39afa4;
+}
+.music:hover, .music.hover {
+    color: #000;
+}
+.music-1:hover, .music-1.hover {
+    background: #39afa4;
+}
+.music-2 {
+    color: #2d84b1;
+    border-color: #4f80b2;
+}
+.music-2:hover, .music-2.hover {
+    background: #2d84b1;
+}
+.music-3 {
+    color: #ec6941; 
+    border-color: #ec6941;
+    margin-right: 0;
+}
+.music-3:hover, .music-3.hover {
+    background: #ec6941; 
+}
+.music-4 {
+    color: #cba467; 
+    border-color: #cba467;
+}
+.music-4:hover, .music-4.hover {
+    background: #cba467; 
+}
+.music-5 {
+    color: #425fab; 
+    border-color: #425fab;
+}
+.music-5:hover, .music-5.hover {
+    background: #425fab; 
+}
+.music i {
+    float: right;
+    margin-right: 8px;
+    margin-top: 15px;
+}
+/*.music span {
+    width: 25px;
+    height: 25px;
+    float: right;
+    background: url('../img/btn.png') no-repeat 0 0;
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.music-1 span {
+    background-position: 0 -145px;
+}
+.music-2 span {
+    background-position: -38px -145px;
+}
+.music-3 span {
+    background-position: -70px -145px;
+}
+.music-4 span {
+    background-position: -100px -145px;
+}
+.music-5 span {
+    background-position: -130px -145px;
+}*/
 .theme-1 .f-btn {
+    color: #428f85;
+    background: #fcfdf8;
     border: 1px solid #428f85;
+}
+.theme-2 .f-btn {
+    color: #ca2301;
+    background: #fcfdf9;
+    border: 1px solid #ca2301;
+}
+.theme-2 .f-btn:hover {
+    color: #fff;
+    background: #ca2301;
+    border: 1px solid #ca2301;    
 }
 .main-content {
     position: relative;
