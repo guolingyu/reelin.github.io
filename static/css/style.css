@@ -114,21 +114,24 @@ header img {
     float: left;
 }
 header p {
-    margin-left: 65px;
-    font-size: 14px;
+    margin-left: 75px;
+    font-size: 16px;
     font-weight: bold;
-    line-height: 55px;
+    line-height: 65px;
 }
 header .mute {
-    width: 20px;
-    height: 20px;
+    width: 25px;
+    height: 25px;
     line-height: 20px;
     margin-left: 452px;
-    padding: 4px;
+    padding: 6px;
     border-radius: 30px;
     display: block;
     text-align: center;
-    margin-top: 9px;
+    margin-top: 6px;
+}
+header .mute i {
+    font-size: 1.5em;
 }
 .theme-1 header .mute {
     border: 1px solid #eee;
@@ -144,11 +147,11 @@ figure {
     width: 476px;
 }
 .theme-1 .container-bg {
-    background: url('../img/bg.png') repeat-y 0 0;
+    background: url('../img/bg.jpg') repeat-y 0 0;
     color: #428f85;
 }
 .theme-2 .container-bg {
-    background: url('../img/bg1.png') repeat-y 0 0;
+    background: url('../img/bg1.jpg') repeat-y 0 0;
     color: #ca2301;    
 }
 .theme-1 figure {
@@ -170,13 +173,16 @@ figure {
     border: 4px solid #efe5ca;
 }
 .desc p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 30px;
 
 }
 footer {
     margin-top: 50px;
     padding-bottom: 130px;
+}
+footer.no-font {
+    margin-top: 200px;
 }
 .f-btn {
     display: inline-block;

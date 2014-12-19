@@ -16,72 +16,102 @@
     <script type="text/javascript" src="js/mod.csstransforms.min.js"></script>
     <script type="text/javascript" src="js/circle.player.js"></script>
     <script type="text/javascript">
-        //<![CDATA[
-
         $(document).ready(function(){
+        // jplayer
+        var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
+            {
+                m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
+                oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
+            }, {
+                cssSelectorAncestor: "#cp_container_1",
+                swfPath: "js/jplayer",
+                wmode: "window",
+                keyEnabled: true,
+                muted: false
+            });
+        // 事件处理
+        $('.modal').height($(window).height());
 
-            /*
-             * Instance CirclePlayer inside jQuery doc ready
-             *
-             * CirclePlayer(jPlayerSelector, media, options)
-             *   jPlayerSelector: String - The css selector of the jPlayer div.
-             *   media: Object - The media object used in jPlayer("setMedia",media).
-             *   options: Object - The jPlayer options.
-             *
-             * Multiple instances must set the cssSelectorAncestor in the jPlayer options. Defaults to "#cp_container_1" in CirclePlayer.
-             *
-             * The CirclePlayer uses the default supplied:"m4a, oga" if not given, which is different from the jPlayer default of supplied:"mp3"
-             * Note that the {wmode:"window"} option is set to ensure playback in Firefox 3.6 with the Flash solution.
-             * However, the OGA format would be used in this case with the HTML solution.
-             */
-            
-            var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
-                    {
-                        m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
-                        oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
-                    }, {
-                        cssSelectorAncestor: "#cp_container_1",
-                        swfPath: "js/jplayer",
-                        wmode: "window",
-                        keyEnabled: true,
-                        muted: false
-                    });
-            $('header .mute').on('click', function(e) {
-                e.preventDefault();
-                var that = $(this),
-                    icon = that.find('i');
-                if (icon.hasClass('icon-volume-up')) {
-                    icon.removeClass('icon-volume-up').addClass('icon-volume-off');
-                    myCirclePlayer.player.jPlayer("option", "muted", true);
-                } else {
-                    icon.addClass('icon-volume-up').removeClass('icon-volume-off');
-                    myCirclePlayer.player.jPlayer("option","muted", false);
-                }
-            });
-            $('.modal').height($(window).height());
-            $('.f-btn.share').on('click', function(e) {
-                e.preventDefault();
-                $('.modal').show();
-            });
-            $('.wrapper').on('click', '.modal .modal-close', function(e) {
-                e.preventDefault();
-                $('.modal').hide();
-            });
-            $('.theme').on('click', function(e) {
-                e.preventDefault();
-                var that = $(this),
-                    wrapper = $('.wrapper');
-                $('.theme.hover').removeClass('hover');
-                that.addClass('hover');
-                if (that.hasClass('theme-btn-1')) {
-                    wrapper.removeClass('theme-2').addClass('theme-1');
-                } else {
-                    wrapper.removeClass('theme-1').addClass('theme-2');
-                } 
-            });
-
+        $('.f-btn.share').on('click', function(e) {
+            e.preventDefault();
+            $('.modal').show();
         });
-        //]]>
+
+        $('.wrapper').on('click', '.modal .modal-close', function(e) {
+            e.preventDefault();
+            $('.modal').hide();
+        });
+
+        $('.theme').on('click', function(e) {
+            e.preventDefault();
+            var that = $(this),
+                wrapper = $('.wrapper');
+                
+            $('.theme.hover').removeClass('hover');
+            that.addClass('hover');
+            if (that.hasClass('theme-btn-1')) {
+                wrapper.removeClass('theme-2').addClass('theme-1');
+                $('input[name="theme"]').val('1');
+            } else {
+                wrapper.removeClass('theme-1').addClass('theme-2');
+                $('input[name="theme"]').val('2');
+            } 
+        });
+
+       $('#music').on("click", function(e) {
+            e.preventDefault();
+            playAudio(currentId);
+        });
+
+        $('.cp-controls li').on('click', '.cp-pause', function() {
+            playAudio(currentId, false);
+        });
+        $('.cp-controls li').on('click', '.cp-play', function() {
+            playAudio(currentId, true);
+        });
+
+        $('.music').on('click', function(e) {
+            var that = $(this),
+                index = that.index('.music') + 1;
+            e.preventDefault();
+            $('.music.hover').removeClass('hover');
+            that.addClass('hover');
+            $('input[name="bg_track"]').val(index);
+            playAudio('audiofile' + index);
+        });
+
+        // 背景音乐
+        var currentFile = "",
+            currentId = "";
+        function playAudio(musicId, isOff) {
+            isOff = isOff ? isOff : true;
+            if (window.HTMLAudioElement) {
+                try {
+                    var oAudio = document.getElementById('audio');
+                    var audioURL = document.getElementById(musicId); 
+
+                    if (audioURL.value !== currentFile) {
+                        oAudio.src = audioURL.value;
+                        currentFile = audioURL.value; 
+                        currentId = musicId;                      
+                    } 
+                    if (oAudio.paused && isOff) {
+                        oAudio.play();
+                        $('#music i').addClass('icon-volume-up').removeClass('icon-volume-off');
+                    }
+                    else {
+                        oAudio.pause();
+                        $('#music i').removeClass('icon-volume-up').addClass('icon-volume-off');
+                    }
+                }
+                catch (e) {
+                     if(window.console && console.error("Error:" + e));
+                }
+            }
+        }
+        playAudio('audiofile1');
+
+    });
     </script>
 </head>
 
@@ -92,24 +122,36 @@
     <div class="theme-block clearfix">
         <a class="t-btn theme-btn-1 hover theme" href="#"></a>
         <a class="t-btn theme-btn-2 theme" href="#"></a> 
-        <a class="t-btn music-1 music hover" href="#"><i class="icon-music"></i>Bloody and Blunt</a> 
-        <a class="t-btn music-2 music" href="#"><i class="icon-music"></i>Bloody and Blunt</a> 
-        <a class="t-btn music-3 music" href="#"><i class="icon-music"></i>Bloody and Blunt</a> 
-        <a class="t-btn music-4 music" href="#"><i class="icon-music"></i>Bloody and Blunt</a> 
-        <a class="t-btn music-5 music" href="#"><i class="icon-music"></i>Bloody and Blunt</a> 
+        <a class="t-btn music-1 music hover" href="#"><i class="icon-music"></i>Jinglebells</a> 
+        <a class="t-btn music-2 music" href="#"><i class="icon-music"></i>Ceslavie</a> 
+        <a class="t-btn music-3 music" href="#"><i class="icon-music"></i>Hell</a> 
+        <a class="t-btn music-4 music" href="#"><i class="icon-music"></i>Stairway</a> 
+        <a class="t-btn music-5 music" href="#"><i class="icon-music"></i>Thinman</a> 
+        <input type="hidden" id="audiofile1" value="http://7rfh19.com1.z0.glb.clouddn.com/jinglebells.mp3" />
+        <input type="hidden" id="audiofile2" value="http://7rfh19.com1.z0.glb.clouddn.com/ceslavie.mp3" />
+        <input type="hidden" id="audiofile3" value="http://7rfh19.com1.z0.glb.clouddn.com/hell.mp3" />
+        <input type="hidden" id="audiofile4" value="http://7rfh19.com1.z0.glb.clouddn.com/stairway.mp3" />
+        <input type="hidden" id="audiofile5" value="http://7rfh19.com1.z0.glb.clouddn.com/thinman.mp3" />
         <div class="clearfix">  
-            <button type="button" class="btn btn-primary btn-lg">好了，生成花语</button>
+            <form action="card/save/{OPEN_ID}/">
+                <input type="hidden" name="theme" value="1" />
+                <input type="hidden" name="bg_track" value="1" />    
+                <button type="submit" class="btn btn-primary btn-lg">好了，生成花语</button>
+            </form>
         </div> 
     </div>
     <div class="container-bg">
-       <div class="content">
+        <div class="content">
+            <div style="display:none;">
+              <audio id="audio" style="width:25%" controls></audio>
+            </div>
            <header class="clearfix">
                <div class="author">
                    <img class="hut" src="img/hut.png"></img>
-                   <img src="img/bgr.jpg" alt="" width="55" height="55"/>
+                   <img src="img/bgr.png" alt="" width="65" height="65"/>
                    <p class="nick">老王Alex</p>
                </div>
-               <a class="mute" href="#"><i class="icon-volume-up" id="music"></i></a>
+               <a class="mute" href="#" id="music"><i class="icon-volume-up"></i></a>
            </header>
            <!-- 没有图加类名no-figure -->
            <!-- <section class="main-content no-figure"> -->
@@ -124,10 +166,6 @@
                </figure>
                <div id="jquery_jplayer_1" class="cp-jplayer"></div>
                 <div id="cp_container_1" class="cp-container">
-                   <div class="cp-buffer-holder"> 
-                       <div class="cp-buffer-1"></div>
-                       <div class="cp-buffer-2"></div>
-                   </div>
                    <div class="cp-progress-holder"> 
                        <div class="cp-progress-1"></div>
                        <div class="cp-progress-2"></div>
@@ -142,6 +180,8 @@
            <section class="desc">
                <p>有情人终成扣肉，<br>两情若是久长时，又岂在煮猪肉肉。<br>哈哈哈哈哈</p>
            </section>
+           <!-- 没有图和文字加类名no-font-->
+           <!-- <footer class="no-font"> -->
            <footer>
                <a class="f-btn share" href="#">分享</a>
                <a class="f-btn" href="#">进入花店</a>
