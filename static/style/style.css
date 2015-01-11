@@ -67,6 +67,40 @@ textarea {
 .wrapper.center {
   width: 640px;
 }
+.wrapper.center .tips {
+  display: none;
+  background: #772d2c;
+  width: 100%;
+  opacity: 0.9;
+  position: fixed;
+  height: 100px;
+  line-height: 100px;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+.wrapper.center .tips .warning {
+  float: left;
+  background: #f07c7c;
+  width: 40px;
+  height: 40px;
+  line-height: 39px;
+  margin: 30px 20px;
+  display: inline-block;
+  border-radius: 20px;
+  text-align: center;
+}
+.wrapper.center .tips .close {
+  font-weight: bold;
+  float: right;
+  margin-right: 30px;
+}
+.wrapper.center .tips .close:hover {
+  text-decoration: none;
+}
 .wrapper.center .side {
   position: static;
   min-height: 0;
@@ -532,23 +566,6 @@ textarea {
   border: none;
   padding-bottom: 15px;
 }
-#reset .tips {
-  visibility: hidden;
-  text-align: center;
-  font-size: 18px;
-  color: #d14;
-  margin-bottom: 10px;
-}
-#reset .tips .error {
-  background: #d14;
-  color: #fff;
-  width: 20px;
-  height: 20px;
-  line-height: 19px;
-  margin-right: 7px;
-  display: inline-block;
-  border-radius: 13px;
-}
 #reset .success {
   text-align: center;
   font-size: 28px;
@@ -570,6 +587,7 @@ textarea {
   width: 240px;
   height: 60px;
   padding: 0 20px;
+  font-size: 28px;
   margin-bottom: 15px;
   box-shadow: 0px 2px 1px #ccc inset;
 }
