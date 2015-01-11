@@ -1,9 +1,9 @@
 (function($) {
     $('body').css('background', '#727171');
-    var wrapperHeight = $('.center').height(),
-        winHeight = $(window).height();
-    if (wrapperHeight < winHeight) {
-        $('.center').height(winHeight);
+    var mainHeight = $('.center .main').height(),
+        winHeight = $(window).height() - 158;
+    if (mainHeight < winHeight) {
+        $('.center .main').height(winHeight);
     }
     $('input').on('blur', function() {
         if ($(this).attr('name') == 'confirmPassword') {
