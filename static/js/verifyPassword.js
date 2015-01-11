@@ -5,7 +5,7 @@
     if (mainHeight < winHeight) {
         $('.center .main').height(winHeight);
     }
-    $('input').on('blur', function() {
+    $('input').blur(function() {
         if ($(this).attr('name') == 'confirmPassword') {
             verifyPassword($(this), 1);
         } else {
