@@ -5,18 +5,14 @@
     if (mainHeight < winHeight) {
         $('.center .main').height(winHeight);
     }
-    $('input').blur(function() {
-        if ($(this).attr('name') == 'confirmPassword') {
-            verifyPassword($(this), 1);
-        } else {
-            verifyPassword($(this));
-        }
+    $('input[name="password"]').blur(function() {
+        verifyPassword($(this));
     });
     function verifyPassword(elem, isConfirmPassword) {
         var value = elem.val(),
             len = value.length,
         password = $('input[name="password"]').val();
-        if (len < 6 || len > 18 || !(/^[a-zA-Z0-9!@#$%^&*()_+|{}?><\-\]\\[\/]*$/.test(value))) {
+        if (!isConfirmPassword && (len < 6 || len > 18 || !(/^[a-zA-Z0-9!@#$%^&*()_+|{}?><\-\]\\[\/]*$/.test(value)))) {
             $('.tips .text').html('密码格式错误');
             $('.tips').css('top', $('body').scrollTop()).show();
             setTimeout(function() {
