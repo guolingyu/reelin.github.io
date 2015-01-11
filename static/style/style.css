@@ -117,8 +117,7 @@ textarea {
   font-size: 36px;
   font-weight: normal;
   line-height: 83px;
-  margin-left: 100px;
-  margin-right: 120px;
+  margin-left: 161px;
 }
 .wrapper.center .side .header .logo-image {
   display: inline-block;
@@ -126,6 +125,7 @@ textarea {
   width: 83px;
   height: 83px;
   float: left;
+  margin-left: 48px;
 }
 .wrapper.center .side .open-small {
   float: right;
@@ -140,7 +140,7 @@ textarea {
 }
 .wrapper.center .footer {
   border-top: 1px solid #e2e2e2;
-  margin-top: 30px;
+  margin: 30px 30px 0 30px;
   background: #fff;
   text-align: center;
   padding: 25px 0;
@@ -598,7 +598,7 @@ textarea {
 #reset form span {
   display: block;
   font-size: 18px;
-  color: #ccc;
+  color: #6d6e71;
   margin-bottom: 20px;
 }
 #reset form button {
@@ -721,10 +721,16 @@ textarea {
     top: 0;
     cursor: pointer;
   }
-  .center .footer p {
+  .wrapper.center .footer p {
     display: block;
   }
-  .center .open-small {
+  .wrapper.center .open-small {
     display: block;
+  }
+  .wrapper.center .side .header h1 {
+    margin-left: 100px;
+  }
+  .wrapper.center .side .header .logo-image {
+    margin-left: 0;
   }
 }
