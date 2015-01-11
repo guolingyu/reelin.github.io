@@ -22,7 +22,6 @@
             setTimeout(function() {
                 $('.tips').hide();
             }, 2000);
-            elem.focus();
             return false;
         } 
         if (isConfirmPassword && value != password) {
@@ -31,7 +30,6 @@
             setTimeout(function() {
                 $('.tips').hide();
             }, 2000);
-            elem.focus();
             return false;    
         }
         $('.tips').hide();
