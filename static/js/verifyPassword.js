@@ -14,18 +14,22 @@
         password = $('input[name="password"]').val();
         if (!isConfirmPassword && (len < 6 || len > 18 || !(/^[a-zA-Z0-9!@#$%^&*()_+|{}?><\-\]\\[\/]*$/.test(value)))) {
             $('.tips .text').html('密码格式错误');
-            $('.tips').css('top', $('body').scrollTop()).show();
             setTimeout(function() {
-                $('.tips').hide();
-            }, 2000);
+                $('.tips').css('top', $('body').scrollTop()).show();
+                setTimeout(function() {
+                    $('.tips').hide();
+                }, 2000);
+            }, 500);
             return false;
         } 
         if (isConfirmPassword && value != password) {
             $('.tips .text').html('密码不一致');
-            $('.tips').css('top', $('body').scrollTop()).show();
             setTimeout(function() {
-                $('.tips').hide();
-            }, 2000);
+                $('.tips').css('top', $('body').scrollTop()).show();
+                setTimeout(function() {
+                    $('.tips').hide();
+                }, 2000);
+            }, 500);
             return false;    
         }
         $('.tips').hide();

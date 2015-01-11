@@ -128,7 +128,6 @@ textarea {
   float: left;
 }
 .wrapper.center .side .open-small {
-  display: block;
   float: right;
   margin-top: 17px;
 }
@@ -140,11 +139,14 @@ textarea {
   float: none;
 }
 .wrapper.center .footer {
-  border-top: 1px solid #6d6e71;
+  border-top: 1px solid #e2e2e2;
   margin-top: 30px;
   background: #fff;
   text-align: center;
   padding: 25px 0;
+}
+.wrapper.center .footer p {
+  font-size: 24px;
 }
 .photo-main h3 {
   text-align: center;
@@ -436,6 +438,7 @@ textarea {
   background-position: -299px -4px;
   width: 104px;
   height: 46px;
+  display: none;
 }
 .icon.open {
   background-position: 0px -108px;
@@ -565,6 +568,7 @@ textarea {
 #reset h3 {
   border: none;
   padding-bottom: 15px;
+  font-weight: bold;
 }
 #reset .success {
   text-align: center;
@@ -718,6 +722,9 @@ textarea {
     cursor: pointer;
   }
   .center .footer p {
+    display: block;
+  }
+  .center .open-small {
     display: block;
   }
 }
