@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta content="target-densitydpi=device-dpi,width=640" name="viewport">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico" />
+    <title>个人图扑</title>
+    <meta name="author" content="图扑"/>
+    <meta name="Copyright" content="图扑版权所有"/>
+    <meta name="keywords" content="图扑，tupu，照片，话题，交友，美图，照片交友，话题交友，美图交友">
+    <meta name="description" content="图扑，用照片创造话题。发布照片就可以发起话题，跟踪话题就可以发现世界。在这里，和好友、陌生人一起创造充满乐趣的生活图谱">
+
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <script type="text/javascript" src="js/util.js"></script>
+</head>
+<body>
+<div class="wrapper clearfix">
+    <div class="side">
+        <div class="header">
+            <a class="logo" href=""><span class="logo-image"></span></a>
+            <a class="install-small icon" href=""></a>
+            <h1>图扑，用照片创造话题</h1>
+        </div>
+        <p class="descript">发布照片就可以发起话题，跟踪话题就可以发现世界。在这里，和好友、陌生人一起创造充满乐趣的生活图谱。</p>
+        <div class="download clearfix">
+            <img alt="扫描下载二维码下载应用" class="qr-code left" src="images/qrcode.png">
+            <div class="other-info">
+                <img alt="AppStore" class="app" src="images/appstore.png">
+                <p class="fblod">iPhone / iPad</p>
+                <p>扫描二维码安装</p>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="photo-main" id="home">
+            <h3>个人图谱</h3>
+            <p class="topic-title">#话题名称最长二十个字话题名称最长二十个字#</p>
+            <div class="photo-list">
+                <ul class="clearfix">
+                    <!-- 取值每排第三个加类col-last -->
+                    <li><a href=""><img src="images/add.png" /></a></li>
+                    <li><a href="" target="_blank"><img src="images/1.jpg" /></a></li>
+                    <li class="col-last"><a href="" target="_blank"><img src="images/2.jpg" /></a></li>
+                    <li><a href="" target="_blank"><img src="images/3.jpg" /></a></li>
+                    <li><a href="" target="_blank"><img src="images/4.jpg" /></a></li>
+                    <li class="col-last"><a href="" target="_blank"><img src="images/5.jpg" /></a></li>
+                    <li><a href="" target="_blank"><img src="images/3.jpg" /></a></li>
+                    <li><a href="" target="_blank"><img src="images/2.jpg" /></a></li>
+                    <li class="col-last"><a href="" target="_blank"></li>
+                </ul>
+                
+            </div>
+            <div class="post-info-wrapper">
+                <p class="left-font">by</p>
+                <div class="post-info clearfix">
+
+                    <div class="avatar">
+                        <img src="images/avatar.jpg" />
+                    </div>
+                    <div class="post-meta clearfix">
+                        <p class="post-title">伦子</p>
+                        <p class="post-content"><span class="photo-num">989</span> 照片</p>
+                    </div>
+                </div>
+            </div>
+            <p class="load-more">（查看更多请安装图扑App）</p>
+        </div>
+        <div class="footer">
+            <p>&copy;2014 Tupu Network Limited./<a class="S_func1" href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备06042301号-2</a></p>
+            <a class="install icon"></a>
+        </div>
+        <div class="modal">
+            <div class="modal-bg"></div>
+             <a class="install" href="">点这里查看更多有趣话题照片</a>
+             <span class="icon close"></span> 
+        </div>
+
+    </div>
+    <iframe frameborder="0" id="ifr" style="display: none;" src="javascript:void(0)"></iframe>
+    <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+
+    <script type="text/javascript">
+        $(".modal .close").on("click", function() {
+            $(".modal ").hide();
+        });
+    </script>
+    <script type="text/javascript" src="js/skip.js"></script>
+
+</div>
+</body>
+</html>

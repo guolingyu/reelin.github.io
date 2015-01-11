@@ -39,20 +39,18 @@
                 return {search: fn(search,new RegExp( "([^?=&]+)(=([^&]*))?", "g" ))||{},hash: fn(hash,new RegExp( "([^#=&]+)(=([^&]*))?", "g" ))||{}};
             }
             var isAndroid=navigator.userAgent.match(/android/ig),
-                isIos=navigator.userAgent.match(/iphone|ipod/ig),
-                isIpad=navigator.userAgent.match(/ipad/ig),
-                isQQ = (/QQ/ig).test(navigator.userAgent),
-                params = localParam(),
-                isappinstalled = params.search['appinstall'],
-                openurl = params.search['openurl'],
-                iframe = document.getElementById('ifr');
+                    isIos=navigator.userAgent.match(/iphone|ipod/ig),
+                    isIpad=navigator.userAgent.match(/ipad/ig),
+                    isQQ = (/QQ/ig).test(navigator.userAgent),
+                    params = localParam(),
+                    isappinstalled = params.search['isappinstalled']||params.search['appinstall'],
+                    openurl = params.search['openurl']+window.location.hash,
+                    iframe = document.getElementById('ifr');
             if(isIos||isIpad){
-                openurl = openurl || 'tupu://';
+                openurl = openurl || 'newsapp://';
             }else if(isAndroid){
                 openurl = 'http://tupu.im/';
             }
-            alert('isappinstalled ' + isappinstalled);
-            alert(openurl);
             window.onload=function() {
                 var iosCls = 'iosguidedownload',
                         EL = document.getElementById("guide");
@@ -64,17 +62,16 @@
                 }
                 if(!isQQ){
                     if((isIos||isIpad) && !isAndroid){
+                        window.location = openurl;
                         if(!isappinstalled || (isappinstalled && isappinstalled!='1') ){
                             setTimeout(function(){
-                                window.location.href = "itms-apps://itunes.apple.com/us/app/tu-pu-yong-zhao-pian-chuang/id915233164?ls=1&amp;mt=8";
+                                window.location = "itms-apps://itunes.apple.com/us/app/tu-pu-yong-zhao-pian-chuang/id915233164?ls=1&amp;mt=8";
                             }, 50);
-                        } else {
-                            window.location = openurl;
                         }
-                    } else if(isAndroid){
+                    }else if(isAndroid){
                         iframe.src = openurl;
                     }
-                }                
+                }
             }
         })(window,document);
     </script>

@@ -3,200 +3,66 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta content="target-densitydpi=device-dpi,width=640" name="viewport">
-    <title>贺卡</title>
-    <link rel="stylesheet" href="css/circle.player.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico" />
+    <title>图扑</title>
+    <meta name="author" content="图扑"/>
+    <meta name="Copyright" content="图扑版权所有"/>
+    <meta name="keywords" content="图扑，tupu，照片，话题，交友，美图，照片交友，话题交友，美图交友">
+    <meta name="description" content="图扑，用照片创造话题。发布照片就可以发起话题，跟踪话题就可以发现世界。在这里，和好友、陌生人一起创造充满乐趣的生活图谱">
+
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    
     <script type="text/javascript" src="js/util.js"></script>
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jplayer/jquery.jplayer.min.js"></script>
-    <script type="text/javascript" src="js/jquery.transform2d.js"></script>
-    <script type="text/javascript" src="js/jquery.grab.js"></script>
-    <script type="text/javascript" src="js/mod.csstransforms.min.js"></script>
-    <script type="text/javascript" src="js/circle.player.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-        // jplayer
-        var myCirclePlayer = new CirclePlayer("#jquery_jplayer_1",
-            {
-                m4a: "http://www.jplayer.org/audio/m4a/Miaow-07-Bubble.m4a",
-                oga: "http://www.jplayer.org/audio/ogg/Miaow-07-Bubble.ogg"
-            }, {
-                cssSelectorAncestor: "#cp_container_1",
-                swfPath: "js/jplayer",
-                wmode: "window",
-                keyEnabled: true,
-                muted: false
-            });
-        // 事件处理
-        $('.modal').height($(window).height());
-
-        $('.f-btn.share').on('click', function(e) {
-            e.preventDefault();
-            $('.modal').show();
-        });
-
-        $('.wrapper').on('click', '.modal .modal-close', function(e) {
-            e.preventDefault();
-            $('.modal').hide();
-        });
-
-        $('.theme').on('click', function(e) {
-            e.preventDefault();
-            var that = $(this),
-                wrapper = $('.wrapper');
-                
-            $('.theme.hover').removeClass('hover');
-            that.addClass('hover');
-            if (that.hasClass('theme-btn-1')) {
-                wrapper.removeClass('theme-2').addClass('theme-1');
-                $('input[name="theme"]').val('1');
-            } else {
-                wrapper.removeClass('theme-1').addClass('theme-2');
-                $('input[name="theme"]').val('2');
-            } 
-        });
-
-       $('#music').on("click", function(e) {
-            e.preventDefault();
-            playAudio(currentId);
-        });
-
-        $('.cp-controls li').on('click', '.cp-pause', function() {
-            playAudio(currentId, false);
-        });
-        $('.cp-controls li').on('click', '.cp-play', function() {
-            playAudio(currentId, true);
-        });
-
-        $('.music').on('click', function(e) {
-            var that = $(this),
-                index = that.index('.music') + 1;
-            e.preventDefault();
-            $('.music.hover').removeClass('hover');
-            that.addClass('hover');
-            $('input[name="bg_track"]').val(index);
-            playAudio('audiofile' + index);
-        });
-
-        // 背景音乐
-        var currentFile = "",
-            currentId = "";
-        function playAudio(musicId, isOff) {
-            isOff = isOff ? isOff : true;
-            if (window.HTMLAudioElement) {
-                try {
-                    var oAudio = document.getElementById('audio');
-                    var audioURL = document.getElementById(musicId); 
-
-                    if (audioURL.value !== currentFile) {
-                        oAudio.src = audioURL.value;
-                        currentFile = audioURL.value; 
-                        currentId = musicId;                      
-                    } 
-                    if (oAudio.paused && isOff) {
-                        oAudio.play();
-                        $('#music i').addClass('icon-volume-up').removeClass('icon-volume-off');
-                    }
-                    else {
-                        oAudio.pause();
-                        $('#music i').removeClass('icon-volume-up').addClass('icon-volume-off');
-                    }
-                }
-                catch (e) {
-                     if(window.console && console.error("Error:" + e));
-                }
-            }
-        }
-        playAudio('audiofile1');
-
-    });
-    </script>
 </head>
-
 <body>
-<!-- 切换主题，普通主题theme-1，圣诞主题theme-2
-<div class="wrapper clearfix theme-1"> -->
-<div class="wrapper clearfix theme-1">
-    <div class="theme-block clearfix">
-        <a class="t-btn theme-btn-1 hover theme" href="#"></a>
-        <a class="t-btn theme-btn-2 theme" href="#"></a> 
-        <a class="t-btn music-1 music hover" href="#"><i class="icon-music"></i>Jinglebells</a> 
-        <a class="t-btn music-2 music" href="#"><i class="icon-music"></i>Ceslavie</a> 
-        <a class="t-btn music-3 music" href="#"><i class="icon-music"></i>Hell</a> 
-        <a class="t-btn music-4 music" href="#"><i class="icon-music"></i>Stairway</a> 
-        <a class="t-btn music-5 music" href="#"><i class="icon-music"></i>Thinman</a> 
-        <input type="hidden" id="audiofile1" value="http://7rfh19.com1.z0.glb.clouddn.com/jinglebells.mp3" />
-        <input type="hidden" id="audiofile2" value="http://7rfh19.com1.z0.glb.clouddn.com/ceslavie.mp3" />
-        <input type="hidden" id="audiofile3" value="http://7rfh19.com1.z0.glb.clouddn.com/hell.mp3" />
-        <input type="hidden" id="audiofile4" value="http://7rfh19.com1.z0.glb.clouddn.com/stairway.mp3" />
-        <input type="hidden" id="audiofile5" value="http://7rfh19.com1.z0.glb.clouddn.com/thinman.mp3" />
-        <div class="clearfix">  
-            <form action="card/save/{OPEN_ID}/">
-                <input type="hidden" name="theme" value="1" />
-                <input type="hidden" name="bg_track" value="1" />    
-                <button type="submit" class="btn btn-primary btn-lg">好了，生成花语</button>
-            </form>
-        </div> 
-    </div>
-    <div class="container-bg">
-        <div class="content">
-            <div style="display:none;">
-              <audio id="audio" style="width:25%" controls></audio>
-            </div>
-           <header class="clearfix">
-               <div class="author">
-                   <img class="hut" src="img/hut.png"></img>
-                   <img src="img/bgr.png" alt="" width="65" height="65"/>
-                   <p class="nick">老王Alex</p>
-               </div>
-               <a class="mute" href="#" id="music"><i class="icon-volume-up"></i></a>
-           </header>
-           <!-- 没有图加类名no-figure -->
-           <!-- <section class="main-content no-figure"> -->
-           <section class="main-content">
-                <img class="hut-big" src="img/hut-big.png"></img>
-                <!-- 如果没图figure隐藏 -->
-                <!-- <figure>
-                   <img src="img/29.pic.jpg" alt="" width="476" />
-               </figure> -->
-               <figure>
-                   <img src="img/29.pic.jpg" alt="" width="476" />
-               </figure>
-               <div id="jquery_jplayer_1" class="cp-jplayer"></div>
-                <div id="cp_container_1" class="cp-container">
-                   <div class="cp-progress-holder"> 
-                       <div class="cp-progress-1"></div>
-                       <div class="cp-progress-2"></div>
-                   </div>
-                   <div class="cp-circle-control"></div>
-                   <ul class="cp-controls">
-                       <li><a class="cp-play" tabindex="1">play</a></li>
-                       <li><a class="cp-pause" style="display:none;" tabindex="1">pause</a></li> 
-                   </ul>
-               </div>
-           </section>
-           <section class="desc">
-               <p>有情人终成扣肉，<br>两情若是久长时，又岂在煮猪肉肉。<br>哈哈哈哈哈</p>
-           </section>
-           <!-- 没有图和文字加类名no-font-->
-           <!-- <footer class="no-font"> -->
-           <footer>
-               <a class="f-btn share" href="#">分享</a>
-               <a class="f-btn" href="#">进入花店</a>
-           </footer>
-       </div>
-
-        <div class="modal">
-            <a class="modal-close" href="#"><i class="icon-remove-sign icon-2x"></i></a>
-            <div class="modal-content">
-                <p>请点击右上角按钮<br>把它分享给指定好友或朋友圈</p>
+<div class="wrapper clearfix">
+    <div class="side">
+        <div class="header">
+            <a class="logo" href=""><span class="logo-image"></span></a>
+            <a class="install-small icon" href=""></a>
+            <h1>图扑，用照片创造话题</h1>
+        </div>
+        <p class="descript">发布照片就可以发起话题，跟踪话题就可以发现世界。在这里，和好友、陌生人一起创造充满乐趣的生活图谱。</p>
+        <div class="download clearfix">
+            <img alt="扫描下载二维码下载应用" class="qr-code left" src="images/qrcode.png">
+            <div class="other-info">
+                <img alt="AppStore" class="app" src="images/appstore.png">
+                <p class="fblod">iPhone / iPad</p>
+                <p>扫描二维码安装</p>
             </div>
         </div>
     </div>
+    <div class="main">
+        <div class="photo-main" id="index">
+            <div class="animate-list clearfix">
+                <img class="pic1 active pic" src="images/webhome/web1.png" alt="图扑"/>
+                <img class="pic2 pic" src="images/webhome/web2.png" alt="图扑"/>
+                <img class="pic3 pic" src="images/webhome/web3.png" alt="图扑"/>
+                <img class="pic4 pic" src="images/webhome/web4.png" alt="图扑"/>
+                <img class="pic5 pic" src="images/webhome/web5.png" alt="图扑"/>
+            </div>
+        </div>
+        <div class="footer">
+            <p>&copy;2014 Tupu Network Limited./<a class="S_func1" href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备06042301号-2</a></p>
+        </div>
+        <div class="modal">
+            <div class="modal-bg"></div>
+             <a class="install" href="">点这里查看更多有趣话题照片</a>
+             <span class="icon close"></span> 
+        </div>
+    </div>
 </div>
+<iframe frameborder="0" id="ifr" style="display: none;" src="javascript:void(0)"></iframe>
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="js/animation.js"></script>
 
+<script type="text/javascript">
+    $(".modal .close").on("click", function() {
+        $(".modal ").hide();
+    });
+</script>
+
+<script type="text/javascript" src="js/skip.js"></script>
 
 </body>
 </html>

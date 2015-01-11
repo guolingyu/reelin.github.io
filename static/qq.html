@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta content="target-densitydpi=device-dpi,width=640" name="viewport">
+    <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico" />
+    <title>图扑</title>
+    <meta name="author" content="图扑"/>
+    <meta name="Copyright" content="图扑版权所有"/>
+    <meta name="keywords" content="图扑，tupu，照片，话题，交友，美图，照片交友，话题交友，美图交友">
+    <meta name="description" content="图扑，用照片创造话题。发布照片就可以发起话题，跟踪话题就可以发现世界。在这里，和好友、陌生人一起创造充满乐趣的生活图谱">
+
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <script type="text/javascript" src="js/util.js"></script>
+</head>
+<body style="background:#fff;">
+<div class="wrapper clearfix">
+    <div class="main">
+        <img src="images/qq.png" alt=""/>
+
+    </div>
+    <div id="guide" class="guide"></div>
+    <iframe frameborder="0" id="ifr" style="display: none;" src="javascript:void(0)"></iframe>
+    <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript">
+        ;(function(window,doc){
+            function localParam(search,hash){
+                search = search || window.location.search;
+                hash = hash || window.location.hash;
+                var fn = function(str,reg){
+                    if(str){
+                        var data = {};
+                        str.replace(reg,function( $0, $1, $2, $3 ){
+                            data[ $1 ] = $3;
+                        });
+                        return data;
+                    }
+                }
+                return {search: fn(search,new RegExp( "([^?=&]+)(=([^&]*))?", "g" ))||{},hash: fn(hash,new RegExp( "([^#=&]+)(=([^&]*))?", "g" ))||{}};
+            }
+            var isAndroid=navigator.userAgent.match(/android/ig),
+                isIos=navigator.userAgent.match(/iphone|ipod/ig),
+                isIpad=navigator.userAgent.match(/ipad/ig),
+                isQQ = (/QQ/ig).test(navigator.userAgent),
+                params = localParam(),
+                iframe = document.getElementById('ifr'),
+                isappinstalled = params.search['appinstall'],
+                openurl = params.search['openurl'];
+
+            if(isIos||isIpad){
+                openurl = openurl || 'tupu://';
+            }else if(isAndroid){
+                openurl = 'http://tupu.im/';
+            }
+
+            window.onload=function() {
+                var iosCls = 'iosguidedownload',
+                        EL = document.getElementById("guide");
+                if(isappinstalled && isappinstalled=='1'){
+                    iosCls = 'iosguideopen';
+                }
+                if((isIos||isIpad) && !isAndroid){
+                    EL.classList.add(iosCls);
+                }
+                if(!isQQ){
+                    if((isIos||isIpad) && !isAndroid){
+                        window.location = decodeURIComponent(openurl);
+                        if(!isappinstalled || (isappinstalled && isappinstalled!='1') ){
+                            setTimeout(function(){
+                                window.location.href = "itms-apps://itunes.apple.com/us/app/tu-pu-yong-zhao-pian-chuang/id915233164?ls=1&amp;mt=8";
+                            }, 50);
+                        } else {
+                            window.location = decodeURIComponent(openurl);
+                        }
+                    } else if(isAndroid){
+                        iframe.src = decodeURIComponent(openurl);
+                    }
+                }               
+            }
+        })(window,document);
+    </script>
+</div>
+</body>
+</html>
