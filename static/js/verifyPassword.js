@@ -1,5 +1,10 @@
 (function($) {
     $('body').css('background', '#727171');
+    var wrapperHeight = $('.center').height(),
+        winHeight = $(window).height();
+    if (wrapperHeight < winHeight) {
+        $('.center').height(winHeight);
+    }
     $('input').on('blur', function() {
         if ($(this).attr('name') == 'confirmPassword') {
             verifyPassword($(this), 1);
