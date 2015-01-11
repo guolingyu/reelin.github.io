@@ -441,6 +441,7 @@ textarea {
   display: none;
 }
 .icon.open {
+  display: none;
   background-position: 0px -108px;
   width: 285px;
   height: 67px;
@@ -732,5 +733,8 @@ textarea {
   }
   .wrapper.center .side .header .logo-image {
     margin-left: 0;
+  }
+  .wrapper.center .open {
+    display: block;
   }
 }
