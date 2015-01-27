@@ -383,6 +383,8 @@ textarea {
 }
 .side .qr-code {
   float: left;
+  width: 138px;
+  height: 138px;
 }
 .side .other-info {
   margin-left: 147px;
@@ -689,22 +691,30 @@ textarea {
   }
   .modal {
     display: block;
-    padding: 25px 0;
+    height: 111px;
     background: transparent;
     position: fixed;
     width: 640px;
     left: 0;
     bottom: 0;
+    font-size: 26px;
+    color: #fff;
+  }
+  .modal p {
+    line-height: 111px;
+    margin-left: 118px;
+  }
+  .modal p span {
+    font-weight: bold;
   }
   .modal .install {
-    width: 470px;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    font-size: 30px;
-    padding: 8px 20px;
-    border-radius: 10px;
-    background: #e5e5e5;
+    float: right;
+    width: 104px;
+    height: 46px;
+    display: inline-block;
+    background: url('../images/open_small.png') no-repeat 0 0;
+    margin-right: 20px;
+    margin-top: 30px;
   }
   .modal .modal-bg {
     width: 640px;

@@ -80,9 +80,9 @@ function skip(link) {
         e.preventDefault();
         download();
     });
-    $(".modal .install, .center .open-small, .center .open").on("click", function(e) {
+    $(".modal .install").on("click", function(e) {
         e.preventDefault();
         open();
-    }); 
+    });
 }
    
