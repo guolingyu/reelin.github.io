@@ -78,6 +78,7 @@ function skip(link) {
         }
     }
     $(".install-small, .footer .install").on("click", function(e) {
+        alert(1);
         e.preventDefault();
         download();
     });
