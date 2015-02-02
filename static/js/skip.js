@@ -49,6 +49,7 @@ function skip(link) {
     }
 
     function download(){
+        alert(wxDownload);
         if(isWeixin){
             window.location = wxDownload;
         }else if(isQQ) {
@@ -83,6 +84,6 @@ function skip(link) {
     $(".modal .install").on("click", function(e) {
         e.preventDefault();
         open();
-    }); 
+    });
 }
    
