@@ -53,7 +53,7 @@ function skip(link) {
         if(isWeixin){
             window.location = wxDownload;
         }else if(isQQ) {
-            window.location = qqDownload;
+            window.location = iDownload;
         }else if((isIDevice || isIDeviceIpad) && !isAndroid){
             setTimeout(function(){
                 window.location = iDownload;
@@ -66,7 +66,7 @@ function skip(link) {
         if(isWeixin){
             window.location = wxLink;
         }else if(isQQ) {
-            window.location = qqLink;
+            window.location = skipAppLink;
         }else if((isIDevice || isIDeviceIpad) && !isAndroid){
             window.location = skipAppLink;
             setTimeout(function(){
@@ -84,6 +84,7 @@ function skip(link) {
     });
     $(".modal .install").on("click", function(e) {
         e.preventDefault();
+        alert(2);c
         open();
     });
 }
