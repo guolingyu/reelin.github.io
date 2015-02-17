@@ -49,11 +49,10 @@ function skip(link) {
     }
 
     function download(){
-        alert(wxDownload);
         if(isWeixin){
             window.location = wxDownload;
         }else if(isQQ) {
-            window.location = iDownload;
+            window.location.href = qqDownload;
         }else if((isIDevice || isIDeviceIpad) && !isAndroid){
             setTimeout(function(){
                 window.location = iDownload;
@@ -66,7 +65,7 @@ function skip(link) {
         if(isWeixin){
             window.location = wxLink;
         }else if(isQQ) {
-            window.location = skipAppLink;
+            window.location = qqLink;
         }else if((isIDevice || isIDeviceIpad) && !isAndroid){
             window.location = skipAppLink;
             setTimeout(function(){
@@ -78,13 +77,11 @@ function skip(link) {
         }
     }
     $(".install-small, .footer .install").on("click", function(e) {
-        alert(1);
         e.preventDefault();
         download();
     });
     $(".modal .install").on("click", function(e) {
         e.preventDefault();
-        alert(2);c
         open();
     });
 }

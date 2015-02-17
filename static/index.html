@@ -1,32 +1,35 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta content="target-densitydpi=device-dpi,width=640" name="viewport">
-    <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="/static/images/logo.ico" />
     <title>图扑</title>
     <meta name="author" content="图扑"/>
     <meta name="Copyright" content="图扑版权所有"/>
     <meta name="keywords" content="图扑，tupu，照片，话题，交友，美图，照片交友，话题交友，美图交友">
     <meta name="description" content="图扑，用照片创造话题。发布照片就可以发起话题，跟踪话题就可以发现世界。在这里，和好友、陌生人一起创造充满乐趣的生活图谱">
-
-    <link rel="stylesheet" type="text/css" href="style/style.css" />
     
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
     <script type="text/javascript" src="js/util.js"></script>
+    <meta property="qc:admins" content="11770561735615" />
 </head>
 <body>
 <div class="wrapper clearfix">
     <div class="side">
         <div class="header">
             <a class="logo" href=""><span class="logo-image"></span></a>
-            <a class="install-small icon" href=""></a>
+            <a class="install-small icon" href="https://itunes.apple.com/us/app/tu-pu-yong-zhao-pian-chuang/id915233164?ls=1&mt=8"></a>
             <h1>图扑，用照片创造话题</h1>
         </div>
         <p class="descript">发布照片就可以发起话题，跟踪话题就可以发现世界。在这里，和好友、陌生人一起创造充满乐趣的生活图谱。</p>
         <div class="download clearfix">
-            <img alt="扫描下载二维码下载应用" class="qr-code left" src="images/qrcode.png">
+            <img alt="扫描下载二维码下载应用" class="qr-code left" src="/static/images/qrcode.png">
             <div class="other-info">
-                <img alt="AppStore" class="app" src="images/appstore.png">
+                <a href="https://itunes.apple.com/us/app/tu-pu-yong-zhao-pian-chuang/id915233164?ls=1&mt=8">
+                <img alt="AppStore" class="app" src="/static/images/appstore.png">
+                </a>
                 <p class="fblod">iPhone / iPad</p>
                 <p>扫描二维码安装</p>
             </div>
@@ -36,33 +39,25 @@
         <div class="photo-main" id="index">
             <div class="animate-list clearfix">
                 <img class="pic1 active pic" src="images/webhome/web1.png" alt="图扑"/>
-                <img class="pic2 pic" src="images/webhome/web2.png" alt="图扑"/>
-                <img class="pic3 pic" src="images/webhome/web3.png" alt="图扑"/>
-                <img class="pic4 pic" src="images/webhome/web4.png" alt="图扑"/>
-                <img class="pic5 pic" src="images/webhome/web5.png" alt="图扑"/>
+                <img class="pic2 pic" src="/static/images/webhome/web2.png" alt="图扑"/>
+                <img class="pic3 pic" src="/static/images/webhome/web3.png" alt="图扑"/>
+                <img class="pic4 pic" src="/static/images/webhome/web4.png" alt="图扑"/>
+                <img class="pic5 pic" src="/static/images/webhome/web5.png" alt="图扑"/>
             </div>
         </div>
         <div class="footer">
             <p>&copy;2015 Tupu Network Limited./<a class="S_func1" href="http://www.miitbeian.gov.cn/" target="_blank">粤ICP备06042301号-2</a></p>
-        </div>
-        <div class="modal clearfix">
-            <div class="modal-bg"></div>
-            <span class="icon close"></span>
-            <p>打开<span>图扑APP</span>，查看更多照片<a class="install" href=""></a></p>             
+            <p class="wap">&copy;2015 Tupu Network Limited./</p>
         </div>
     </div>
 </div>
 <iframe frameborder="0" id="ifr" style="display: none;" src="javascript:void(0)"></iframe>
 <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
 <script type="text/javascript" src="js/animation.js"></script>
-
-<script type="text/javascript">
-    $(".modal .close").on("click", function() {
-        $(".modal ").hide();
-    });
-</script>
-
 <script type="text/javascript" src="js/skip.js"></script>
+<script type="text/javascript">
+        skip();
+    </script>
 
 </body>
 </html>
