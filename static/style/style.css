@@ -148,9 +148,6 @@ textarea {
 .wrapper.center .footer p {
   font-size: 24px;
 }
-.wrapper.center .footer p.wap {
-  display: none;
-}
 .photo-main h3 {
   text-align: center;
   font-size: 30px;
@@ -347,6 +344,9 @@ textarea {
 .footer p {
   font-size: 12px;
   padding: 10px;
+}
+.footer p.wap {
+  display: none;
 }
 .side {
   _float: left;
@@ -695,7 +695,7 @@ textarea {
   .footer p.wap {
     display: block;
     text-align: center;
-    font-size: 14px;
+    font-size: 20px;
   }
   .modal {
     display: block;

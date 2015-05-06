@@ -20,11 +20,13 @@ function skip(link) {
         isAndroid = (/Android/gi).test(nav.userAgent),
         isWeixin = (/MicroMessenger/ig).test(nav.userAgent),
         isQQ = (/QQ/ig).test(nav.userAgent),
+        isWeibo = (/weibo/ig).test(nav.userAgent),
         autoopen = params.search['autoopen']||params.hash['autoopen'],
         isappinstalled = params.search['isappinstalled'],
         appinstall = params.search['appinstall'],
         qqLink = 'http://tupu.im/static/qq.html',
         wxLink = 'http://tupu.im/static/weixin.html',
+        weiboLink = 'http://tupu.im/static/weibo.html'
         iDownload = 'itms-apps://itunes.apple.com/us/app/tu-pu-yong-zhao-pian-chuang/id915233164?ls=1&amp;mt=8',
         wxDownload = wxLink + '?openurl=' + iDownload,
         qqDownload = qqLink + '?openurl=' + iDownload,
@@ -66,6 +68,9 @@ function skip(link) {
             window.location = wxLink;
         }else if(isQQ) {
             window.location = qqLink;
+        }else if (isWeibo) {
+            $('body').css('background', '#fff');
+            $('.wrapper').html('<div class="main"><img src="/static/images/weibo.png"/></div>');
         }else if((isIDevice || isIDeviceIpad) && !isAndroid){
             window.location = skipAppLink;
             setTimeout(function(){
