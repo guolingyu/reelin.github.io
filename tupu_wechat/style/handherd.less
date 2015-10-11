@@ -1,0 +1,108 @@
+@media screen and (max-width: 640px) {
+    .wrapper {
+        width: auto;
+    }
+    .side {
+        position: static;
+        width: 600px;
+        margin: 10px auto 15px auto;
+        padding: 0;
+        min-height: 0;
+        .header {
+            display: block;
+            h1 {
+                font-size: 36px;
+                font-weight: normal;
+                line-height: 83px;
+                margin-left: 100px;
+                margin-right: 120px;
+            }
+            .logo-image {
+                display: inline-block;
+                background: url("../images/logo_small.png");
+                width: 83px;
+                height: 83px;
+                float: left;
+            }
+
+
+        }
+        .install-small {
+            display: block;
+            float: right;
+            margin-top: 17px;
+        }
+
+        .descript, .download {
+            display: none;
+        }
+    }
+    .main {
+        float: none;
+    }
+    .animate-list {
+        position: static;
+        height: 639px;
+        overflow: hidden;
+        background: #fff;
+        .pic {
+            position: static;
+            width: 360px;
+            height: auto;
+            margin-left: 140px;
+        }
+        .pic5, .pic6, .pic7, .pic8, .pic9 {
+            display: none;
+        }
+        .pic-font {
+            width: 640px;
+            margin-left: 0;
+        }
+    }
+    .footer {
+        padding: 25px 0;
+        p {
+            display: none;
+        }
+        .install {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .modal {
+        display: block;
+        padding: 25px 0;
+        background: transparent;
+        position: fixed;
+        width: 640px;
+        left: 0;
+        bottom: 0;
+        .install{
+            width: 470px;
+            margin: 0 auto;
+            display: block;
+            text-align: center;
+            font-size: 30px;
+            padding: 8px 20px;
+            border-radius: 10px;
+            background: #e5e5e5;
+        }
+         .modal-bg {
+            width: 640px;
+            height: 111px;
+            background: #000;
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: -1;
+            opacity: .7;
+        }
+        .close {
+            position: absolute;
+            left: 0;
+            top: 0;
+            cursor: pointer;
+        }
+
+    }
+}
