@@ -24,36 +24,34 @@
         var len = imagesArray.length;
 
         for( var i = 0; i < len; i++) {
-            insertImage(imagesArray[i]);
+            insertImage(imagesArray[i], i, len);
         }
-//        insertImage(imagesArray[0]);
     }
+
     /* 插入图片 */
-    function insertImage(image) {
+    function insertImage(image, index, len) {
         var $img = $('<img src="" class="js-album-item">').attr('src', image).height(h_stand);
         $('#hidden-wrapper').append($img);
-        var $img = $('#hidden-wrapper img');
-        $img.each(function(index) {
-            $img[index].onload = function() {
-                console.log($(this).attr('src'), w2);
-                if (w2 < w_stand) {
-                    if (w2 == 0) {
-                        $('#tp-album-thumb').append($('<div class="tp-photo-wrapper"></div>').append($(this)));
-                    } else {
-                        $('.tp-photo-wrapper').last().append($(this));
-                    }
-                    w2 = w2 + $(this).width();
-
+        $('#hidden-wrapper img')[index].onload = function() {
+            console.log($(this).attr('src'), w2);
+            if (w2 < w_stand) {
+                if (w2 == 0) {
+                    $('#tp-album-thumb').append($('<div class="tp-photo-wrapper"></div>').append($(this)));
                 } else {
-                    handleImage();
-
-                    w2 = 0;
-                    insertImage($(this));
+                    $('.tp-photo-wrapper').last().append($(this));
                 }
-            };
-        });
+                w2 = w2 + $(this).width();
 
-
+            } else {
+                handleImage();
+                w2 = 0;
+                $('#tp-album-thumb').append($('<div class="tp-photo-wrapper"></div>').append($(this)));
+                w2 = w2 + $(this).width();
+                if ($('.tp-photo-wrapper img').length == len) {
+                    handleImage();
+                }
+            }
+        };
     }
 
     /* 处理整行图片 */
