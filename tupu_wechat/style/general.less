@@ -16,8 +16,8 @@ footer {
     }
 }
 
-/* Ïà²áÒ³ */
-/* Ïà²á·âÃæ */
+/* ï¿½ï¿½ï¿½Ò³ */
+/* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ */
 .tp-banner-image {
     width: 640px;
     height: 340px;
@@ -53,6 +53,8 @@ footer {
     }
     &.tp-album-photo {
         padding: 20px;
+        overflow: hidden;
+        width: 600px;
     }
     &.tp-member-wrapper {
         background: #fff;
@@ -61,8 +63,20 @@ footer {
         overflow: hidden;
     }
 }
+/* ç…§ç‰‡æµ */
+#tp-album-thumb {
+    width: 900px;
+}
+.tp-photo-wrapper {
+    float: left;
+    margin-bottom: 20px;
+    img {
+        margin-right: 20px;
+        float: left;
+    }
+}
 
-/* Í¼·½¿éÁ÷ */
+/* æ–¹å—æµ */
 .tp-member-thumb {
     width: 700px;
     .tp-member-item {       
@@ -83,7 +97,7 @@ footer {
     }
 }
 
-/* ÕÕÆ¬Ò³ */
+/* ï¿½ï¿½Æ¬Ò³ */
 .tp-user {
     padding: 20px;
     img, .tp-user-info {
@@ -135,7 +149,7 @@ footer {
     }
 }
 
-/* ×îÔŞÒ³Ãæ */
+/* ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ */
 .tp-like-user {
     .tp-best-like {
         display: block;
@@ -199,7 +213,7 @@ footer {
             margin-bottom: 10px;
         }
     }
-    /* µ¹¼ÆÊ±×îÔŞ */
+    /* ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ */
     .tp-deadline-time {
         position: relative;
         margin-bottom: 20px;
@@ -210,12 +224,15 @@ footer {
         font-size: 30px;
         text-align: center;
         .js-album-name {
+            display: block;
             color: #000;
+            width: 428px;
+            margin: 0 auto;
         }
         .js-deadline-time {
             font-size: 100px;
             color: #000;
-            padding-bottom: 20px;
+            padding-bottom: 25px;
         }
         .fixed-time {
             position: absolute;

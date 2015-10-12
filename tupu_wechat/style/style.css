@@ -130,8 +130,8 @@ footer p {
   color: #5A5555;
   text-align: center;
 }
-/* ����ҳ */
-/* �������� */
+/* ���ҳ */
+/* ������ */
 .tp-banner-image {
   width: 640px;
   height: 340px;
@@ -167,6 +167,8 @@ footer p {
 }
 .tp-album-main.tp-album-photo {
   padding: 20px;
+  overflow: hidden;
+  width: 600px;
 }
 .tp-album-main.tp-member-wrapper {
   background: #fff;
@@ -174,7 +176,19 @@ footer p {
   width: 580px;
   overflow: hidden;
 }
-/* ͼ������ */
+/* 照片流 */
+#tp-album-thumb {
+  width: 900px;
+}
+.tp-photo-wrapper {
+  float: left;
+  margin-bottom: 20px;
+}
+.tp-photo-wrapper img {
+  margin-right: 20px;
+  float: left;
+}
+/* 方块流 */
 .tp-member-thumb {
   width: 700px;
 }
@@ -320,12 +334,15 @@ footer p {
   margin-top: 10px;
 }
 .tp-like-user .tp-deadline-time .js-album-name {
+  display: block;
   color: #000;
+  width: 428px;
+  margin: 0 auto;
 }
 .tp-like-user .tp-deadline-time .js-deadline-time {
   font-size: 100px;
   color: #000;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 .tp-like-user .tp-deadline-time .fixed-time {
   position: absolute;

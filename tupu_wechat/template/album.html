@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" type="text/css" href="../style/style.css" />
     <script type="text/javascript" src="../js/util.js"></script>
+    <script type="text/javascript" src="../js/zepto.min.js"></script>
 </head>
 <body>
     <div class="tp-wrapper">
@@ -28,10 +29,8 @@
         </div>
         <section class="tp-album-main tp-album-photo clearfix">
             <a class="tp-album-btn tp-album-btn-big" href=""><span class="tp-icon tp-icon-add"></span>添加相片到相册</a>
-            <section id="tp-album-thumb">
-                <div class="tp-photo-wrapper">
-                    <img src="" alt=""/>
-                </div>
+            <section id="tp-album-thumb clearfix">
+
             </section>
         </section>
         <section class="tp-album-main tp-member-wrapper">
@@ -80,5 +79,7 @@
         <div class="modal-bg"></div>
         <div class="modal-main"></div>
     </div>
+    <div id="hidden-wrapper" style="overflow:hidden;height:0;"></div>
+    <script type="text/javascript" src="../js/loadImage.js"></script>
 </body>
 </html>
