@@ -19,11 +19,10 @@
     var w2 = 0;
 
     function loadImage() {
-        for (var i = 0, j = 0; i < 30;  i++, j++) {
+        for (var i = 0, j = 1; i < 16;  i++, j++) {
 //            var j = Math.floor(Math.random() * 15) + 1;
 
-            console.log(j,i);
-            insertImage('../test/'+ j +'.jpg', i, 30);
+            insertImage('../test/'+ j +'.jpg', i, 16);
         }
 
 //        insertImage(imagesArray[3], 0, 3);
@@ -85,6 +84,21 @@
     }
 
     loadImage();
+
+    $('.tp-album-tab .tp-album-number').tap(function(e) {
+        e.preventDefault();
+        $('.tp-album-tab .active').removeClass('active');
+        $(this).addClass('active');
+        $('.tp-album-photo').show();
+        $('.tp-member-wrapper').hide();
+    });
+    $('.tp-album-tab .tp-album-member').tap(function(e) {
+        e.preventDefault();
+        $('.tp-album-tab .active').removeClass('active');
+        $(this).addClass('active');
+        $('.tp-album-photo').hide();
+        $('.tp-member-wrapper').show();
+    });
 
 })(Zepto);
 
