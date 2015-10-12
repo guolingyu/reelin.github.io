@@ -178,11 +178,13 @@ footer p {
 }
 /* 照片流 */
 #tp-album-thumb {
-  width: 640px;
+  width: 1200px;
+  clear: left;
 }
 .tp-photo-wrapper {
-  float: left;
   margin-bottom: 20px;
+  float: left;
+  clear: left;
 }
 .tp-photo-wrapper img {
   margin-right: 20px;

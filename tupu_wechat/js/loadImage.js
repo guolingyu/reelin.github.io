@@ -17,15 +17,18 @@
     var w_stand = 400;
     var w_win = 600;
     var w2 = 0;
-    var imagesArray = ['../test/1.jpg', '../test/2.jpg', '../images/test/3.jpg','../images/test/4.jpg', '../images/test/5.jpg', '../images/test/6.jpg', '../images/test/7.jpg', '../images/test/8.jpg'];
-    var tempHtml = $('<img src="" class="js-album-item">');
 
-    function loadImage(imagesArray) {
-        var len = imagesArray.length;
+    function loadImage() {
+        for (var i = 0; i < 30;  i++) {
+            var j = Math.floor(Math.random() * 15) + 1;
 
-        for( var i = 0; i < len; i++) {
-            insertImage(imagesArray[i], i, len);
+            console.log(j,i);
+            insertImage('../test/'+ j +'.jpg', i, 30);
         }
+
+//        insertImage(imagesArray[3], 0, 3);
+//        insertImage(imagesArray[4], 1, 3);
+//        insertImage(imagesArray[1], 2, 3);
     }
 
     /* 插入图片 */
@@ -33,10 +36,9 @@
         var $img = $('<img src="" class="js-album-item">').attr('src', image).height(h_stand);
         $('#hidden-wrapper').append($img);
         $('#hidden-wrapper img')[index].onload = function() {
-            console.log($(this).attr('src'), w2);
             if (w2 < w_stand) {
                 if (w2 == 0) {
-                    $('#tp-album-thumb').append($('<div class="tp-photo-wrapper"></div>').append($(this)));
+                    $('#tp-album-thumb').append($('<div class="tp-photo-wrapper clearfix"></div>').append($(this)));
                 } else {
                     $('.tp-photo-wrapper').last().append($(this));
                 }
@@ -45,11 +47,12 @@
             } else {
                 handleImage();
                 w2 = 0;
-                $('#tp-album-thumb').append($('<div class="tp-photo-wrapper"></div>').append($(this)));
+                $('#tp-album-thumb').append($('<div class="tp-photo-wrapper clearfix"></div>').append($(this)));
                 w2 = w2 + $(this).width();
-                if ($('.tp-photo-wrapper img').length == len) {
-                    handleImage(true);
-                }
+
+            }
+            if ($('.tp-photo-wrapper img').length == len) {
+                handleImage(true);
             }
         };
     }
@@ -57,17 +60,17 @@
     /* 处理整行图片 */
     function handleImage(isLast) {
         var $imageWrapper = $('.tp-photo-wrapper').last(),
-            h_deta = h_stand * w_win / $imageWrapper.width(),
-            images = $imageWrapper.find('img');
-        if (isLast) {
-            return ;
-        }
+            images = $imageWrapper.find('img'),
+            w_current = w_win + (images.length-1) * 20,
+            h_deta = h_stand * w_current / $imageWrapper.width();
+
+        if (isLast) { return ; }
 
         if (w2 != w_win) {
             /* w2/w_stand = h_stand/deta_h */
             images.height(h_deta);
             var w_wrapper = $('.tp-photo-wrapper').last().width(),
-                w_deta = Math.abs(w_win + (images.length-1) * 20 - w_wrapper) / images.length;
+                w_deta = Math.abs(w_current - w_wrapper) / images.length;
             if (w_wrapper < w_win) {
                 images.each(function() {
                     $(this).width($(this).width() + w_deta);
@@ -81,7 +84,7 @@
         }
     }
 
-    loadImage(imagesArray);
+    loadImage();
 
 })(Zepto);
 
