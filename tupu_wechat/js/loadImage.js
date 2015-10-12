@@ -19,8 +19,8 @@
     var w2 = 0;
 
     function loadImage() {
-        for (var i = 0; i < 30;  i++) {
-            var j = Math.floor(Math.random() * 15) + 1;
+        for (var i = 0, j = 0; i < 30;  i++, j++) {
+//            var j = Math.floor(Math.random() * 15) + 1;
 
             console.log(j,i);
             insertImage('../test/'+ j +'.jpg', i, 30);

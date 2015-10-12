@@ -136,7 +136,7 @@
           <file leaf-file-name="loadImage.js" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/js/loadImage.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="78" column="47" selection-start="2568" selection-end="2568" vertical-scroll-proportion="0.6132003" vertical-offset="1385" max-vertical-offset="2688">
+                <state line="23" column="18" selection-start="607" selection-end="607" vertical-scroll-proportion="0.35533383" vertical-offset="181" max-vertical-offset="2688">
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -470,12 +470,12 @@
       <workItem from="1444631468975" duration="180000" />
       <workItem from="1444631737816" duration="5364000" />
       <workItem from="1444639746236" duration="643000" />
-      <workItem from="1444641814392" duration="5305000" />
+      <workItem from="1444641814392" duration="5404000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89806000" />
+    <option name="totallyTimeSpent" value="89905000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -892,7 +892,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/loadImage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="78" column="47" selection-start="2568" selection-end="2568" vertical-scroll-proportion="0.6132003" vertical-offset="1385" max-vertical-offset="2688">
+        <state line="23" column="18" selection-start="607" selection-end="607" vertical-scroll-proportion="0.35533383" vertical-offset="181" max-vertical-offset="2688">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
