@@ -124,19 +124,19 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="general.less" pinned="false" current="false" current-in-tab="false">
+          <file leaf-file-name="general.less" pinned="false" current="true" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style/general.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="67" column="18" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.0" vertical-offset="1876" max-vertical-offset="9128">
+                <state line="69" column="17" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.39844358" vertical-offset="1420" max-vertical-offset="9128">
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="loadImage.js" pinned="false" current="true" current-in-tab="true">
+          <file leaf-file-name="loadImage.js" pinned="false" current="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/js/loadImage.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state line="49" column="48" selection-start="1821" selection-end="1821" vertical-scroll-proportion="0.15852742" vertical-offset="1161" max-vertical-offset="2492">
+                <state line="64" column="43" selection-start="2200" selection-end="2200" vertical-scroll-proportion="-26.5" vertical-offset="1103" max-vertical-offset="2604">
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -197,9 +197,9 @@
         <option value="$PROJECT_DIR$/template/photo_item.html" />
         <option value="$PROJECT_DIR$/style/reset.less" />
         <option value="$PROJECT_DIR$/template/best_like.html" />
-        <option value="$PROJECT_DIR$/style/general.less" />
         <option value="$PROJECT_DIR$/template/album.html" />
         <option value="$PROJECT_DIR$/js/loadImage.js" />
+        <option value="$PROJECT_DIR$/style/general.less" />
       </list>
     </option>
   </component>
@@ -470,12 +470,12 @@
       <workItem from="1444631468975" duration="180000" />
       <workItem from="1444631737816" duration="5364000" />
       <workItem from="1444639746236" duration="643000" />
-      <workItem from="1444641814392" duration="3060000" />
+      <workItem from="1444641814392" duration="3294000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87561000" />
+    <option name="totallyTimeSpent" value="87795000" />
   </component>
   <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
@@ -860,13 +860,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style/general.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="18" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.0" vertical-offset="1056" max-vertical-offset="9128">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/style/reset.less">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="1" selection-start="374" selection-end="374" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="1598">
@@ -892,10 +885,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/loadImage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="48" selection-start="1821" selection-end="1821" vertical-scroll-proportion="0.15852742" vertical-offset="1161" max-vertical-offset="2492">
+        <state line="64" column="43" selection-start="2200" selection-end="2200" vertical-scroll-proportion="-26.5" vertical-offset="1103" max-vertical-offset="2604">
           <folding>
             <element signature="n#!!doc" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/general.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="17" selection-start="1299" selection-end="1299" vertical-scroll-proportion="0.39844358" vertical-offset="1420" max-vertical-offset="9128">
+          <folding />
         </state>
       </provider>
     </entry>

@@ -48,17 +48,21 @@
                 $('#tp-album-thumb').append($('<div class="tp-photo-wrapper"></div>').append($(this)));
                 w2 = w2 + $(this).width();
                 if ($('.tp-photo-wrapper img').length == len) {
-                    handleImage();
+                    handleImage(true);
                 }
             }
         };
     }
 
     /* 处理整行图片 */
-    function handleImage() {
+    function handleImage(isLast) {
         var $imageWrapper = $('.tp-photo-wrapper').last(),
             h_deta = h_stand * w_win / $imageWrapper.width(),
             images = $imageWrapper.find('img');
+        if (isLast) {
+            return ;
+        }
+
         if (w2 != w_win) {
             /* w2/w_stand = h_stand/deta_h */
             images.height(h_deta);
