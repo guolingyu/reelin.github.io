@@ -2,13 +2,13 @@
     var Navigator = (function(){
         var localStorage = window.localStorage,frame;
         /**
-         * iframe ÔªËØ
+         * iframe Ôªï¿½ï¿½
          *
          * @property {Element} frame
          */
         frame = null;
         /**
-         * ´´½¨iframe,°ïÖú½â¾öiOSµÄUIWebViewÃ»ÓÐJS API
+         * ï¿½ï¿½ï¿½ï¿½iframe,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½iOSï¿½ï¿½UIWebViewÃ»ï¿½ï¿½JS API
          *
          * @method getFrame
          * @return {Element} iframe
@@ -23,27 +23,27 @@
             return _frame;
         }
         /**
-         * É¾³ýiframe
+         * É¾ï¿½ï¿½iframe
          *
          * @method removeFrame
-         * @param {Element} frame Ö´ÐÐµÄ·½·¨
+         * @param {Element} frame Ö´ï¿½ÐµÄ·ï¿½ï¿½ï¿½
          */
         function removeFrame(frame){
             frame && frame.parentNode.removeChild(frame);
         }
         /**
-         * Ö´ÐÐÓë¿Í»§¶Ë½»»¥µÄÐ­Òé
+         * Ö´ï¿½ï¿½ï¿½ï¿½Í»ï¿½ï¿½Ë½ï¿½ï¿½ï¿½ï¿½ï¿½Ð­ï¿½ï¿½
          *
          * @method protocol
-         * @param {String} command Ö´ÐÐµÄÐ­Òé¼°ÃüÁî
-         * @param {boolean} single iOSÊ±ÊÇ·ñÊÇÊ¹ÓÃ¶ÀÁ¢µÄiframe,Ä¬ÈÏfalse
-         * @param {boolean} noframe iOSÊ±ÊÇ·ñ²»Í¨¹ýiframe,Ä¬ÈÏfalse
+         * @param {String} command Ö´ï¿½Ðµï¿½Ð­ï¿½é¼°ï¿½ï¿½ï¿½ï¿½
+         * @param {boolean} single iOSÊ±ï¿½Ç·ï¿½ï¿½ï¿½Ê¹ï¿½Ã¶ï¿½ï¿½ï¿½ï¿½ï¿½iframe,Ä¬ï¿½ï¿½false
+         * @param {boolean} noframe iOSÊ±ï¿½Ç·ï¿½Í¨ï¿½ï¿½iframe,Ä¬ï¿½ï¿½false
          */
         function protocol(command,single,noframe){
             var _frame,timer;
-            //²»Í¨¹ýiframe
+            //ï¿½ï¿½Í¨ï¿½ï¿½iframe
             if(noframe){window.location.href = command;return;}
-            //Í¨¹ýiframe
+            //Í¨ï¿½ï¿½iframe
             if(single){
                 _frame = getFrame();
                 _frame.setAttribute("src", command);
@@ -60,7 +60,7 @@
             }
         }
         /**
-         * ´ÓlocalStorageÀïÈ¡Ò»¸öÖµ
+         * ï¿½ï¿½localStorageï¿½ï¿½È¡Ò»ï¿½ï¿½Öµ
          *
          * @method getLocalValue
          * @param {String} id item id
@@ -74,7 +74,7 @@
             }
         }
         /**
-         * ÉèÖÃÒ»¸ölocalStorageµÄÖµ
+         * ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½localStorageï¿½ï¿½Öµ
          *
          * @method setLocalValue
          * @param {String} id item id
@@ -221,7 +221,7 @@
             }
         }
         /**
-         * ³õÊ¼»¯
+         * ï¿½ï¿½Ê¼ï¿½ï¿½
          * _els
          * meta = {name:{content:String,seriation:Array,store:{property:String},...},...}
          * @method init
@@ -284,7 +284,7 @@
                     message: 'An observer object can not register without an update method!'
                 }
             }
-            this.unregister(observer);//·ÀÖ¹ÖØ¸´×¢²á
+            this.unregister(observer);//ï¿½ï¿½Ö¹ï¿½Ø¸ï¿½×¢ï¿½ï¿½
             this.observers.push(observer);
             return this;
         },
@@ -366,7 +366,7 @@
             actionsHistory = [INIT_HASH_STR];
         var changedCallback = emptyFn;
 
-        //¿ªÆôÃªµã£¬½â¾öÒ³Ãæ×Ô¶¯¹ö¶¯µÄÎÊÌâ
+        //ï¿½ï¿½ï¿½ï¿½Ãªï¿½ã£¬ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         var _st = document.createElement('style'),
             _div = document.createElement('div');
         _st.innerText = '.RESTFul-anchor{position: fixed; top: 0; left: 0;}';
@@ -376,7 +376,7 @@
 
         function formatHash(hash){
             if(hash){
-                //hashºó²»ÄÜ´øsearchÖµ
+                //hashï¿½ï¿½ï¿½Ü´ï¿½searchÖµ
                 hash = hash.replace(/\?.*/g,'');
             }
             return hash;
@@ -418,10 +418,10 @@
             }
         }
         /**
-         * ÔÚËùÓÐÖ÷Ìâ±»¶©ÔÄÖ®Ç°£¬ÔÚÒ³ÃæÊ×´Î¼ÓÔØÖ®³õ
-         * ³õÊ¼»¯Ò»¸öÓëÔ´hash²»Í¬ÇÒÔÝÎ´±»¶©ÔÄµÄÖ÷Ìâ
-         * ×îÖÕÈÔÈ»Ìø×ªµ½Ô´hash
-         * ´Ë·½·¨²¢²»ÊÇ±ØÒªµÄ
+         * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½â±»ï¿½ï¿½ï¿½ï¿½Ö®Ç°ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½×´Î¼ï¿½ï¿½ï¿½Ö®ï¿½ï¿½
+         * ï¿½ï¿½Ê¼ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ô´hashï¿½ï¿½Í¬ï¿½ï¿½ï¿½ï¿½Î´ï¿½ï¿½ï¿½ï¿½ï¿½Äµï¿½ï¿½ï¿½ï¿½ï¿½
+         * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È»ï¿½ï¿½×ªï¿½ï¿½Ô´hash
+         * ï¿½Ë·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ç±ï¿½Òªï¿½ï¿½
          * @param {String} action
          * @param {Function} done
          */
@@ -443,15 +443,15 @@
             }
         }
         /**
-         * Ç¿ÖÆË¢ÐÂ
-         * ÔÚÎÞÐèÒýÆðhash±ä»¯Çé¿öÏÂ£¬Ç¿ÖÆÖ´ÐÐËùÓÐÖ÷ÌâÒ»´Î
+         * Ç¿ï¿½ï¿½Ë¢ï¿½ï¿½
+         * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½hashï¿½ä»¯ï¿½ï¿½ï¿½ï¿½Â£ï¿½Ç¿ï¿½ï¿½Ö´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½
          */
         function run(){
             locationHashChanged();
             return Pubsub;
         }
         /**
-         * ¶©ÔÄËùÓÐÃ»ÓÐ±»×¢²áµÄÖ÷Ìâ
+         * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½Ð±ï¿½×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
          * @param {Object} observer
          */
         function onUnsubscribed(observer){
@@ -459,7 +459,7 @@
             return Pubsub;
         }
         /**
-         * µ±hash·¢Éú±ä»¯Ê±´¥·¢,»áÏÈÓÚËùÓÐ¶©ÔÄµÄÖ÷Ìâ´¥·¢
+         * ï¿½ï¿½hashï¿½ï¿½ï¿½ï¿½ä»¯Ê±ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¶ï¿½ï¿½Äµï¿½ï¿½ï¿½ï¿½â´¥ï¿½ï¿½
          */
         function onChanged(callback){
             if(typeof callback==='function'){
@@ -468,7 +468,7 @@
             return Pubsub;
         }
         /**
-         * Ìø×ªµ½Ò»¸öÖ¸¶¨µÄÖ÷Ìâ
+         * ï¿½ï¿½×ªï¿½ï¿½Ò»ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
          * @param {Object} action
          */
         function forward(action){
@@ -487,11 +487,11 @@
         }
 
         /**
-         * ·µ»ØÉÏÒ»Ö÷Ìâ
+         * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½
          */
         function back(){
             var ac = getLastAction() || -1;
-            //Èç¹ûä¯ÀÀÆ÷ÓÐÀúÊ·Ôò×ßÀúÊ·
+            //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê·
             if(window.history.length>1){
                 ac = -1;
             }
@@ -506,7 +506,7 @@
             actionsHistory.push(action);
         }
         function getLastAction(){
-            //popÁ½´ÎÊÇÒòÎª×îºóÒ»´ÎÊÇµ±Ç°µÄ
+            //popï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Çµï¿½Ç°ï¿½ï¿½
             actionsHistory.pop();
             return actionsHistory.pop();
         }
@@ -591,61 +591,61 @@
         window.__newsapp_device_done = function(rs){
             afterCallback(rs,Callbacks.afterDevice);
         }
-        //¸üÐÂÓÃ»§×ÊÁÏ
+        //ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½
         function updateProfile(){
             protocol(Protocols.updateprofile,true);
         }
         /**
-         * µÇÂ¼
-         * @param {Function} callback ³É¹¦»Øµ÷
+         * ï¿½ï¿½Â¼
+         * @param {Function} callback ï¿½É¹ï¿½ï¿½Øµï¿½
          */
         function login(callback){
             Callbacks.afterLogin = callback;
             protocol(Protocols.login,true);
         }
         /**
-         * »ñÈ¡ÓÃ»§ÐÅÏ¢
-         * @param {Function} callback ³É¹¦»Øµ÷
+         * ï¿½ï¿½È¡ï¿½Ã»ï¿½ï¿½ï¿½Ï¢
+         * @param {Function} callback ï¿½É¹ï¿½ï¿½Øµï¿½
          */
         function userInfo(callback){
             Callbacks.afterUserinfo = callback;
             protocol(Protocols.userinfo,true);
         }
         /**
-         * »ñÈ¡Éè±¸ÐÅÏ¢
-         * @param {Function} callback ³É¹¦»Øµ÷
+         * ï¿½ï¿½È¡ï¿½è±¸ï¿½ï¿½Ï¢
+         * @param {Function} callback ï¿½É¹ï¿½ï¿½Øµï¿½
          */
         function device(callback){
             Callbacks.afterDevice = callback;
             protocol(Protocols.device,true);
         }
         /**
-         * ·ÖÏí
-         * @param {Function} callback ³É¹¦»Øµ÷
+         * ï¿½ï¿½ï¿½ï¿½
+         * @param {Function} callback ï¿½É¹ï¿½ï¿½Øµï¿½
          */
         function share(callback){
             Callbacks.afterShare = callback;
             protocol(Protocols.share,true);
         }
         /**
-         * ·ÖÏí
-         * @param {Function} callback ³É¹¦»Øµ÷
+         * ï¿½ï¿½ï¿½ï¿½
+         * @param {Function} callback ï¿½É¹ï¿½ï¿½Øµï¿½
          */
         function comment(callback){
             Callbacks.afterComment = callback;
             protocol(Protocols.comment,true);
         }
         /**
-         * ´ò¿ª¿Í»§¶ËÊÓÍ¼
+         * ï¿½ò¿ª¿Í»ï¿½ï¿½ï¿½ï¿½ï¿½Í¼
          * @param {String} type feedback,font,personalcenter,skin,font
          */
         function pushView(type){
             protocol(Protocols.pushview.replace('{TYPE}',type),true);
         }
         /**
-         * ¼ÓÃÜ
-         * @param {String} data ´ý¼ÓÃÜÊý¾Ý
-         * @param {Function} callback ³É¹¦»Øµ÷
+         * ï¿½ï¿½ï¿½ï¿½
+         * @param {String} data ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+         * @param {Function} callback ï¿½É¹ï¿½ï¿½Øµï¿½
          */
         function encrypt(data,callback){
             Callbacks.afterEncrypt = callback;
@@ -691,7 +691,7 @@
         isNewsapp = newsApp.isNewsApp,
         user = window.ns_Tie.user,
         isLogined = user.logined;
-    try {//Ö¸¶¨ÓòÃû
+    try {//Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         document.domain = "163.com";
     } catch(err) {
     }
@@ -700,7 +700,7 @@
     var list = $(".wn-nickname-list");
 
     /**
-     * ×óÓÒ»¬¶¯
+     * ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½
      */
     var isSwipe = false;
     $(".wn-wrapper").swipeLeft(function(e) {
@@ -780,16 +780,16 @@
             }
         }
     });
-    //½ûÖ¹bodyÉÏÏÂ»¬¶¯
+    //ï¿½ï¿½Ö¹bodyï¿½ï¿½ï¿½Â»ï¿½ï¿½ï¿½
     $("body").on('touchmove',function(e){
         e.preventDefault();
     });
     /**
-     * ÏÔÊ¾³ÆºÅÐÅÏ¢µ¯²ã
+     * ï¿½ï¿½Ê¾ï¿½Æºï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½
      */
     function showModal() {
         $("#wn_form").submit();
-        var str = 'ÄúÒÑ»ñµÃ¡°' + $(".wn-wrapper li.active img").attr("alt") + 'ÇòÃÔ¡±³ÆºÅ£¬ÏÖÔÚÄú¿ÉÒÔÔÚ¸úÌùÖÐÎªÄúÐÄ°®µÄÇò¶ÓÄÅº°ÖúÍþÁË£¡';
+        var str = 'ï¿½ï¿½ï¿½Ñ»ï¿½Ã¡ï¿½' + $(".wn-wrapper li.active img").attr("alt") + 'ï¿½ï¿½ï¿½Ô¡ï¿½ï¿½ÆºÅ£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½Ä°ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Åºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ë£ï¿½';
         $(".wn-modal-wrapper .wn-modal-main p").html(str);
         $(".wn-modal-wrapper").show();
     }
@@ -831,15 +831,15 @@
         }
     });
     var applyError = {
-        '-1' : 'Í¨ÐÐÖ¤ÑéÖ¤Ê§°Ü',
-        '-2' : '³ÆºÅidÎª¿Õ»ò²»´æÔÚ',
-        '-3' : 'etimeÎª¿Õ»ò²»ºÏ·¨',
-        '-4' : 'ÎÞÉêÇëÈ¨ÏÞ',
-        '0' : 'Ê§°Ü'
+        '-1' : 'Í¨ï¿½ï¿½Ö¤ï¿½ï¿½Ö¤Ê§ï¿½ï¿½',
+        '-2' : 'ï¿½Æºï¿½idÎªï¿½Õ»ò²»´ï¿½ï¿½ï¿½',
+        '-3' : 'etimeÎªï¿½Õ»ò²»ºÏ·ï¿½',
+        '-4' : 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¨ï¿½ï¿½',
+        '0' : 'Ê§ï¿½ï¿½'
     };
 
     /**
-     * Ìá½»ÉêÇëÇëÇó
+     * ï¿½á½»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      */
     function submitApplyForm() {
         $.post('http://tie.163.com/reply/applyTitle.jsp', {
@@ -857,7 +857,7 @@
     }
 
     /**
-     * ´´½¨IFrame
+     * ï¿½ï¿½ï¿½ï¿½IFrame
      * @return Element iframe
      * @method createFrame
      */
@@ -871,7 +871,7 @@
         iframe.onload = iframe.onreadystatechange = function() {
             if (!listenFrame) {
                 return;
-            }//²»ÓÃÊÂ¼þÐ£¶ÔµÇÂ¼
+            }//ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½Ð£ï¿½Ôµï¿½Â¼
             if ((!this.readyState || this.readyState == 'loaded' || this.readyState == 'complete')) {
 
                 if (count || this.contentWindow.location.search) {
@@ -888,7 +888,7 @@
     }
     var toElement = (function() {
         var div = document.createElement('div');
-        return function(html) {//±Õ°ü,ÎÞÐëÔÙ´Î´´½¨div
+        return function(html) {//ï¿½Õ°ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½Ù´Î´ï¿½ï¿½ï¿½div
             div.innerHTML = html;
             var element = div.firstChild;
             div.removeChild(element);
@@ -902,11 +902,11 @@
             pf = $(".login-form .password"),
             pass = pf.val();
         if (name.length == 0) {
-            showError("ÇëÊäÈëÓÃ»§Ãû");
+            showError("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½");
             nf.focus();
             return false;
         } else if (pass.length == 0) {
-            showError("ÇëÊäÈëÃÜÂë");
+            showError("ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½");
             pf.focus();
             return false;
         }
@@ -914,7 +914,7 @@
     }
     function loginSuccess(data) {
         isLogined = true;
-        $(".login-tips").html("µÇÂ¼³É¹¦£¡");
+        $(".login-tips").html("ï¿½ï¿½Â¼ï¿½É¹ï¿½ï¿½ï¿½");
 
         setTimeout(function() {
             $(".wn-login-modal").hide();
@@ -952,7 +952,7 @@
         }
     }
     /**
-     * »ñÈ¡URLÖÐµÄËÑË÷²ÎÊý
+     * ï¿½ï¿½È¡URLï¿½Ðµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      * @param String href
      * @method getSearches
      */
@@ -966,29 +966,29 @@
         return data;
     }
     var errorMsg = {
-        412 : 'Äú³¢ÊÔµÄ´ÎÊýÒÑ¾­Ì«¶à,Çë¹ýÒ»¶ÎÊ±¼äÔÙÊÔ',
-        414 : 'ÄúµÄIPµÇÂ¼Ê§°Ü´ÎÊý¹ý¶à,ÇëÉÔºóÔÙÊÔ',
-        415 : 'Äú½ñÌìµÇÂ¼´íÎó´ÎÊýÒÑ¾­Ì«¶à,ÇëÃ÷ÌìÔÙÊÔ',
-        416 : 'ÄúµÄIP½ñÌìµÇÂ¼¹ýÓÚÆµ·±£¬ÇëÉÔºóÔÙÊÔ',
-        417 : 'ÄúµÄIP½ñÌìµÇÂ¼´ÎÊý¹ý¶à£¬ÇëÃ÷ÌìÔÙÊÔ',
-        418 : 'Äú½ñÌìµÇÂ¼´ÎÊý¹ý¶à,ÇëÃ÷ÌìÔÙÊÔ',
-        419 : 'ÄúµÄµÇÂ¼²Ù×÷¹ýÓÚÆµ·±£¬ÇëÉÔºòÔÙÊÔ',
-        420 : 'ÓÃ»§Ãû²»´æÔÚ',
-        422 : 'ÕÊºÅ±»Ëø¶¨£¬ÇëÄú½âËøºóÔÙµÇÂ¼',
-        424 : '¸Ãö¦ºÅ·þÎñÒÑµ½ÆÚ£¬ÇëÄúÐø·Ñ',
-        425 : 'ÍâÓòÕÊºÅ²¢ÇÒÔÚ¼¤»îÓÐÐ§ÆÚÒÔÄÚ',
-        426 : 'ÍâÓòÕÊºÅ²¢ÇÒÒÑ¾­¹ýÁË¼¤»îÓÐÐ§ÆÚÏÞ',
-        427 : '³¬Ê±£¬ÒÑ³¬¹ý5·ÖÖÓÓÐÐ§ÆÚ',
-        428 : 'ÐèÒª½øÈëÖÐ¼äÌáÐÑÒ³Ãæ',
-        460 : 'ÃÜÂë²»ÕýÈ·',
-        500 : 'ÏµÍ³·±Ã¦£¬ÇëÄúÉÔºóÔÙÊÔ',
-        503 : 'ÏµÍ³Î¬»¤£¬ÇëÄúÉÔºóÔÙÊÔ',
-        1000: 'ÇëÊäÈëÓÐÐ§µÄÓÃ»§Ãû'
+        412 : 'ï¿½ï¿½ï¿½ÔµÄ´ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½Ì«ï¿½ï¿½,ï¿½ï¿½ï¿½Ò»ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½',
+        414 : 'ï¿½ï¿½ï¿½IPï¿½ï¿½Â¼Ê§ï¿½Ü´ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½Ôºï¿½ï¿½ï¿½ï¿½ï¿½',
+        415 : 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½Ì«ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½',
+        416 : 'ï¿½ï¿½ï¿½IPï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôºï¿½ï¿½ï¿½ï¿½ï¿½',
+        417 : 'ï¿½ï¿½ï¿½IPï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½à£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½',
+        418 : 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½,ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½',
+        419 : 'ï¿½ï¿½Äµï¿½Â¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôºï¿½ï¿½ï¿½ï¿½ï¿½',
+        420 : 'ï¿½Ã»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½',
+        422 : 'ï¿½ÊºÅ±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ùµï¿½Â¼',
+        424 : 'ï¿½ï¿½ï¿½ï¿½ï¿½Å·ï¿½ï¿½ï¿½ï¿½Ñµï¿½ï¿½Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½',
+        425 : 'ï¿½ï¿½ï¿½ï¿½ï¿½ÊºÅ²ï¿½ï¿½ï¿½ï¿½Ú¼ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½',
+        426 : 'ï¿½ï¿½ï¿½ï¿½ï¿½ÊºÅ²ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½Ë¼ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½ï¿½ï¿½',
+        427 : 'ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Ñ³ï¿½ï¿½ï¿½5ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½',
+        428 : 'ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½Ð¼ï¿½ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½',
+        460 : 'ï¿½ï¿½ï¿½ë²»ï¿½ï¿½È·',
+        500 : 'ÏµÍ³ï¿½ï¿½Ã¦ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôºï¿½ï¿½ï¿½ï¿½ï¿½',
+        503 : 'ÏµÍ³Î¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ôºï¿½ï¿½ï¿½ï¿½ï¿½',
+        1000: 'ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð§ï¿½ï¿½ï¿½Ã»ï¿½ï¿½ï¿½'
     };
 
 
     /**
-     * Êä³ö´íÎóÐÅÏ¢
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
      * @param msg
      */
     function showError(msg) {
@@ -996,7 +996,7 @@
     }
 
     /**
-     * Ð£ÑéµÇÂ¼×´Ì¬
+     * Ð£ï¿½ï¿½ï¿½Â¼×´Ì¬
      */
     function verifyLogin() {
         if (verifyCookie && verifyCookie()) {
@@ -1019,7 +1019,7 @@
         var S_INFO = NTES.cookie.get('S_INFO'), P_INFO = NTES.cookie.get('P_INFO');
         return (S_INFO && (P_INFO[2] != '2'));
     }
-    //Ð£ÑéCookieµÄ·½·¨ÊµÏÖ
+    //Ð£ï¿½ï¿½Cookieï¿½Ä·ï¿½ï¿½ï¿½Êµï¿½ï¿½
     var success = {},
         failed = {};
     success.userProduct = function(data) {

@@ -113,6 +113,12 @@ p {
 textarea {
   resize: none;
 }
+table {
+  border: 0;
+  margin: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 .tp-wrapper {
   width: 100%;
   min-height: 100%;
@@ -130,8 +136,8 @@ footer p {
   color: #5A5555;
   text-align: center;
 }
-/* ���ҳ */
-/* ������ */
+/* 相册页面 */
+/* 顶部图片 */
 .tp-banner-image {
   width: 640px;
   height: 340px;
@@ -162,11 +168,13 @@ footer p {
   background: #e4e4e4;
   padding-top: 20px;
 }
-.tp-album-main .tp-album-btn-big {
-  margin-bottom: 20px;
-}
 .tp-album-main.tp-album-photo {
   padding: 20px;
+  overflow: hidden;
+  width: 600px;
+}
+.tp-album-main.tp-album-upload {
+  padding: 20px 20px 0 20px;
   overflow: hidden;
   width: 600px;
 }
@@ -176,6 +184,49 @@ footer p {
   overflow: hidden;
   padding: 20px 30px;
   border-top: 20px solid #e4e4e4;
+}
+/* 上传图片 */
+.gray-wrapper {
+  background: #e4e4e4;
+  padding: 20px;
+}
+#fsUploadProgress .info {
+  width: 480px;
+}
+#fsUploadProgress tr {
+  background: #fff;
+  height: 100px;
+}
+#fsUploadProgress .progressName {
+  padding: 10px 30px 10px 10px;
+}
+#fsUploadProgress .progressName .imgWrapper {
+  background: #ccc;
+  height: 80px;
+  width: 80px;
+}
+#fsUploadProgress .progressContainer td {
+  margin: 20px;
+}
+#fsUploadProgress .tp-close {
+  float: right;
+  margin-right: 20px;
+}
+.progress {
+  height: 10px;
+  width: 414px;
+  overflow: hidden;
+  background-color: #ccc;
+  float: left;
+  margin-top: 20px;
+}
+.progress-striped .progress-bar-info {
+  background-color: #2F5BA3;
+  height: 10px;
+  font-size: 12px;
+  line-height: 10px;
+  color: #ffffff;
+  text-align: center;
 }
 /* 照片流 */
 #tp-album-thumb {
@@ -187,7 +238,8 @@ footer p {
   float: left;
   clear: left;
 }
-.tp-photo-wrapper img {
+.tp-photo-wrapper .js-album-item {
+  background: #ccc;
   margin-right: 20px;
   float: left;
 }
@@ -261,10 +313,7 @@ footer p {
 .tp-photo-info .tp-photo-album span {
   color: #6D6868;
 }
-/* ����ҳ�� */
-.tp-like-user {
-  /* ����ʱ���� */
-}
+/* 最赞页面 */
 .tp-like-user .tp-best-like {
   display: block;
   width: 220px;
@@ -425,4 +474,9 @@ footer p {
   width: 52px;
   height: 52px;
   background-position: -155px 0;
+}
+.tp-icon.tp-close {
+  background-position: -208px 0;
+  width: 28px;
+  height: 28px;
 }

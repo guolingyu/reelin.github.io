@@ -10,27 +10,36 @@
     <meta name="keywords" content="图扑，tupu，照片，话题，交友，美图，照片交友，话题交友，美图交友">
     <meta name="description" content="图扑，用照片创造话题。发布照片就可以发起话题，跟踪话题就可以发现世界。在这里，和好友、陌生人一起创造充满乐趣的生活图谱">
 
-    <link rel="stylesheet" type="text/css" href="../style/style.css" />
-    <script type="text/javascript" src="../js/util.js"></script>
-    <script type="text/javascript" src="../js/zepto.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/style/style.css" />
+    <script type="text/javascript" src="/js/util.js"></script>
+    <script type="text/javascript" src="/js/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="/js/plupload.full.min.js"></script>
+    <script type="text/javascript" src="/js/ui.js"></script>
+    <script type="text/javascript" src="/js/qiniu.js"></script>
 </head>
 <body>
     <div class="tp-wrapper">
         <section class="tp-album-banner">
             <div class="tp-banner-image">
                 <img src="../images/banner.png" alt="群相册名字群相册名字群相册名字群相册名字群相册名字" width="100%"/>
-                <h2>「群相册名字群相册名字群相册名字群相册名字」</h2>
+                <h2 class="js-album-name">「群相册名字群相册名字群相册名字群相册名字」</h2>
             </div>
         </section>
         <div class="tp-album-tab clearfix">
-            <a class="tp-album-btn tp-album-number active" href="">723 照片</a>
+            <a class="tp-album-btn tp-album-number active" href=""><span class="js-group-num"></span> 照片</a>
             <span class="line"></span>
-            <a class="tp-album-btn tp-album-member" href="javascript:;">76 群友</a>
+            <a class="tp-album-btn tp-album-member" href="javascript:;"><span class="js-member-num"></span> 群友</a>
         </div>
+
+        <section class="tp-album-main tp-album-upload clearfix" id="container">
+            <a class="tp-album-btn tp-album-btn-big" id="js-upload-image" href="#"><span class="tp-icon tp-icon-add"></span>添加相片到相册</a>
+
+        </section>
+        <section class="gray-wrapper"><table id="fsUploadProgress"></table></section>
         <section class="tp-album-main tp-album-photo clearfix">
-            <a class="tp-album-btn tp-album-btn-big" href="javascript:;"><span class="tp-icon tp-icon-add"></span>添加相片到相册</a>
             <section id="tp-album-thumb" class="clearfix"></section>
         </section>
+
         <section class="tp-album-main tp-member-wrapper" style="display: none;">
             <section class="tp-member-thumb clearfix">
                 <div class="tp-member-item">
@@ -78,6 +87,7 @@
         <div class="modal-main"></div>
     </div>
     <div id="hidden-wrapper" style="overflow:hidden;height:0;"></div>
-    <script type="text/javascript" src="../js/loadImage.js"></script>
+    <script type="text/javascript" src="/js/upload_image.js"></script>
+    <!--<script type="text/javascript" src="../js/loadImage.js"></script>-->
 </body>
 </html>

@@ -16,8 +16,8 @@ footer {
     }
 }
 
-/* ���ҳ */
-/* ������ */
+/* 相册页面 */
+/* 顶部图片 */
 .tp-banner-image {
     width: 640px;
     height: 340px;
@@ -48,11 +48,13 @@ footer {
 .tp-album-main {
     background: #e4e4e4;
     padding-top: 20px;
-    .tp-album-btn-big {
-        margin-bottom: 20px;
-    }
     &.tp-album-photo {
         padding: 20px;
+        overflow: hidden;
+        width: 600px;
+    }
+    &.tp-album-upload {
+        padding: 20px 20px 0 20px;
         overflow: hidden;
         width: 600px;
     }
@@ -64,6 +66,55 @@ footer {
         border-top: 20px solid #e4e4e4;
     }
 }
+/* 上传图片 */
+.gray-wrapper {
+    background: #e4e4e4;
+    padding: 20px;
+}
+#fsUploadProgress {
+    .info {
+        width: 480px;
+    }
+    tr {
+        background: #fff;
+        height: 100px;
+    }
+    .progressName {
+        padding: 10px 30px 10px 10px;
+        .imgWrapper {
+            background: #ccc;
+            height: 80px;
+            width: 80px;
+        }
+    }
+    .progressContainer {
+
+        td {
+            margin: 20px;
+        }
+    }
+    .tp-close {
+        float: right;
+        margin-right: 20px;
+    }
+}
+.progress {
+    height: 10px;
+    width: 414px;
+    overflow: hidden;
+    background-color: #ccc;
+    float: left;
+    margin-top: 20px;
+}
+.progress-striped .progress-bar-info {
+    background-color: #2F5BA3;
+    height: 10px;
+    font-size: 12px;
+    line-height: 10px;
+    color: #ffffff;
+    text-align: center;
+}
+
 /* 照片流 */
 #tp-album-thumb {
     width: 1200px;
@@ -73,7 +124,8 @@ footer {
     margin-bottom: 20px;
     float: left;
     clear: left;
-    img {
+    .js-album-item {
+        background: #ccc;
         margin-right: 20px;
         float: left;
     }
@@ -152,7 +204,7 @@ footer {
     }
 }
 
-/* ����ҳ�� */
+/* 最赞页面 */
 .tp-like-user {
     .tp-best-like {
         display: block;
@@ -216,7 +268,7 @@ footer {
             margin-bottom: 10px;
         }
     }
-    /* ����ʱ���� */
+
     .tp-deadline-time {
         position: relative;
         margin-bottom: 20px;
@@ -317,6 +369,11 @@ footer {
         width: 52px;
         height: 52px;
         background-position: -155px 0;
+    }
+    &.tp-close {
+        background-position: -208px 0;
+        width: 28px;
+        height: 28px;
     }
 }
 
