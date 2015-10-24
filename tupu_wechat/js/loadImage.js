@@ -22,69 +22,70 @@
         this.w_stand = 400;
         this.w_win = 600;
         this.w2 = 0;
-    }
+    };
+        /* 插入图片 */
+    LoadImage.prototype.insertImage(image, index, len) {
+            var imgHeight = image.height,
+                imgWidth = image.width,
+                imgUrl = image.url,
+                $imgWrapper = $('<div class="js-album-item"></div>').height(h_stand),
+                $img = $('<img src="">').attr('src', imgUrl).height(h_stand);
 
-    /* 插入图片 */
-    function insertImage(image, index, len) {
-        var imgHeight = image.height,
-            imgWidth = image.width,
-            imgUrl = image.url,
-            $imgWrapper = $('<div class="js-album-item"></div>').height(h_stand),
-            $img = $('<img src="">').attr('src', imgUrl).height(h_stand);
-//        $('#hidden-wrapper').append($img);
+            $imgWrapper.append($img);
+            if (w2 < w_stand) {
+                if (w2 == 0) {
+                    $('#tp-album-thumb').append($('<div class="tp-photo-wrapper clearfix"></div>').append($imgWrapper));
+                } else {
+                    $('.tp-photo-wrapper').last().append($imgWrapper);
+                }
+                w2 = w2 + $img.width();
 
-        $imgWrapper.append($img);
-        if (w2 < w_stand) {
-            if (w2 == 0) {
-                $('#tp-album-thumb').append($('<div class="tp-photo-wrapper clearfix"></div>').append($imgWrapper));
             } else {
-                $('.tp-photo-wrapper').last().append($imgWrapper);
+                handleImage();
+                w2 = 0;
+                $('#tp-album-thumb').append($('<div class="tp-photo-wrapper clearfix"></div>').append($imgWrapper));
+                w2 = w2 + $img.width();
+
             }
-            w2 = w2 + $img.width();
-
-        } else {
-            handleImage();
-            w2 = 0;
-            $('#tp-album-thumb').append($('<div class="tp-photo-wrapper clearfix"></div>').append($imgWrapper));
-            w2 = w2 + $img.width();
+            if ($('.tp-photo-wrapper img').length == len) {
+                handleImage(true);
+            }
 
         }
-        if ($('.tp-photo-wrapper img').length == len) {
-            handleImage(true);
-        }
 
-    }
+        /* 处理整行图片 */
+        function handleImage(isLast) {
+            var $imageWrapper = $('.tp-photo-wrapper').last(),
+                images = $imageWrapper.find('img'),
+                imageWrapper =  $imageWrapper.find('.js-album-item'),
+                w_current = w_win + (images.length-1) * 20,
+                h_deta = h_stand * w_current / $imageWrapper.width();
 
-    /* 处理整行图片 */
-    function handleImage(isLast) {
-        var $imageWrapper = $('.tp-photo-wrapper').last(),
-            images = $imageWrapper.find('img'),
-            imageWrapper =  $imageWrapper.find('.js-album-item'),
-            w_current = w_win + (images.length-1) * 20,
-            h_deta = h_stand * w_current / $imageWrapper.width();
+            if (isLast) { return ; }
 
-        if (isLast) { return ; }
+            if (w2 != w_win) {
+                /* w2/w_stand = h_stand/deta_h */
+                images.height(h_deta);
+                imageWrapper.height(h_deta);
+                var w_wrapper = $('.tp-photo-wrapper').last().width(),
+                    w_deta = Math.abs(w_current - w_wrapper) / images.length;
+                if (w_wrapper < w_win) {
+                    images.each(function() {
+                        $(this).width($(this).width() + w_deta);
+                        $(this).parent().width($(this).width() + w_deta);
+                    });
 
-        if (w2 != w_win) {
-            /* w2/w_stand = h_stand/deta_h */
-            images.height(h_deta);
-            imageWrapper.height(h_deta);
-            var w_wrapper = $('.tp-photo-wrapper').last().width(),
-                w_deta = Math.abs(w_current - w_wrapper) / images.length;
-            if (w_wrapper < w_win) {
-                images.each(function() {
-                    $(this).width($(this).width() + w_deta);
-                    $(this).parent().width($(this).width() + w_deta);
-                });
-
-            } else if (w_wrapper > w_win) {
-                images.each(function() {
-                    $(this).width($(this).width() - w_deta);
-                    $(this).parent().width($(this).width() - w_deta);
-                })
+                } else if (w_wrapper > w_win) {
+                    images.each(function() {
+                        $(this).width($(this).width() - w_deta);
+                        $(this).parent().width($(this).width() - w_deta);
+                    })
+                }
             }
         }
     }
+
+
 
 
 

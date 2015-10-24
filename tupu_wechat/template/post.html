@@ -12,6 +12,8 @@
 
     <link rel="stylesheet" type="text/css" href="../style/style.css" />
     <script type="text/javascript" src="../js/util.js"></script>
+    <script type="text/javascript" src="../js/jquery-1.9.0.min.js"></script>
+
 </head>
 <body>
     <div class="tp-wrapper">
@@ -23,11 +25,16 @@
             </div>
         </section>
         <section class="tp-photo-info">
-            <img src="../images/3.jpg" width="640px">
+            <div class="photo-wrapper">
+                <img src="" style="display: none;">
+            </div>
+
             <p class="tp-photo-desc">撞上鄂乡的古伦木沓节张鸣鄂伦春是人数不多的小民族，但是，这个民族在人们眼里，却不陌生。稍微有点年纪的人，有哪个不知道那首歌呢——“高高的兴安岭，一片大森林，森林里住着勇敢的鄂伦春，你呀一匹烈马...</p>
             <div class="tp-photo-like">
                 <a class="js-tp-like tp-icon tp-icon-like" href=""></a>
-                <p class="tp-like-num">173 赞</p>
+                <span class="tp-icon tp-heart-left tp-heart"></span>
+                <span class="tp-icon tp-heart-right tp-heart"></span>
+                <p class="tp-like-num"><span class="js-like-num">173</span> 赞</p>
 
             </div>
             <div class="tp-photo-album">
@@ -40,5 +47,6 @@
         </section>
 
     </div>
+    <script type="text/javascript" src="../js/post.js"></script>
 </body>
 </html>

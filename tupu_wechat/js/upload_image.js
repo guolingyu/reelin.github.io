@@ -10,21 +10,14 @@
 
     var page = 1;
 
+    var group_id = '13';
 
 
-//    $.ajaxSetup({
-//        headers: {'Authorization': 'Basic '+ $.base64_encode('anonymous:js-dev-key')}
-//    });
-//    $.post('http://121.201.58.29:5000/api/v1/auth/email/register/',{'email': '117361827@qq.com', 'password': 'rl110110'}, function(data){
-//        $.ajaxSetup({
-//            headers: {'Authorization': 'Basic '+ $.base64_encode(data.user.uuid+':'+key)}
-//        });
-//        uploadImage();
-//    });
+
     $.ajaxSetup({
         headers: {'Authorization': 'Basic '+ $.base64_encode('anonymous:'+key)}
     });
-    $.post('http://121.201.58.29:5000/api/v1/auth/email/login/',{'email': '117361827@qq.com', 'password': 'rl110110'}, function(data){
+    $.post('http://121.201.58.29:80/api/v1/auth/email/login/',{'email': '117361827@qq.com', 'password': 'rl110110'}, function(data){
         if (data.user) {
             $.ajaxSetup({
                 headers: {'Authorization': 'Basic '+ $.base64_encode(data.user.uuid+':'+key)}
@@ -40,9 +33,26 @@
 //            });
         }
     });
+    function register() {
+        $.ajaxSetup({
+            headers: {'Authorization': 'Basic '+ $.base64_encode('anonymous:js-dev-key')}
+        });
+        $.post('http://121.201.58.29:80/api/v1/auth/email/register/',{'email': '117361827@qq.com', 'password': 'rl110110'}, function(data){
+            $.ajaxSetup({
+                headers: {'Authorization': 'Basic '+ $.base64_encode(data.user.uuid+':'+key)}
+            });
+        });
+    }
+    function buildGroup() {
+        $.post('http://121.201.58.29:80/api/v1/groups/',{'name': '世界同時多発ラブ仮病捏造バラード'}, function(data){
+            if (data.group) {
+                group_id = data.group.id;
+            }
+        });
+    }
 
     function uploadImage() {
-        $.get('http://121.201.58.29:5000/api/v1/apps/qiniu/', function(data){
+        $.get('http://121.201.58.29:80/api/v1/apps/qiniu/', function(data){
             if (data) {
                 qiniu = data;
                 var uploader = Qiniu.uploader({
@@ -102,8 +112,8 @@
 
 //                                progress.setComplete(up, info);
                             var imageInfo = Qiniu.imageInfo(res.key);
-                            $.post('http://121.201.58.29:5000/api/v1/posts/',{
-                                'group_id': '6',
+                            $.post('http://121.201.58.29:80/api/v1/posts/',{
+                                'group_id': group_id,
                                 'url': sourceLink,
                                 'width': imageInfo.width,
                                 'height': imageInfo.height,
@@ -150,7 +160,7 @@
 
     /* 登陆加载相册图片 */
     function getGroup(page, fileId) {
-        $.post('http://121.201.58.29:5000/api/v1/auth/email/login/',{'email': '117361827@qq.com', 'password': 'rl110110'}, function(data){
+        $.post('http://121.201.58.29:80/api/v1/auth/email/login/',{'email': '117361827@qq.com', 'password': 'rl110110'}, function(data){
             if (data.user) {
                 getGroupImages(page, fileId);
 
@@ -165,7 +175,7 @@
             'page': page || 1
         };
         if (page == 1) {w2 = 0;}
-        $.get('http://121.201.58.29:5000/api/v1/groups/6/posts/',data, function(data){
+        $.get('http://121.201.58.29:80/api/v1/groups/'+ group_id +'/posts/',data, function(data){
             var images_len = data.posts.length,
                 $delete = $('#tp-album-thumb .tp-photo-wrapper.delete');
             if (images_len) {
@@ -189,7 +199,7 @@
         var imgHeight = image.height,
             imgWidth = image.width,
             imgUrl = image.url,
-            $imgWrapper = $('<a href="\"' + image.id + ' class="js-album-item"></div>').height(h_stand),
+            $imgWrapper = $('<a href="\"' + ' class="js-album-item"></a>').height(h_stand),
             $img = $('<img src="">').attr('src', imgUrl).height(h_stand);
 //        $('#hidden-wrapper').append($img);
 
@@ -223,7 +233,7 @@
             w_current = w_win + (images.length-1) * 20,
             h_deta = h_stand * w_current / $imageWrapper.width();
 
-        if (isLast) { return ; }
+        if (isLast) { return; }
 
         if (w2 != w_win) {
             /* w2/w_stand = h_stand/deta_h */

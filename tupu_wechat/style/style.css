@@ -113,6 +113,16 @@ p {
 textarea {
   resize: none;
 }
+.tp-left {
+  float: left;
+}
+.tp-right {
+  float: right;
+}
+.fz26 {
+  font-size: 26px;
+  line-height: 28px;
+}
 table {
   border: 0;
   margin: 0;
@@ -242,6 +252,7 @@ footer p {
   background: #ccc;
   margin-right: 20px;
   float: left;
+  display: block;
 }
 /* 方块流 */
 .tp-member-thumb {
@@ -266,6 +277,7 @@ footer p {
 /* ��Ƭҳ */
 .tp-user {
   padding: 20px;
+  background-color: #fff;
 }
 .tp-user img,
 .tp-user .tp-user-info {
@@ -273,6 +285,7 @@ footer p {
 }
 .tp-user .tp-user-info {
   margin-left: 20px;
+  width: 490px;
 }
 .tp-user .tp-user-info .tp-user-name {
   font-size: 32px;
@@ -284,6 +297,18 @@ footer p {
   font-size: 26px;
   color: #aaa;
 }
+.tp-photo-info {
+  background: #fff;
+}
+.tp-photo-info .photo-wrapper {
+  background: #ccc;
+  min-height: 128px;
+}
+.tp-photo-info .photo-wrapper img {
+  max-width: 640px;
+  display: block;
+  margin: 0 auto;
+}
 .tp-photo-info .tp-photo-desc {
   font-size: 30px;
   line-height: 38px;
@@ -291,6 +316,7 @@ footer p {
   padding: 20px;
 }
 .tp-photo-info .tp-photo-like {
+  position: relative;
   height: 110px;
   font-size: 30px;
   color: #E60012;
@@ -302,6 +328,7 @@ footer p {
   margin-top: 36px;
 }
 .tp-photo-info .tp-photo-album {
+  background: #fff;
   height: 120px;
   padding: 0 20px;
   font-size: 30px;
@@ -413,6 +440,84 @@ footer p {
 .tp-like-user .tp-deadline-time .fixed-time.second {
   left: 510px;
 }
+/* 个人页面 */
+.tp-store-wrapper {
+  padding: 20px;
+  border-bottom: 1px solid #E4E4E4;
+}
+.tp-store-wrapper .tp-close {
+  margin-top: 20px;
+  margin-right: 100px;
+}
+.tp-store-wrapper .tp-store-info {
+  width: 414px;
+}
+.tp-store-wrapper .tp-store {
+  margin-right: 20px;
+}
+.tp-store-wrapper p {
+  color: #5A5555;
+}
+.tp-store-wrapper .tp-return {
+  margin-top: 10px;
+}
+.tp-album .tp-user .tp-user-info .tp-user-name {
+  margin-top: 0;
+  line-height: 38px;
+}
+/* 弹层 */
+.modal {
+  position: fixed;
+  background: #000;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  width: 640px;
+  display: none;
+}
+.modal .modal-main {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 101;
+  width: 100%;
+  overflow: hidden;
+}
+.modal .modal-main img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal .modal-main .tp-photo-like {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+.modal .modal-main .tp-photo-like .js-tp-desc {
+  font-size: 20px;
+  color: #fff;
+  max-height: 54px;
+  overflow: hidden;
+  width: 560px;
+  padding: 0 40px 10px 40px;
+  border-bottom: 1px solid #fff;
+}
+.modal .modal-main .tp-photo-like .js-tp-like {
+  margin: 40px 20px;
+}
+.modal .modal-main .tp-photo-like .tp-like-num {
+  margin-left: 20px;
+  font-size: 26px;
+  color: #fff;
+  line-height: 128px;
+}
+.modal .modal-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  z-index: 999;
+}
 /* btn */
 .tp-album-btn {
   width: 319px;
@@ -470,6 +575,52 @@ footer p {
   height: 54px;
   background-position: -46px 0;
 }
+.tp-icon.tp-icon-liked {
+  background-position: -103px 0;
+  width: 50px;
+  height: 54px;
+  float: right;
+  margin-top: 33px;
+  animation: scaleToBig linear 0.7s 1;
+  -moz-animation: scaleToBig linear 0.7s 1;
+  -webkit-animation: scaleToBig linear 0.7s 1;
+  -o-animation: scaleToBig linear 0.7s 1;
+  -ms-animation: scaleToBig linear 0.7s 1;
+}
+.tp-icon.tp-heart-left {
+  background-position: -238px 0;
+  width: 35px;
+  height: 54px;
+  position: absolute;
+  right: 40px;
+  top: 33px;
+  display: none;
+}
+.tp-icon.tp-heart-left.broken {
+  display: block;
+  animation: heartLeft linear 0.7s 1;
+  -moz-animation: heartLeft linear 0.7s 1;
+  -webkit-animation: heartLeft linear 0.7s 1;
+  -o-animation: heartLeft linear 0.7s 1;
+  -ms-animation: heartLeft linear 0.7s 1;
+}
+.tp-icon.tp-heart-right {
+  background-position: -273px 0;
+  width: 35px;
+  height: 54px;
+  position: absolute;
+  right: 13px;
+  top: 32px;
+  display: none;
+}
+.tp-icon.tp-heart-right.broken {
+  display: block;
+  animation: heartRight linear 0.7s 1;
+  -moz-animation: heartRight linear 0.7s 1;
+  -webkit-animation: heartRight linear 0.7s 1;
+  -o-animation: heartRight linear 0.7s 1;
+  -ms-animation: heartRight linear 0.7s 1;
+}
 .tp-icon.tp-logo {
   width: 52px;
   height: 52px;
@@ -479,4 +630,400 @@ footer p {
   background-position: -208px 0;
   width: 28px;
   height: 28px;
+}
+.tp-icon.tp-close-black {
+  background-position: -497px 0;
+  width: 31px;
+  height: 31px;
+}
+.tp-icon.tp-store {
+  background-position: -306px 0;
+  width: 50px;
+  height: 54px;
+}
+.tp-icon.tp-return {
+  background-position: -358px 0;
+  width: 38px;
+  height: 41px;
+}
+.tp-icon.tp-like-black {
+  background-position: -395px 0;
+  width: 51px;
+  height: 48px;
+}
+.tp-icon.tp-liked-black {
+  background-position: -447px 0;
+  width: 51px;
+  height: 48px;
+}
+@keyframes scaleToBig {
+  0% {
+    transform-origin: center center;
+    transform: scale(1, 1);
+  }
+  20% {
+    transform-origin: center center;
+    transform: scale(1.15, 1.15);
+  }
+  50% {
+    transform-origin: center center;
+    transform: scale(1.3, 1.3);
+  }
+  80% {
+    transform-origin: center center;
+    transform: scale(1.15, 1.15);
+  }
+  100% {
+    transform-origin: center center;
+    transform: scale(1, 1);
+  }
+}
+@-ms-keyframes scaleToBig {
+  0% {
+    transform-origin: center center;
+    transform: scale(1, 1);
+  }
+  20% {
+    transform-origin: center center;
+    transform: scale(1.15, 1.15);
+  }
+  50% {
+    transform-origin: center center;
+    transform: scale(1.3, 1.3);
+  }
+  80% {
+    transform-origin: center center;
+    transform: scale(1.15, 1.15);
+  }
+  100% {
+    transform-origin: center center;
+    transform: scale(1, 1);
+  }
+}
+@-moz-keyframes scaleToBig {
+  0% {
+    transform-origin: center center;
+    transform: scale(1, 1);
+  }
+  20% {
+    transform-origin: center center;
+    transform: scale(1.15, 1.15);
+  }
+  50% {
+    transform-origin: center center;
+    transform: scale(1.3, 1.3);
+  }
+  80% {
+    transform-origin: center center;
+    transform: scale(1.15, 1.15);
+  }
+  100% {
+    transform-origin: center center;
+    transform: scale(1, 1);
+  }
+}
+@-webkit-keyframes scaleToBig {
+  0% {
+    transform-origin: center center;
+    transform: scale(1, 1);
+  }
+  20% {
+    transform-origin: center center;
+    transform: scale(1.15, 1.15);
+  }
+  50% {
+    transform-origin: center center;
+    transform: scale(1.3, 1.3);
+  }
+  80% {
+    transform-origin: center center;
+    transform: scale(1.15, 1.15);
+  }
+  100% {
+    transform-origin: center center;
+    transform: scale(1, 1);
+  }
+}
+@-o-keyframes scaleToBig {
+  0% {
+    transform-origin: center center;
+    transform: scale(1, 1);
+  }
+  20% {
+    transform-origin: center center;
+    transform: scale(1.15, 1.15);
+  }
+  50% {
+    transform-origin: center center;
+    transform: scale(1.3, 1.3);
+  }
+  80% {
+    transform-origin: center center;
+    transform: scale(1.15, 1.15);
+  }
+  100% {
+    transform-origin: center center;
+    transform: scale(1, 1);
+  }
+}
+/* 破碎的心 */
+@keyframes heartLeft {
+  0% {
+    transform: scale(1.1, 1.1);
+    transform-origin: right bottom;
+  }
+  20% {
+    transform: scale(1.2, 1.2);
+    transform-origin: right bottom;
+  }
+  50% {
+    transform: rotate(-5deg);
+    opacity: 0.8;
+    transform-origin: right bottom;
+  }
+  80% {
+    transform: rotate(-15deg);
+    opacity: 0.5;
+    transform-origin: right bottom;
+  }
+  100% {
+    transform: rotate(-25deg);
+    opacity: 0.2;
+    transform-origin: right bottom;
+  }
+}
+@-ms-keyframes heartLeft {
+  0% {
+    transform: scale(1.1, 1.1);
+    transform-origin: right bottom;
+  }
+  20% {
+    transform: scale(1.2, 1.2);
+    transform-origin: right bottom;
+  }
+  50% {
+    transform: rotate(-5deg);
+    opacity: 0.8;
+    transform-origin: right bottom;
+  }
+  80% {
+    transform: rotate(-15deg);
+    opacity: 0.5;
+    transform-origin: right bottom;
+  }
+  100% {
+    transform: rotate(-25deg);
+    opacity: 0.2;
+    transform-origin: right bottom;
+  }
+}
+@-moz-keyframes heartLeft {
+  0% {
+    transform: rotate(-5deg);
+    opacity: 1;
+    transform-origin: right bottom;
+  }
+  20% {
+    transform: rotate(-10deg);
+    opacity: 0.9;
+    transform-origin: right bottom;
+  }
+  50% {
+    transform: rotate(-15deg);
+    opacity: 0.7;
+    transform-origin: right bottom;
+  }
+  80% {
+    transform: rotate(-20deg);
+    opacity: 0.5;
+    transform-origin: right bottom;
+  }
+  100% {
+    transform: rotate(-25deg);
+    opacity: 0.2;
+    transform-origin: right bottom;
+  }
+}
+@-webkit-keyframes heartLeft {
+  0% {
+    transform: scale(1.1, 1.1);
+    transform-origin: right bottom;
+  }
+  20% {
+    transform: scale(1.2, 1.2);
+    transform-origin: right bottom;
+  }
+  50% {
+    transform: rotate(-5deg);
+    opacity: 0.8;
+    transform-origin: right bottom;
+  }
+  80% {
+    transform: rotate(-15deg);
+    opacity: 0.5;
+    transform-origin: right bottom;
+  }
+  100% {
+    transform: rotate(-25deg);
+    opacity: 0.2;
+    transform-origin: right bottom;
+  }
+}
+@-o-keyframes heartLeft {
+  0% {
+    transform: rotate(-5deg);
+    opacity: 1;
+    transform-origin: right bottom;
+  }
+  20% {
+    transform: rotate(-10deg);
+    opacity: 0.9;
+    transform-origin: right bottom;
+  }
+  50% {
+    transform: rotate(-15deg);
+    opacity: 0.7;
+    transform-origin: right bottom;
+  }
+  80% {
+    transform: rotate(-20deg);
+    opacity: 0.5;
+    transform-origin: right bottom;
+  }
+  100% {
+    transform: rotate(-25deg);
+    opacity: 0.2;
+    transform-origin: right bottom;
+  }
+}
+@keyframes heartRight {
+  0% {
+    transform: scale(1.1, 1.1);
+    transform-origin: left bottom;
+  }
+  20% {
+    transform: scale(1.2, 1.2);
+    transform-origin: left bottom;
+  }
+  50% {
+    transform: rotate(5deg);
+    opacity: 0.8;
+    transform-origin: left bottom;
+  }
+  80% {
+    transform: rotate(15deg);
+    opacity: 0.5;
+    transform-origin: left bottom;
+  }
+  100% {
+    transform: rotate(25deg);
+    opacity: 0.2;
+    transform-origin: left bottom;
+  }
+}
+@-ms-keyframes heartRight {
+  0% {
+    transform: rotate(5deg);
+    opacity: 1;
+    transform-origin: left bottom;
+  }
+  20% {
+    transform: rotate(10deg);
+    opacity: 0.9;
+    transform-origin: left bottom;
+  }
+  50% {
+    transform: rotate(15deg);
+    opacity: 0.7;
+    transform-origin: left bottom;
+  }
+  80% {
+    transform: rotate(20deg);
+    opacity: 0.5;
+    transform-origin: left bottom;
+  }
+  100% {
+    transform: rotate(25deg);
+    opacity: 0.2;
+    transform-origin: left bottom;
+  }
+}
+@-moz-keyframes heartRight {
+  0% {
+    transform: rotate(5deg);
+    opacity: 1;
+    transform-origin: left bottom;
+  }
+  20% {
+    transform: rotate(10deg);
+    opacity: 0.9;
+    transform-origin: left bottom;
+  }
+  50% {
+    transform: rotate(15deg);
+    opacity: 0.7;
+    transform-origin: left bottom;
+  }
+  80% {
+    transform: rotate(20deg);
+    opacity: 0.5;
+    transform-origin: left bottom;
+  }
+  100% {
+    transform: rotate(25deg);
+    opacity: 0.2;
+    transform-origin: left bottom;
+  }
+}
+@-webkit-keyframes heartRight {
+  0% {
+    transform: scale(1.1, 1.1);
+    transform-origin: left bottom;
+  }
+  20% {
+    transform: scale(1.2, 1.2);
+    transform-origin: left bottom;
+  }
+  50% {
+    transform: rotate(5deg);
+    opacity: 0.8;
+    transform-origin: left bottom;
+  }
+  80% {
+    transform: rotate(15deg);
+    opacity: 0.5;
+    transform-origin: left bottom;
+  }
+  100% {
+    transform: rotate(25deg);
+    opacity: 0.2;
+    transform-origin: left bottom;
+  }
+}
+@-o-keyframes heartRight {
+  0% {
+    transform: rotate(5deg);
+    opacity: 1;
+    transform-origin: left bottom;
+  }
+  20% {
+    transform: rotate(10deg);
+    opacity: 0.9;
+    transform-origin: left bottom;
+  }
+  50% {
+    transform: rotate(15deg);
+    opacity: 0.7;
+    transform-origin: left bottom;
+  }
+  80% {
+    transform: rotate(20deg);
+    opacity: 0.5;
+    transform-origin: left bottom;
+  }
+  100% {
+    transform: rotate(25deg);
+    opacity: 0.2;
+    transform-origin: left bottom;
+  }
 }
