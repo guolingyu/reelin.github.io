@@ -1,0 +1,110 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta content="target-densitydpi=device-dpi,width=640" name="viewport">
+    <link rel="shortcut icon" type="image/x-icon" href="https://dn-tupu-dev.qbox.me/img/logo.png?1450237869" />
+    <title>图扑 - 最好用的微信相册</title>
+    <meta name="author" content="图扑"/>
+    <meta name="Copyright" content="图扑版权所有"/>
+    <meta name="keywords" content="相册、微信、社交、微信群、群相册、手机拍照">
+    <meta name="description" content="图扑，用照片创造话题。发布照片就可以发起话题，跟踪话题就可以发现世界。在这里，和好友、陌生人一起创造充满乐趣的生活图谱">
+    <link rel="stylesheet" type="text/css" href="https://dn-tupu-dev.qbox.me/css/style_web.css?1437869" />
+    <script type="text/javascript" src="https://dn-tupu-dev.qbox.me/js/util.js?1450237869"></script>
+    <script type="text/javascript" src="https://dn-tupu-dev.qbox.me/js/jquery-1.9.0.min.js?1450237869"></script>
+</head>
+<body>
+<div class="wrapper clearfix">
+    <div class="col-left">
+        <div class="header">
+            <a class="logo pc" href="javascript:;"><img src="https://dn-tupu-dev.qbox.me/img/logo_web.png?1450237869"></a>
+            <a class="logo phone" href="javascript:;"><img src="https://dn-tupu-dev.qbox.me/img/logo_big.png?1450237869"></a>
+            <h1>图扑，最好用的微信群相册</h1>
+        </div>
+        <p class="descript web">
+            聚会、派对、旅行、活动、亲友照片收集<br>
+            利器，在微信里就能上传、点赞高清照片。<br>
+            轻松收集好照片，轻松收获赞。
+        </p>
+        <p class="descript phone">聚会、旅行、活动照片收集利器<br>在微信里就能上传、点赞好照片</p>
+        <div class="download clearfix">
+            <img alt="扫描下载二维码下载应用" class="qr-code left" src="https://dn-tupu-dev.qbox.me/img/qrcode.png?1450237869">
+            <div class="other-info">
+                <p>微信扫一扫<br>快速安装<br>图扑APP</p>
+            </div>
+        </div>
+        <div class="btn-wrapper clearfix">
+            <a class="btn-download iphone" href="https://appsto.re/cn/mMvJ2.i" target="_blank">
+                <img src="https://dn-tupu-dev.qbox.me/img/Apple_logo_white.png?1450237869">iPhone
+            </a>
+            <a class="btn-download android" href="https://dn-tupu-asset.qbox.me/tupu_2015120901_v2.0.0.apk" target="_blank">
+                <img src="https://dn-tupu-dev.qbox.me/img/Android_logo_white.png?1450237869">Android
+            </a>
+        </div>
+        <a class="btn phone" href="http://a.app.qq.com/o/simple.jsp?pkgname=im.tupu.tupu" target="_blank"><span class="tp-icon tp-download-blue"></span>点击安装</a>
+        <div class="info">
+            <img class="iphone" src="https://dn-tupu-dev.qbox.me/img/iPhone.png?1450237869">
+            <img class="android" src="https://dn-tupu-dev.qbox.me/img/android.png?1450237869">
+        </div>
+        <div class="footer">
+            <p>&copy; 2015 tupu.im&nbsp;&nbsp;<a class="S_func1" href="http://www.miitbeian.gov.cn/" target="_blank">
+                粤ICP备15095257号</a>
+            </p>
+        </div>
+    </div>
+    <div class="col-right">
+        <img src="https://dn-tupu-dev.qbox.me/img/info_web.jpg?1450237869">   
+    </div>
+</div>
+
+<script type="text/javascript">
+    (function($){
+        function localParam(search,hash){
+            search = search || window.location.search;
+            hash = hash || window.location.hash;
+            var fn = function(str,reg){
+                if(str){
+                    var data = {};
+                    str.replace(reg,function( $0, $1, $2, $3 ){
+                        data[ $1 ] = $3;
+                    });
+                    return data;
+                }
+            }
+            return {search: fn(search,new RegExp( "([^?=&]+)(=([^&]*))?", "g" ))||{},hash: fn(hash,new RegExp( "([^#=&]+)(=([^&]*))?", "g" ))||{}};
+        }
+        var nav = navigator,
+            params = localParam(),
+            isIDevice = (/iphone|ipod/gi).test(nav.platform),
+            isIDeviceIpad = (/ipad/gi).test(nav.platform),
+            isAndroid = (/Android/gi).test(nav.userAgent);
+        var win_height = $(window).height();
+        
+        $('.btn').css('top', (win_height-70)/2);
+        if (!isAndroid && !isIDevice && !isIDeviceIpad ) {
+           $('.wrapper').css('margin-top', (win_height-513)/2); 
+        }
+        
+
+        $(window).resize(function() {
+            var win_height = $(window).height();
+            if (win_height > 513 && !isAndroid && !isIDevice && !isIDeviceIpad ) {
+                $('.wrapper').css('margin-top', (win_height-513)/2);
+            }
+        });
+        
+        if (win_height < 1050) {
+            $('.info img').width('80%');    
+        }
+        if (isAndroid) {
+            $('.info .android').css('display', 'block');
+        } else {
+            $('.info .iphone').css('display', 'block');
+        }
+    })(jQuery);
+
+</script>
+
+</body>
+</html>
