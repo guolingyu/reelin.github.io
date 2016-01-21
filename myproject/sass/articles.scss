@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities";
+
+/*All icon*/
+$icon-sprite-layout:smart;
+$icon-spacing: 6px;
+$icon-sprite-dimensions:true;
+@import "icon/*.png";
+@include all-icon-sprites;
+
+html,
+body {
+    font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, "\5b8b\4f53", sans-serif;
+    font-weight: 400;
+    color: #333;
+    background: #fff;
+    min-height: 100%;
+    width: 640px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: center;
+}
+a img {
+    border: 0;
+}
+a {
+    text-decoration: none;
+    outline: 0;
+}
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: none;
+}
+a:active {
+    border: 0 none;
+}
+p {
+    word-wrap: break-word;
+}
+
+.clearfix {
+	@include clearfix;
+}
+
+.icon-border {
+	display: block;
+}
+.icon-tab, .icon-price {
+	@include inline-block;
+}
+
+.btn-red {
+    width: 146px;
+    height: 50px;
+    line-height: 50px;
+    color: #fff;
+    background-color: #ff3333;
+    display: block;
+    font-size: 26px;
+    text-align: center;
+}
+
+.banner {
+	height: 426px;
+	overflow: hidden;
+}
+
+.recommend {
+	padding: 45px 30px;
+	h1, h2, h5 {
+		font-size: 32px;
+		line-height: 32px;
+		margin-top: 9px;
+		margin-bottom: 9px; 
+	}
+	h1 {
+		border-left: 3px solid #4d4d4d;
+	}
+	h1, h5 {
+		float: left;
+		padding-left: 15px;
+	}
+	.title, h2 {
+		margin-bottom: 20px
+	}
+	p {
+		font-size: 26px;
+		line-height: 42px;
+	}	
+}
+.thumb {
+	margin-top: 30px;
+	.icon-tab {
+		position: absolute;
+		left: 0;
+		top: 30px;
+		font-size: 22px;
+		line-height: 44px;	
+		color: #fff;
+    	text-align: center;
+	}
+	.img-wrapper {
+		position: relative;
+		width: 580px;
+		height: 386px;
+		overflow: hidden;
+		margin-bottom: 15px;
+		img {
+			float: left;
+		}
+	}
+	p {
+		font-size: 20px;
+		line-height: 36px;
+		color: #888;
+		text-align: center;
+	}
+	.page {
+	    position: absolute;
+	    right: 20px;
+	    bottom: 20px;
+		font-size: 24px;
+		color: #222;
+		width: 80px;
+		height: 40px;
+		line-height: 40px;
+	    text-align: center;
+        background: #fff;
+	    @include border-radius(20px);
+	    @include opacity(0.6);
+	}
+	
+}
+.col-wrapper {
+	margin-top: 30px;
+	.price {
+	    color: #ff3333;
+	    line-height: 42px;
+	    height: 42px;
+	    .icon-price {
+	    	float: left;
+	    	margin-right: 15px;
+	    }
+	}
+	.btn-red {
+		float: right;
+	}
+}
+.text-wrapper {
+	.title {
+		position: relative;
+	    height: 40px;
+	    margin: 50px auto 30px auto;
+    	.line {
+    		position: absolute;
+    		left: 0;
+    		top: 20px;
+    	}
+	}
+	h3 {
+	    font-size: 32px;
+	    text-align: center;
+	    position: absolute;
+	    background-color: #fff;
+	    z-index: 11;
+	    left: 93px;
+	    padding: 0 20px;    	
+	}
+	font-size: 22px;
+	line-height: 42px;
+	margin-bottom: 55px;
+}
+.line {
+	height: 1px;
+	background: #333;
+	width: 100%;
+	display: block;
+}
+
