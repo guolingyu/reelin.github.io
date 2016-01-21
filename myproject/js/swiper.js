@@ -1,20 +1,25 @@
 (function($){
-	var hammerModal = new Hammer($('.thumb .img-wrapper')[0]);
-
-	var imgList = $('.thumb .img-wrapper img');
-	var imgListLen = imgList.length;
-	var imgWrapper = $('.thumb .img-wrapper div');
-	var dis = 580;
-	var maxLeft = dis * (imgListLen - 1);    
-
-    hammerModal.on('swipeleft', function(e) {
-    	var left = parseInt(imgWrapper.css('margin-left'));
+	$('.thumb .img-wrapper').hammer().on("swipeleft", function() {
+		var that = $(this);
+		var imgList = $(this).find('img');
+		var imgListLen = imgList.length;
+		var imgWrapper = $(this).find('div');
+		var dis = 580;
+		var maxLeft = dis * (imgListLen - 1); 
+		var left = parseInt(imgWrapper.css('margin-left'));
     	if (imgListLen > 1 && left < maxLeft) {
     		imgWrapper.animate({
     			'margin-left': left - dis
     		}, 500);
     	}
-    }).on('swiperight', function(e) {
+	}).on('swiperight', function() {
+		var that = $(this);
+		var imgList = $(this).find('img');
+		var imgListLen = imgList.length;
+		var imgWrapper = $(this).find('div');
+		var dis = 580;
+		var maxLeft = dis * (imgListLen - 1); 
+		var left = parseInt(imgWrapper.css('margin-left'));
     	var left = parseInt(imgWrapper.css('margin-left'));
     	if (imgListLen > 1 && left > 0) {
     		imgWrapper.animate({
@@ -22,4 +27,5 @@
     		}, 500);
     	} 
     });
+
 })(jQuery);
