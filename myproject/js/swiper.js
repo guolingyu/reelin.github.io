@@ -1,4 +1,4 @@
-(function(jQuery){
+(function($){
 	var hammerModal = new Hammer($('.thumb .img-wrapper')[0]);
 
 	var imgList = $('.thumb .img-wrapper img');
@@ -23,5 +23,5 @@
     			'margin-left': left + dis
     		}, 500);
     	} 
-    })
+    });
 })(jQuery);
