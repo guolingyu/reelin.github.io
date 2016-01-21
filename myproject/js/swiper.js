@@ -1,4 +1,5 @@
 (function($){
+	var isSwiping = false;
 	$('.thumb .img-wrapper').hammer().on("swipeleft", function() {
 		var that = $(this);
 		var imgList = that.find('img');
@@ -9,10 +10,12 @@
 		var currentPage = that.find('.js-current-page');
 		var left = parseInt(imgWrapper.css('margin-left'));
 
-    	if (imgListLen > 1 && left > - maxLeft) {
+    	if (!isSwiping && imgListLen > 1 && left > - maxLeft) {
+    		isSwiping = true;
     		imgWrapper.animate({
     			'margin-left': left - dis
     		}, 500, function() {
+    			isSwiping = false;
     			currentPage.html(parseInt(currentPage.html()) + 1);
     		});
     	}
@@ -25,10 +28,12 @@
 		var left = parseInt(imgWrapper.css('margin-left'));
     	var currentPage = that.find('.js-current-page');
 		
-    	if (imgListLen > 1 && left < 0) {
+    	if (!isSwiping && imgListLen > 1 && left < 0) {
+    		isSwiping = true;
     		imgWrapper.animate({
     			'margin-left': left + dis
     		}, 500, function() {
+    			isSwiping = false;
     			currentPage.html(parseInt(currentPage.html()) - 1);
     		});
     	} 
