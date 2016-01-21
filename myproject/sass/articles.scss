@@ -110,6 +110,9 @@ p {
 		height: 386px;
 		overflow: hidden;
 		margin-bottom: 15px;
+		div {
+			width: 20000px;
+		}
 		img {
 			float: left;
 		}
@@ -144,7 +147,7 @@ p {
 	    height: 42px;
 	    .icon-price {
 	    	float: left;
-	    	margin-right: 15px;
+	    	margin-right: 10px;
 	    }
 	}
 	.btn-red {

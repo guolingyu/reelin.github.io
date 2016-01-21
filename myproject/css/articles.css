@@ -227,17 +227,21 @@ p {
   margin-bottom: 15px;
 }
 /* line 113, ../sass/articles.scss */
+.thumb .img-wrapper div {
+  width: 20000px;
+}
+/* line 116, ../sass/articles.scss */
 .thumb .img-wrapper img {
   float: left;
 }
-/* line 117, ../sass/articles.scss */
+/* line 120, ../sass/articles.scss */
 .thumb p {
   font-size: 20px;
   line-height: 36px;
   color: #888;
   text-align: center;
 }
-/* line 123, ../sass/articles.scss */
+/* line 126, ../sass/articles.scss */
 .thumb .page {
   position: absolute;
   right: 20px;
@@ -256,45 +260,45 @@ p {
   opacity: 0.6;
 }
 
-/* line 139, ../sass/articles.scss */
+/* line 142, ../sass/articles.scss */
 .col-wrapper {
   margin-top: 30px;
 }
-/* line 141, ../sass/articles.scss */
+/* line 144, ../sass/articles.scss */
 .col-wrapper .price {
   color: #ff3333;
   line-height: 42px;
   height: 42px;
 }
-/* line 145, ../sass/articles.scss */
+/* line 148, ../sass/articles.scss */
 .col-wrapper .price .icon-price {
   float: left;
-  margin-right: 15px;
+  margin-right: 10px;
 }
-/* line 150, ../sass/articles.scss */
+/* line 153, ../sass/articles.scss */
 .col-wrapper .btn-red {
   float: right;
 }
 
-/* line 154, ../sass/articles.scss */
+/* line 157, ../sass/articles.scss */
 .text-wrapper {
   font-size: 22px;
   line-height: 42px;
   margin-bottom: 55px;
 }
-/* line 155, ../sass/articles.scss */
+/* line 158, ../sass/articles.scss */
 .text-wrapper .title {
   position: relative;
   height: 40px;
   margin: 50px auto 30px auto;
 }
-/* line 159, ../sass/articles.scss */
+/* line 162, ../sass/articles.scss */
 .text-wrapper .title .line {
   position: absolute;
   left: 0;
   top: 20px;
 }
-/* line 165, ../sass/articles.scss */
+/* line 168, ../sass/articles.scss */
 .text-wrapper h3 {
   font-size: 32px;
   text-align: center;
@@ -305,7 +309,7 @@ p {
   padding: 0 20px;
 }
 
-/* line 178, ../sass/articles.scss */
+/* line 181, ../sass/articles.scss */
 .line {
   height: 1px;
   background: #333;
