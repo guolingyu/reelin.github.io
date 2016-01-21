@@ -5,9 +5,7 @@
 	var imgListLen = imgList.length;
 	var imgWrapper = $('.thumb .img-wrapper div');
 	var dis = 580;
-	var maxLeft = dis * (imgListLen - 1);
-
-    hammerModal.add(new Hammer.Swipe());      
+	var maxLeft = dis * (imgListLen - 1);    
 
     hammerModal.on('swipeleft', function(e) {
     	var left = parseInt(imgWrapper.css('margin-left'));
