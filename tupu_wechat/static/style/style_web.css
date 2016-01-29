@@ -1,0 +1,277 @@
+html,
+body {
+  font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, "\5b8b\4f53", sans-serif;
+  font-weight: 400;
+  color: #5A5555;
+  background: #e5e5e5;
+  min-height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: center;
+}
+body {
+  width: 640px;
+}
+body,
+div,
+img,
+ul,
+li,
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  outline: 0;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-user-select: text;
+}
+*,
+:after,
+:before {
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+p,
+div {
+  max-height: 999999px;
+}
+.clearfix:after {
+  content: " ";
+  display: block;
+  visibility: hidden;
+  clear: both;
+  overflow: hidden;
+}
+.clearfix {
+  *display: inline-block;
+}
+*html .clearfix {
+  height: 1%;
+}
+address,
+cite,
+code,
+em,
+th,
+i {
+  font-weight: normal;
+  font-style: normal;
+}
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+p {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  color: inherit;
+  cursor: pointer;
+  text-decoration: none;
+  blr: expression("this.onfocus=this.blur()");
+  outline: none;
+}
+a img {
+  border: 0;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  border: 0 none;
+}
+p {
+  word-wrap: break-word;
+}
+textarea {
+  resize: none;
+}
+.tp-left {
+  float: left;
+}
+.tp-right {
+  float: right;
+}
+.fz26 {
+  font-size: 26px;
+  line-height: 28px;
+}
+table {
+  border: 0;
+  margin: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+html,
+body {
+  background: #fff;
+  width: auto;
+}
+.wrapper {
+  width: 900px;
+  margin: 60px auto auto auto;
+}
+.wrapper .col-left {
+  float: left;
+  width: 343px;
+}
+.wrapper .col-left .logo {
+  margin-bottom: 30px;
+  display: block;
+}
+.wrapper .col-left .logo.phone {
+  display: none;
+}
+.wrapper .col-left h1 {
+  font-size: 27px;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+.wrapper .col-left .descript {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+.wrapper .col-left .descript.phone {
+  display: none;
+}
+.wrapper .col-left .download {
+  margin-bottom: 40px;
+}
+.wrapper .col-left .download img {
+  float: left;
+}
+.wrapper .col-left .download p {
+  font-size: 18px;
+  color: #000;
+  line-height: 31px;
+  margin-left: 200px;
+  padding-top: 27px;
+  font-weight: bold;
+}
+.wrapper .col-left .btn-wrapper {
+  margin-bottom: 120px;
+}
+.wrapper .col-left .btn-download {
+  background-color: #2F5BA3;
+  color: #fff;
+  padding: 13px 18px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.wrapper .col-left .btn-download img {
+  float: left;
+  margin-top: 1px;
+  margin-right: 5px;
+}
+.wrapper .col-left .btn {
+  display: none;
+}
+.wrapper .col-left .info {
+  display: none;
+}
+.wrapper .col-left .footer {
+  font-size: 12px;
+  line-height: 18px;
+  margin-bottom: 50px;
+}
+.wrapper .col-right {
+  float: right;
+}
+@media screen and (max-width: 640px) {
+  .wrapper {
+    text-align: center;
+    width: auto;
+    margin-top: 100px;
+  }
+  .wrapper .col-left {
+    float: none;
+  }
+  .wrapper .col-left .logo {
+    display: none;
+  }
+  .wrapper .col-left .logo.phone {
+    display: block;
+    width: 130px;
+    margin: 0 auto 40px auto;
+  }
+  .wrapper .col-left h1 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 15px;
+  }
+  .wrapper .col-left .descript.phone {
+    display: block;
+    font-size: 21px;
+    line-height: 26px;
+  }
+  .wrapper .col-left .btn-wrapper,
+  .wrapper .col-left .footer,
+  .wrapper .col-left .descript.web,
+  .wrapper .col-left .download {
+    display: none;
+  }
+  .wrapper .col-left .btn {
+    position: absolute;
+    left: 195px;
+    display: block;
+    width: 247px;
+    height: 70px;
+    border: 2px solid #2F5BA3;
+    margin: 0 auto;
+    color: #2F5BA3;
+    font-size: 24px;
+    border-radius: 10px;
+    line-height: 68px;
+  }
+  .wrapper .col-left .info img {
+    display: none;
+    position: absolute;
+    left: 107px;
+    bottom: 0;
+    display: block;
+    width: 425px;
+    height: 417px;
+  }
+  .wrapper .col-right {
+    display: none;
+  }
+  .tp-icon {
+    display: inline-block;
+    vertical-align: middle;
+    background: url('https://dn-tupu-dev.qbox.me/img/icon.png') no-repeat 0 0;
+  }
+  .tp-icon.tp-download-blue {
+    width: 26px;
+    height: 26px;
+    background-position: -640px -10px;
+    margin-right: 10px;
+    margin-top: -7px;
+  }
+}

@@ -1,0 +1,960 @@
+.tp-wrapper {
+    width: 100%;
+    min-height: 100%;
+    position: relative;
+    &.champion {
+        background: #fff;
+    }
+}
+footer {
+    background: #E4E4E4;
+    padding-top: 36px;
+    padding-bottom: 30px;
+    width: 100%;
+    p {
+        font-size: 22px;
+        line-height: 24px;
+        color: #5A5555;
+        text-align: center;
+    }
+}
+
+/* 相册页面 */
+/* 顶部图片 */
+.tp-banner-image {
+    width: 640px;
+    height: 340px;
+    overflow: hidden;
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #2F5BA3;
+    img {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    h2 {
+        max-width: 520px;
+        margin: 0 auto;
+        font-size: 45px;
+        color: #fff;
+        font-weight: normal;
+        position: relative;
+        z-index: 1;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-box-align: center;
+    }
+}
+.tp-invitation {
+    position: absolute;
+    top: 340px;
+    left: 0;
+    z-index: 99;
+    width: 640px;
+    .tp-invitation-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: #fff;
+        opacity: .95;
+        width: 100%;
+        height: 100%;
+        z-index: 100;
+    }
+    .tp-btn-blue {
+        margin: 0 auto;
+        position: relative;
+        z-index: 111;
+    }
+}
+
+.tp-album-main {
+    background: #e4e4e4;
+    padding-top: 20px;
+    text-shadow: 1px 1px 1px #5A5555;
+    &.tp-album-photo {
+        padding: 20px;
+        overflow: hidden;
+        width: 600px;
+        .loading {
+            img {
+                margin: 30px auto 0 auto;
+                display: block;
+            }
+
+        }
+    }
+    &.tp-album-upload {
+        padding: 20px 20px 0 20px;
+        overflow: hidden;
+        width: 600px;
+    }
+    &.tp-member-wrapper {
+        background: #fff;
+        width: 580px;
+        overflow: hidden;
+        padding: 20px 30px;
+        border-top: 20px solid #e4e4e4;
+    }
+}
+
+/* 照片流 */
+#tp-album-thumb {
+    width: 1200px;
+    clear: left;
+}
+.tp-photo-wrapper {
+    margin-bottom: 20px;
+    float: left;
+    clear: left;
+    .js-album-item {
+        background: #ccc;
+        margin-right: 20px;
+        float: left;
+        display: block;
+        position: relative;
+        .loading {
+            left: 47%;
+            top: 47%;
+            z-index: 99;
+        }
+        .loading-bg {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background-color: #fff;
+            opacity: .7;
+        }
+        img {
+            position: absolute;    
+        }
+    }
+}
+
+/* 方块流 */
+.tp-member-thumb {
+    width: 700px;
+    .tp-member-item {       
+        width: 102px;
+        float: left;
+        height: 212px;
+        margin-right: 54px;
+        img {
+            width: 102px;
+            height: 102px;
+            margin-bottom: 5px;
+        }
+        .tp-member-nick {
+            font-size: 20px;
+            color: #5A5555;
+            line-height: 22px;
+        }
+    }
+}
+
+/* ��Ƭҳ */
+.tp-user {
+    padding: 20px;
+    background-color: #fff;
+    img, .tp-user-info {
+        float: left;
+    }
+    .tp-user-info {
+        margin-left: 20px;
+        width: 490px;
+        .tp-user-name {
+            font-size: 32px;
+            line-height: 34px;
+            color: #5A5555;
+            margin-top: 15px;
+        }
+        .tp-time {
+            font-size: 26px;
+            color: #aaa;
+        }
+    }
+}
+
+.tp-photo-info {
+    background: #fff;
+    .photo-wrapper {
+        background: #ccc;
+        min-height: 128px;
+        img {
+            max-width: 640px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .tp-photo-desc {
+        font-size: 30px;
+        line-height: 38px;
+        color: #aaa;
+        padding: 20px;
+    }
+    .tp-photo-like {
+        position: relative;
+        height: 110px;
+        font-size: 30px;
+        color: #E60012;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        padding: 0 20px;
+        p {
+            margin-top: 36px;
+        }
+    }
+    .tp-photo-album {
+        background: #fff;
+        height: 120px;
+        padding: 0 20px;
+        font-size: 30px;
+        line-height: 32px;
+        color: #aaa;
+        display: table-cell;
+        vertical-align: middle;
+        span {
+            color: #6D6868;
+        }
+    }
+}
+
+/* 最赞页面 */
+.tp-like-user {
+    .tp-best-like {
+        display: block;
+        width: 220px;
+        margin: 47px auto 50px auto;
+    }
+    .tp-like-title {
+        font-size: 32px;
+        line-height: 32px;
+        color: #CB7638;
+        text-align: center;
+    }
+    .js-avatar {
+        margin: 50px auto;
+        display: block;
+        width: 220px;
+    }
+    .tp-like-info {
+        width: 540px;
+        height: 70px;
+        line-height: 35px;
+        font-size: 32px;
+        color: #000;
+        position: relative;
+        margin: 0 auto 40px auto;
+        .line {
+            width: 100%;
+            height: 1px;
+            background: #aaa;
+            position: absolute;
+            left: 0;
+            top: 50%;
+        }
+        .js-like-user-nick {
+            max-width: 256px;
+            padding: 0 15px;
+            background-color: #fff;
+            text-align: center;
+            position: absolute;
+            left: 128px;
+            top: 0;
+            z-index: 1;
+            &.sort {
+                top: 28px;
+            }
+        }
+    }
+    .tp-like-album {
+        color: #5A5555;
+        font-size: 24px;
+        text-align: center;
+
+        .js-album-name {
+            max-width: 520px;
+            margin: 0 auto 40px auto;
+            font-size: 32px;
+        }
+        .tp-album-deadline-time {
+            font-size: 24px;
+            color: #aaa;
+            margin-bottom: 10px;
+        }
+    }
+
+    .tp-deadline-time {
+        position: relative;
+        margin-bottom: 20px;
+        .tp-tip {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        font-size: 30px;
+        text-align: center;
+        .js-album-name {
+            display: block;
+            color: #000;
+            width: 428px;
+            margin: 0 auto;
+        }
+        .js-deadline-time {
+            font-size: 100px;
+            color: #000;
+            padding-bottom: 25px;
+        }
+        .fixed-time {
+            position: absolute;
+            color: #000;
+            top: 150px;
+            &.day {
+                left: 100px;
+            }
+            &.hour {
+                left: 234px;
+            }
+            &.min {
+                left: 374px;
+            }
+            &.second {
+                left: 510px;
+            }
+        }
+    }
+}
+/* 个人页面 */
+.tp-store-wrapper {
+    padding: 20px;
+    border-bottom: 1px solid #E4E4E4;
+    .tp-close {
+        margin-top: 20px;
+        margin-right: 100px;
+    }
+    .tp-store-info {
+        width: 414px;
+    }
+    .tp-store {
+        margin-right: 20px;
+    }
+    p {
+        color: #5A5555;;
+    }
+    .tp-return {
+        margin-top: 10px;
+    }
+}
+.tp-album {
+    .tp-user .tp-user-info .tp-user-name {
+        margin-top: 0;
+        line-height: 38px;
+    }
+}
+
+/* 弹层 */
+.modal {
+    position: fixed;
+    background: #000;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width: 640px;
+    display: none;
+    text-shadow: 1px 1px 1px #5A5555;
+    .modal-main {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 101;
+        width: 100%;
+        overflow: hidden;
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .tp-photo-like {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: 999;
+            .js-tp-desc {
+                font-size: 20px;
+                color: #fff;
+                max-height: 54px;
+                overflow: hidden;
+                width: 560px;
+                padding: 0 40px 10px 40px;
+                border-bottom: 1px solid #fff;
+            }
+            .js-tp-like {
+                margin: 40px 20px;
+            }
+            .tp-like-num {
+                margin-left: 20px;
+                font-size: 26px;
+                color: #fff;
+                line-height: 128px;
+            }
+        }
+        .tp-liked-animation, .tp-heart{
+            top: 40%;
+        }
+    }
+    .modal-close {
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 999;
+    }
+}
+
+/* btn */
+.tp-album-btn {
+    width: 319px;
+    padding: 32px 0;
+    font-size: 24px;
+    color: #aaa;
+    text-align: center;
+    display: inline-block;
+    float: left;
+    background: #fff;
+    &:hover, &.active {
+        color: #2F5BA3;
+    }
+}
+.line {
+    width: 1px;
+    height: 78px;
+    background: #ccc;
+    display: inline-block;
+    float: left;
+    margin-top: 11px;
+}
+.tp-album-btn-big {
+    width: 600px;
+}
+.tp-download-btn {
+    display: block;
+    width: 490px;
+    padding: 24px 20px;
+    font-size: 32px;
+    color: #fff;
+    background-color: #2F5BA3;
+    margin: 0 auto 10px auto;
+    .tp-logo {
+        float: left;
+        margin-right: 10px;
+    }
+}
+.tp-btn-blue {
+    display: block;
+    background: #2F5BA3;
+    width: 530px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 35px;
+    color: #fff;
+}
+
+/* icon */
+.tp-icon {
+    display: inline-block;
+    vertical-align: middle;
+    background: url('../img/tp_icon.png') no-repeat 0 0;
+    &.tp-icon-add {
+        width: 46px;
+        height: 47px;
+        margin-right: 20px;
+    }
+    &.tp-icon-like {
+        float: right;
+        margin-top: 33px;
+        width: 56px;
+        height: 54px;
+        background-position: -46px 0;
+    }
+    &.tp-icon-liked {
+        background-position: -103px 0;
+        width: 50px;
+        height: 54px;
+        float: right;
+        margin-top: 33px;
+        animation: scaleToBig linear 0.7s 1;
+        -moz-animation: scaleToBig linear 0.7s 1;
+        -webkit-animation: scaleToBig linear 0.7s 1;
+        -o-animation: scaleToBig linear 0.7s 1;
+        -ms-animation: scaleToBig linear 0.7s 1;
+    }
+    &.tp-heart-left {
+        background-position: -238px 0;
+        width: 35px;
+        height: 54px;
+        position: absolute;
+        right: 40px;
+        top: 33px;
+        display: none;
+        &.broken {
+            display: block;
+            animation: heartLeft linear 1s 1;
+            -moz-animation: heartLeft linear 0.7s 1;
+            -webkit-animation: heartLeft linear 0.7s 1;
+            -o-animation: heartLeft linear 0.7s 1;
+            -ms-animation: heartLeft linear 0.7s 1;
+        }
+    }
+    &.tp-heart-right {
+        background-position: -274px 0;
+        width: 32px;
+        height: 54px;
+        position: absolute;
+        right: 13px;
+        top: 32px;
+        display: none;
+        &.broken {
+            display: block;
+            animation: heartRight linear 0.7s 1;
+            -moz-animation: heartRight linear 0.7s 1;
+            -webkit-animation: heartRight linear 0.7s 1;
+            -o-animation: heartRight linear 0.7s 1;
+            -ms-animation: heartRight linear 0.7s 1;
+        }
+    }
+    &.tp-logo {
+        width: 52px;
+        height: 52px;
+        background-position: -155px 0;
+    }
+    &.tp-close {
+        background-position: -208px 0;
+        width: 28px;
+        height: 28px;
+    }
+    &.tp-close-black {
+        background-position: -497px 0;
+        width: 31px;
+        height: 31px;
+    }
+    &.tp-store {
+        background-position: -306px 0;
+        width: 50px;
+        height: 54px;
+    }
+    &.tp-return {
+        background-position: -358px 0;
+        width: 38px;
+        height: 41px;
+    }
+    &.tp-like-black {
+        background-position: -395px 0;
+        width: 51px;
+        height: 48px;
+    }
+    &.tp-liked-black {
+        background-position: -447px 0;
+        width: 51px;
+        height: 48px;
+    }
+}
+@keyframes scaleToBig
+{
+    0% {
+        transform-origin: center center;
+        transform: scale(1.0,1.0);
+    }
+    20% {
+        transform-origin: center center;
+        transform: scale(1.15,1.15);
+    }
+    50% {
+        transform-origin: center center;
+        transform: scale(1.3,1.3);
+    }
+    80% {
+        transform-origin: center center;
+        transform: scale(1.15,1.15);
+    }
+    100% {
+        transform-origin: center center;
+        transform: scale(1.0,1.0);
+    }
+}
+@-ms-keyframes scaleToBig
+{
+    0% {
+        -ms-transform-origin: center center;
+        -ms-transform: scale(1.0,1.0);
+    }
+    20% {
+        -ms-transform-origin: center center;
+        -ms-transform: scale(1.15,1.15);
+    }
+    50% {
+        -ms-transform-origin: center center;
+        -ms-transform: scale(1.3,1.3);
+    }
+    80% {
+        -ms-transform-origin: center center;
+        -ms-transform: scale(1.15,1.15);
+    }
+    100% {
+        -ms-transform-origin: center center;
+        -ms-transform: scale(1.0,1.0);
+    }
+}
+@-moz-keyframes scaleToBig
+{
+    0% {
+        -moz-transform-origin: center center;
+        -moz-transform: scale(1.0,1.0);
+    }
+    20% {
+        -moz-transform-origin: center center;
+        -moz-transform: scale(1.15,1.15);
+    }
+    50% {
+        -moz-transform-origin: center center;
+        -moz-transform: scale(1.3,1.3);
+    }
+    80% {
+        -moz-transform-origin: center center;
+        -moz-transform: scale(1.15,1.15);
+    }
+    100% {
+        -moz-transform-origin: center center;
+        -moz-transform: scale(1.0,1.0);
+    }
+}
+@-webkit-keyframes scaleToBig
+{
+    0% {
+        -webkit-transform-origin: center center;
+        -webkit-transform: scale(1.0,1.0);
+    }
+    20% {
+        -webkit-transform-origin: center center;
+        -webkit-transform: scale(1.15,1.15);
+    }
+    50% {
+        -webkit-transform-origin: center center;
+        -webkit-transform: scale(1.3,1.3);
+    }
+    80% {
+        -webkit-transform-origin: center center;
+        -webkit-transform: scale(1.15,1.15);
+    }
+    100% {
+        -webkit-transform-origin: center center;
+        -webkit-transform: scale(1.0,1.0);
+    }
+}
+@-o-keyframes scaleToBig
+{
+    0% {
+        -o-transform-origin: center center;
+        -o-transform: scale(1.0,1.0);
+    }
+    20% {
+        -o-transform-origin: center center;
+        -o-transform: scale(1.15,1.15);
+    }
+    50% {
+        -o-transform-origin: center center;
+        -o-transform: scale(1.3,1.3);
+    }
+    80% {
+        -o-transform-origin: center center;
+        -o-transform: scale(1.15,1.15);
+    }
+    100% {
+        -o-transform-origin: center center;
+        -o-transform: scale(1.0,1.0);
+    }
+}
+
+/* 破碎的心 */
+@keyframes heartLeft
+{
+    0% {
+        transform: scale(1.1,1.1);
+        transform-origin: right bottom;
+    }
+    20% {
+        transform: scale(1.2,1.2);
+        opacity: 0.9;
+        transform-origin: right bottom;
+    }
+    50% {
+        transform: rotate(-5deg);
+        opacity: 0.8;
+        transform-origin: right bottom;
+    }
+    80% {
+        transform: rotate(-15deg);
+        opacity: 0.5;
+        transform-origin: right bottom;
+    }
+    100% {
+        transform: rotate(-25deg);
+        opacity: 0.2;
+        transform-origin: right bottom;
+    }
+}
+@-ms-keyframes heartLeft
+{
+    0% {
+        -ms-transform: scale(1.1,1.1);
+        -ms-transform-origin: right bottom;
+    }
+    20% {
+        -ms-transform: scale(1.2,1.2);
+        opacity: 0.9;
+        -ms-transform-origin: right bottom;
+    }
+    50% {
+        -ms-transform: rotate(-5deg);
+        opacity: 0.8;
+        -ms-transform-origin: right bottom;
+    }
+    80% {
+        -ms-transform: rotate(-15deg);
+        opacity: 0.5;
+        -ms-transform-origin: right bottom;
+    }
+    100% {
+        -ms-transform: rotate(-25deg);
+        opacity: 0.2;
+        -ms-transform-origin: right bottom;
+    }
+}
+@-moz-keyframes heartLeft
+{
+    0% {
+        -moz-transform: rotate(-5deg);
+        opacity: 1;
+        -moz-transform-origin: right bottom;
+    }
+    20% {
+        -moz-transform: rotate(-10deg);
+        opacity: 0.9;
+        -moz-transform-origin: right bottom;
+    }
+    50% {
+        -moz-transform: rotate(-15deg);
+        opacity: 0.7;
+        -moz-transform-origin: right bottom;
+    }
+    80% {
+        -moz-transform: rotate(-20deg);
+        opacity: 0.5;
+        -moz-transform-origin: right bottom;
+    }
+    100% {
+        -moz-transform: rotate(-25deg);
+        opacity: 0.2;
+        -moz-transform-origin: right bottom;
+    }
+}
+@-webkit-keyframes heartLeft
+{
+    0% {
+        transform: scale(1.1,1.1);
+        transform-origin: right bottom;
+    }
+    20% {
+        transform: scale(1.2,1.2);
+        opacity: 0.9;
+        transform-origin: right bottom;
+    }
+    50% {
+        transform: rotate(-5deg);
+        opacity: 0.8;
+        transform-origin: right bottom;
+    }
+    80% {
+        transform: rotate(-15deg);
+        opacity: 0.5;
+        transform-origin: right bottom;
+    }
+    100% {
+        transform: rotate(-25deg);
+        opacity: 0.2;
+        transform-origin: right bottom;
+    }
+}
+@-o-keyframes heartLeft
+{
+    0% {
+        transform: rotate(-5deg);
+        opacity: 1;
+        transform-origin: right bottom;
+    }
+    20% {
+        transform: rotate(-10deg);
+        opacity: 0.9;
+        transform-origin: right bottom;
+    }
+    50% {
+        transform: rotate(-15deg);
+        opacity: 0.7;
+        transform-origin: right bottom;
+    }
+    80% {
+        transform: rotate(-20deg);
+        opacity: 0.5;
+        transform-origin: right bottom;
+    }
+    100% {
+        transform: rotate(-25deg);
+        opacity: 0.2;
+        transform-origin: right bottom;
+    }
+}
+
+@keyframes heartRight
+{
+    0% {
+        transform: scale(1.1,1.1);
+        transform-origin: left bottom;
+    }
+    20% {
+        transform: scale(1.2,1.2);
+        transform-origin: left bottom;
+    }
+    50% {
+        transform: rotate(5deg);
+        opacity: 0.8;
+        transform-origin: left bottom;
+    }
+    80% {
+        transform: rotate(15deg);
+        opacity: 0.5;
+        transform-origin: left bottom;
+    }
+    100% {
+        transform: rotate(25deg);
+        opacity: 0.2;
+        transform-origin: left bottom;
+    }
+}
+@-ms-keyframes heartRight
+{
+    0% {
+        transform: rotate(5deg);
+        opacity: 1;
+        transform-origin: left bottom;
+    }
+    20% {
+        transform: rotate(10deg);
+        opacity: 0.9;
+        transform-origin: left bottom;
+    }
+    50% {
+        transform: rotate(15deg);
+        opacity: 0.7;
+        transform-origin: left bottom;
+    }
+    80% {
+        transform: rotate(20deg);
+        opacity: 0.5;
+        transform-origin: left bottom;
+    }
+    100% {
+        transform: rotate(25deg);
+        opacity: 0.2;
+        transform-origin: left bottom;
+    }
+}
+@-moz-keyframes heartRight
+{
+    0% {
+        transform: rotate(5deg);
+        opacity: 1;
+        transform-origin: left bottom;
+    }
+    20% {
+        transform: rotate(10deg);
+        opacity: 0.9;
+        transform-origin: left bottom;
+    }
+    50% {
+        transform: rotate(15deg);
+        opacity: 0.7;
+        transform-origin: left bottom;
+    }
+    80% {
+        transform: rotate(20deg);
+        opacity: 0.5;
+        transform-origin: left bottom;
+    }
+    100% {
+        transform: rotate(25deg);
+        opacity: 0.2;
+        transform-origin: left bottom;
+    }
+}
+@-webkit-keyframes heartRight
+{
+    0% {
+        transform: scale(1.1,1.1);
+        transform-origin: left bottom;
+    }
+    20% {
+        transform: scale(1.2,1.2);
+        transform-origin: left bottom;
+    }
+    50% {
+        transform: rotate(5deg);
+        opacity: 0.8;
+        transform-origin: left bottom;
+    }
+    80% {
+        transform: rotate(15deg);
+        opacity: 0.5;
+        transform-origin: left bottom;
+    }
+    100% {
+        transform: rotate(25deg);
+        opacity: 0.2;
+        transform-origin: left bottom;
+    }
+}
+@-o-keyframes heartRight
+{
+    0% {
+        transform: rotate(5deg);
+        opacity: 1;
+        transform-origin: left bottom;
+    }
+    20% {
+        transform: rotate(10deg);
+        opacity: 0.9;
+        transform-origin: left bottom;
+    }
+    50% {
+        transform: rotate(15deg);
+        opacity: 0.7;
+        transform-origin: left bottom;
+    }
+    80% {
+        transform: rotate(20deg);
+        opacity: 0.5;
+        transform-origin: left bottom;
+    }
+    100% {
+        transform: rotate(25deg);
+        opacity: 0.2;
+        transform-origin: left bottom;
+    }
+}
+.ui-loader h1 {
+    display: none;
+}
+

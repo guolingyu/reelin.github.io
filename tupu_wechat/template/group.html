@@ -1,92 +1,39 @@
+
 <!DOCTYPE html>
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
     <meta content="target-densitydpi=device-dpi,width=640" name="viewport">
-    <link rel="shortcut icon" type="image/x-icon" href="images/logo.ico" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://dn-tupu-dev.qbox.me/img/logo.ico" />
     <title>群相册</title>
     <meta name="author" content="图扑"/>
     <meta name="Copyright" content="图扑版权所有"/>
     <meta name="keywords" content="图扑，tupu，照片，话题，交友，美图，照片交友，话题交友，美图交友">
     <meta name="description" content="图扑，用照片创造话题。发布照片就可以发起话题，跟踪话题就可以发现世界。在这里，和好友、陌生人一起创造充满乐趣的生活图谱">
-
-    <link rel="stylesheet" type="text/css" href="/style/style.css" />
-    <script type="text/javascript" src="/js/util.js"></script>
-    <script type="text/javascript" src="/js/jquery-1.9.0.min.js"></script>
-    <script type="text/javascript" src="/js/plupload.full.min.js"></script>
-    <script type="text/javascript" src="/js/ui.js"></script>
-    <script type="text/javascript" src="/js/qiniu.js"></script>
+    
+    
+        <link rel="stylesheet" type="text/css" href="..static/style/style.css?1449069383" />
+    
+    
+    <script type="text/javascript" src="https://dn-tupu-dev.qbox.me/js/util.js"></script>
+    <script type="text/javascript" src="https://dn-tupu-dev.qbox.me/js/jquery-1.9.0.min.js"></script><script type="text/javascript" src="https://dn-tupu-dev.qbox.me/js/plupload.full.min.js"></script>
+<script type="text/javascript" src="https://dn-tupu-dev.qbox.me/js/ui.js"></script>
+<script type="text/javascript" src="https://dn-tupu-dev.qbox.me/js/qiniu.js"></script>
 </head>
 <body>
-    <div class="tp-wrapper">
-        <section class="tp-album-banner">
-            <div class="tp-banner-image">
-                <img src="../images/banner.png" alt="群相册名字群相册名字群相册名字群相册名字群相册名字" width="100%"/>
-                <h2 class="js-album-name">「群相册名字群相册名字群相册名字群相册名字」</h2>
-            </div>
-        </section>
-        <div class="tp-album-tab clearfix">
-            <a class="tp-album-btn tp-album-number active" href=""><span class="js-group-num"></span> 照片</a>
-            <span class="line"></span>
-            <a class="tp-album-btn tp-album-member" href="javascript:;"><span class="js-member-num"></span> 群友</a>
-        </div>
+        <input id="appId" type="hidden" value="wxd3b6c4a06da07946"/>
+        <input id="timestamp" type="hidden" value="1449814472"/>
+        <input id="nonceStr" type="hidden" value="631ed5f4846b43bebca0b4c76e76c5b6"/>
+        <input id="signature" type="hidden" value="d1ff852af2e37f9fccc3104b0ccd4ad98f2201d1"/>
+        <input id="api" type="hidden" value="https://gibson.tupu.im/"/>
+        <input id="auth" type="hidden" value="Basic NGMxNDYzY2E4MzUwNDBlNmFlM2Y0N2YzYWNlODE5Mzk6anMtZGV2LWtleQ=="/>
+    
+    
+    <input id="groupUUId" type="hidden" value="f4b19831bd03464b87dfca9b72b361e6"/>
+    <input id="userUUId" type="hidden" value="6a0f0298f0dd4371b67cbe52943eb4b6"/>
+    
 
-        <section class="tp-album-main tp-album-upload clearfix" id="container">
-            <a class="tp-album-btn tp-album-btn-big" id="js-upload-image" href="#"><span class="tp-icon tp-icon-add"></span>添加相片到相册</a>
+    <script type="text/javascript" src="https://dn-tupu-dev.qbox.me/js/group.js?1449069383"></script>
 
-        </section>
-        <section class="gray-wrapper"><table id="fsUploadProgress"></table></section>
-        <section class="tp-album-main tp-album-photo clearfix">
-            <section id="tp-album-thumb" class="clearfix"></section>
-        </section>
-
-        <section class="tp-album-main tp-member-wrapper" style="display: none;">
-            <section class="tp-member-thumb clearfix">
-                <div class="tp-member-item">
-                    <img src="../images/avatar.png" alt="FIX字幕侠字幕字幕字字FIX侠" />
-                    <p class="tp-member-nick">FIX字幕侠字幕字幕字字FIX侠</p>
-                </div>
-                <div class="tp-member-item">
-                    <img src="../images/avatar.png" alt="FIX字幕侠字幕字幕字字FIX侠" />
-                    <p class="tp-member-nick">FIX字幕侠字</p>
-                </div>
-                <div class="tp-member-item">
-                    <img src="../images/avatar.png" alt="FIX字幕侠字幕字幕字字FIX侠" />
-                    <p class="tp-member-nick">FIX字幕侠字幕字幕字字FIX侠</p>
-                </div>
-                <div class="tp-member-item">
-                    <img src="../images/avatar.png" alt="FIX字幕侠字幕字幕字字FIX侠" />
-                    <p class="tp-member-nick">FIX字幕侠字</p>
-                </div>
-                <div class="tp-member-item">
-                    <img src="../images/avatar.png" alt="FIX字幕侠字幕字幕字字FIX侠" />
-                    <p class="tp-member-nick">FIX字幕侠字幕字幕字字FIX侠</p>
-                </div>
-                <div class="tp-member-item">
-                    <img src="../images/avatar.png" alt="FIX字幕侠字幕字幕字字FIX侠" />
-                    <p class="tp-member-nick">FIX字幕侠字</p>
-                </div>
-                <div class="tp-member-item">
-                    <img src="../images/avatar.png" alt="FIX字幕侠字幕字幕字字FIX侠" />
-                    <p class="tp-member-nick">FIX字幕侠字幕字幕字字FIX侠</p>
-                </div>
-                <div class="tp-member-item">
-                    <img src="../images/avatar.png" alt="FIX字幕侠字幕字幕字字FIX侠" />
-                    <p class="tp-member-nick">FIX字幕侠字</p>
-                </div>
-
-            </section>
-        </section>
-    </div>
-    <footer>
-        <a class="tp-download-btn" href=""><span class="tp-icon tp-logo"></span>安装图扑APP轻松收集好照片</a>
-        <p>最好用的微信群相册，聚会、旅行、活动照片收集利器</p>
-    </footer>
-    <div class="modal">
-        <div class="modal-bg"></div>
-        <div class="modal-main"></div>
-    </div>
-    <script type="text/javascript" src="/js/upload_image.js"></script>
-    <!--<script type="text/javascript" src="../js/loadImage.js"></script>-->
 </body>
 </html>
