@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    
+    <meta content="target-densitydpi=device-dpi,width=640" name="viewport">
+
+    <title>Perapher</title>
+    <link href="css/loading.css" rel="stylesheet" type="text/css" />
+    <script src="http://static.qiezipai.cn/activity/js/util.js" type="text/javascript"></script>
+
+</head>
+<body>
+
+<div class="background_img"></div>
+<div class="container">
+    <div id="right_1" data-0="left:-50%;top:90%;" data-1000="left:0%; top:60%;" data-1900="top:-55%;">
+        <img src="image/201403_l.png" ></img>
+    </div>
+    <div id="left_1" data-0="right:-50%;top:80%;" data-1000="right:0%; top:60%;" data-1900="top:-55%;">
+        <img src="image/201403_r.png" ></img>
+    </div> 
+
+    <div id="right_2" data-1000="left:-50%;top:80%;" data-1250="left:0%; top:60%;" data-2150="top:-55%;" >
+        <img src="image/201404_l.png" ></img>
+    </div>
+    <div id="left_2" data-1000="right:-50%;top:90%;" data-1250="right:0%; top:60%;"  data-2150="top:-55%;">
+        <img src="image/201404_r.png" ></img>
+    </div>
+
+    <div id="right_3" data-1250="left:-50%;top:90%;" data-1500="left:0%; top:60%;" data-2400="top:-55%;">
+        <img src="image/201405_l.png" ></img>
+    </div>
+    <div id="left_3" data-1250="right:-50%;top:90%;" data-1500="right:0%; top:60%" data-2400="top:-55%;" >
+        <img src="image/201405_r.png" ></img>
+    </div>
+
+    <div id="right_4" data-1500="left:-50%;top:90%;" data-1750="left:0%; top:60%;" data-2650="top:-55%;">
+        <img src="image/201410_l.png" ></img>
+    </div>
+    <div id="left_4" data-1500="right:-50%;top:90%;" data-1750="right:0%; top:60%;" data-2650="top:-55%;">
+        <img src="image/201410_r.png" ></img>
+    </div>
+    
+    <div id="right_5" data-1750="left:-50%;top:90%;" data-2000="left:0%; top:60%;" data-2900="top:-55%;" >
+        <img src="image/201412_l.png" ></img>
+    </div>
+    <div id="left_5" data-1750="right:-50%;top:90%;" data-2000="right:0%; top:60%;" data-2900="top:-55%;">
+        <img src="image/201412_r.png" ></img>
+    </div> 
+
+    <div id="right_6" data-2000="left:-50%;top:90%;" data-2250="left:0%; top:60%;" data-3150="top:-55%;" >
+        <img src="image/201501_l.png" ></img>
+    </div>
+    <div id="left_6" data-2000="right:-50%;top:90%;" data-2250="right:0%; top:60%;" data-3150="top:-55%;">
+        <img src="image/201501_r.png" ></img>
+    </div> 
+
+    <div id="right_7" data-2250="left:-50%;top:90%;" data-2500="left:0%; top:60%;" data-3400="top:-55%;" >
+        <img src="image/201503_l.png" ></img>
+    </div>
+    <div id="left_7" data-2250="right:-50%;top:90%;" data-2500="right:0%; top:60%;" data-3400="top:-55%;">
+        <img src="image/201503_r.png" ></img>
+    </div> 
+
+    <div id="right_8" data-2500="left:-50%;top:90%;" data-2750="left:0%; top:60%;" data-3500="top:-55%;" >
+        <img src="image/201506_l.png" ></img>
+    </div>
+    <div id="left_8" data-2500="right:-50%;top:90%;" data-2750="right:0%; top:60%;" data-3500="top:-55%;">
+        <img src="image/201506_r.png" ></img>
+    </div> 
+
+    <div id="footer_img" data-2800="right:0;top:110%;" data-3800="top:-60%;">
+        <img src="image/footer.png"></img>
+        <input type="button" id="vote_btn" value="开始投票"></input>
+    </div>
+    <div id="arrow" class="arrow_comeon" data-2700="bottom:30px;" data-2800="bottom:-100px;">
+        <img src="image/arrow.gif"></img>
+    </div>
+
+
+</div>
+<div class="perapher"></div>
+<div class="welcome"></div>
+<div class="starting"></div>
+
+<script type="text/javascript" src="http://static.qiezipai.cn/activity/js/jquery-1.10.1.min.js"></script>
+<script src="js/skrollr.js" type="text/javascript" ></script>
+
+<script type="text/javascript">
+    $(function(){
+        // $("body").css("overflow","hidden");
+
+        window.setTimeout(
+        function(){
+         $(".starting").addClass('toping');
+        },3000);
+
+        window.setTimeout(
+        function(){
+         $(".welcome").addClass('comeon');
+        },3000);
+        
+        window.setTimeout(
+        function(){
+         $(".welcome").removeClass('comeon');
+        },4000);
+
+        window.setTimeout(
+        function(){
+         $(".perapher").addClass('comeon');
+        },4000);
+
+        window.setTimeout(
+        function(){
+         $(".perapher").removeClass('comeon');
+        },7000);
+
+        window.setTimeout(
+        function(){
+         $(".container").css("display","block");
+         $("#arrow").removeClass('arrow_comeon');
+        },7000);
+
+        //$(".container").css("display","block");
+        window.setTimeout(
+        function(){
+        var s = skrollr.init({
+            smoothScrolling : true,
+            smoothScrollingDuration:200,
+            scale:2,
+        })
+        },7000);
+
+        //$(".container").css("display","block");
+    });
+
+
+
+</script>
+</body>
+</html>
