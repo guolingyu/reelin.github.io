@@ -169,12 +169,13 @@ option {
 /* line 22, ../scss/form.scss */
 .med-form .label {
   float: left;
+  width: 200px;
 }
-/* line 25, ../scss/form.scss */
+/* line 26, ../scss/form.scss */
 .med-form .item-input {
   float: right;
 }
-/* line 28, ../scss/form.scss */
+/* line 29, ../scss/form.scss */
 .med-form input, .med-form select {
   height: 100px;
   line-height: 100px;
@@ -185,32 +186,32 @@ option {
   margin-right: 15px;
   color: #7a7a7a;
 }
-/* line 38, ../scss/form.scss */
+/* line 39, ../scss/form.scss */
 .med-form input {
   width: 400px;
 }
-/* line 41, ../scss/form.scss */
+/* line 42, ../scss/form.scss */
 .med-form .icon-arrow-right-gray {
   float: right;
   margin-top: 40px;
 }
-/* line 45, ../scss/form.scss */
+/* line 46, ../scss/form.scss */
 .med-form .btn-text-right {
   color: #0084ff;
   float: right;
 }
-/* line 49, ../scss/form.scss */
+/* line 50, ../scss/form.scss */
 .med-form .matter-list {
   clear: both;
   border-top: 1px solid #d8d8d8;
 }
-/* line 52, ../scss/form.scss */
+/* line 53, ../scss/form.scss */
 .med-form .matter-list li {
   border-bottom: 1px solid #d8d8d8;
   color: #7a7a7a;
   text-align: right;
 }
-/* line 58, ../scss/form.scss */
+/* line 59, ../scss/form.scss */
 .med-form .btn-blue {
   width: 100%;
   display: block;
