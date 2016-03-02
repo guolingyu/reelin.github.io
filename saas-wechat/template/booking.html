@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta content="target-densitydpi=device-dpi,width=750" name="viewport">
+    <link rel="shortcut icon" type="image/x-icon" href=""/>
+    <title>Medlinker</title>
+    <meta name="author" content=""/>
+    <meta name="Copyright" content=""/>
+    <meta name="keywords" content="">
+    <meta name="description" content="图">
+    <link rel="stylesheet" type="text/css" href="../css/booking.css">
+    <script type="text/javascript" src="../javascript/util.js"></script>
+    <script type="text/javascript" src="../javascript/jquery-1.9.0.min.js"></script>
+</head>
+<body>
+    <div class="title-bar clearfix">
+        <a class="return-back icon icon-arrow-left-blue" href="javascript:;"></a>
+        <h1>新增预约</h1>
+    </div>
+    <div class="med-form">
+        <div class="form-block">
+            <div class="form-col clearfix">
+                <div class="item-title label">患者姓名</div>
+                <div class="item-input">
+                    <a class="range-slider" href="javascript:;">
+                        <input type="text" name="name"/>
+                        <span class="icon icon-arrow-right-gray"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="form-col clearfix">
+                <div class="item-title label">患者手机号</div>
+                <div class="item-input">
+                    <div class="range-slider">
+                        <input type="tel" name="phone"/>
+                        <span class="icon icon-arrow-right-gray"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-col clearfix">
+                <div class="item-title label">性别</div>
+                <div class="item-input">
+                    <div class="range-slider">
+                        <select name="sex">
+                            <option value="male">男</option>
+                            <option value="female">女</option>
+                        </select>
+                        <span class="icon icon-arrow-right-gray"></span>
+                    </div>
+
+                </div>
+            </div>
+            <div class="form-col clearfix">
+                <div class="item-title label">年龄</div>
+                <div class="item-input">
+                    <div class="range-slider">
+                        <input type="tel" name="phone"/>
+                        <span class="icon icon-arrow-right-gray"></span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="form-block">
+            <div class="form-col clearfix">
+                <div class="item-title label">预约医生</div>
+                <div class="item-input">
+                    <div class="range-slider">
+                        <input type="text" value="哇哈哈"/>
+                    </div>
+                </div>
+            </div>
+            <div class="form-col clearfix">
+                <div class="item-title label">预约时间</div>
+                <div class="item-input">
+                    <div class="range-slider">
+                        <input type="datetime-local" name="time"/>
+                        <span class="icon icon-arrow-right-gray"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-col clearfix">
+                <div class="item-title label">预约事项</div>
+                <a class="add-matter btn-text-right" href="javascript:;">添加</a>
+                <ul class="matter-list">
+                    <li><span class="index">1. </span>初诊-种植一期手术</li>
+                    <li><span class="index">2. </span>初诊-种植一期手术</li>
+                </ul>
+            </div>
+            <div class="form-col clearfix">
+                <div class="item-title label">预约备注</div>
+                <textarea name="booking-remark" cols="30" rows="10"></textarea>
+            </div>
+        </div>
+        <a class="btn-blue sumbit" href="javascript:;">保存</a>
+    </div>
+</body>
+</html>

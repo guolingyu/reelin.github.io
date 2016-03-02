@@ -1,0 +1,282 @@
+/* line 5, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/*All icon*/
+/* line 14, ../scss/reset.scss */
+html,
+body {
+  font: 32x/1.5 "Helvetica Neue", Helvetica, Arial, "\5b8b\4f53", sans-serif;
+  font-weight: 400;
+  color: #000;
+  background: #fff;
+  min-height: 100%;
+  width: 750px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-box-align: center;
+}
+
+/* line 26, ../scss/reset.scss */
+a img {
+  border: 0;
+}
+
+/* line 29, ../scss/reset.scss */
+a {
+  text-decoration: none;
+  outline: 0;
+}
+
+/* line 33, ../scss/reset.scss */
+a:visited {
+  text-decoration: none;
+}
+
+/* line 36, ../scss/reset.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 39, ../scss/reset.scss */
+a:active {
+  border: 0 none;
+}
+
+/* line 42, ../scss/reset.scss */
+p {
+  word-wrap: break-word;
+}
+
+/* line 46, ../scss/reset.scss */
+select {
+  -webkit-appearance: none;
+  border: 0;
+  background: transparent;
+}
+
+/* line 51, ../scss/reset.scss */
+input, select, textarea {
+  outline: 0 none;
+}
+
+/* line 54, ../scss/reset.scss */
+input:focus, select:focus, textarea:focus {
+  outline: 0 none;
+}
+
+/* line 57, ../scss/reset.scss */
+option {
+  font-weight: normal;
+  display: block;
+  padding: 0px 2px 1px;
+  white-space: pre;
+}
+
+/* line 63, ../scss/reset.scss */
+.clearfix {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 2, ../scss/form.scss */
+.med-form {
+  font-size: 32px;
+  line-height: 100px;
+}
+/* line 5, ../scss/form.scss */
+.med-form .form-block {
+  border-bottom: 25px solid #e5e5e5;
+}
+/* line 7, ../scss/form.scss */
+.med-form .form-block .form-col {
+  border-bottom: 1px solid #d8d8d8;
+  padding: 0 25px;
+}
+/* line 10, ../scss/form.scss */
+.med-form .form-block .form-col textarea {
+  clear: both;
+  width: 100%;
+  height: 230px;
+  border: 0;
+  font-size: 32px;
+  color: #7a7a7a;
+  line-height: 35px;
+}
+/* line 20, ../scss/form.scss */
+.med-form .form-block .label {
+  float: left;
+}
+/* line 23, ../scss/form.scss */
+.med-form .form-block .item-input {
+  float: right;
+}
+/* line 26, ../scss/form.scss */
+.med-form .form-block input, .med-form .form-block select {
+  height: 34px;
+  border: 0;
+  font-size: 32px;
+  text-align: right;
+  margin-right: 15px;
+  color: #7a7a7a;
+}
+/* line 34, ../scss/form.scss */
+.med-form .form-block input {
+  width: 400px;
+}
+/* line 37, ../scss/form.scss */
+.med-form .form-block .icon-arrow-right-gray {
+  float: right;
+  margin-top: 40px;
+}
+/* line 41, ../scss/form.scss */
+.med-form .form-block .btn-text-right {
+  color: #0084ff;
+  float: right;
+}
+/* line 45, ../scss/form.scss */
+.med-form .form-block .matter-list {
+  clear: both;
+  border-top: 1px solid #d8d8d8;
+}
+/* line 48, ../scss/form.scss */
+.med-form .form-block .matter-list li {
+  border-bottom: 1px solid #d8d8d8;
+  color: #7a7a7a;
+  text-align: right;
+}
+/* line 55, ../scss/form.scss */
+.med-form .btn-blue {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: block;
+  background: #0084ff;
+  line-height: 100px;
+  height: 100px;
+  font-size: 34px;
+  color: #fff;
+  text-align: center;
+}
+
+/* line 64, icon/*.png */
+.icon-sprite, .icon-arrow-left-blue, .icon-arrow-right-gray, .icon-search {
+  background-image: url('../images/icon-s03837d1085.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-arrow-left-blue {
+  background-position: 0 0;
+  height: 42px;
+  width: 23px;
+}
+
+/* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-arrow-right-gray {
+  background-position: 0 -48px;
+  height: 24px;
+  width: 14px;
+}
+
+/* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-search {
+  background-position: 0 -78px;
+  height: 33px;
+  width: 33px;
+}
+
+/*All icon*/
+/* line 13, ../scss/icon.scss */
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+
+/* line 5, ../scss/patients.scss */
+.title-bar, .med-form {
+  width: 100%;
+}
+
+/* line 8, ../scss/patients.scss */
+.title-bar {
+  border-bottom: 1px solid #e8e8e8;
+}
+/* line 10, ../scss/patients.scss */
+.title-bar .icon {
+  float: left;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+/* line 15, ../scss/patients.scss */
+.title-bar h1 {
+  font-size: 36px;
+  line-height: 100px;
+  height: 100px;
+  text-align: center;
+  font-weight: normal;
+}

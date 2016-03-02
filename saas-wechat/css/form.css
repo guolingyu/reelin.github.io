@@ -1,0 +1,79 @@
+/* line 2, ../scss/form.scss */
+.med-form {
+  font-size: 32px;
+  line-height: 100px;
+}
+/* line 5, ../scss/form.scss */
+.med-form .form-block {
+  border-bottom: 25px solid #e5e5e5;
+}
+/* line 7, ../scss/form.scss */
+.med-form .form-block .form-col {
+  border-bottom: 1px solid #d8d8d8;
+  padding: 0 25px;
+}
+/* line 10, ../scss/form.scss */
+.med-form .form-block .form-col textarea {
+  clear: both;
+  width: 100%;
+  height: 230px;
+  border: 0;
+  font-size: 32px;
+  color: #7a7a7a;
+  line-height: 35px;
+}
+/* line 20, ../scss/form.scss */
+.med-form .form-block .label {
+  float: left;
+}
+/* line 23, ../scss/form.scss */
+.med-form .form-block .item-input {
+  float: right;
+}
+/* line 26, ../scss/form.scss */
+.med-form .form-block input, .med-form .form-block select {
+  height: 34px;
+  border: 0;
+  font-size: 32px;
+  text-align: right;
+  margin-right: 15px;
+  color: #7a7a7a;
+}
+/* line 34, ../scss/form.scss */
+.med-form .form-block input {
+  width: 400px;
+}
+/* line 37, ../scss/form.scss */
+.med-form .form-block .icon-arrow-right-gray {
+  float: right;
+  margin-top: 40px;
+}
+/* line 41, ../scss/form.scss */
+.med-form .form-block .btn-text-right {
+  color: #0084ff;
+  float: right;
+}
+/* line 45, ../scss/form.scss */
+.med-form .form-block .matter-list {
+  clear: both;
+  border-top: 1px solid #d8d8d8;
+}
+/* line 48, ../scss/form.scss */
+.med-form .form-block .matter-list li {
+  border-bottom: 1px solid #d8d8d8;
+  color: #7a7a7a;
+  text-align: right;
+}
+/* line 55, ../scss/form.scss */
+.med-form .btn-blue {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  display: block;
+  background: #0084ff;
+  line-height: 100px;
+  height: 100px;
+  font-size: 34px;
+  color: #fff;
+  text-align: center;
+}
