@@ -118,15 +118,17 @@ select {
 
 /* line 51, ../scss/reset.scss */
 input, select, textarea {
-  outline: 0 none;
+  outline: 0;
+  background: transparent;
 }
 
-/* line 54, ../scss/reset.scss */
+/* line 55, ../scss/reset.scss */
 input:focus, select:focus, textarea:focus {
-  outline: 0 none;
+  outline: 0;
+  background: transparent;
 }
 
-/* line 57, ../scss/reset.scss */
+/* line 59, ../scss/reset.scss */
 option {
   font-weight: normal;
   display: block;
@@ -134,7 +136,7 @@ option {
   white-space: pre;
 }
 
-/* line 63, ../scss/reset.scss */
+/* line 65, ../scss/reset.scss */
 .clearfix {
   overflow: hidden;
   *zoom: 1;
