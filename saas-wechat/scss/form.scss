@@ -4,58 +4,59 @@
     line-height: 100px;
     .form-block {
         border-bottom: 25px solid #e5e5e5;
-        .form-col {
-            border-bottom: 1px solid #d8d8d8;
-            padding: 0 25px;
-            textarea {
-                clear: both;
-                width: 100%;
-                height: 230px;
-                border: 0;
-                font-size: 32px;
-                color: #7a7a7a;
-                line-height: 35px;
-            }
-        }
-        .label {
-            float: left;
-        }
-        .item-input {
-            float: right;
-        }
-        input, select {
-            height: 34px;
+
+    }
+    .form-col {
+        border-bottom: 1px solid #d8d8d8;
+        padding: 0 25px;
+        textarea {
+            clear: both;
+            width: 100%;
+            height: 230px;
             border: 0;
             font-size: 32px;
-            text-align: right;
-            margin-right: 15px;
             color: #7a7a7a;
+            line-height: 35px;
         }
-        input {
-            width: 400px;
-        }
-        .icon-arrow-right-gray {
-            float: right;
-            margin-top: 40px;
-        }
-        .btn-text-right {
-            color: #0084ff;
-            float: right;
-        }
-        .matter-list {
-            clear: both;
-            border-top: 1px solid #d8d8d8;
-            li {
-                border-bottom: 1px solid #d8d8d8;
-                color: #7a7a7a;
-                text-align: right;
-            }
+    }
+    .label {
+        float: left;
+    }
+    .item-input {
+        float: right;
+    }
+    input, select {
+        height: 100px;
+        line-height: 100px;
+        padding: 0;
+        border: 0;
+        font-size: 32px;
+        text-align: right;
+        margin-right: 15px;
+        color: #7a7a7a;
+    }
+    input {
+        width: 400px;
+    }
+    .icon-arrow-right-gray {
+        float: right;
+        margin-top: 40px;
+    }
+    .btn-text-right {
+        color: #0084ff;
+        float: right;
+    }
+    .matter-list {
+        clear: both;
+        border-top: 1px solid #d8d8d8;
+        li {
+            border-bottom: 1px solid #d8d8d8;
+            color: #7a7a7a;
+            text-align: right;
         }
     }
     .btn-blue {
         width: 100%;
-        position: fixed;
-        bottom: 0;
         display: block;
         background: #0084ff;
         line-height: 100px;

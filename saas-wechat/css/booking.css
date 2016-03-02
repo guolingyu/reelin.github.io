@@ -149,13 +149,13 @@ option {
 .med-form .form-block {
   border-bottom: 25px solid #e5e5e5;
 }
-/* line 7, ../scss/form.scss */
-.med-form .form-block .form-col {
+/* line 9, ../scss/form.scss */
+.med-form .form-col {
   border-bottom: 1px solid #d8d8d8;
   padding: 0 25px;
 }
-/* line 10, ../scss/form.scss */
-.med-form .form-block .form-col textarea {
+/* line 12, ../scss/form.scss */
+.med-form .form-col textarea {
   clear: both;
   width: 100%;
   height: 230px;
@@ -164,53 +164,53 @@ option {
   color: #7a7a7a;
   line-height: 35px;
 }
-/* line 20, ../scss/form.scss */
-.med-form .form-block .label {
+/* line 22, ../scss/form.scss */
+.med-form .label {
   float: left;
 }
-/* line 23, ../scss/form.scss */
-.med-form .form-block .item-input {
+/* line 25, ../scss/form.scss */
+.med-form .item-input {
   float: right;
 }
-/* line 26, ../scss/form.scss */
-.med-form .form-block input, .med-form .form-block select {
-  height: 34px;
+/* line 28, ../scss/form.scss */
+.med-form input, .med-form select {
+  height: 100px;
+  line-height: 100px;
+  padding: 0;
   border: 0;
   font-size: 32px;
   text-align: right;
   margin-right: 15px;
   color: #7a7a7a;
 }
-/* line 34, ../scss/form.scss */
-.med-form .form-block input {
+/* line 38, ../scss/form.scss */
+.med-form input {
   width: 400px;
 }
-/* line 37, ../scss/form.scss */
-.med-form .form-block .icon-arrow-right-gray {
+/* line 41, ../scss/form.scss */
+.med-form .icon-arrow-right-gray {
   float: right;
   margin-top: 40px;
 }
-/* line 41, ../scss/form.scss */
-.med-form .form-block .btn-text-right {
+/* line 45, ../scss/form.scss */
+.med-form .btn-text-right {
   color: #0084ff;
   float: right;
 }
-/* line 45, ../scss/form.scss */
-.med-form .form-block .matter-list {
+/* line 49, ../scss/form.scss */
+.med-form .matter-list {
   clear: both;
   border-top: 1px solid #d8d8d8;
 }
-/* line 48, ../scss/form.scss */
-.med-form .form-block .matter-list li {
+/* line 52, ../scss/form.scss */
+.med-form .matter-list li {
   border-bottom: 1px solid #d8d8d8;
   color: #7a7a7a;
   text-align: right;
 }
-/* line 55, ../scss/form.scss */
+/* line 58, ../scss/form.scss */
 .med-form .btn-blue {
   width: 100%;
-  position: fixed;
-  bottom: 0;
   display: block;
   background: #0084ff;
   line-height: 100px;
