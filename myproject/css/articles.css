@@ -64,9 +64,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /*All icon*/
-/* line 64, icon/*.png */
-.icon-sprite, .icon-border, .icon-price, .icon-tab {
-  background-image: url('../images/icon-sc2a745961b.png');
+/* line 96, icon/*.png */
+.icon-sprite, .icon-border, .icon-bust, .icon-hip, .icon-logo, .icon-price, .icon-tab, .icon-waistline {
+  background-image: url('../images/icon-s65a5dddeb0.png');
   background-repeat: no-repeat;
 }
 
@@ -78,17 +78,45 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 /* line 84, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-price {
+.icon-bust {
   background-position: 0 -40px;
+  height: 24px;
+  width: 25px;
+}
+
+/* line 84, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-hip {
+  background-position: 0 -70px;
+  height: 25px;
+  width: 16px;
+}
+
+/* line 84, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-logo {
+  background-position: 0 -101px;
+  height: 74px;
+  width: 74px;
+}
+
+/* line 84, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-price {
+  background-position: 0 -181px;
   height: 40px;
   width: 40px;
 }
 
 /* line 84, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
 .icon-tab {
-  background-position: 0 -86px;
+  background-position: 0 -227px;
   height: 45px;
   width: 134px;
+}
+
+/* line 84, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-waistline {
+  background-position: 0 -278px;
+  height: 20px;
+  width: 25px;
 }
 
 /* line 14, ../sass/articles.scss */
@@ -143,12 +171,17 @@ p {
 }
 
 /* line 50, ../sass/articles.scss */
-.icon-border {
+.border {
   display: block;
+  width: 100%;
+  height: 20px;
+  background-color: #f7f7f7;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
 }
 
-/* line 53, ../sass/articles.scss */
-.icon-tab, .icon-price {
+/* line 58, ../sass/articles.scss */
+.icon-tab, .icon-price, .icon-bust, .icon-waistline, .icon-hip, .icon-logo {
   display: inline-block;
   vertical-align: middle;
   *vertical-align: auto;
@@ -156,7 +189,7 @@ p {
   *display: inline;
 }
 
-/* line 57, ../sass/articles.scss */
+/* line 62, ../sass/articles.scss */
 .btn-red {
   width: 146px;
   height: 50px;
@@ -168,47 +201,82 @@ p {
   text-align: center;
 }
 
-/* line 68, ../sass/articles.scss */
+/* line 73, ../sass/articles.scss */
 .banner {
   height: 426px;
   overflow: hidden;
 }
 
-/* line 73, ../sass/articles.scss */
+/* line 78, ../sass/articles.scss */
 .recommend {
   padding: 45px 30px;
 }
-/* line 75, ../sass/articles.scss */
+/* line 80, ../sass/articles.scss */
 .recommend h1, .recommend h2, .recommend h5 {
   font-size: 32px;
   line-height: 32px;
   margin-top: 9px;
   margin-bottom: 9px;
 }
-/* line 81, ../sass/articles.scss */
+/* line 86, ../sass/articles.scss */
 .recommend h1 {
   border-left: 3px solid #4d4d4d;
 }
-/* line 84, ../sass/articles.scss */
+/* line 89, ../sass/articles.scss */
 .recommend h1, .recommend h5 {
   float: left;
   padding-left: 15px;
 }
-/* line 88, ../sass/articles.scss */
+/* line 93, ../sass/articles.scss */
 .recommend .title, .recommend h2 {
   margin-bottom: 20px;
+  text-align: center;
 }
-/* line 91, ../sass/articles.scss */
+/* line 97, ../sass/articles.scss */
 .recommend p {
   font-size: 26px;
   line-height: 42px;
 }
+/* line 100, ../sass/articles.scss */
+.recommend p.size {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  font-size: 24px;
+  color: #fff;
+  width: 100px;
+  vertical-align: middle;
+  padding: 0px 8px;
+  border-radius: 16px;
+  line-height: 30px;
+  height: 30px;
+}
+/* line 110, ../sass/articles.scss */
+.recommend p.size span {
+  margin-right: 7px;
+  vertical-align: top;
+  margin-top: 3px;
+}
+/* line 115, ../sass/articles.scss */
+.recommend p.size.bust {
+  background: #ff96b1;
+}
+/* line 118, ../sass/articles.scss */
+.recommend p.size.waistline {
+  background: #16c6ca;
+}
+/* line 121, ../sass/articles.scss */
+.recommend p.size.hip {
+  background: #80c8ff;
+}
 
-/* line 96, ../sass/articles.scss */
+/* line 127, ../sass/articles.scss */
 .thumb {
   margin-top: 30px;
 }
-/* line 98, ../sass/articles.scss */
+/* line 129, ../sass/articles.scss */
 .thumb .icon-tab {
   position: absolute;
   left: 0;
@@ -218,7 +286,7 @@ p {
   color: #fff;
   text-align: center;
 }
-/* line 107, ../sass/articles.scss */
+/* line 138, ../sass/articles.scss */
 .thumb .img-wrapper {
   position: relative;
   width: 580px;
@@ -226,23 +294,23 @@ p {
   overflow: hidden;
   margin-bottom: 15px;
 }
-/* line 113, ../sass/articles.scss */
+/* line 144, ../sass/articles.scss */
 .thumb .img-wrapper div {
   width: 20000px;
 }
-/* line 116, ../sass/articles.scss */
+/* line 147, ../sass/articles.scss */
 .thumb .img-wrapper img {
   float: left;
   width: 580px;
 }
-/* line 121, ../sass/articles.scss */
+/* line 152, ../sass/articles.scss */
 .thumb p {
   font-size: 20px;
   line-height: 36px;
   color: #888;
   text-align: center;
 }
-/* line 127, ../sass/articles.scss */
+/* line 158, ../sass/articles.scss */
 .thumb .page {
   position: absolute;
   right: 20px;
@@ -261,45 +329,45 @@ p {
   opacity: 0.6;
 }
 
-/* line 143, ../sass/articles.scss */
+/* line 174, ../sass/articles.scss */
 .col-wrapper {
   margin-top: 30px;
 }
-/* line 145, ../sass/articles.scss */
+/* line 176, ../sass/articles.scss */
 .col-wrapper .price {
   color: #ff3333;
   line-height: 42px;
   height: 42px;
 }
-/* line 149, ../sass/articles.scss */
+/* line 180, ../sass/articles.scss */
 .col-wrapper .price .icon-price {
   float: left;
   margin-right: 10px;
 }
-/* line 154, ../sass/articles.scss */
+/* line 185, ../sass/articles.scss */
 .col-wrapper .btn-red {
   float: right;
 }
 
-/* line 158, ../sass/articles.scss */
+/* line 189, ../sass/articles.scss */
 .text-wrapper {
   font-size: 22px;
   line-height: 42px;
   margin-bottom: 55px;
 }
-/* line 159, ../sass/articles.scss */
+/* line 190, ../sass/articles.scss */
 .text-wrapper .title {
   position: relative;
   height: 40px;
   margin: 50px auto 30px auto;
 }
-/* line 163, ../sass/articles.scss */
+/* line 194, ../sass/articles.scss */
 .text-wrapper .title .line {
   position: absolute;
   left: 0;
   top: 20px;
 }
-/* line 169, ../sass/articles.scss */
+/* line 200, ../sass/articles.scss */
 .text-wrapper h3 {
   font-size: 32px;
   text-align: center;
@@ -310,10 +378,61 @@ p {
   padding: 0 20px;
 }
 
-/* line 182, ../sass/articles.scss */
+/* line 213, ../sass/articles.scss */
 .line {
   height: 1px;
   background: #333;
   width: 100%;
   display: block;
+}
+
+/* line 219, ../sass/articles.scss */
+footer {
+  position: fixed;
+  bottom: 0;
+  background: #fff;
+  opacity: .9;
+  border-top: 1px solid #e7e7e7;
+  width: 600px;
+  padding: 12px 20px;
+}
+/* line 227, ../sass/articles.scss */
+footer span {
+  float: left;
+}
+/* line 230, ../sass/articles.scss */
+footer .info {
+  float: left;
+  margin-left: 20px;
+}
+/* line 233, ../sass/articles.scss */
+footer .info p {
+  font-size: 18px;
+  color: #333333;
+}
+/* line 236, ../sass/articles.scss */
+footer .info p span {
+  color: #ff3333;
+}
+/* line 239, ../sass/articles.scss */
+footer .info p.main {
+  font-size: 32px;
+}
+/* line 244, ../sass/articles.scss */
+footer .download {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  width: 110px;
+  height: 54px;
+  line-height: 54px;
+  font-size: 24px;
+  color: #fff;
+  background: #ff3333;
+  float: right;
+  text-align: center;
+  border-radius: 5px;
+  margin-top: 10px;
 }
