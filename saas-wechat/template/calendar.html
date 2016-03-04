@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" />
+    <meta content="target-densitydpi=device-dpi,width=750" name="viewport">
+    <link rel="shortcut icon" type="image/x-icon" href=""/>
+    <title>Medlinker</title>
+    <meta name="author" content=""/>
+    <meta name="Copyright" content=""/>
+    <meta name="keywords" content="">
+    <meta name="description" content="图">
+    <link rel="stylesheet" type="text/css" href="../css/canlendar.css">
+    <script type="text/javascript" src="../javascript/util.js"></script>
+    <script type="text/javascript" src="../javascript/jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="../javascript/moment.js"></script>
+    <script type="text/javascript" src="../javascript/fullcalendar.js"></script>
+    <script type="text/javascript" src="../javascript/lang-all.js"></script>
+</head>
+<body>
+<div id="calendar"></div>
+<script>
+    $(document).ready(function() {
+
+        $('#calendar').fullCalendar({
+            header: {
+                left: 'prev,title,next',
+                right: 'today,month'
+            },
+            contentHeight: '100%',
+            lang: 'zh-cn',
+            contentHeight: '70',
+            monthNames: ['01', '02', '03', '04', '05', '06', '07',
+                '08', '09', '10', '11', '12'],
+            dayNames: ['日', '一', '二', '三', '四', '五', '六️'],
+            timeFormat: 'H:mm',
+            defaultDate: new Date(),
+            editable: true,
+            eventLimit: true, // allow "more" link when too many events
+            events: [
+                {
+                    title: 'All Day Event',
+                    start: '2016-01-01'
+                },
+                {
+                    title: 'Long Event',
+                    start: '2016-01-07',
+                    end: '2016-01-10'
+                },
+                {
+                    id: 999,
+                    title: 'Repeating Event',
+                    start: '2016-01-09T16:00:00'
+                },
+                {
+                    id: 999,
+                    title: 'Repeating Event',
+                    start: '2016-01-16T16:00:00'
+                },
+                {
+                    title: 'Conference',
+                    start: '2016-01-11',
+                    end: '2016-01-13'
+                },
+                {
+                    title: 'Meeting',
+                    start: '2016-01-12T10:30:00',
+                    end: '2016-01-12T12:30:00'
+                },
+                {
+                    title: 'Lunch',
+                    start: '2016-01-12T12:00:00'
+                },
+                {
+                    title: 'Meeting',
+                    start: '2016-01-12T14:30:00'
+                },
+                {
+                    title: 'Happy Hour',
+                    start: '2016-01-12T17:30:00'
+                },
+                {
+                    title: 'Dinner',
+                    start: '2016-01-12T20:00:00'
+                },
+                {
+                    title: 'Birthday Party',
+                    start: '2016-01-13T07:00:00'
+                },
+                {
+                    title: 'Click for Google',
+                    url: 'http://google.com/',
+                    start: '2016-01-28'
+                }
+            ],
+            dayClick: function(date, jsEvent, view) {
+                view.calendar.gotoDate(date);
+                view.calendar.changeView('agendaWeek');
+
+            }
+        });
+        function getWeek($elem) {
+
+        }
+
+    });
+
+</script>
+
+</body>
+</html>

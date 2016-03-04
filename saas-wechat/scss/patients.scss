@@ -1,22 +1,64 @@
-@import "reset.scss";
+@import "general.scss";
 @import "form.scss";
-@import "icon.scss";
 
 .title-bar, .med-form {
-  width: 100%;
+    width: 100%;
 }
 .title-bar {
-  border-bottom: 1px solid #e8e8e8;
-  .icon {
-    float: left;
-    margin-left: 20px;
-    margin-top: 30px;
-  }
-  h1 {
-    font-size: 36px;
-    line-height: 100px;
-    height: 100px;
-    text-align: center;
-    font-weight: normal;
-  }
+    border-bottom: 1px solid #e8e8e8;
+    .icon {
+        float: left;
+        margin-left: 20px;
+        margin-top: 30px;
+    }
+    h1 {
+        font-size: 36px;
+        line-height: 100px;
+        height: 100px;
+        text-align: center;
+        font-weight: normal;
+    }
+}
+.patients-list {
+    width: 100%;
+}
+.search-block {
+    background: #f5f5f5;
+    margin: 20px 25px;
+    padding: 14px 20px;
+    border-radius: 30px;
+    input {
+        @include inline-block;
+        padding: 4px 20px;
+        width: 564px;
+        font-size: 30px;
+        vertical-align: middle;
+    }
+}
+.thumb-list {
+    .thumb-list-title {
+        background: #f5f5f5;
+        font-size: 30px;
+        color: #949494;
+        line-height: 40px;
+        height: 40px;
+        padding: 0 25px;
+    }
+    .thumb-list-item {
+        margin: 0 25px;
+        padding: 10px 0;
+        border-bottom: 1px solid #d8d8d8;
+        img {
+            border-radius: 35px;
+            @include inline-block;
+        }
+        .nick {
+            @include inline-block;
+            margin-left: 20px;
+            font-size: 32px;
+        }
+    }
+    ul li:last-child {
+        border: 0 none;
+    }
 }

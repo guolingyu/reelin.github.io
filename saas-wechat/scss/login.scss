@@ -1,0 +1,79 @@
+@import "general";
+
+.login-wrapper {
+    background: linear-gradient(#d1ddf0, #f7f8fc);
+    width: 100%;
+    position: relative;
+    h1 {
+        font-size: 36px;
+        color: #788aa7;
+        text-align: center;
+        line-height: 60px;
+        margin-top: 75px;
+        span {
+            font-size: 24px;
+        }
+    }
+    > p {
+        font-size: 26px;
+        color: #b5bcc7;
+        text-align: center;
+        line-height: 40px;
+    }
+    .login-block {
+        width: 580px;
+        height: 600px;
+        background: #fff;
+        opacity: .8;
+        box-shadow: 0 0 40px rgba(171, 195, 213, .6);
+        margin: 40px auto;
+        padding: 30px 40px;
+        .title {
+            font-size: 56px;
+            color: #788aa7;
+            text-align: left;
+            margin-bottom: 75px;
+        }
+        input {
+            font-size: 30px;
+            color: #788aa7;
+            padding: 20px 5px;
+            border-bottom: 1px solid #edeef0;
+            margin-bottom: 35px;
+            width: 580px;
+            &::-webkit-input-placeholder { color:#788aa7;; }
+            &::-moz-placeholder { color:#788aa7;; }
+            &:-ms-input-placeholder { color:#788aa7;; }
+            &:-moz-placeholder { color:#788aa7;; }
+        }
+        button {
+            display: block;
+            background: #2a7afb;
+            color: #fff;
+            font-size: 32px;
+            width: 580px;
+            height: 78px;
+            border-radius: 40px;
+            margin-top: 120px;
+            box-shadow: 0 10px 24px rgba(0, 114, 255, .45);
+        }
+    }
+}
+footer {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    p {
+        font-size: 22px;
+        color: #afb7c5;
+        line-height: 32px;
+    }
+}
+
+@mixin linear-gradient($color1, $color2) {
+    background: -webkit-linear-gradient($color1, $color2);
+    background: -o-linear-gradient($color1, $color2);
+    background: -moz-linear-gradient($color1, $color2);
+    background: linear-gradient($color1, $color2);
+}

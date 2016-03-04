@@ -63,12 +63,131 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* line 88, icon/*.png */
+.icon-sprite, .icon-arrow-left-blue, .icon-arrow-left-border, .icon-arrow-right-border, .icon-arrow-right-gray, .icon-canlendar, .icon-search {
+  background-image: url('../images/icon-sd524869f7d.png');
+  background-repeat: no-repeat;
+}
+
+/* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-arrow-left-blue {
+  background-position: 0 0;
+}
+
+/* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-arrow-left-border {
+  background-position: 0 -42px;
+}
+
+/* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-arrow-right-border {
+  background-position: 0 -90px;
+}
+
+/* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-arrow-right-gray {
+  background-position: 0 -138px;
+}
+
+/* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-canlendar {
+  background-position: 0 -162px;
+}
+
+/* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-search {
+  background-position: 0 -203px;
+}
+
 /*All icon*/
-/* line 14, ../scss/reset.scss */
+/* line 15, ../scss/general.scss */
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+
+/* line 20, ../scss/general.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* line 25, ../scss/general.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 29, ../scss/general.scss */
+td,
+th {
+  padding: 0;
+}
+
+/* line 33, ../scss/general.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 39, ../scss/general.scss */
+button,
+select {
+  text-transform: none;
+  outline: none;
+  border: 0 none;
+}
+
+/* line 45, ../scss/general.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 52, ../scss/general.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 57, ../scss/general.scss */
+input {
+  line-height: normal;
+}
+
+/* line 60, ../scss/general.scss */
+input,
+select,
+button {
+  -webkit-appearance: none;
+}
+
+/* line 65, ../scss/general.scss */
+a,
+button {
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* line 70, ../scss/general.scss */
+img {
+  outline: none;
+}
+
+/* line 75, ../scss/general.scss */
 html,
 body {
-  font: 32x/1.5 "Helvetica Neue", Helvetica, Arial, "\5b8b\4f53", sans-serif;
+  font-family: 'PingFang SC', 'Lucica Grande', 'Helvatica Neue', 'Helvatica', 'Hiragino Sans GB', 'Microsoft YaHei', 'WenQuanYi Micro Hei', Arial, serif;
   font-weight: 400;
+  font-size: 32px;
   color: #000;
   background: #fff;
   min-height: 100%;
@@ -76,59 +195,64 @@ body {
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-box-align: center;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1;
 }
 
-/* line 26, ../scss/reset.scss */
+/* line 91, ../scss/general.scss */
 a img {
   border: 0;
 }
 
-/* line 29, ../scss/reset.scss */
+/* line 94, ../scss/general.scss */
 a {
   text-decoration: none;
   outline: 0;
 }
 
-/* line 33, ../scss/reset.scss */
+/* line 98, ../scss/general.scss */
 a:visited {
   text-decoration: none;
 }
 
-/* line 36, ../scss/reset.scss */
+/* line 101, ../scss/general.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 39, ../scss/reset.scss */
+/* line 104, ../scss/general.scss */
 a:active {
   border: 0 none;
 }
 
-/* line 42, ../scss/reset.scss */
+/* line 107, ../scss/general.scss */
 p {
   word-wrap: break-word;
 }
 
-/* line 46, ../scss/reset.scss */
+/* line 111, ../scss/general.scss */
 select {
   -webkit-appearance: none;
   border: 0;
   background: transparent;
 }
 
-/* line 51, ../scss/reset.scss */
+/* line 116, ../scss/general.scss */
 input, select, textarea {
   outline: 0;
   background: transparent;
+  border: 0 none;
 }
 
-/* line 55, ../scss/reset.scss */
+/* line 121, ../scss/general.scss */
 input:focus, select:focus, textarea:focus, input:active, select:active, textarea:active {
   outline: 0;
   background: transparent;
+  border: 0 none;
 }
 
-/* line 59, ../scss/reset.scss */
+/* line 126, ../scss/general.scss */
 option {
   font-weight: normal;
   display: block;
@@ -136,7 +260,17 @@ option {
   white-space: pre;
 }
 
-/* line 65, ../scss/reset.scss */
+/* line 132, ../scss/general.scss */
+::-webkit-inner-spin-button {
+  visibility: hidden;
+}
+
+/* line 133, ../scss/general.scss */
+::-webkit-datetime-edit-text {
+  text-align: right;
+}
+
+/* line 134, ../scss/general.scss */
 .clearfix {
   overflow: hidden;
   *zoom: 1;
@@ -223,63 +357,90 @@ option {
   text-align: center;
 }
 
-/* line 64, icon/*.png */
-.icon-sprite, .icon-arrow-left-blue, .icon-arrow-right-gray, .icon-search {
-  background-image: url('../images/icon-s03837d1085.png');
-  background-repeat: no-repeat;
-}
-
-/* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-arrow-left-blue {
-  background-position: 0 0;
-  height: 42px;
-  width: 23px;
-}
-
-/* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-arrow-right-gray {
-  background-position: 0 -48px;
-  height: 24px;
-  width: 14px;
-}
-
-/* line 84, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
-.icon-search {
-  background-position: 0 -78px;
-  height: 33px;
-  width: 33px;
-}
-
-/*All icon*/
-/* line 13, ../scss/icon.scss */
-.icon {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-}
-
-/* line 5, ../scss/patients.scss */
+/* line 4, ../scss/patients.scss */
 .title-bar, .med-form {
   width: 100%;
 }
 
-/* line 8, ../scss/patients.scss */
+/* line 7, ../scss/patients.scss */
 .title-bar {
   border-bottom: 1px solid #e8e8e8;
 }
-/* line 10, ../scss/patients.scss */
+/* line 9, ../scss/patients.scss */
 .title-bar .icon {
   float: left;
   margin-left: 20px;
   margin-top: 30px;
 }
-/* line 15, ../scss/patients.scss */
+/* line 14, ../scss/patients.scss */
 .title-bar h1 {
   font-size: 36px;
   line-height: 100px;
   height: 100px;
   text-align: center;
   font-weight: normal;
+}
+
+/* line 22, ../scss/patients.scss */
+.patients-list {
+  width: 100%;
+}
+
+/* line 25, ../scss/patients.scss */
+.search-block {
+  background: #f5f5f5;
+  margin: 20px 25px;
+  padding: 14px 20px;
+  border-radius: 30px;
+}
+/* line 30, ../scss/patients.scss */
+.search-block input {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  padding: 4px 20px;
+  width: 564px;
+  font-size: 30px;
+  vertical-align: middle;
+}
+
+/* line 39, ../scss/patients.scss */
+.thumb-list .thumb-list-title {
+  background: #f5f5f5;
+  font-size: 30px;
+  color: #949494;
+  line-height: 40px;
+  height: 40px;
+  padding: 0 25px;
+}
+/* line 47, ../scss/patients.scss */
+.thumb-list .thumb-list-item {
+  margin: 0 25px;
+  padding: 10px 0;
+  border-bottom: 1px solid #d8d8d8;
+}
+/* line 51, ../scss/patients.scss */
+.thumb-list .thumb-list-item img {
+  border-radius: 35px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+}
+/* line 55, ../scss/patients.scss */
+.thumb-list .thumb-list-item .nick {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  margin-left: 20px;
+  font-size: 32px;
+}
+/* line 61, ../scss/patients.scss */
+.thumb-list ul li:last-child {
+  border: 0 none;
 }

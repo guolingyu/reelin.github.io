@@ -1,0 +1,13 @@
+@import "general.scss";
+@import "form.scss";
+
+@import "fullcalendar.scss";
+
+#canlendar {
+    width: 100%;
+    .fc-view-container {
+        font-size: 38px;
+        color: #a5acbd;
+        width: 100%;
+    }
+}
